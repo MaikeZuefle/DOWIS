@@ -12,7 +12,7 @@ def load_mt(language):
     base_dir = "data_storage/task"
     os.makedirs(base_dir, exist_ok=True)
 
-    audio_paths = [] # .wav should be stored in data_storage/task_name (loaded if already there, else download it)
+    input_texts = [] # .wav should be stored in data_storage/task_name (loaded if already there, else download it)
     references = [] # strings
 
-    return {"inputs" : audio_paths, "references": references}
+    return {"inputs" : input_texts, "references": references}
