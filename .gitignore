@@ -86,7 +86,6 @@ ipython_config.py
 *.wav
 __pycache__/
 .env
-data_storage/
 generated_output/
 outputs/
 convert_to_json.py
