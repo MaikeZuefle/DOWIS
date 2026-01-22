@@ -1,0 +1,684 @@
+{
+  "asr": {
+    "basic": [
+      {
+        "text": "Ju lutem transkriptoni klipin.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Shndërroni përmbajtjen e folur në tekst.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem transkriptoni përmbajtjen e regjistruar në format të shkruar.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem prodhoni një transkriptim të saktë tekstual të këtij regjistrimi.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund të shkruash çfarë po thuhet në këtë audio?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem shënoni gjithçka që dëgjoni në këtë klip.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem dëgjoni të gjithë klipin audio dhe jepni një transkriptim të plotë dhe të saktë të të gjitha fjalëve të folura.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem shndërroni të gjithë përmbajtjen e folur të këtij regjistrimi në një transkripte të qartë dhe të saktë tekstuale.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Ju lutem transkriptoni.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Transkripto këtë klip.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "st": {
+    "basic": [
+      {
+        "text": "Ju lutem përktheni regjistrimin në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Shndërroni bisedën në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem përktheni përmbajtjen audio në anglisht me saktësi të lartë.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem jepni një përkthim të saktë në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund të përkthesh atë që po thonë në anglisht?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem shndërroni këtë audio në anglisht për mua.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem dëgjoni të gjithë audion dhe jepni një përkthim të plotë dhe të saktë në anglisht të gjithë përmbajtjes së folur.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem shndërroni të gjithë përmbajtjen e folur të këtij regjistrimi në një përkthim të qartë dhe te sakte në anglisht, duke ruajtur kuptimin dhe tonin.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Përktheni në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Në anglisht, te lutem.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "sqa": {
+    "basic": [
+      {
+        "text": "Ju lutem përgjigjuni pyetjes bazuar në klip: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dëgjoni regjistrimin dhe jepni përgjigjen për: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem dëgjoni regjistrimin e dhene dhe jepni një përgjigje të saktë për pyetjen e mëposhtme: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem analizoni përmbajtjen audio dhe jepni një përgjigje të saktë për pyetjen: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund ta dëgjosh këtë dhe të më thuash përgjigjen për <question>?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dëgjoje klipin dhe më trego përgjigjen për këtë: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem dëgjoni me kujdes të gjithë klipin audio dhe jepni një përgjigje të plotë dhe të ndërgjegjshme ndaj kontekstit për pyetjen: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Duke përdorur të gjithë informacionin përkatës nga regjistrimi, jepni një përgjigje të qartë dhe të arsyetuar mirë për këtë pyetje: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Cila është përgjigjja: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dëgjo dhe përgjigju: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "ssum": {
+    "basic": [
+      {
+        "text": "Ju lutem përmblidhni regjistrimin.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Jepni një përmbledhje të shkurtër të përmbajtjes.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem dëgjoni këtë dhe prodhoni një përmbledhje të shkurtër dhe të saktë.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem gjeneroni një përmbledhje të strukturuar mirë të klipit audio.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund ta dëgjosh këtë dhe të më thuash pikat kryesore?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dëgjoje këtë klip dhe përmblidhe për mua.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem dëgjoni të gjithë regjistrimin dhe jepni një përmbledhje gjithëpërfshirëse që kap të gjitha idetë kyçe, temat dhe detajet e pergjithshme.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Krijoni një përmbledhje të qartë dhe të organizuar mirë të regjistrimit, duke theksuar pikat kryesore, informacionin mbështetës dhe çdo përfundim të përmendur.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Përmbledheni.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Jepni një përmbledhje të shkurtër.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "slu": {
+    "basic": [
+      {
+        "text": "Ju lutem interpretoni kuptimin e klipit të folur.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Nxirrni qëllimin dhe informacionin kyç nga ky regjistrim.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem analizoni përmbajtjen e folur dhe jepni qëllimin e identifikuar së bashku me entitetet përkatëse.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem kryeni kuptimin e gjuhës së folur mbi këtë regjistrim dhe prodhoni interpretimin e tij semantik.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund të kuptosh çfarë dëshiron folësi nga ky klip?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dëgjoje këtë dhe më trego qëllimin dhe detajet e rëndësishme.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem dëgjoni të gjithë regjistrimin dhe jepni një interpretim të plotë semantik, duke përfshirë qëllimin, entitetet kyçe dhe çdo informacion kontekstual përkatës.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Analizoni regjistrimin dhe jepni një dalje të strukturuar SLU që kap qëllimin e folësit, slot-et, entitetet dhe çdo sinjal tjetër semantik.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Nxirrni qëllimin dhe entitetet.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Bëni SLU mbi këtë audio.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "tts": {
+    "basic": [
+      {
+        "text": "Ju lutem shndërroni këtë tekst në të folur.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Gjeneroni audio të folur nga teksti i mëposhtëm.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem prodhoni një version të të folurit me tingëllim natyral të tekstit të dhënë.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem sintetizoni këtë tekst në dalje audio të qartë dhe të saktë.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, lexoje këtë tekst me zë të lartë.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Gjeneroni të folur nga kjo.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem shndërroni të gjithë tekstin në të folur, duke ruajtur intonacionin e duhur, pauzat dhe theksimin për një paraqitje natyrale.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Gjeneroni një version të folur me cilësi të lartë të tekstit, duke kapur nuancat, pikësimin dhe tonin shprehës.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Tekst në të folur.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Fol këtë tekst.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "s2st": {
+    "basic": [
+      {
+        "text": "Ju lutem përktheni këtë klip në të folur në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Shndërroni përmbajtjen e folur në audio në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem prodhoni një përkthim të folur në anglisht të këtij regjistrimi.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem gjeneroni një version të folur të saktë në anglisht të regjistrimit të dhënë.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund ta kthesh këtë në audio në anglisht?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Bëje këtë klip të flasë në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem dëgjoni të gjithë regjistrimin dhe jepni një përkthim të folur natyral dhe kontekstualisht të saktë në anglisht, duke ruajtur tonin dhe kuptimin.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Gjeneroni një version të folur në anglisht me cilësi të lartë të këtij regjistrimi, duke ruajtur intonacionin, theksimin dhe çdo sinjal shprehës.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Përkthe në të folur në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "S2ST: Anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "mt": {
+    "basic": [
+      {
+        "text": "Ju lutem përktheni tekstin në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Shndërroni këtë tekst në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem jepni një përkthim të saktë të tekstit të mëposhtëm në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem përktheni këtë tekst në anglisht, duke ruajtur kuptimin dhe tonin e tij.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund ta përkthesh këtë në anglisht?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ktheje këtë në anglisht për mua.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem përktheni të gjithë tekstin në anglisht, duke ruajtur qartësinë, kontekstin dhe formulimin natyral.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Jepni një përkthim me cilësi të lartë të këtij teksti në anglisht, duke ruajtur shprehjet idiomatike dhe kuptimin e synuar.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Përkthe në anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "MT: Anglisht.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "tsum": {
+    "basic": [
+      {
+        "text": "Ju lutem përmblidhni tekstin.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Jepni një përmbledhje të shkurtër.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem gjeneroni një përmbledhje të shkurtër dhe të saktë të tekstit të mëposhtëm.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem prodhoni një përmbledhje të strukturuar mirë të tekstit.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund të më tregosh pikat kryesore të këtij teksti?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Lexoje këtë dhe përmblidhe për mua.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem krijoni një përmbledhje gjithëpërfshirëse të tekstit, duke kapur të gjitha idetë kryesore, detajet mbështetëse dhe përfundimet.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Analizoni tekstin dhe jepni një përmbledhje të detajuar dhe të organizuar mirë, duke theksuar pikat kryesore dhe informacionin e rëndësishëm.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Përmblidhe këtë.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Jepni një përmbledhje të shkurtër.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "lipread": {
+    "basic": [
+      {
+        "text": "Ju lutem transkriptoni të folurin nga videoja.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Shkruani çfarë po thotë personi në këtë video.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem jepni një transkriptim të saktë të të folurit bazuar në lëvizjet e buzëve të folësit në këtë video.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem analizoni videon dhe gjeneroni një transkriptim të saktë tekstual të përmbajtjes së folur.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund të më tregosh çfarë po thonë duke parë buzët e tyre?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Shiko këtë video dhe shkruaj fjalët që po thuhen.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem vëzhgoni me kujdes lëvizjet e buzëve të folësit gjatë gjithë videos dhe jepni një transkriptim të plotë dhe të saktë të të gjitha fjalëve të folura.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Gjeneroni një transkriptim të plotë tekstual bazuar në lëvizjet e buzëve në video, duke kapur çdo fjalë të folur dhe kontekstin sa më saktë të jetë e mundur.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transkriptoni nga buzët.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Lexoni buzët dhe shkruani.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "achap": {
+    "basic": [
+      {
+        "text": "Ju lutem ndani audion në kapituj dhe jepni një titull të qartë për secilin kapitull. Gjithashtu prodhoni transkriptin, të organizuar nën secilin kapitull. Përdorni tituj në Markdown për titujt e kapitujve (p.sh., ## Titulli i Kapitullit) dhe ndani secilin kapitull me rreshta të rinj.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Krijoni segmente për këtë audio dhe caktoni një titull përshkrues për secilin segment. Gjithashtu përfshini transkriptin, të grupuar sipas segmentit. Formatoni titujt e segmenteve si tituj Markdown dhe vendosni një rresht të ri midis segmenteve.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Ju lutem analizoni audion dhe gjeneroni kapituj të përcaktuar mirë me tituj përshkrues për secilin bazuar në përmbajtjen e tij, dhe gjithashtu jepni transkriptin e plotë të organizuar nën kapitujt përkatës. Ju lutem formatoni titujt e kapitujve si tituj Markdown dhe ndani secilin kapitull me një rresht bosh.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ju lutem segmentoni audion në seksione logjike dhe jepni shënues kapitujsh me tituj për secilin seksion, së bashku me tekstin e transkriptit të rregulluar nën secilin kapitull. Përdorni tituj Markdown për titujt e kapitujve dhe sigurohuni që të ketë një rresht të ri midis kapitujve.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, a mund ta ndash këtë audio në pjesë, t'i japësh secilës pjesë një titull dhe të përfshish transkriptin nën secilën pjesë? Përdorni tituj Markdown për titujt dhe vendosni një rresht bosh midis pjesëve.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Ndaje audion në kapituj për mua, duke përfshirë një titull dhe transkriptin për secilin kapitull. Formatoni titujt si tituj Markdown dhe ndani secilin kapitull me një rresht të ri.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Ju lutem shikoni audion dhe ndani atë në kapituj bazuar në funksion, temë, kalime skenash dhe përmbajtje kyçe. Për secilin kapitull, jepni një titull përshkrues dhe transkriptin e atij kapitulli. Përdorni tituj Markdown për titujt e kapitujve (p.sh., ## Hyrje) dhe ndani secilin kapitull me një rresht bosh.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Gjeneroni një segmentim të detajuar sipas kapitujve të audios, duke përshkruar përmbajtjen e secilit seksion dhe duke i dhënë secilit kapitull një titull të qartë. Gjithashtu përfshini transkriptin, të organizuar nën secilin kapitull. Formatoni titujt e kapitujve si tituj Markdown (p.sh., ## Hyrje) dhe vendosni një rresht të ri midis kapitujve.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transkripto + Kapituj në Markdown (tituj për titujt, rresht bosh midis kapitujve).",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Transkripto me kapituj audio të shtuar. Përdorni tituj Markdown për titujt e kapitujve dhe rreshta të rinj midis kapitujve.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  }
+}

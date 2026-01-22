@@ -1,0 +1,684 @@
+{
+  "asr": {
+    "basic": [
+      {
+        "text": "Přepiš audio.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Převeď nahrávku do textu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Prosím o převod audia do písemné podoby.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím o doslovný přepis této nahrávky.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Přepsal bys prosím, co se říká v tom audiu?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Potřebuju přepis toho, co se říká v tom audiu. Pomůžeš mi?",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, poslechni si uvedený zvukový záznam a proveď úplný a doslovný přepis.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím o úplnou a doslovnou transkripci celého uvedeného audiozáznamu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Přepiš.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Transkripci.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "st": {
+    "basic": [
+      {
+        "text": "Prosím, přeložte tuto nahrávku do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Převeďte prosím tuto konverzaci v češtině.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Prosím, přeložte zvukový obsah do češtiny s vysokou přesností.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Laskavě poskytněte přesný překlad do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš prosím přeložit co říkají do češtiny?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, přeložte pro mě toto audio do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, poslechněte si celý audio soubor a poskytněte úplný a přesný překlad veškerého mluveného obsahu do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Laskavě přeložte veškerý mluvený obsah této nahrávky do jasného a přesného překladu do češtiny, se zachováním významu a tónu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Přeložte do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "V čeština, prosím.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "sqa": {
+    "basic": [
+      {
+        "text": "Prosím, odpovězte na otázku na základě klipu:",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poslechněte si nahrávku a poskytněte odpověď na:",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě si poslechněte poskytnutou nahrávku a uveďte přesnou odpověď na následující otázku:",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, analyzujte zvukový obsah a poskytněte přesnou odpověď na otázku:",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš si to poslechnout a odpovědět na ...?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poslechni si ten klip a dej mi vědět odpověď na toto:",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, pečlivě si poslechněte celý audio klip a poskytněte úplnou a kontextově přesnou odpověď na otázku:",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "S využitím všech relevantních informací z nahrávky poskytněte jasnou a dobře odůvodněnou odpověď na tuto otázku:",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Jaká je odpověď:",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poslechněte si a odpovězte:",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "ssum": {
+    "basic": [
+      {
+        "text": "Prosím, shrňte tuto nahrávku.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poskytněte stručné shrnutí obsahu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě si poslechněte nahrávku a vytvořte stručné a přesné shrnutí.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, vytvořte dobře strukturované shrnutí konverzace.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš si to poslechnout a říct mi hlavní body?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poslechni si tento klip a shrň mi ho.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, poslechněte si celou nahrávku a poskytněte ucelené shrnutí zachycující všechny klíčové myšlenky, témata a důležité detaily.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte jasné a dobře uspořádané shrnutí nahrávky, které zdůrazní hlavní body, podpůrné informace a případné zmíněné závěry.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Shrňte.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dejte krátké shrnutí.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "slu": {
+    "basic": [
+      {
+        "text": "Prosím, interpretujte význam mluveného klipu.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Odvoďte z této nahrávky záměr a klíčové informace.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě analyzujte mluvený obsah a uveďte zjištěný záměr spolu s relevantními postavami a lokacemi.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, proveďte porozumění mluvenému jazyku u této nahrávky a vytvořte její sémantickou interpretaci.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, dokážeš zjistit, co mluvčí v tomto klipu chce?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poslechni si to a řekni mi záměr a důležité detaily.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, poslechněte si celou nahrávku a poskytněte úplnou sémantickou interpretaci, včetně záměru, klíčových entit a veškerých relevantních kontextových informací.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Analyzujte nahrávku a poskytněte strukturovaný výstup SLU zachycující záměr mluvčího, sloty, entity a další sémantické signály.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Odvoďte záměr a entity.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Proveďte SLU na tomto audiu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "tts": {
+    "basic": [
+      {
+        "text": "Prosím, převeďte tento text na řeč.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte mluvené audio z následujícího textu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě vytvořte přirozeně znějící mluvené podání poskytnutého textu.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, syntetizujte tento text do jasného a přesného audio výstupu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, přečti prosím tento text nahlas.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Udělejte z tohoto textu mluvené audio.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, převeďte celý text na řeč se zachováním správné intonace, pauz a důrazů pro přirozený projev.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte vysoce kvalitní mluvenou verzi textu, zachycující nuance, interpunkci a výrazový tón.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Text na řeč.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Přečtěte tento text.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "s2st": {
+    "basic": [
+      {
+        "text": "Prosím, přeložte tento klip do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Převeďte mluvený obsah do audio podoby v češtině.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě vytvořte mluvený překlad této nahrávky v češtině.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, vytvořte přesnou mluvenou verzi této nahrávky v češtině.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš z toho udělat audio v češtině?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Nechte tento klip mluvit v češtině.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, poslechněte si celou nahrávku a poskytněte přirozený, kontextově přesný mluvený překlad v <cílovém jazyce>, se zachováním tónu a významu.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte vysoce kvalitní mluvenou verzi této nahrávky v češtině, se zachováním intonace, důrazů a výrazových signálů.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Přeložte do mluvené podoby v češtině.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "S2ST: čeština.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "mt": {
+    "basic": [
+      {
+        "text": "Prosím, přeložte text z  do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Převeďte tento text do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě poskytněte přesný překlad následujícího textu do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, přeložte tento text do češtiny se zachováním jeho významu a tónu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš to přeložit do češtiny?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Převeď mi to prosím do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, přeložte celý text do češtiny, s jasností, kontextem a přirozenou formulací.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poskytněte vysoce kvalitní překlad tohoto textu, zachovávající idiomatické výrazy a zamýšlený význam do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Přeložte do češtiny.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "MT: čeština.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "tsum": {
+    "basic": [
+      {
+        "text": "Prosím, shrňte tento text.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Poskytněte stručné shrnutí tohoto textu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě vytvořte stručné a přesné shrnutí následujícího textu.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, vytvořte dobře strukturované shrnutí obsahu textu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš mi říct hlavní body tohoto textu?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Přečti si tento text a shrň mi ho.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, vytvořte ucelené shrnutí textu, zachycující všechny klíčové myšlenky, podpůrné informace a závěry.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Analyzujte text a poskytněte podrobné, dobře uspořádané shrnutí zdůrazňující hlavní body a důležité informace.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Shrňte text.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Dejte krátké shrnutí.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "lipread": {
+    "basic": [
+      {
+        "text": "Prosím, přepište řeč z videa.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Zapište, co osoba ve videu říká.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě poskytněte přesnou transkripci řeči na základě pohybů rtů mluvčího ve videu.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, analyzujte video a vytvořte přesnou textovou transkripci mluveného obsahu.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš mi říct, co říkají, když sleduješ jejich rty?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Sledujte toto video a zapište slova, která jsou vyslovena.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, pečlivě sledujte pohyby rtů mluvčího v celém videu a poskytněte úplnou a přesnou transkripci všech mluvených slov.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte ucelenou textovou transkripci na základě pohybů rtů ve videu, zachycující každé vyslovené slovo a kontext co nejpřesněji.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Přepište podle rtů.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Čtěte podle rtů a zapisujte.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "achap": {
+    "basic": [
+      {
+        "text": "Prosím, rozdělte audio na kapitoly a u každé kapitoly uveďte jasný název. Také vytvořte přepis uspořádaný pod jednotlivými kapitolami. Použijte nadpisy Markdown pro názvy kapitol (např. ## Název kapitoly) a každou kapitolu oddělte prázdným řádkem.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte segmenty tohoto audia a přiřaďte každému segmentu popisný název. Zahrňte také přepis seskupený podle segmentů. Formátujte názvy segmentů jako nadpisy Markdown a mezi segmenty vložte prázdný řádek.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Laskavě analyzujte audio a vytvořte jasně definované kapitoly s popisnými názvy pro každou z nich na základě obsahu, a také poskytněte úplný přepis uspořádaný pod příslušnými kapitolami. Formátujte názvy kapitol jako nadpisy Markdown a každou kapitolu oddělte prázdným řádkem.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Prosím, rozdělte audio do logických sekcí a u každé sekce uveďte značku kapitoly s názvem, spolu s přepisem textu uspořádaným pod každou kapitolou. Použijte nadpisy Markdown pro názvy kapitol a zajistěte, aby mezi kapitolami byl prázdný řádek.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Ahoj, můžeš toto audio rozdělit na části, každé části dát název a přidat pod každou část přepis? Použij nadpisy Markdown pro názvy a mezi části vlož prázdný řádek.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Rozděl pro mě audio na kapitoly, u každé kapitoly uveď název a přepis. Formátujte názvy jako nadpisy Markdown a každou kapitolu oddělte prázdným řádkem.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Prosím, sledujte audio a rozdělte jej na kapitoly na základě funkce, tématu, přechodů scén a klíčového obsahu. U každé kapitoly uveďte popisný název, čas začátku a přepis kapitoly. Použijte nadpisy Markdown pro názvy kapitol a časové značky (např. ## 00:00 – Úvod) a každou kapitolu oddělte prázdným řádkem.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Vytvořte podrobné členění audia po kapitolách, uveďte časové značky, popište obsah každé sekce a dejte každé kapitole jasný název. Zahrňte také přepis, uspořádaný pod jednotlivými kapitolami. Formátujte názvy kapitol jako nadpisy Markdown s časovými značkami začátku (např. ## 00:00 – Úvod) a vložte prázdný řádek mezi kapitoly.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Přepis + kapitoly v Markdown (nadpisy pro názvy, prázdný řádek mezi kapitolami).",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Přepis s přidanými kapitolami audia. Použijte nadpisy Markdown pro názvy kapitol a prázdné řádky mezi kapitolami.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  }
+}
