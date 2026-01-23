@@ -82,10 +82,13 @@ profile_default/
 ipython_config.py
 
 
-
+# Custom
 *.wav
 __pycache__/
 .env
 generated_output/
 outputs/
 convert_to_json.py
+get_flash.sh
+myjob.sh
+z_outputs/

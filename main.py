@@ -83,7 +83,7 @@ def main(out_folder, model, task, modality, lang):
     # Loading data
     logging.info(f"Loading Data.")
     data = load_data(task=task, language=lang)
-    input_data, references = data["inputs"][0:3], data["references"][0:3]
+    input_data, references = data["inputs"], data["references"]
 
     # Loading Prompts
     logging.info(f"Loading Prompts.")
@@ -119,7 +119,7 @@ def main(out_folder, model, task, modality, lang):
                     out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality)
                 if m_p:
                     out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality)
-
+                breakpoint()
         outputs.append(out)
 
     with open(output_file_path, "w", encoding="utf-8") as f:
@@ -130,7 +130,7 @@ def main(out_folder, model, task, modality, lang):
 
 
 if __name__ == "__main__":
-    LANGS = ["alb", "cs", "de", "en", "es", "fr", "hu", "it", "lv", "nl", "pt", "ru", "sv"]
+    LANGS = ["alb", "cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
     MODALITIES = ["text", "audio"]
     TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SLU", "SQA", "SSUM", "ST", "TSUM", "TTS"]
     MODELS = ["phi_multimodal", "qwen_omni"]

@@ -38,7 +38,7 @@ def generate(model_processor_config, prompt, example, modality):
 
     elif prompt_modality == "text":
         prompt = orig_prompt
-
+        
     if modality == "audio":
         audio, samplerate = sf.read(example)
         audios.append((audio, samplerate))
@@ -46,15 +46,15 @@ def generate(model_processor_config, prompt, example, modality):
     
     elif modality == "text":
         seperator_token += f"\n"
+        audios = None
 
     final_prompt = f"{user_prompt}{example}{seperator_token}{prompt}{prompt_suffix}{assistant_prompt}"
 
     inputs = processor(text=final_prompt, audios=audios, return_tensors='pt').to('cuda:0')
 
-
     generate_ids = model.generate(
         **inputs,
-        max_new_tokens=4096,
+        max_new_tokens=128000,
         generation_config=generation_config,
     )
     generate_ids = generate_ids[:, inputs['input_ids'].shape[1]:]

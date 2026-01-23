@@ -1,18 +1,12 @@
-import os
+from datasets import load_dataset
+
 def load_mt(language):
-    raise NotImplementedError()
 
-    # example in asr.py 
+    if language == "alb":
+        raise ValueError("Albanian is not supported in FLEURS.")
 
-    if language == "":
-        raise ValueError("_ is not supported.")
-    
-    # we do only en-x
+    fleurs_mt = load_dataset("google/fleurs", f"en_us", split="test", trust_remote_code=True)
 
-    base_dir = "data_storage/task"
-    os.makedirs(base_dir, exist_ok=True)
+    sources = [entry["raw_transcription"] for entry in fleurs_mt]
 
-    input_texts = [] # .wav should be stored in data_storage/task_name (loaded if already there, else download it)
-    references = [] # strings
-
-    return {"inputs" : input_texts, "references": references}
+    return {"inputs" : sources, "references": sources} # we append sources because we do QE
