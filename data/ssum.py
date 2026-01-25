@@ -47,11 +47,7 @@ def load_ssum(language):
 
             for event, elem in context:
                 if elem.tag == "sample" and elem.attrib.get("task") == "SUM":
-                    audio_path = elem.findtext("audio_path")
-                    reference = elem.findtext("reference")
-
-                    if audio_path is not None and reference is not None:
-                        audio_paths.append(audio_path)
-                        references.append(reference)
+                    audio_paths.append(elem.findtext("audio_path"))
+                    references.append(elem.findtext("reference"))
                     elem.clear()
     return {"inputs": audio_paths, "references": references}
