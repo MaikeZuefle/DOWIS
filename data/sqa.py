@@ -19,7 +19,7 @@ def load_sqa(language):
 
     download_audio(base_dir)
 
-    mcif_bench = load_dataset("FBK-MT/MCIF", f"{language}_long", split="test")
+    mcif_bench = load_dataset("FBK-MT/MCIF", "long_fixedprompt", split="test")
 
     qa_starting_prompt = {
         "en": "Answer the following question concisely given the English content: ",
