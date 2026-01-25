@@ -1,16 +1,57 @@
 import os
+import gzip
+import json
+
+import urllib.request
+import xml.etree.ElementTree as ET
+
+MCIF_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/main/"
+MCIF_VERSION = "1.2"
+
+def download_audio(base_dir):
+    api_url = "https://huggingface.co/api/datasets/FBK-MT/MCIF/tree/main"
+
+    with urllib.request.urlopen(api_url) as response:
+        files = json.load(response)
+
+    wav_files = [f["path"] for f in files if f["path"].endswith(".wav")]
+
+    for file_path in wav_files:
+        filename = os.path.basename(file_path)
+        out_path = os.path.join(base_dir, filename)
+
+        if os.path.exists(out_path):
+            continue
+
+        download_url = MCIF_URL + file_path
+        urllib.request.urlretrieve(download_url, out_path)
+
+
 def load_ssum(language):
-    raise NotImplementedError()
+    if language not in ["en", "it", "de"]:
+        raise ValueError("Only English, Italian, and German languages are supported for SQA.")
 
-    # example in asr.py 
-
-    if language == "":
-        raise ValueError("_ is not supported.")
-
-    base_dir = "data_storage/task"
+    base_dir = "data_storage/mcif"
     os.makedirs(base_dir, exist_ok=True)
 
-    audio_paths = [] # .wav should be stored in data_storage/task_name (loaded if already there, else download it)
-    references = [] # strings
+    download_audio(base_dir)
 
-    return {"inputs" : audio_paths, "references": references}
+    file_name = f"MCIF.long.{language}.ref.xml.gz"
+    url = MCIF_URL + f"{file_name}?download=true"
+
+    audio_paths = []; references = []
+
+    with urllib.request.urlopen(url) as response:
+        with gzip.GzipFile(fileobj=response) as gz:
+            context = ET.iterparse(gz, events=("end",))
+
+            for event, elem in context:
+                if elem.tag == "sample" and elem.attrib.get("task") == "SUM":
+                    audio_path = elem.findtext("audio_path")
+                    reference = elem.findtext("reference")
+
+                    if audio_path is not None and reference is not None:
+                        audio_paths.append(audio_path)
+                        references.append(reference)
+                    elem.clear()
+    return {"inputs": audio_paths, "references": references}
