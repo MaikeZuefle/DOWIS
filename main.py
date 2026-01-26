@@ -71,7 +71,7 @@ def load_prompt(task, language):
 def main(out_folder, model, task, lang):
 
     # Setting output paths and inferring modalities
-    output_file_path = f"{out_folder}/{model}/{task}/{lang}.json"
+    output_file_path = f"{out_folder}/{model}/{task}/{lang}.jsonl"
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     set_up_logging(output_file_path)
     modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
@@ -99,7 +99,8 @@ def main(out_folder, model, task, lang):
 
     # Starting Generation
     logging.info(f"Starting Output Generation.")
-    outputs = []
+
+    f_out = open(output_file_path, "a", encoding="utf-8")
     for x, ref in tqdm(zip(input_data, references), desc="Generating Outputs", total=len(input_data)):
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
@@ -107,12 +108,12 @@ def main(out_folder, model, task, lang):
 
             # sample one out of two prompts in this category
             prompt_type_idx = random.randint(0, len(prompts) - 1)
-            out["predicted"]["prompt_number"] = prompt_type_idx # either 0 or 1
+            out["predicted"]["prompt_number"] = prompt_type_idx + 1 # either 1 or 2
             p = prompts[prompt_type_idx]
            
             # text prompt generation
             text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
-            out["predicted"][prompt_type]["text"]  = generate(model_instance, text_prompt, x, modality, output_modality)
+            out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality)
 
             
             # sample one speaker (most tasks have only speaker per gender, but some have two)
@@ -121,7 +122,7 @@ def main(out_folder, model, task, lang):
  
             if num_audio_prompts > 0:               
                 speaker_idx = random.randint(0, num_audio_prompts - 1) if num_audio_prompts > 1 else 0
-                out["predicted"]["spk_number"] = speaker_idx # either 0 or 1
+                out["predicted"]["spk_number"] = speaker_idx + 1 # either 1 or 2
 
                 # audio prompts generation
                 if  p["female_rec"]:
@@ -132,12 +133,10 @@ def main(out_folder, model, task, lang):
                     m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
                     out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality)
 
-        outputs.append(out)
+        f_out.write(json.dumps(out, ensure_ascii=False) + "\n")
+        f_out.flush()
 
-
-    # Saving outputs
-    with open(output_file_path, "w", encoding="utf-8") as f:
-        json.dump(outputs, f, ensure_ascii=False, indent=2)
+    f_out.close()
 
     logging.info(f"Writing Outputs to file {output_file_path}.")
     logging.info("All done.")

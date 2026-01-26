@@ -22,7 +22,7 @@ def update_json_with_audio_paths(data):
                 for gender_key, gender_variants in GENDERS.items():
                     for gender_variant in gender_variants:
                         filename = f"{LANG}_{gender_variant}_{task}_{style}_{idx}.wav"
-                        file_path = AUDIO_ROOT / filename
+                        file_path = "prompts" / AUDIO_ROOT / filename
 
                         if file_path.exists():
                             prompt[f"{gender_key}_rec"].append(str(file_path))

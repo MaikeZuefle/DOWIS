@@ -19,7 +19,7 @@ TASK_MODALITY_MAPPER = {
 
 
 def set_up_logging(output_file_path):
-    log_file = output_file_path.replace(".xml", ".log")
+    log_file = output_file_path.replace(".jsonl", ".log")
 
     # Clear existing handlers if rerunning in interactive environments
     for handler in logging.root.handlers[:]:
