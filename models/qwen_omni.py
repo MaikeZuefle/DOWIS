@@ -9,7 +9,6 @@ def load_model():
         device_map="auto",
         
         attn_implementation="flash_attention_2",
-        cache_dir="/home/mzuefle/.cache/huggingface/hub",
     )
     model.disable_talker()
     processor = Qwen3OmniMoeProcessor.from_pretrained(MODEL_PATH)
@@ -17,18 +16,32 @@ def load_model():
 
 
 def generate(model_processor, prompt, example, modality):
+
     from qwen_omni_utils import process_mm_info
+
+    prompt_modality = prompt["prompt_modality"]
+    orig_prompt = prompt["prompt"]
+
     model, processor = model_processor
 
+    # prepare prompts
+    if prompt_modality == "audio":
+        prompt_dict = {"type": audio, "audio": orig_prompt}
+
+    elif prompt_modality == "text":
+        prompt_dict = {"type": "text", "text": orig_prompt}
+
+    # prepare inputs
+    if modality == "audio":
+        input_dict = {"type": "audio", "audio": example}
+    elif modality == "text":
+        input_dict = {"type": "text", "text": example}
+        
 
     USE_AUDIO_IN_VIDEO = False
-    if modality == "text":
-        user_conv_content = [{"type": "text", "text": f"{prompt}\n{example}\n"}]
-    elif modality == "audio":
-        user_conv_content = [{"type": "audio", "audio": str(example)}, {"type": "text", "text": prompt}]
+    RETURN_AUDIO = False
 
-    else:
-        raise NotImplementedError()
+    user_conv_content = [input_dict, prompt_dict]
 
     conversations = [{"role": "user", "content": user_conv_content}]
 
@@ -47,15 +60,14 @@ def generate(model_processor, prompt, example, modality):
     text_ids, audio = model.generate(**inputs, 
                                     thinker_return_dict_in_generate=True,
                                     use_audio_in_video=USE_AUDIO_IN_VIDEO,
-                                    return_audio=False,
-                                    max_new_tokens=32768, 
-                                    thinker_max_new_tokens=32768)
+                                    return_audio=RETURN_AUDIO,
+                                    max_new_tokens=32768)
     
     response = processor.batch_decode(text_ids.sequences[:, inputs["input_ids"].shape[1] :],
                                 skip_special_tokens=True,
-                                clean_up_tokenization_spaces=False)
+                                clean_up_tokenization_spaces=False)[0]
 
-    # postprocess
+
     return response
 
 
