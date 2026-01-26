@@ -15,18 +15,19 @@ def load_model():
     return model, processor
 
 
-def generate(model_processor, prompt, example, modality):
+def generate(model_processor, prompt, example, modality, output_modality):
 
     from qwen_omni_utils import process_mm_info
 
+    # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
     orig_prompt = prompt["prompt"]
-
     model, processor = model_processor
+
 
     # prepare prompts
     if prompt_modality == "audio":
-        prompt_dict = {"type": audio, "audio": orig_prompt}
+        prompt_dict = {"type": "audio", "audio": orig_prompt}
 
     elif prompt_modality == "text":
         prompt_dict = {"type": "text", "text": orig_prompt}
@@ -39,7 +40,7 @@ def generate(model_processor, prompt, example, modality):
         
 
     USE_AUDIO_IN_VIDEO = False
-    RETURN_AUDIO = False
+    RETURN_AUDIO = output_modality == "audio"
 
     user_conv_content = [input_dict, prompt_dict]
 
@@ -56,7 +57,6 @@ def generate(model_processor, prompt, example, modality):
                     use_audio_in_video=USE_AUDIO_IN_VIDEO)
     inputs = inputs.to(model.device).to(model.dtype)
 
-    # Inference: Generation of the output text and audio
     text_ids, audio = model.generate(**inputs, 
                                     thinker_return_dict_in_generate=True,
                                     use_audio_in_video=USE_AUDIO_IN_VIDEO,

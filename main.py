@@ -24,7 +24,7 @@ from data.tsum import load_tsum
 from data.tts import load_tts
 
 # utils
-from utils import set_up_logging
+from utils import set_up_logging, TASK_MODALITY_MAPPER
 
 # setting seed for reproducibilty
 set_seed(42)
@@ -66,21 +66,23 @@ def load_prompt(task, language):
     return prompts[task.lower()]
 
 
-def main(out_folder, model, task, modality, lang):
+def main(out_folder, model, task, lang):
 
-    output_file_path = f"{out_folder}/{model}/{task}/{modality}_{lang}.json"
+    # Setting output paths and inferring modalities
+    output_file_path = f"{out_folder}/{model}/{task}/{lang}.json"
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     set_up_logging(output_file_path)
+    modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
 
+    # Logging
     logging.info("Welcome!")
     logging.info(
-        f"Modality: {modality}, Lang: {lang}, Modality: {modality}, Task: {task}"
+        f"Modality: {modality}, Lang: {lang}, Task: {task}"
     )
 
     logging.info(f"Output Json: {output_file_path}")
 
-
-    # Loading data
+    # Loading Data
     logging.info(f"Loading Data.")
     data = load_data(task=task, language=lang)
     input_data, references = data["inputs"], data["references"]
@@ -93,10 +95,9 @@ def main(out_folder, model, task, modality, lang):
     logging.info(f"Loading Model.")
     model_instance, generate = load_model(model)
 
-
+    # Starting Generation
     logging.info(f"Starting Output Generation.")
     outputs = []
-
     for x, ref in tqdm(zip(input_data, references), desc="Generating Outputs", total=len(input_data)):
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
@@ -114,14 +115,16 @@ def main(out_folder, model, task, modality, lang):
                 m_audio_prompt = {"prompt_modality": "audio", "prompt": m_p}
 
                 # generate
-                out["predicted"][prompt_type]["text"]  = generate(model_instance, text_prompt, x, modality)
+                out["predicted"][prompt_type]["text"]  = generate(model_instance, text_prompt, x, modality, output_modality)
                 if f_p:
-                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality)
+                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality)
                 if m_p:
-                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality)
+                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality)
                 breakpoint()
         outputs.append(out)
 
+
+    # Saving outputs
     with open(output_file_path, "w", encoding="utf-8") as f:
         json.dump(outputs, f, ensure_ascii=False, indent=2)
 
@@ -141,9 +144,6 @@ if __name__ == "__main__":
         "--lang", choices=LANGS, default=LANGS[0], help="Language to process"
     )
     parser.add_argument(
-        "--modality", choices=MODALITIES, default=MODALITIES[0], help="Modality type"
-    )
-    parser.add_argument(
         "--task", choices=TASKS, default=TASKS[0], help="Task"
     )
     parser.add_argument("--model", choices=MODELS, default=MODELS[0], help="Model type")
@@ -152,12 +152,12 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
     main(
         out_folder=args.out_folder,
         model=args.model,
         task=args.task,
-        modality=args.modality,
         lang=args.lang,
     )
-    # python main.py --lang de --modality audio --model phi_multimodal --task ASR --out_folder outputs
+
+    # Usage:
+    # python main.py --lang de --model phi_multimodal --task ASR --out_folder outputs

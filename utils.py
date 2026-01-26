@@ -3,6 +3,21 @@ import logging
 import os
 import sys
 
+TASK_MODALITY_MAPPER = {
+    "ACHAP": {"modality": "audio", "output_modality": "text"},    
+    "ASR": {"modality": "audio", "output_modality": "text"},      
+    "MT": {"modality": "text", "output_modality": "text"},        
+    "S2ST": {"modality": "audio", "output_modality": "audio"},    
+    "SLU": {"modality": "audio", "output_modality": "text"},      
+    "SQA": {"modality": "audio", "output_modality": "text"},       
+    "SSUM": {"modality": "audio", "output_modality": "text"},      
+    "ST": {"modality": "audio", "output_modality": "text"},       
+    "TSUM": {"modality": "text", "output_modality": "text"},      
+    "TTS": {"modality": "text", "output_modality": "audio"}       
+}
+
+
+
 def set_up_logging(output_file_path):
     log_file = output_file_path.replace(".xml", ".log")
 
@@ -28,3 +43,6 @@ def set_up_logging(output_file_path):
 
     # Add handlers to root logger
     logging.basicConfig(level=logging.INFO, handlers=[file_handler, console_handler])
+
+
+
