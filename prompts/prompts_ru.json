@@ -4,60 +4,80 @@
       {
         "text": "Пожалуйста, транскрибируй клип.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_basic_1.wav"
+        ]
       },
       {
         "text": "Конвертируй произнесённое в текст.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, транскрибируйте записанный контент в письменном виде.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, дайте точную текстовую транскрипцию этой записи.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, можешь выписать, что говорится в этой записи?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_informal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, запиши всё, что слышишь в этом клипе.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, прослушай всю аудиозапись и предоставь полный, точный перевод всех произнесённых слов.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_detailed_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, преобразуй весь контент этой аудиозаписи в чёткую и точную текстовую транскрипцию.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Пожалуйста, транскрибируй.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_short_1.wav"
+        ]
       },
       {
         "text": "Транскрибируй эту запись.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_asr_short_2.wav"
+        ]
       }
     ]
   },
@@ -66,60 +86,80 @@
       {
         "text": "Пожалуйста, переведи эту запись на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_basic_1.wav"
+        ]
       },
       {
         "text": "Переведи разговор на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, переведите этот аудиоконтент на русский с высокой точностью.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, предоставьте точный перевод на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, можешь перевести, что они говорят, на русский?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_informal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, переведи мне эту запись на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, прослушайте полностью аудиофайл и предоставьте полный, точный перевод всего устного содержания на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_detailed_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, преобразуйте всё устное содержание этой записи в чёткий и дословный русский перевод, сохранив смысл и тон.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Переведи на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_short_1.wav"
+        ]
       },
       {
         "text": "На русском, пожалуйста.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_st_short_2.wav"
+        ]
       }
     ]
   },
@@ -128,60 +168,80 @@
       {
         "text": "Пожалуйста, ответь на вопрос, опираясь на запись: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_basic_1.wav"
+        ]
       },
       {
         "text": "Прослушай запись и предоставь ответ на: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, прослушайте предоставленную запись и подготовьте точный ответ на следующий вопрос: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_formal_1.wav"
+        ]
       },
       {
         "text": "Проанализируйте аудиоконтент и дайте точный ответ на вопрос: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, ты можешь послушать это и дать ответ на <question>?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_informal_1.wav"
+        ]
       },
       {
         "text": "Прослушай клип и дай мне ответ на: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, внимательно прослушайте весь аудиоклип и дайте полный и учитывающий контекст ответ на вопрос: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_detailed_1.wav"
+        ]
       },
       {
         "text": "Используя всю необходимую информацию из записи, дайте четкий и обоснованный ответ на следующий вопрос: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Каков ответ: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_short_1.wav"
+        ]
       },
       {
         "text": "Прослушай и ответь: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_sqa_short_2.wav"
+        ]
       }
     ]
   },
@@ -190,60 +250,80 @@
       {
         "text": "Пожалуйста, кратко изложи содержание записи.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_basic_1.wav"
+        ]
       },
       {
         "text": "Предоставь краткое изложение содержания.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, прослушайте это и кратко и точно изложите содержание.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, создайте хорошо структурированное резюме аудиоклипа.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, можешь послушать это и рассказать мне основные моменты?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_informal_1.wav"
+        ]
       },
       {
         "text": "Послушай этот клип и кратко изложи его содержание.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, прослушайте полную запись и предоставьте подробное резюме, отражающее все ключевые идеи, темы и важные детали.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_detailed_1.wav"
+        ]
       },
       {
         "text": "Составьте четкое, хорошо организованное резюме записи, выделив основные моменты, вспомогательную информацию и любые упомянутые выводы.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Резюмируй.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_short_1.wav"
+        ]
       },
       {
         "text": "Дай краткое резюме.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_ssum_short_2.wav"
+        ]
       }
     ]
   },
@@ -252,60 +332,80 @@
       {
         "text": "Пожалуйста, переведи смысл прослушанного фрагмента.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_basic_1.wav"
+        ]
       },
       {
         "text": "Извлеки смысл и основную информацию из этой записи.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, проанализируйте устный контент и предоставьте обнаруженное намерение вместе с соответствующими сущностями.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, выполните Spoken Language Understanding для этой записи и создайте семантическую интерпретацию.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, ты можешь понять, что хочет говорящий в этом клипе?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_informal_1.wav"
+        ]
       },
       {
         "text": "Послушай это и расскажи мне о намерениях и важных деталях.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, прослушайте полную запись и предоставьте полную семантическую интерпретацию, включая намерение, ключевые сущности и любую важную контекстную информацию.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_detailed_1.wav"
+        ]
       },
       {
         "text": "Анализируйте запись и предоставьте структурированный вывод SLU, который отражает намерение говорящего, слоты, сущности и любые дополнительные семантические подсказки.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Извлеки намерения и сущности.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_short_1.wav"
+        ]
       },
       {
         "text": "Проведи SLU на этом аудио.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_slu_short_2.wav"
+        ]
       }
     ]
   },
@@ -314,60 +414,80 @@
       {
         "text": "Пожалуйста, преобразуй этот текст в речь.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_basic_1.wav"
+        ]
       },
       {
         "text": "Сгенерируй устную речь из следующего текста.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, создайте естественно звучащую речевую интерпретацию предоставленного текста.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, синтезируйте этот текст в четкое и точное аудио.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, прочитай этот текст вслух.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_informal_1.wav"
+        ]
       },
       {
         "text": "Сгенерируй речь на основе этого.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, преобразуйте весь текст в речь, сохраняя правильную интонацию, паузы и ударения для естественной подачи.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_detailed_1.wav"
+        ]
       },
       {
         "text": "Создайте высококачественную озвученную версию текста, передающую нюансы, пунктуацию и выразительный тон.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Текст в речь.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_short_1.wav"
+        ]
       },
       {
         "text": "Прочитай этот текст.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tts_short_2.wav"
+        ]
       }
     ]
   },
@@ -376,60 +496,80 @@
       {
         "text": "Пожалуйста, переведите этот клип на русскую речь.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_basic_1.wav"
+        ]
       },
       {
         "text": "Преобразуйте устный контент в аудио на русском языке.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, сделайте устный перевод этой записи на русский язык.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, сгенерируйте точный русский речевой перевод предоставленной записи.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, ты можешь превратить это в аудио на русском языке?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_informal_1.wav"
+        ]
       },
       {
         "text": "Сделайте так, чтобы этот клип звучал по-русски.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, прослушайте полную запись и предоставьте естественный, контекстуально точный устный перевод на русский язык, сохранив тон и смысл.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_detailed_1.wav"
+        ]
       },
       {
         "text": "Создайте высококачественную русскую речевую версию этой записи, сохранив интонацию, ударения и любые выразительные особенности.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Переведи на устный русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_short_1.wav"
+        ]
       },
       {
         "text": "S2ST: русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_s2st_short_2.wav"
+        ]
       }
     ]
   },
@@ -438,60 +578,80 @@
       {
         "text": "Пожалуйста, переведи текст на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_basic_1.wav"
+        ]
       },
       {
         "text": "Переведи этот текст на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, предоставьте точный перевод следующего текста на русский язык.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, переведите этот текст на русский язык, сохранив его смысл и тон.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, ты можешь перевести это на русский?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_informal_1.wav"
+        ]
       },
       {
         "text": "Переведите это мне на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, переведите весь текст на русский язык, сохранив ясность, контекст и естественность формулировок.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_detailed_1.wav"
+        ]
       },
       {
         "text": "Предоставьте высококачественный перевод этого текста, сохранив идиоматические выражения и задуманный смысл на русском языке.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Переведи на русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_short_1.wav"
+        ]
       },
       {
         "text": "Машинный перевод: русский.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_mt_short_2.wav"
+        ]
       }
     ]
   },
@@ -500,60 +660,80 @@
       {
         "text": "Пожалуйста, кратко изложите содержание текста.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_basic_1.wav"
+        ]
       },
       {
         "text": "Предоставьте краткое резюме.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, составьте краткое и точное резюме следующего текста.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, составьте хорошо структурированное резюме текста.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, ты можешь рассказать об основных моментах этого текста?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_informal_1.wav"
+        ]
       },
       {
         "text": "Прочитай это и кратко изложи мне суть.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Составьте подробное резюме текста, отражающее все ключевые идеи, вспомогательные детали и выводы.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_detailed_1.wav"
+        ]
       },
       {
         "text": "Проанализируйте текст и составьте подробное, хорошо организованное резюме, выделив основные моменты и важную информацию.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Резюмируй.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_short_1.wav"
+        ]
       },
       {
         "text": "Дай краткое резюме.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_tsum_short_2.wav"
+        ]
       }
     ]
   },
@@ -562,60 +742,80 @@
       {
         "text": "Пожалуйста, транскрибируйте речь из видео.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_basic_1.wav"
+        ]
       },
       {
         "text": "Запишите, что говорит человек в этом видео.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, предоставьте точную транскрипцию речи на основе движений губ говорящего в этом видео.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_formal_1.wav"
+        ]
       },
       {
         "text": "Проанализируйте видео и создайте точную текстовую транскрипцию устного содержания.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, ты можешь сказать мне, что они говорят, смотря на их губы?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_informal_1.wav"
+        ]
       },
       {
         "text": "Посмотри это видео и запиши слова, которые произносятся.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Внимательно наблюдайте за движением губ говорящего на протяжении всего видео и предоставьте полную и точную транскрипцию всех произнесенных слов.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_detailed_1.wav"
+        ]
       },
       {
         "text": "Создайте полную текстовую транскрипцию на основе движений губ в видео, улавливая каждое произнесенное слово и контекст максимально точно.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Транскрибируй с движений губ.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_short_1.wav"
+        ]
       },
       {
         "text": "Читай по губам и запиши.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_lipread_short_2.wav"
+        ]
       }
     ]
   },
@@ -624,60 +824,80 @@
       {
         "text": "Пожалуйста, разделите аудиозапись на главы и дайте понятное название каждой главе. Также подготовьте транскрипт, разбитый на главы. Для названий глав используйте заголовки Markdown (например, ## Название главы) и разделите главы новыми строками.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_basic_1.wav"
+        ]
       },
       {
         "text": "Создайте сегменты для этого аудио и присвойте описательное название каждому сегменту. Также добавьте транскрипт, сгруппированный по сегментам. Оформите названия сегментов в виде заголовков Markdown и вставьте новую строку между сегментами.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Пожалуйста, проанализируйте аудиозапись и создайте четко определенные главы с описательными названиями для каждой из них в зависимости от их содержания, а также предоставьте полную транскрипцию, организованную по соответствующим главам. Пожалуйста, отформатируйте названия глав как заголовки Markdown и разделите каждую главу пустой строкой.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_formal_1.wav"
+        ]
       },
       {
         "text": "Пожалуйста, разделите аудиозапись на логические разделы и добавьте метки глав с названиями для каждого раздела, а также текст транскрипта, расположенный под каждой главой. Используйте заголовки Markdown для названий глав и убедитесь, что между главами есть новая строка.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Эй, можешь разделить эту аудиозапись на части, дать каждой части название и добавить транскрипт под каждой частью? Используй заголовки Markdown для названий и вставь пустую строку между частями.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_informal_1.wav"
+        ]
       },
       {
         "text": "Разбей мне аудиозапись на главы, включая заголовок и транскрипт для каждой главы. Оформи заголовки в виде заголовков Markdown и раздели каждую главу новой строкой.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Пожалуйста, просмотри аудиозапись и разделите ее на главы в зависимости от функции, темы, переходов между сценами и ключевого содержания. Для каждой главы приведите описательное название и транскрипцию этой главы. Используйте заголовки Markdown для названий глав (например, ## Введение) и разделите каждую главу пустой строкой.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_detailed_1.wav"
+        ]
       },
       {
         "text": "Создайте подробную сегментацию аудио по главам, описывая содержание каждого раздела и присваивая каждой главе четкое название. Также включите транскрипт, организованный по главам. Оформите названия глав в виде заголовков Markdown (например, ## Введение) и вставьте новую строку между главами.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Транскрипт + главы в формате Markdown (заголовки для названий, пустая строка между главами).",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_short_1.wav"
+        ]
       },
       {
         "text": "Транскрипт с добавленными аудиоглавами. Используй заголовки Markdown для названий глав и новые строки между главами.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "audio_prompts/ru/ru_male1_achap_short_2.wav"
+        ]
       }
     ]
   }
