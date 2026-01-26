@@ -1,0 +1,684 @@
+{
+  "asr": {
+    "basic": [
+      {
+        "text": "Por favor, transcribe el clip.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Convierte el contenido hablado en texto.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, transcribe el contenido grabado en un formato escrito.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Amablemente produce una transcripción textual precisa de esta grabación.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes escribir lo que se está diciendo en este audio?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, anota todo lo que escuches en este clip.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, escucha el clip de audio completo y proporciona una transcripción completa y precisa de todas las palabras habladas.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Amablemente convierte todo el contenido hablado de esta grabación en una transcripción de texto clara y precisa.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Por favor, transcribe.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Transcribe este clip.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "st": {
+    "basic": [
+      {
+        "text": "Por favor, traduce la grabación al español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Convierte la conversación al español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, traduce el contenido del audio al españolcon alta precisión.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Amablemente proporciona una traducción precisa al español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes traducir lo que están diciendo al español?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, convierte este audio al españolpara mí.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, escucha el archivo de audio completo y proporciona una traducción completa y precisa de todo el contenido hablado al español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Amablemente convierte todo el contenido hablado de esta grabación en una traducción al español clara y fiel, preservando el significado y el tono.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Traduce al español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "En español, por favor.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "sqa": {
+    "basic": [
+      {
+        "text": "Por favor, responde a la pregunta basándote en el clip: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Escucha la grabación y proporciona la respuesta a: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, escucha la grabación proporcionada y ofrece una respuesta precisa a la siguiente pregunta: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, analiza el contenido del audio y ofrece una respuesta precisa a la pregunta: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes escuchar esto y decirme la respuesta a <question>?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Escucha el clip y dime la respuesta a esto: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, escucha atentamente todo el clip de audio y proporciona una respuesta completa y consciente del contexto a la pregunta: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Utilizando toda la información relevante de la grabación, ofrece una respuesta clara y bien razonada a esta pregunta: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "¿Cuál es la respuesta: <question>?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Escucha y responde: <question>.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "ssum": {
+    "basic": [
+      {
+        "text": "Por favor, resume la grabación.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Proporciona un breve resumen del contenido.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, escucha esto y produce un resumen conciso y preciso.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, genera un resumen bien estructurado del clip de audio.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes escuchar esto y decirme los puntos principales?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Escucha este clip y resúmelo para mí.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, escucha la grabación completa y proporciona un resumen completo que capture todas las ideas clave, los temas y los detalles importantes.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Crea un resumen claro y bien organizado de la grabación, destacando los puntos principales, la información de apoyo y cualquier conclusión mencionada.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Resume.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Da un resumen breve.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "slu": {
+    "basic": [
+      {
+        "text": "Por favor, interpreta el significado del clip hablado.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Extrae la intención y la información clave de esta grabación.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, analiza el contenido hablado y proporciona la intención detectada junto con las entidades relevantes.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, realiza comprensión del lenguaje hablado (SLU) en esta grabación y produce su interpretación semántica.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes averiguar qué quiere el hablante en este clip?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Escucha esto y dime la intención y los detalles importantes.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, escucha la grabación completa y proporciona una interpretación semántica completa, incluyendo la intención, las entidades clave y cualquier información contextual relevante.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Analiza la grabación y entrega una salida de SLU estructurada que capture la intención del hablante, los slots, las entidades y cualquier señal semántica adicional.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Extrae la intención y las entidades.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Realiza SLU en este audio.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "tts": {
+    "basic": [
+      {
+        "text": "Por favor, convierte este texto en voz.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Genera audio hablado a partir del siguiente texto.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, produce una versión hablada del texto proporcionado con un sonido natural.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, sintetiza este texto en una salida de audio clara y precisa.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, lee este texto en voz alta.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Genera voz a partir de esto.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, convierte todo el texto en voz, manteniendo una entonación, pausas y énfasis adecuados para una entrega natural.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Genera una versión hablada de alta calidad del texto, capturando matices, puntuación y un tono expresivo.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Texto a voz.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Habla este texto.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "s2st": {
+    "basic": [
+      {
+        "text": "Por favor, traduce este clip a voz en español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Convierte el contenido hablado en audio en español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, produce una traducción hablada de esta grabación en español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, genera una versión hablada en español precisa de la grabación proporcionada.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes convertir esto en audio en español?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Haz que este clip hable en español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, escucha la grabación completa y proporciona una traducción hablada en español natural y contextualmente precisa, preservando el tono y el significado.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Genera una versión hablada en español de alta calidad de esta grabación, manteniendo la entonación, el énfasis y cualquier matiz expresivo.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Traduce a voz en español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "S2ST: español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "mt": {
+    "basic": [
+      {
+        "text": "Por favor, traduce el texto al español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Convierte este texto al español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, proporciona una traducción precisa del siguiente texto al español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, traduce este texto al español, preservando su significado y tono.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes traducir esto al español?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Convierte esto al español para mí.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, traduce el texto completo al español, manteniendo la claridad, el contexto y una redacción natural.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Proporciona una traducción de alta calidad de este texto, preservando las expresiones idiomáticas y el significado previsto al español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Traduce al español.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "MT: español.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "tsum": {
+    "basic": [
+      {
+        "text": "Por favor, resume el texto.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Proporciona un breve resumen.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, genera un resumen conciso y preciso del siguiente texto.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, produce un resumen bien estructurado del texto.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes decirme los puntos principales de este texto?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Lee esto y resúmelo para mí.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, crea un resumen completo del texto, capturando todas las ideas clave, los detalles de apoyo y las conclusiones.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Analiza el texto y proporciona un resumen detallado y bien organizado que destaque los puntos principales y la información importante.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Resume esto.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Da un resumen corto.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "lipread": {
+    "basic": [
+      {
+        "text": "Por favor, transcribe el discurso del video.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Escribe lo que la persona está diciendo en este video.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, proporciona una transcripción precisa del discurso basándote en los movimientos de los labios del hablante en este video.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, analiza el video y genera una transcripción textual precisa del contenido hablado.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes decirme qué están diciendo observando sus labios?",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Mira este video y escribe las palabras que se están diciendo.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, observa cuidadosamente los movimientos de los labios del hablante a lo largo de todo el video y proporciona una transcripción completa y precisa de todas las palabras habladas.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Genera una transcripción textual completa basada en los movimientos de los labios en el video, capturando cada palabra hablada y el contexto con la mayor precisión posible.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transcribe a partir de los labios.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Lee los labios y escribe.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  },
+  "achap": {
+    "basic": [
+      {
+        "text": "Por favor, divide el audio en capítulos y proporciona un título claro para cada capítulo. Además, produce la transcripción, organizada bajo cada capítulo. Usa encabezados Markdown para los títulos de los capítulos (por ejemplo, ## Título del capítulo) y separa cada capítulo con líneas en blanco.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Crea segmentos para este audio y asigna un título descriptivo a cada segmento. También incluye la transcripción, agrupada por segmento. Da formato a los títulos de los segmentos como encabezados Markdown y coloca una línea en blanco entre los segmentos.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Por favor, analiza el audio y genera capítulos bien definidos con títulos descriptivos para cada uno según su contenido, y también proporciona la transcripción completa organizada bajo los capítulos correspondientes. Por favor, escribe los títulos de los capítulos como encabezados Markdown y separa cada capítulo con una línea en blanco.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Por favor, segmenta el audio en secciones lógicas y proporciona marcadores de capítulos con títulos para cada sección, junto con el texto de la transcripción organizado bajo cada capítulo. Usa encabezados Markdown para los títulos de los capítulos y asegúrate de que haya una línea en blanco entre capítulos.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Oye, ¿puedes dividir este audio en partes, darle un título a cada parte e incluir la transcripción debajo de cada una? Usa encabezados Markdown para los títulos y coloca una línea en blanco entre las partes.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Divide el audio en capítulos para mí, incluyendo un título y la transcripción de cada capítulo. Da formato a los títulos como encabezados Markdown y separa cada capítulo con una línea en blanco.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Por favor, analiza el audio y divídelo en capítulos basados en la función, el tema, las transiciones y el contenido clave. Para cada capítulo, proporciona un título descriptivo y la transcripción de ese capítulo. Usa encabezados Markdown para los títulos de los capítulos (por ejemplo, ## Introducción) y separa cada capítulo con una línea en blanco.",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Genera una segmentación detallada del audio por capítulos, describiendo el contenido de cada sección y asignando a cada capítulo un título claro. También incluye la transcripción, organizada bajo cada capítulo. Da formato a los títulos de los capítulos como encabezados Markdown (por ejemplo, ## Introducción) e inserta una línea en blanco entre capítulos.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transcripción y capítulos en Markdown (encabezados para los títulos, línea en blanco entre capítulos).",
+        "female_rec": [],
+        "male_rec": []
+      },
+      {
+        "text": "Transcripción con capítulos de audio añadidos. Usa encabezados Markdown para los títulos de los capítulos y líneas en blanco entre capítulos.",
+        "female_rec": [],
+        "male_rec": []
+      }
+    ]
+  }
+}
