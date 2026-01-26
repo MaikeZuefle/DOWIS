@@ -27,7 +27,9 @@ from data.tts import load_tts
 from utils import set_up_logging, TASK_MODALITY_MAPPER
 
 # setting seed for reproducibilty
+import random
 set_seed(42)
+random.seed(42)
 
 
 def load_model(model_name):
@@ -102,25 +104,34 @@ def main(out_folder, model, task, lang):
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
             out["predicted"][prompt_type] = {}
-            for p in prompts[:1]:
-                # text prompt
-                text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
-                
-                # female audio prompt
-                f_p = p["female_rec"][0] if len(p["female_rec"]) >= 1 else None
-                f_audio_prompt = {"prompt_modality": "audio", "prompt": f_p}
 
-                # male audio prompt
-                m_p = p["male_prompts"] if len(p["male_rec"]) >= 1 else None
-                m_audio_prompt = {"prompt_modality": "audio", "prompt": m_p}
+            # sample one out of two prompts in this category
+            prompt_type_idx = random.randint(0, len(prompts) - 1)
+            out["predicted"]["prompt_number"] = prompt_type_idx # either 0 or 1
+            p = prompts[prompt_type_idx]
+           
+            # text prompt generation
+            text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
+            out["predicted"][prompt_type]["text"]  = generate(model_instance, text_prompt, x, modality, output_modality)
 
-                # generate
-                out["predicted"][prompt_type]["text"]  = generate(model_instance, text_prompt, x, modality, output_modality)
-                if f_p:
+            
+            # sample one speaker (most tasks have only speaker per gender, but some have two)
+            f_len, m_len = len(p["female_rec"]), len(p["male_rec"])
+            num_audio_prompts = min(f_len, m_len) if f_len > 0 and m_len > 0 else max(f_len, m_len)
+ 
+            if num_audio_prompts > 0:               
+                speaker_idx = random.randint(0, num_audio_prompts - 1) if num_audio_prompts > 1 else 0
+                out["predicted"]["spk_number"] = speaker_idx # either 0 or 1
+
+                # audio prompts generation
+                if  p["female_rec"]:
+                    f_audio_prompt = {"prompt_modality": "audio", "prompt": p["female_rec"][speaker_idx]}
                     out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality)
-                if m_p:
+
+                if p["male_rec"]:
+                    m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
                     out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality)
-                breakpoint()
+
         outputs.append(out)
 
 
