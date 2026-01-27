@@ -35,18 +35,17 @@ def load_sqa(language):
     with urllib.request.urlopen(url) as response:
         with gzip.GzipFile(fileobj=response) as gz:
             context = ET.iterparse(gz, events=("end",))
-
             for event, elem in context:
-                if elem.tag == "sample" and elem.attrib.get("task") == "SUM":
-                    sqa_samples[elem.attrib.get("id")] = {
+                if elem.tag == "sample" and elem.attrib.get("task") == "QA":
+                    sqa_samples[f"{elem.attrib.get("id")}"] = {
                         "audio_path": elem.findtext("audio_path"),
                         "reference": elem.findtext("reference")
                     }
                     elem.clear()
 
-    for idx, entry in enumerate(mcif_bench):
+    for idx, entry in zip(mcif_bench["id"], mcif_bench["prompt_en"]):
         if idx in sqa_samples:
-            question = entry[f"prompt_{language}"].replace(qa_starting_prompt[language], "")
+            question = entry.replace(qa_starting_prompt[language], "")
             sqa_samples[idx]["question"] = question
 
     audio_paths = []; references = []; questions = []
