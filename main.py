@@ -67,6 +67,13 @@ def load_prompt(task, language):
             raise KeyError(f"Task {task} does not have prompts in {prompts_path}.")
     return prompts[task.lower()]
 
+def get_out_wav_path(output_modality, idx, wavs_folder, prompt_type):
+    if output_modality == "audio":
+        out_wav = f"{wavs_folder}/{idx}_{prompt_type}"
+    text_prompt_wav = f"{out_wav}_text_prompt.wav" if output_modality == "audio" else None
+    f_audio_prompt_wav = f"{out_wav}_f_audio_prompt.wav" if output_modality == "audio" else None
+    m_audio_prompt_wav = f"{out_wav}_m_audio_prompt.wav" if output_modality == "audio" else None
+    return text_prompt_wav, f_audio_prompt_wav, m_audio_prompt_wav
 
 def main(out_folder, model, task, lang):
 
@@ -75,10 +82,12 @@ def main(out_folder, model, task, lang):
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     set_up_logging(output_file_path)
     modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
+    wavs_folder = None
     if output_modality == "audio":
         wavs_folder = output_file_path.replace(".jsonl", "wavs")
         if not os.path.exists(wavs_folder):
             os.makedirs(wavs_folder)
+
 
     # Logging
     logging.info("Welcome!")
@@ -91,7 +100,7 @@ def main(out_folder, model, task, lang):
     # Loading Data
     logging.info(f"Loading Data.")
     data = load_data(task=task, language=lang)
-    input_data, references = data["inputs"], data["references"]
+    input_data, references = data["inputs"][0:3], data["references"][0:3]
 
     # Loading Prompts
     logging.info(f"Loading Prompts.")
@@ -111,11 +120,11 @@ def main(out_folder, model, task, lang):
                 desc="Generating Outputs",
                 total=len(input_data))
         ):
+
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
-            if output_modality == "audio":
-                out_wav = f"{wavs_folder}/{idx}_{prompt_type}"
 
+            t_wav, fa_wav, ma_wav = get_out_wav_path(output_modality, idx, wavs_folder, prompt_type)
             out["predicted"][prompt_type] = {}
 
             # sample one out of two prompts in this category
@@ -125,7 +134,7 @@ def main(out_folder, model, task, lang):
            
             # text prompt generation
             text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
-            out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality, out_wav=f"{out_wav}_text_prompt.wav")
+            out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality, out_wav=t_wav)
 
             
             # sample one speaker (most tasks have only speaker per gender, but some have two)
@@ -139,11 +148,11 @@ def main(out_folder, model, task, lang):
                 # audio prompts generation
                 if  p["female_rec"]:
                     f_audio_prompt = {"prompt_modality": "audio", "prompt": p["female_rec"][speaker_idx]}
-                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality, out_wav=f"{out_wav}_f_audio_prompt.wav")
+                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality, out_wav=fa_wav)
 
                 if p["male_rec"]:
                     m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
-                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality, out_wav=f"{out_wav}_m_audio_prompt.wav")
+                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality, out_wav=ma_wav)
 
         f_out.write(json.dumps(out, ensure_ascii=False) + "\n")
         f_out.flush()
@@ -182,4 +191,4 @@ if __name__ == "__main__":
     )
 
     # Usage:
-    # python main.py --lang de --model phi_multimodal --task ASR --out_folder outputs
+    # python main.py --lang es --model phi_multimodal --task ASR --out_folder outputs_debug

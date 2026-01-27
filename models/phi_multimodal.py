@@ -59,7 +59,7 @@ def generate(model_processor_config, prompt, example, modality, output_modality,
 
     generate_ids = model.generate(
         **inputs,
-        max_new_tokens=128000,
+        max_new_tokens=4096,
         generation_config=generation_config,
     )
     generate_ids = generate_ids[:, inputs['input_ids'].shape[1]:]

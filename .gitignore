@@ -92,3 +92,8 @@ convert_to_json.py
 get_flash.sh
 myjob.sh
 z_outputs/
+outputs_debug
+outputs_deb/
+run_scripts/
+myjob_phi.sh
+myjob_qwen.sh
