@@ -100,7 +100,7 @@ def main(out_folder, model, task, lang):
     # Loading Data
     logging.info(f"Loading Data.")
     data = load_data(task=task, language=lang)
-    input_data, references = data["inputs"][0:3], data["references"][0:3]
+    input_data, references = data["inputs"], data["references"]
 
     # Loading Prompts
     logging.info(f"Loading Prompts.")
