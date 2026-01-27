@@ -15,7 +15,7 @@ def load_model():
 
     return model, processor, generation_config
 
-def generate(model_processor_config, prompt, example, modality, output_modality):
+def generate(model_processor_config, prompt, example, modality, output_modality, out_wav=None):
     import soundfile as sf
 
     if output_modality == "audio":

@@ -75,6 +75,10 @@ def main(out_folder, model, task, lang):
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     set_up_logging(output_file_path)
     modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
+    if output_modality == "audio":
+        wavs_folder = output_file_path.replace(".jsonl", "wavs")
+        if not os.path.exists(wavs_folder):
+            os.makedirs(wavs_folder)
 
     # Logging
     logging.info("Welcome!")
@@ -101,9 +105,17 @@ def main(out_folder, model, task, lang):
     logging.info(f"Starting Output Generation.")
 
     f_out = open(output_file_path, "a", encoding="utf-8")
-    for x, ref in tqdm(zip(input_data, references), desc="Generating Outputs", total=len(input_data)):
+    
+    for idx, (x, ref) in enumerate(
+            tqdm(zip(input_data, references),
+                desc="Generating Outputs",
+                total=len(input_data))
+        ):
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
+            if output_modality == "audio":
+                out_wav = f"{wavs_folder}/{idx}_{prompt_type}"
+
             out["predicted"][prompt_type] = {}
 
             # sample one out of two prompts in this category
@@ -113,7 +125,7 @@ def main(out_folder, model, task, lang):
            
             # text prompt generation
             text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
-            out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality)
+            out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality, out_wav=f"{out_wav}_text_prompt.wav")
 
             
             # sample one speaker (most tasks have only speaker per gender, but some have two)
@@ -127,11 +139,11 @@ def main(out_folder, model, task, lang):
                 # audio prompts generation
                 if  p["female_rec"]:
                     f_audio_prompt = {"prompt_modality": "audio", "prompt": p["female_rec"][speaker_idx]}
-                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality)
+                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality, out_wav=f"{out_wav}_f_audio_prompt.wav")
 
                 if p["male_rec"]:
                     m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
-                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality)
+                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality, out_wav=f"{out_wav}_m_audio_prompt.wav")
 
         f_out.write(json.dumps(out, ensure_ascii=False) + "\n")
         f_out.flush()

@@ -1,3 +1,4 @@
+import os
 def load_model():
     from transformers import Qwen3OmniMoeForConditionalGeneration, Qwen3OmniMoeProcessor
 
@@ -15,9 +16,10 @@ def load_model():
     return model, processor
 
 
-def generate(model_processor, prompt, example, modality, output_modality):
+def generate(model_processor, prompt, example, modality, output_modality, out_wav):
 
     from qwen_omni_utils import process_mm_info
+    import soundfile as sf
 
     # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
@@ -67,6 +69,12 @@ def generate(model_processor, prompt, example, modality, output_modality):
                                 skip_special_tokens=True,
                                 clean_up_tokenization_spaces=False)[0]
 
+    if RETURN_AUDIO and audio is not None:
+        sf.write(
+            out_wav,
+            audio.reshape(-1).detach().cpu().numpy(),
+            samplerate=24000,
+        )
 
     return response
 
