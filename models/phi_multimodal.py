@@ -52,7 +52,8 @@ def generate(model_processor_config, prompt, example, modality, output_modality,
     
     elif modality == "text":
         seperator_token += f"\n"
-        audios = None
+        if prompt_modality == "text":
+            audios = None
 
     final_prompt = f"{user_prompt}{example}{seperator_token}{prompt}{prompt_suffix}{assistant_prompt}"
     inputs = processor(text=final_prompt, audios=audios, return_tensors='pt').to('cuda:0')
