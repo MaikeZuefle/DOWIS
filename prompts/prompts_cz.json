@@ -4,19 +4,19 @@
       {
         "text": "Přepiš audio.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_basic_1.wav"
         ]
       },
       {
         "text": "Převeď nahrávku do textu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_basic_2.wav"
         ]
       }
     ],
@@ -24,19 +24,19 @@
       {
         "text": "Prosím o převod audia do písemné podoby.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_formal_1.wav"
         ]
       },
       {
         "text": "Prosím o doslovný přepis této nahrávky.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_formal_2.wav"
         ]
       }
     ],
@@ -44,19 +44,19 @@
       {
         "text": "Přepsal bys prosím, co se říká v tom audiu?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_informal_1.wav"
         ]
       },
       {
         "text": "Potřebuju přepis toho, co se říká v tom audiu. Pomůžeš mi?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_informal_2.wav"
         ]
       }
     ],
@@ -64,19 +64,19 @@
       {
         "text": "Prosím, poslechni si uvedený zvukový záznam a proveď úplný a doslovný přepis.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_detailed_1.wav"
         ]
       },
       {
         "text": "Prosím o úplnou a doslovnou transkripci celého uvedeného audiozáznamu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_detailed_2.wav"
         ]
       }
     ],
@@ -84,19 +84,19 @@
       {
         "text": "Přepiš.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_short_1.wav"
         ]
       },
       {
         "text": "Transkripci.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_asr_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_asr_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_asr_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_asr_short_2.wav"
         ]
       }
     ]
@@ -106,19 +106,19 @@
       {
         "text": "Prosím, přeložte tuto nahrávku do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_basic_1.wav"
         ]
       },
       {
         "text": "Převeďte prosím tuto konverzaci v češtině.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_basic_2.wav"
         ]
       }
     ],
@@ -126,19 +126,19 @@
       {
         "text": "Prosím, přeložte zvukový obsah do češtiny s vysokou přesností.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_formal_1.wav"
         ]
       },
       {
         "text": "Laskavě poskytněte přesný překlad do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_formal_2.wav"
         ]
       }
     ],
@@ -146,19 +146,19 @@
       {
         "text": "Ahoj, můžeš prosím přeložit co říkají do češtiny?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_informal_1.wav"
         ]
       },
       {
         "text": "Prosím, přeložte pro mě toto audio do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_informal_2.wav"
         ]
       }
     ],
@@ -166,19 +166,19 @@
       {
         "text": "Prosím, poslechněte si celý audio soubor a poskytněte úplný a přesný překlad veškerého mluveného obsahu do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_detailed_1.wav"
         ]
       },
       {
         "text": "Laskavě přeložte veškerý mluvený obsah této nahrávky do jasného a přesného překladu do češtiny, se zachováním významu a tónu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_detailed_2.wav"
         ]
       }
     ],
@@ -186,19 +186,19 @@
       {
         "text": "Přeložte do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_short_1.wav"
         ]
       },
       {
         "text": "V čeština, prosím.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_st_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_st_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_st_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_st_short_2.wav"
         ]
       }
     ]
@@ -208,19 +208,19 @@
       {
         "text": "Prosím, odpovězte na otázku na základě klipu:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_basic_1.wav"
         ]
       },
       {
         "text": "Poslechněte si nahrávku a poskytněte odpověď na:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_basic_2.wav"
         ]
       }
     ],
@@ -228,19 +228,19 @@
       {
         "text": "Laskavě si poslechněte poskytnutou nahrávku a uveďte přesnou odpověď na následující otázku:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, analyzujte zvukový obsah a poskytněte přesnou odpověď na otázku:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_formal_2.wav"
         ]
       }
     ],
@@ -248,19 +248,19 @@
       {
         "text": "Ahoj, můžeš si to poslechnout a odpovědět na ...?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_informal_1.wav"
         ]
       },
       {
         "text": "Poslechni si ten klip a dej mi vědět odpověď na toto:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_informal_2.wav"
         ]
       }
     ],
@@ -268,19 +268,19 @@
       {
         "text": "Prosím, pečlivě si poslechněte celý audio klip a poskytněte úplnou a kontextově přesnou odpověď na otázku:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_detailed_1.wav"
         ]
       },
       {
         "text": "S využitím všech relevantních informací z nahrávky poskytněte jasnou a dobře odůvodněnou odpověď na tuto otázku:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_detailed_2.wav"
         ]
       }
     ],
@@ -288,19 +288,19 @@
       {
         "text": "Jaká je odpověď:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_short_1.wav"
         ]
       },
       {
         "text": "Poslechněte si a odpovězte:",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_sqa_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_sqa_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_sqa_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_sqa_short_2.wav"
         ]
       }
     ]
@@ -310,19 +310,19 @@
       {
         "text": "Prosím, shrňte tuto nahrávku.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_basic_1.wav"
         ]
       },
       {
         "text": "Poskytněte stručné shrnutí obsahu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_basic_2.wav"
         ]
       }
     ],
@@ -330,19 +330,19 @@
       {
         "text": "Laskavě si poslechněte nahrávku a vytvořte stručné a přesné shrnutí.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, vytvořte dobře strukturované shrnutí konverzace.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_formal_2.wav"
         ]
       }
     ],
@@ -350,19 +350,19 @@
       {
         "text": "Ahoj, můžeš si to poslechnout a říct mi hlavní body?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_informal_1.wav"
         ]
       },
       {
         "text": "Poslechni si tento klip a shrň mi ho.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_informal_2.wav"
         ]
       }
     ],
@@ -370,19 +370,19 @@
       {
         "text": "Prosím, poslechněte si celou nahrávku a poskytněte ucelené shrnutí zachycující všechny klíčové myšlenky, témata a důležité detaily.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_detailed_1.wav"
         ]
       },
       {
         "text": "Vytvořte jasné a dobře uspořádané shrnutí nahrávky, které zdůrazní hlavní body, podpůrné informace a případné zmíněné závěry.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_detailed_2.wav"
         ]
       }
     ],
@@ -390,19 +390,19 @@
       {
         "text": "Shrňte.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_short_1.wav"
         ]
       },
       {
         "text": "Dejte krátké shrnutí.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_ssum_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_ssum_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_ssum_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_ssum_short_2.wav"
         ]
       }
     ]
@@ -412,19 +412,19 @@
       {
         "text": "Prosím, interpretujte význam mluveného klipu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_basic_1.wav"
         ]
       },
       {
         "text": "Odvoďte z této nahrávky záměr a klíčové informace.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_basic_2.wav"
         ]
       }
     ],
@@ -432,19 +432,19 @@
       {
         "text": "Laskavě analyzujte mluvený obsah a uveďte zjištěný záměr spolu s relevantními postavami a lokacemi.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, proveďte porozumění mluvenému jazyku u této nahrávky a vytvořte její sémantickou interpretaci.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_formal_2.wav"
         ]
       }
     ],
@@ -452,19 +452,19 @@
       {
         "text": "Ahoj, dokážeš zjistit, co mluvčí v tomto klipu chce?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_informal_1.wav"
         ]
       },
       {
         "text": "Poslechni si to a řekni mi záměr a důležité detaily.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_informal_2.wav"
         ]
       }
     ],
@@ -472,19 +472,19 @@
       {
         "text": "Prosím, poslechněte si celou nahrávku a poskytněte úplnou sémantickou interpretaci, včetně záměru, klíčových entit a veškerých relevantních kontextových informací.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_detailed_1.wav"
         ]
       },
       {
         "text": "Analyzujte nahrávku a poskytněte strukturovaný výstup SLU zachycující záměr mluvčího, sloty, entity a další sémantické signály.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_detailed_2.wav"
         ]
       }
     ],
@@ -492,19 +492,19 @@
       {
         "text": "Odvoďte záměr a entity.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_short_1.wav"
         ]
       },
       {
         "text": "Proveďte SLU na tomto audiu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_slu_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_slu_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_slu_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_slu_short_2.wav"
         ]
       }
     ]
@@ -514,19 +514,19 @@
       {
         "text": "Prosím, převeďte tento text na řeč.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_basic_1.wav"
         ]
       },
       {
         "text": "Vytvořte mluvené audio z následujícího textu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_basic_2.wav"
         ]
       }
     ],
@@ -534,19 +534,19 @@
       {
         "text": "Laskavě vytvořte přirozeně znějící mluvené podání poskytnutého textu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, syntetizujte tento text do jasného a přesného audio výstupu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_formal_2.wav"
         ]
       }
     ],
@@ -554,19 +554,19 @@
       {
         "text": "Ahoj, přečti prosím tento text nahlas.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_informal_1.wav"
         ]
       },
       {
         "text": "Udělejte z tohoto textu mluvené audio.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_informal_2.wav"
         ]
       }
     ],
@@ -574,19 +574,19 @@
       {
         "text": "Prosím, převeďte celý text na řeč se zachováním správné intonace, pauz a důrazů pro přirozený projev.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_detailed_1.wav"
         ]
       },
       {
         "text": "Vytvořte vysoce kvalitní mluvenou verzi textu, zachycující nuance, interpunkci a výrazový tón.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_detailed_2.wav"
         ]
       }
     ],
@@ -594,19 +594,19 @@
       {
         "text": "Text na řeč.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_short_1.wav"
         ]
       },
       {
         "text": "Přečtěte tento text.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tts_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tts_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tts_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tts_short_2.wav"
         ]
       }
     ]
@@ -616,19 +616,19 @@
       {
         "text": "Prosím, přeložte tento klip do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_basic_1.wav"
         ]
       },
       {
         "text": "Převeďte mluvený obsah do audio podoby v češtině.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_basic_2.wav"
         ]
       }
     ],
@@ -636,19 +636,19 @@
       {
         "text": "Laskavě vytvořte mluvený překlad této nahrávky v češtině.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, vytvořte přesnou mluvenou verzi této nahrávky v češtině.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_formal_2.wav"
         ]
       }
     ],
@@ -656,19 +656,19 @@
       {
         "text": "Ahoj, můžeš z toho udělat audio v češtině?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_informal_1.wav"
         ]
       },
       {
         "text": "Nechte tento klip mluvit v češtině.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_informal_2.wav"
         ]
       }
     ],
@@ -676,19 +676,19 @@
       {
         "text": "Prosím, poslechněte si celou nahrávku a poskytněte přirozený, kontextově přesný mluvený překlad v <cílovém jazyce>, se zachováním tónu a významu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_detailed_1.wav"
         ]
       },
       {
         "text": "Vytvořte vysoce kvalitní mluvenou verzi této nahrávky v češtině, se zachováním intonace, důrazů a výrazových signálů.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_detailed_2.wav"
         ]
       }
     ],
@@ -696,19 +696,19 @@
       {
         "text": "Přeložte do mluvené podoby v češtině.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_short_1.wav"
         ]
       },
       {
         "text": "S2ST: čeština.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_s2st_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_s2st_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_s2st_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_s2st_short_2.wav"
         ]
       }
     ]
@@ -718,19 +718,19 @@
       {
         "text": "Prosím, přeložte text z  do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_basic_1.wav"
         ]
       },
       {
         "text": "Převeďte tento text do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_basic_2.wav"
         ]
       }
     ],
@@ -738,19 +738,19 @@
       {
         "text": "Laskavě poskytněte přesný překlad následujícího textu do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, přeložte tento text do češtiny se zachováním jeho významu a tónu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_formal_2.wav"
         ]
       }
     ],
@@ -758,19 +758,19 @@
       {
         "text": "Ahoj, můžeš to přeložit do češtiny?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_informal_1.wav"
         ]
       },
       {
         "text": "Převeď mi to prosím do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_informal_2.wav"
         ]
       }
     ],
@@ -778,19 +778,19 @@
       {
         "text": "Prosím, přeložte celý text do češtiny, s jasností, kontextem a přirozenou formulací.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_detailed_1.wav"
         ]
       },
       {
         "text": "Poskytněte vysoce kvalitní překlad tohoto textu, zachovávající idiomatické výrazy a zamýšlený význam do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_detailed_2.wav"
         ]
       }
     ],
@@ -798,19 +798,19 @@
       {
         "text": "Přeložte do češtiny.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_short_1.wav"
         ]
       },
       {
         "text": "MT: čeština.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_mt_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_mt_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_mt_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_mt_short_2.wav"
         ]
       }
     ]
@@ -820,19 +820,19 @@
       {
         "text": "Prosím, shrňte tento text.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_basic_1.wav"
         ]
       },
       {
         "text": "Poskytněte stručné shrnutí tohoto textu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_basic_2.wav"
         ]
       }
     ],
@@ -840,19 +840,19 @@
       {
         "text": "Laskavě vytvořte stručné a přesné shrnutí následujícího textu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_formal_1.wav"
         ]
       },
       {
         "text": "Prosím, vytvořte dobře strukturované shrnutí obsahu textu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_formal_2.wav"
         ]
       }
     ],
@@ -860,19 +860,19 @@
       {
         "text": "Ahoj, můžeš mi říct hlavní body tohoto textu?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_informal_1.wav"
         ]
       },
       {
         "text": "Přečti si tento text a shrň mi ho.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_informal_2.wav"
         ]
       }
     ],
@@ -880,19 +880,19 @@
       {
         "text": "Prosím, vytvořte ucelené shrnutí textu, zachycující všechny klíčové myšlenky, podpůrné informace a závěry.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_detailed_1.wav"
         ]
       },
       {
         "text": "Analyzujte text a poskytněte podrobné, dobře uspořádané shrnutí zdůrazňující hlavní body a důležité informace.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_detailed_2.wav"
         ]
       }
     ],
@@ -900,19 +900,19 @@
       {
         "text": "Shrňte text.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_short_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_short_1.wav"
         ]
       },
       {
         "text": "Dejte krátké shrnutí.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_tsum_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_tsum_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_tsum_short_2.wav"
+          "prompts/audio_prompts/cs/cs_male1_tsum_short_2.wav"
         ]
       }
     ]
@@ -922,16 +922,16 @@
       {
         "text": "Prosím, přepište řeč z videa.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/cz/cz_male1_lipread_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_male1_lipread_basic_1.wav"
         ]
       },
       {
         "text": "Zapište, co osoba ve videu říká.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_basic_2.wav"
         ],
         "male_rec": []
       }
@@ -940,14 +940,14 @@
       {
         "text": "Laskavě poskytněte přesnou transkripci řeči na základě pohybů rtů mluvčího ve videu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_formal_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Prosím, analyzujte video a vytvořte přesnou textovou transkripci mluveného obsahu.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_formal_2.wav"
         ],
         "male_rec": []
       }
@@ -956,14 +956,14 @@
       {
         "text": "Ahoj, můžeš mi říct, co říkají, když sleduješ jejich rty?",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_informal_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Sledujte toto video a zapište slova, která jsou vyslovena.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_informal_2.wav"
         ],
         "male_rec": []
       }
@@ -972,14 +972,14 @@
       {
         "text": "Prosím, pečlivě sledujte pohyby rtů mluvčího v celém videu a poskytněte úplnou a přesnou transkripci všech mluvených slov.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_detailed_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Vytvořte ucelenou textovou transkripci na základě pohybů rtů ve videu, zachycující každé vyslovené slovo a kontext co nejpřesněji.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_detailed_2.wav"
         ],
         "male_rec": []
       }
@@ -988,14 +988,14 @@
       {
         "text": "Přepište podle rtů.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_short_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Čtěte podle rtů a zapisujte.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_lipread_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_lipread_short_2.wav"
         ],
         "male_rec": []
       }
@@ -1006,14 +1006,14 @@
       {
         "text": "Prosím, rozdělte audio na kapitoly a u každé kapitoly uveďte jasný název. Také vytvořte přepis uspořádaný pod jednotlivými kapitolami. Použijte nadpisy Markdown pro názvy kapitol (např. ## Název kapitoly) a každou kapitolu oddělte prázdným řádkem.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_basic_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_basic_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Vytvořte segmenty tohoto audia a přiřaďte každému segmentu popisný název. Zahrňte také přepis seskupený podle segmentů. Formátujte názvy segmentů jako nadpisy Markdown a mezi segmenty vložte prázdný řádek.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_basic_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_basic_2.wav"
         ],
         "male_rec": []
       }
@@ -1022,14 +1022,14 @@
       {
         "text": "Laskavě analyzujte audio a vytvořte jasně definované kapitoly s popisnými názvy pro každou z nich na základě obsahu, a také poskytněte úplný přepis uspořádaný pod příslušnými kapitolami. Formátujte názvy kapitol jako nadpisy Markdown a každou kapitolu oddělte prázdným řádkem.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_formal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_formal_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Prosím, rozdělte audio do logických sekcí a u každé sekce uveďte značku kapitoly s názvem, spolu s přepisem textu uspořádaným pod každou kapitolou. Použijte nadpisy Markdown pro názvy kapitol a zajistěte, aby mezi kapitolami byl prázdný řádek.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_formal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_formal_2.wav"
         ],
         "male_rec": []
       }
@@ -1038,14 +1038,14 @@
       {
         "text": "Ahoj, můžeš toto audio rozdělit na části, každé části dát název a přidat pod každou část přepis? Použij nadpisy Markdown pro názvy a mezi části vlož prázdný řádek.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_informal_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_informal_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Rozděl pro mě audio na kapitoly, u každé kapitoly uveď název a přepis. Formátujte názvy jako nadpisy Markdown a každou kapitolu oddělte prázdným řádkem.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_informal_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_informal_2.wav"
         ],
         "male_rec": []
       }
@@ -1054,14 +1054,14 @@
       {
         "text": "Prosím, sledujte audio a rozdělte jej na kapitoly na základě funkce, tématu, přechodů scén a klíčového obsahu. U každé kapitoly uveďte popisný název, čas začátku a přepis kapitoly. Použijte nadpisy Markdown pro názvy kapitol a časové značky (např. ## 00:00 – Úvod) a každou kapitolu oddělte prázdným řádkem.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_detailed_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_detailed_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Vytvořte podrobné členění audia po kapitolách, uveďte časové značky, popište obsah každé sekce a dejte každé kapitole jasný název. Zahrňte také přepis, uspořádaný pod jednotlivými kapitolami. Formátujte názvy kapitol jako nadpisy Markdown s časovými značkami začátku (např. ## 00:00 – Úvod) a vložte prázdný řádek mezi kapitoly.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_detailed_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_detailed_2.wav"
         ],
         "male_rec": []
       }
@@ -1070,14 +1070,14 @@
       {
         "text": "Přepis + kapitoly v Markdown (nadpisy pro názvy, prázdný řádek mezi kapitolami).",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_short_1.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_short_1.wav"
         ],
         "male_rec": []
       },
       {
         "text": "Přepis s přidanými kapitolami audia. Použijte nadpisy Markdown pro názvy kapitol a prázdné řádky mezi kapitolami.",
         "female_rec": [
-          "prompts/audio_prompts/cz/cz_female1_achap_short_2.wav"
+          "prompts/audio_prompts/cs/cs_female1_achap_short_2.wav"
         ],
         "male_rec": []
       }

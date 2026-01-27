@@ -1,5 +1,5 @@
 FLEURS_LANG_MAP = {
-    "cz": "cs_cz",
+    "cs": "cs_cz",
     "de": "de_de",
     "en": "en_us",
     "es": "es_419",
