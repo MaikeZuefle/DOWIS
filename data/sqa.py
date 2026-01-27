@@ -43,7 +43,7 @@ def load_sqa(language):
                     }
                     elem.clear()
 
-    for idx, entry in zip(mcif_bench["id"], mcif_bench["prompt_en"]):
+    for idx, entry in zip(mcif_bench["id"], mcif_bench[f"prompt_{language}"]):
         if idx in sqa_samples:
             question = entry.replace(qa_starting_prompt[language], "")
             sqa_samples[idx]["question"] = question
