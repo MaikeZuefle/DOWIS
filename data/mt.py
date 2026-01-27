@@ -2,7 +2,7 @@ from datasets import load_dataset
 
 def load_mt(language):
 
-    if language == "alb":
+    if language == "sq":
         raise ValueError("Albanian is not supported in FLEURS.")
 
     fleurs_mt = load_dataset("google/fleurs", f"en_us", split="test", trust_remote_code=True)

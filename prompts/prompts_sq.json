@@ -64,60 +64,60 @@
   "st": {
     "basic": [
       {
-        "text": "Ju lutem përktheni regjistrimin në anglisht.",
+        "text": "Ju lutem përktheni regjistrimin në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Shndërroni bisedën në anglisht.",
+        "text": "Shndërroni bisedën në shqip.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "formal": [
       {
-        "text": "Ju lutem përktheni përmbajtjen audio në anglisht me saktësi të lartë.",
+        "text": "Ju lutem përktheni përmbajtjen audio në shqip me saktësi të lartë.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Ju lutem jepni një përkthim të saktë në anglisht.",
+        "text": "Ju lutem jepni një përkthim të saktë në shqip.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "informal": [
       {
-        "text": "Hej, a mund të përkthesh atë që po thonë në anglisht?",
+        "text": "Hej, a mund të përkthesh atë që po thonë në shqip?",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Ju lutem shndërroni këtë audio në anglisht për mua.",
+        "text": "Ju lutem shndërroni këtë audio në shqip për mua.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "detailed": [
       {
-        "text": "Ju lutem dëgjoni të gjithë audion dhe jepni një përkthim të plotë dhe të saktë në anglisht të gjithë përmbajtjes së folur.",
+        "text": "Ju lutem dëgjoni të gjithë audion dhe jepni një përkthim të plotë dhe të saktë në shqip të gjithë përmbajtjes së folur.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Ju lutem shndërroni të gjithë përmbajtjen e folur të këtij regjistrimi në një përkthim të qartë dhe te sakte në anglisht, duke ruajtur kuptimin dhe tonin.",
+        "text": "Ju lutem shndërroni të gjithë përmbajtjen e folur të këtij regjistrimi në një përkthim të qartë dhe te sakte në shqip, duke ruajtur kuptimin dhe tonin.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "short": [
       {
-        "text": "Përktheni në anglisht.",
+        "text": "Përktheni në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Në anglisht, te lutem.",
+        "text": "Në shqip, te lutem.",
         "female_rec": [],
         "male_rec": []
       }
@@ -374,60 +374,60 @@
   "s2st": {
     "basic": [
       {
-        "text": "Ju lutem përktheni këtë klip në të folur në anglisht.",
+        "text": "Ju lutem përktheni këtë klip në të folur në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Shndërroni përmbajtjen e folur në audio në anglisht.",
+        "text": "Shndërroni përmbajtjen e folur në audio në shqip.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "formal": [
       {
-        "text": "Ju lutem prodhoni një përkthim të folur në anglisht të këtij regjistrimi.",
+        "text": "Ju lutem prodhoni një përkthim të folur në shqip të këtij regjistrimi.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Ju lutem gjeneroni një version të folur të saktë në anglisht të regjistrimit të dhënë.",
+        "text": "Ju lutem gjeneroni një version të folur të saktë në shqip të regjistrimit të dhënë.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "informal": [
       {
-        "text": "Hej, a mund ta kthesh këtë në audio në anglisht?",
+        "text": "Hej, a mund ta kthesh këtë në audio në shqip?",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Bëje këtë klip të flasë në anglisht.",
+        "text": "Bëje këtë klip të flasë në shqip.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "detailed": [
       {
-        "text": "Ju lutem dëgjoni të gjithë regjistrimin dhe jepni një përkthim të folur natyral dhe kontekstualisht të saktë në anglisht, duke ruajtur tonin dhe kuptimin.",
+        "text": "Ju lutem dëgjoni të gjithë regjistrimin dhe jepni një përkthim të folur natyral dhe kontekstualisht të saktë në shqip, duke ruajtur tonin dhe kuptimin.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Gjeneroni një version të folur në anglisht me cilësi të lartë të këtij regjistrimi, duke ruajtur intonacionin, theksimin dhe çdo sinjal shprehës.",
+        "text": "Gjeneroni një version të folur në shqip me cilësi të lartë të këtij regjistrimi, duke ruajtur intonacionin, theksimin dhe çdo sinjal shprehës.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "short": [
       {
-        "text": "Përkthe në të folur në anglisht.",
+        "text": "Përkthe në të folur në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "S2ST: Anglisht.",
+        "text": "S2ST: Shqip.",
         "female_rec": [],
         "male_rec": []
       }
@@ -436,60 +436,60 @@
   "mt": {
     "basic": [
       {
-        "text": "Ju lutem përktheni tekstin në anglisht.",
+        "text": "Ju lutem përktheni tekstin në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Shndërroni këtë tekst në anglisht.",
+        "text": "Shndërroni këtë tekst në shqip.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "formal": [
       {
-        "text": "Ju lutem jepni një përkthim të saktë të tekstit të mëposhtëm në anglisht.",
+        "text": "Ju lutem jepni një përkthim të saktë të tekstit të mëposhtëm në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Ju lutem përktheni këtë tekst në anglisht, duke ruajtur kuptimin dhe tonin e tij.",
+        "text": "Ju lutem përktheni këtë tekst në shqip, duke ruajtur kuptimin dhe tonin e tij.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "informal": [
       {
-        "text": "Hej, a mund ta përkthesh këtë në anglisht?",
+        "text": "Hej, a mund ta përkthesh këtë në shqip?",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Ktheje këtë në anglisht për mua.",
+        "text": "Ktheje këtë në shqip për mua.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "detailed": [
       {
-        "text": "Ju lutem përktheni të gjithë tekstin në anglisht, duke ruajtur qartësinë, kontekstin dhe formulimin natyral.",
+        "text": "Ju lutem përktheni të gjithë tekstin në shqip, duke ruajtur qartësinë, kontekstin dhe formulimin natyral.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "Jepni një përkthim me cilësi të lartë të këtij teksti në anglisht, duke ruajtur shprehjet idiomatike dhe kuptimin e synuar.",
+        "text": "Jepni një përkthim me cilësi të lartë të këtij teksti në shqip, duke ruajtur shprehjet idiomatike dhe kuptimin e synuar.",
         "female_rec": [],
         "male_rec": []
       }
     ],
     "short": [
       {
-        "text": "Përkthe në anglisht.",
+        "text": "Përkthe në shqip.",
         "female_rec": [],
         "male_rec": []
       },
       {
-        "text": "MT: Anglisht.",
+        "text": "MT: Shqip.",
         "female_rec": [],
         "male_rec": []
       }
@@ -646,7 +646,7 @@
     ],
     "informal": [
       {
-        "text": "Hej, a mund ta ndash këtë audio në pjesë, t'i japësh secilës pjesë një titull dhe të përfshish transkriptin nën secilën pjesë? Përdorni tituj Markdown për titujt dhe vendosni një rresht bosh midis pjesëve.",
+        "text": "Hej, a mund ta ndash këtë audio në pjesë, t’i japësh secilës pjesë një titull dhe të përfshish transkriptin nën secilën pjesë? Përdorni tituj Markdown për titujt dhe vendosni një rresht bosh midis pjesëve.",
         "female_rec": [],
         "male_rec": []
       },

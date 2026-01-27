@@ -4,7 +4,7 @@ import os
 
 def load_asr(language):
 
-    if language == "alb":
+    if language == "sq":
         raise ValueError("Albanian is not supported in FLEURS.")
 
     base_dir = "data_storage/asr"

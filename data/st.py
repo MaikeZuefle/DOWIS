@@ -4,7 +4,7 @@ import soundfile as sf
 
 def load_st(language):
 
-    if language == "alb":
+    if language == "sq":
         raise ValueError("Albanian is not supported in FLEURS.")
 
     base_dir = "data_storage/st"
