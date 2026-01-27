@@ -15,12 +15,15 @@ def load_model():
 
     return model, processor, generation_config
 
-def generate(model_processor_config, prompt, example, modality):
+def generate(model_processor_config, prompt, example, modality, output_modality, out_wav=None):
+    import soundfile as sf
 
+    if output_modality == "audio":
+        raise NotImplementedError("Phi-4-multimodal-instruct does not support speech in output.")
+
+    # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
     orig_prompt = prompt["prompt"]
-
-    import soundfile as sf
     model, processor,  generation_config = model_processor_config
 
     # prompts
@@ -30,6 +33,8 @@ def generate(model_processor_config, prompt, example, modality):
 
     audios = []
     seperator_token = ""
+
+    # prepare prompts
     if prompt_modality == "audio":
         prompt_audio, prompt_samplerate = sf.read(orig_prompt)
         audios.append((prompt_audio, prompt_samplerate))
@@ -38,7 +43,8 @@ def generate(model_processor_config, prompt, example, modality):
 
     elif prompt_modality == "text":
         prompt = orig_prompt
-        
+
+    # prepare inputs
     if modality == "audio":
         audio, samplerate = sf.read(example)
         audios.append((audio, samplerate))
@@ -46,10 +52,10 @@ def generate(model_processor_config, prompt, example, modality):
     
     elif modality == "text":
         seperator_token += f"\n"
-        audios = None
+        if prompt_modality == "text":
+            audios = None
 
     final_prompt = f"{user_prompt}{example}{seperator_token}{prompt}{prompt_suffix}{assistant_prompt}"
-
     inputs = processor(text=final_prompt, audios=audios, return_tensors='pt').to('cuda:0')
 
     generate_ids = model.generate(

@@ -3,61 +3,111 @@
     "basic": [
       {
         "text": "Trascrivi l'audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_asr_basic_1.wav"
+        ]
       },
       {
         "text": "Converti il parlato in testo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_asr_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Per piacere trascrivi il contenuto della registrazione in testo scritto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_asr_formal_1.wav"
+        ]
       },
       {
         "text": "Per cortesia genera una trascrizione testuale accurata di questa registrazione.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_asr_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ciao, riesci a scrivere cosa viene detto in questo audio?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_asr_informal_1.wav"
+        ]
       },
       {
         "text": "Ciao, prova ad annotare quello che senti in questo audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_asr_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per cortesia ascolta tutto l'audio e genera una trascrizione completa e accurata di tutto quello che viene pronunciato.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_asr_detailed_1.wav"
+        ]
       },
       {
         "text": "Converti per piacere tutto il contenuto parlato della registrazione in una trascrizione chiara e precisa.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_asr_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Trascrivimi l'audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_asr_short_1.wav"
+        ]
       },
       {
         "text": "Trascrivi questo audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_asr_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_asr_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_asr_short_2.wav"
+        ]
       }
     ]
   },
@@ -65,61 +115,111 @@
     "basic": [
       {
         "text": "Per favore, traduci la registrazione in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_st_basic_1.wav"
+        ]
       },
       {
         "text": "Converti la conversazione in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_st_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Per favore, traduci il contenuto dell'audio in italiano con un'alta accuratezza.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_st_formal_1.wav"
+        ]
       },
       {
         "text": "Gentilmente, fornisci una traduzione precisa in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_st_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, puoi tradurre cosa viene detto in italiano?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_st_informal_1.wav"
+        ]
       },
       {
         "text": "Per favore, trasforma questo audio in italiano per me.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_st_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, ascolta l'intero file audio e fornisci una traduzione completa e accurata del contenuto parlato in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_st_detailed_1.wav"
+        ]
       },
       {
         "text": "Gentilmente, converti l'intero contenuto di questa registrazione in una traduzione italiana chiara e fedele, preservando il significato e il tono.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_st_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Traduci in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_st_short_1.wav"
+        ]
       },
       {
         "text": "In italiano, grazie.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_st_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_st_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_st_short_2.wav"
+        ]
       }
     ]
   },
@@ -127,61 +227,111 @@
     "basic": [
       {
         "text": "Per favore, rispondi a questa domanda basata sulla clip: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_basic_1.wav"
+        ]
       },
       {
         "text": "Ascolta la registrazione e fornisci una risposta a: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Gentilmente, ascolta la registrazione fornita e fornisci una risposta accurata alla seguente domanda: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_formal_1.wav"
+        ]
       },
       {
         "text": "Per favore, analizza il contenuto dell'audio e fornisci una risposta precisa alla domanda: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, puoi ascoltare questo e dirmi la risposta a <question>?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_informal_1.wav"
+        ]
       },
       {
         "text": "Dai un'ascolto alla clip e fammi sapere la risposta a questa domanda: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, ascolta con attenzione l'intero clip audio e fornisci una risposta completa e contestualizzata alla domanda: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_detailed_1.wav"
+        ]
       },
       {
         "text": "Usando tutte le informazioni rilevanti dalla registrazione, fornisci una risposta chiara e ben ragionata a questa domanda: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Qual è la risposta: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_short_1.wav"
+        ]
       },
       {
         "text": "Ascolta e rispondi: <question>.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_sqa_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_sqa_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_sqa_short_2.wav"
+        ]
       }
     ]
   },
@@ -189,61 +339,111 @@
     "basic": [
       {
         "text": "Per favore, riassumi la registrazione.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_basic_1.wav"
+        ]
       },
       {
         "text": "Fornisci un breve riassunto del contenuto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Gentilmente ascolta questo e produci un sommario conciso e accurato.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_formal_1.wav"
+        ]
       },
       {
         "text": "Per favore, genera un riassunto ben strutturato dell'audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, puoi ascoltare questo e dirmi i punti chiave?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_informal_1.wav"
+        ]
       },
       {
         "text": "Dai un ascolto a questa clip e riassumila per me.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, ascolta tutta la registrazione e fornisci un riassunto completo che catturi tutti i punti chiave, il tema e i dettagli importanti.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_detailed_1.wav"
+        ]
       },
       {
         "text": "Crea un riassunto chiaro e ben organizzato della registrazione, sottolineando i punti chiave, le informazioni a supporto e qualsiasi conclusione menzionata.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Riassumi.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_short_1.wav"
+        ]
       },
       {
         "text": "Fornisci un breve riassunto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_ssum_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_ssum_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_ssum_short_2.wav"
+        ]
       }
     ]
   },
@@ -251,61 +451,111 @@
     "basic": [
       {
         "text": "Per piacere interpreta il significato di questo audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_slu_basic_1.wav"
+        ]
       },
       {
         "text": "Estrai l'intenzione e l'informazione principale di questa registrazione.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_slu_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Cortesemente analizza il parlato e fornisci l'intenzione rilevata e le entità rilevanti.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_slu_formal_1.wav"
+        ]
       },
       {
         "text": "Per cortesia, comprendi il contenuto parlato di questa registrazione e produci la corrispondente interpretazione semantica.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_slu_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, riesci a capire cosa vuole il parlatore in questo audio?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_slu_informal_1.wav"
+        ]
       },
       {
         "text": "Ascolta questo e dimmi l'intenzione espressa e i dettagli importanti.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_slu_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per piacere, ascolta l'intera registrazione e produci una interpretazione semantica completa che comprenda intenzioni, entità principali e qualsiasi informazione di contesto rilevante.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_slu_detailed_1.wav"
+        ]
       },
       {
         "text": "Analizza la registrazione e genera un risultato di comprensione semantica strutturato che contenga l'intenzione del parlatore, i possibili campi, le entità e qualsiasi altra informazione semantica di contesto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_slu_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Estrai intenzioni e entità.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_slu_short_1.wav"
+        ]
       },
       {
         "text": "Genera la comprensione semantica su questo audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_slu_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_slu_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_slu_short_2.wav"
+        ]
       }
     ]
   },
@@ -313,61 +563,111 @@
     "basic": [
       {
         "text": "Per favore, trasforma questo testo in parlato.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_tts_basic_1.wav"
+        ]
       },
       {
         "text": "Produci un audio vocale dal testo che segue.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_tts_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Gentilmente, produci una riproduzione vocale naturale del testo fornito.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_tts_formal_1.wav"
+        ]
       },
       {
         "text": "Per cortesia, sintetizza il testo in un'uscita audio limpida e precisa.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_tts_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ciao, leggi questo testo ad alta voce.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_tts_informal_1.wav"
+        ]
       },
       {
         "text": "Rendi questo testo udibile come audio.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_tts_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, trasforma l'intero testo in parlato, mantenendo pause, enfasi ed un'intonazione adatta per un discorso naturale.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_tts_detailed_1.wav"
+        ]
       },
       {
         "text": "Genera una versione vocale di alta qualità del testo, catturando le sfumature, la punteggiatura e il tono espressivo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_tts_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Sintesi vocale.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_tts_short_1.wav"
+        ]
       },
       {
         "text": "Pronuncia questo testo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tts_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tts_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_tts_short_2.wav"
+        ]
       }
     ]
   },
@@ -375,61 +675,111 @@
     "basic": [
       {
         "text": "Per favore, traduci questo estratto in un audio in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_basic_1.wav"
+        ]
       },
       {
         "text": "Converti il contenuto parlato in un audio in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Si prega di produrre una traduzione orale di questa registrazione in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_formal_1.wav"
+        ]
       },
       {
         "text": "Si prega di generare una riproduzione vocale in italiano della registrazione fornita.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ciao, puoi trasformare questo audio in un audio in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_informal_1.wav"
+        ]
       },
       {
         "text": "Fai parlare questo estratto in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Ascolta l'intera registrazione e fornisci una traduzione orale naturale e contestualmente accurata in italiano, preservando il tono e il significato.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_detailed_1.wav"
+        ]
       },
       {
         "text": "Genera una versione vocale di alta qualità in italiano di questa registrazione, mantenendo l'intonazione, l'enfasi e tutti i segnali espressivi.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Traduci in italiano parlato.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_short_1.wav"
+        ]
       },
       {
         "text": "S2ST: italiano",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_s2st_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_s2st_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_s2st_short_2.wav"
+        ]
       }
     ]
   },
@@ -437,61 +787,111 @@
     "basic": [
       {
         "text": "Per favore, traduci il testo in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_mt_basic_1.wav"
+        ]
       },
       {
         "text": "Converti questo testo in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_mt_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Gentilmente, fornisci una traduzione accurata del seguente testo in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_mt_formal_1.wav"
+        ]
       },
       {
         "text": "Per favore, traduci questo testo in italiano, preservando il suo significato e tono.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_mt_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, puoi tradurre questo in italiano?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_mt_informal_1.wav"
+        ]
       },
       {
         "text": "Trasforma questo in italiano per me.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_mt_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, traduci l'intero testo in italiano, mantenendo chiarezza, contesto e fluidità.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_mt_detailed_1.wav"
+        ]
       },
       {
         "text": "Fornisci una traduzione di alta qualità di questo testo in italiano, preservando espressioni idiomatiche e il significato originale.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_mt_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Traduci in italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_mt_short_1.wav"
+        ]
       },
       {
         "text": "MT: italiano.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_mt_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_mt_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_mt_short_2.wav"
+        ]
       }
     ]
   },
@@ -499,61 +899,111 @@
     "basic": [
       {
         "text": "Per favore, riassumi il testo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_basic_1.wav"
+        ]
       },
       {
         "text": "Fornisci un breve riassunto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Gentilmente, genera un riassunto conciso e accurato del seguente testo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_formal_1.wav"
+        ]
       },
       {
         "text": "Per favore, produci un riassunto ben strutturato del testo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, puoi dirmi quali sono i punti chiave di questo testo?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_informal_1.wav"
+        ]
       },
       {
         "text": "Leggilo e riassumilo per me.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, crea un riassunto completo del testo, catturando tutti i punti chiave, i dettagli a supporto e le conclusioni.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_detailed_1.wav"
+        ]
       },
       {
         "text": "Analizza il testo e fornisci un riassunto dettagliato e ben organizzato, sottolineando i punti chiave e le informazioni importanti.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Riassumi questo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_short_1.wav"
+        ]
       },
       {
         "text": "Fai un breve riassunto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_tsum_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_tsum_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_tsum_short_2.wav"
+        ]
       }
     ]
   },
@@ -561,61 +1011,111 @@
     "basic": [
       {
         "text": "Per favore, trascrivi il parlato dal video.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_basic_1.wav"
+        ]
       },
       {
         "text": "Trascrivi quello che la persona sta dicendo nel video.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Puoi cortesemente fornirmi un trascrizione accurata di ciò che è stato detto nel video basandoti sul movimento delle labbra della persona nel video?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_formal_1.wav"
+        ]
       },
       {
         "text": "Per favore, analizza il video e genera una trascrizione precisa di ciò che è stato detto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ciao, puoi dirmi cosa ha detto basandoti sulla lettura delle labbra?",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_informal_1.wav"
+        ]
       },
       {
         "text": "Guarda il video e trascrivi cosa stanno dicendo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, osserva attentamente il movimento delle labbra della persona che sta parlando e forniscimi una trascrizione accurata e completa di ciò che è stato detto.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_detailed_1.wav"
+        ]
       },
       {
         "text": "Genera una trascrizione completa basata sul movimento delle labbra nel video, catturando ogni singola parola nel suo contesto nella maniera più accurata possibile.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Trascrivi guardando le labbra.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_short_1.wav"
+        ]
       },
       {
         "text": "Leggi le labbra e trascrivi.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_lipread_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_lipread_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_lipread_short_2.wav"
+        ]
       }
     ]
   },
@@ -623,61 +1123,111 @@
     "basic": [
       {
         "text": "Per favore, dividi l'audio in capitoli e fornisci un titolo chiaro per ogni capitolo. Inoltre produci la trascrizione sotto ogni capitolo. Usa il formato Markdown per i titoli dei capitoli (es. ## Titolo del Capitolo) e separa ogni capitolo con un a capo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_basic_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_basic_1.wav",
+          "prompts/audio_prompts/it/it_male2_achap_basic_1.wav"
+        ]
       },
       {
         "text": "Crea dei segmenti per questo audio e assegna un titolo descrittivo ad ogni segmento. Includi anche la trascrizione, raggruppata per segmento. Formatta i titoli dei segmenti usando il formato Markdown e vai a capo tra segmenti.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_basic_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_basic_2.wav",
+          "prompts/audio_prompts/it/it_male2_achap_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Gentilmente, analizza l'audio e genera dei capitoli ben definiti con i corrispondenti titoli descrittivi basati sul loro contenuto, inoltre fornisci la trascrizione completa organizzata sotto il capitolo corrispondente. Formatta i titoli dei capitoli usando il formato Markdown e separa ogni capitolo con una linea vuota.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_formal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_formal_1.wav",
+          "prompts/audio_prompts/it/it_male2_achap_formal_1.wav"
+        ]
       },
       {
         "text": "Per favore, segmenta l'audio in parti logiche e marca ogni capitolo con un titolo e la trascrizione, posizionata sotto il titolo per ogni capitolo. Usa il formato Markdown per i titoli dei capitoli e assicurati che ci sia un a capo tra ogni capitolo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_formal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_formal_2.wav",
+          "prompts/audio_prompts/it/it_male2_achap_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Ehi, puoi dividere questo audio in parti, dando un titolo ad ogni parte, e includendo la trascrizione sotto ogni parte? Usa il formato Markdown per i titoli e metti una linea vuota tra le varie parti.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_informal_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_informal_1.wav",
+          "prompts/audio_prompts/it/it_male2_achap_informal_1.wav"
+        ]
       },
       {
         "text": "Dividi l'audio in capitoli per me, includendo il titolo e la trascrizione per ogni capitolo. Formatta il titolo usando il formato Markdown e separa ogni capitolo con un a capo.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_informal_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_informal_2.wav",
+          "prompts/audio_prompts/it/it_male2_achap_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Per favore, ascolta l'audio e dividilo in capitoli basati su funzione, argomento, transizione tra scene e contenuto chiave. Per ogni capitolo, fornisci un titolo descrittivo e la trascrizione di quel capitolo. Usa il formato Markdown per titoli dei capitoli (es. ## Introduzione) e separa ogni capitolo con una linea vuota.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_detailed_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_detailed_1.wav",
+          "prompts/audio_prompts/it/it_male2_achap_detailed_1.wav"
+        ]
       },
       {
         "text": "Genera una dettagliata segmentazione in capitoli dell'audio, descrivendo il contenuto di ogni sezione e dandogli un titolo chiaro. Inoltre, includi la trascrizione, organizzata sotto ogni capitolo. Formatta i titoli dei capitoli in formato Markdown (es. ## Introduzione) e inserisci un a capo tra i capitoli.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_detailed_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_detailed_2.wav",
+          "prompts/audio_prompts/it/it_male2_achap_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Trascrizione + Capitoli in Markdown (intestazione per i titoli, linea vuota tra capitoli).",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_short_1.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_short_1.wav",
+          "prompts/audio_prompts/it/it_male2_achap_short_1.wav"
+        ]
       },
       {
         "text": "Trascrizione dell'audio con l'aggiunta di capitoli. Usa il formato Markdown per i titoli dei capitoli e vai a capo tra capitoli.",
-        "female_rec": [],
-        "male_rec": []
+        "female_rec": [
+          "prompts/audio_prompts/it/it_female1_achap_short_2.wav"
+        ],
+        "male_rec": [
+          "prompts/audio_prompts/it/it_male1_achap_short_2.wav",
+          "prompts/audio_prompts/it/it_male2_achap_short_2.wav"
+        ]
       }
     ]
   }

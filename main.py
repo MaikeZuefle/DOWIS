@@ -24,10 +24,12 @@ from data.tsum import load_tsum
 from data.tts import load_tts
 
 # utils
-from utils import set_up_logging
+from utils import set_up_logging, TASK_MODALITY_MAPPER
 
 # setting seed for reproducibilty
+import random
 set_seed(42)
+random.seed(42)
 
 
 def load_model(model_name):
@@ -65,22 +67,37 @@ def load_prompt(task, language):
             raise KeyError(f"Task {task} does not have prompts in {prompts_path}.")
     return prompts[task.lower()]
 
+def get_out_wav_path(output_modality, idx, wavs_folder, prompt_type):
+    if output_modality == "audio":
+        out_wav = f"{wavs_folder}/{idx}_{prompt_type}"
+    text_prompt_wav = f"{out_wav}_text_prompt.wav" if output_modality == "audio" else None
+    f_audio_prompt_wav = f"{out_wav}_f_audio_prompt.wav" if output_modality == "audio" else None
+    m_audio_prompt_wav = f"{out_wav}_m_audio_prompt.wav" if output_modality == "audio" else None
+    return text_prompt_wav, f_audio_prompt_wav, m_audio_prompt_wav
 
-def main(out_folder, model, task, modality, lang):
+def main(out_folder, model, task, lang):
 
-    output_file_path = f"{out_folder}/{model}/{task}/{modality}_{lang}.json"
+    # Setting output paths and inferring modalities
+    output_file_path = f"{out_folder}/{model}/{task}/{lang}.jsonl"
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     set_up_logging(output_file_path)
+    modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
+    wavs_folder = None
+    if output_modality == "audio":
+        wavs_folder = output_file_path.replace(".jsonl", "wavs")
+        if not os.path.exists(wavs_folder):
+            os.makedirs(wavs_folder)
 
+
+    # Logging
     logging.info("Welcome!")
     logging.info(
-        f"Modality: {modality}, Lang: {lang}, Modality: {modality}, Task: {task}"
+        f"Modality: {modality}, Lang: {lang}, Task: {task}"
     )
 
     logging.info(f"Output Json: {output_file_path}")
 
-
-    # Loading data
+    # Loading Data
     logging.info(f"Loading Data.")
     data = load_data(task=task, language=lang)
     input_data, references = data["inputs"], data["references"]
@@ -93,44 +110,61 @@ def main(out_folder, model, task, modality, lang):
     logging.info(f"Loading Model.")
     model_instance, generate = load_model(model)
 
-
+    # Starting Generation
     logging.info(f"Starting Output Generation.")
-    outputs = []
 
-    for x, ref in tqdm(zip(input_data, references), desc="Generating Outputs", total=len(input_data)):
+    f_out = open(output_file_path, "a", encoding="utf-8")
+    
+    for idx, (x, ref) in enumerate(
+            tqdm(zip(input_data, references),
+                desc="Generating Outputs",
+                total=len(input_data))
+        ):
+
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
+
+            t_wav, fa_wav, ma_wav = get_out_wav_path(output_modality, idx, wavs_folder, prompt_type)
             out["predicted"][prompt_type] = {}
-            for p in prompts[:1]:
-                # text prompt
-                text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
-                
-                # female audio prompt
-                f_p = p["female_rec"][0] if len(p["female_rec"]) >= 1 else None
-                f_audio_prompt = {"prompt_modality": "audio", "prompt": f_p}
 
-                # male audio prompt
-                m_p = p["male_prompts"] if len(p["male_rec"]) >= 1 else None
-                m_audio_prompt = {"prompt_modality": "audio", "prompt": m_p}
+            # sample one out of two prompts in this category
+            prompt_type_idx = random.randint(0, len(prompts) - 1)
+            out["predicted"]["prompt_number"] = prompt_type_idx + 1 # either 1 or 2
+            p = prompts[prompt_type_idx]
+           
+            # text prompt generation
+            text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
+            out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality, out_wav=t_wav)
 
-                # generate
-                out["predicted"][prompt_type]["text"]  = generate(model_instance, text_prompt, x, modality)
-                if f_p:
-                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality)
-                if m_p:
-                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality)
-                breakpoint()
-        outputs.append(out)
+            
+            # sample one speaker (most tasks have only speaker per gender, but some have two)
+            f_len, m_len = len(p["female_rec"]), len(p["male_rec"])
+            num_audio_prompts = min(f_len, m_len) if f_len > 0 and m_len > 0 else max(f_len, m_len)
+ 
+            if num_audio_prompts > 0:               
+                speaker_idx = random.randint(0, num_audio_prompts - 1) if num_audio_prompts > 1 else 0
+                out["predicted"]["spk_number"] = speaker_idx + 1 # either 1 or 2
 
-    with open(output_file_path, "w", encoding="utf-8") as f:
-        json.dump(outputs, f, ensure_ascii=False, indent=2)
+                # audio prompts generation
+                if  p["female_rec"]:
+                    f_audio_prompt = {"prompt_modality": "audio", "prompt": p["female_rec"][speaker_idx]}
+                    out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality, out_wav=fa_wav)
+
+                if p["male_rec"]:
+                    m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
+                    out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality, out_wav=ma_wav)
+
+        f_out.write(json.dumps(out, ensure_ascii=False) + "\n")
+        f_out.flush()
+
+    f_out.close()
 
     logging.info(f"Writing Outputs to file {output_file_path}.")
     logging.info("All done.")
 
 
 if __name__ == "__main__":
-    LANGS = ["alb", "cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
+    LANGS = ["sq", "cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
     MODALITIES = ["text", "audio"]
     TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SLU", "SQA", "SSUM", "ST", "TSUM", "TTS"]
     MODELS = ["phi_multimodal", "qwen_omni"]
@@ -141,9 +175,6 @@ if __name__ == "__main__":
         "--lang", choices=LANGS, default=LANGS[0], help="Language to process"
     )
     parser.add_argument(
-        "--modality", choices=MODALITIES, default=MODALITIES[0], help="Modality type"
-    )
-    parser.add_argument(
         "--task", choices=TASKS, default=TASKS[0], help="Task"
     )
     parser.add_argument("--model", choices=MODELS, default=MODELS[0], help="Model type")
@@ -152,12 +183,12 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
     main(
         out_folder=args.out_folder,
         model=args.model,
         task=args.task,
-        modality=args.modality,
         lang=args.lang,
     )
-    # python main.py --lang de --modality audio --model phi_multimodal --task ASR --out_folder outputs
+
+    # Usage:
+    # python main.py --lang es --model phi_multimodal --task ASR --out_folder outputs_debug

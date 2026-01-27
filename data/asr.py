@@ -1,16 +1,17 @@
 from datasets import load_dataset
 import soundfile as sf
 import os
+from data.utils import FLEURS_LANG_MAP
 
 def load_asr(language):
 
-    if language == "alb":
+    if language == "sq":
         raise ValueError("Albanian is not supported in FLEURS.")
 
     base_dir = "data_storage/asr"
     os.makedirs(base_dir, exist_ok=True)
 
-    fleurs_asr = load_dataset("google/fleurs", f"{language}_{language}", split="test", trust_remote_code=True)
+    fleurs_asr = load_dataset("google/fleurs", FLEURS_LANG_MAP[language], split="test", trust_remote_code=True)
 
     audio_paths = [];  references = []
 
