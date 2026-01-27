@@ -5,7 +5,7 @@
 The following languages are currently supported:
 
 ```
-alb, cs, de, en, es, fr, hu, it, nl, pt, ru, sv
+alb, cz, de, en, es, fr, hu, it, nl, pt, ru, sv
 ```
 
 ---
@@ -55,7 +55,7 @@ The main entry point of the project is `main.py`, which can be executed from the
 
 | Argument | Description | Choices | Default |
 |--------|-------------|---------|---------|
-| `--lang` | Language to process | sq, cs, de, en, es, fr, hu, it, nl, pt, ru, sv | sq |
+| `--lang` | Language to process | sq, cz, de, en, es, fr, hu, it, nl, pt, ru, sv | sq |
 | `--task` | Task to run | ACHAP, ASR, MT, S2ST, SLU, SQA, SSUM, ST, TSUM, TTS | ACHAP |
 | `--model` | Model to use | phi_multimodal, qwen_omni | phi_multimodal |
 | `--out_folder` | Output directory | any path | generated_output |

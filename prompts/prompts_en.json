@@ -4,7 +4,8 @@
       {
         "text": "Please transcribe the clip.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_asr_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_asr_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_basic_1.wav"
@@ -13,7 +14,8 @@
       {
         "text": "Convert the spoken content into text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_asr_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_asr_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_basic_2.wav"
@@ -24,7 +26,8 @@
       {
         "text": "Please transcribe the recorded content into a written format.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_asr_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_asr_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_formal_1.wav"
@@ -33,7 +36,8 @@
       {
         "text": "Kindly produce an accurate textual transcription of this recording.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_asr_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_asr_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_formal_2.wav"
@@ -44,7 +48,8 @@
       {
         "text": "Hey, can you write out what's being said in this audio?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_asr_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_asr_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_informal_1.wav"
@@ -53,7 +58,8 @@
       {
         "text": "Please jot down everything you hear in this clip.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_asr_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_asr_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_informal_2.wav"
@@ -64,7 +70,8 @@
       {
         "text": "Please listen to the entire audio clip and provide a complete, accurate transcription of all spoken words.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_asr_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_asr_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_detailed_1.wav"
@@ -73,7 +80,8 @@
       {
         "text": "Kindly convert the full spoken content of this recording into a clear and precise text transcript.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_asr_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_asr_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_detailed_2.wav"
@@ -84,7 +92,8 @@
       {
         "text": "Please transcribe.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_asr_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_asr_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_short_1.wav"
@@ -93,7 +102,8 @@
       {
         "text": "Transcribe this clip.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_asr_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_asr_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_asr_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_asr_short_2.wav"
@@ -106,7 +116,8 @@
       {
         "text": "Please translate the recording into English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_st_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_st_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_basic_1.wav"
@@ -115,7 +126,8 @@
       {
         "text": "Convert the conversation into English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_st_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_st_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_basic_2.wav"
@@ -126,7 +138,8 @@
       {
         "text": "Please translate the audio content into English with high accuracy.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_st_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_st_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_formal_1.wav"
@@ -135,7 +148,8 @@
       {
         "text": "Kindly provide a precise translation into English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_st_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_st_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_formal_2.wav"
@@ -146,7 +160,8 @@
       {
         "text": "Hey, can you translate what they're saying into English?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_st_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_st_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_informal_1.wav"
@@ -155,7 +170,8 @@
       {
         "text": "Please turn this audio into English for me.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_st_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_st_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_informal_2.wav"
@@ -166,7 +182,8 @@
       {
         "text": "Please listen to the full audio file and provide a complete, accurate translation of all spoken content into English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_st_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_st_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_detailed_1.wav"
@@ -175,7 +192,8 @@
       {
         "text": "Kindly convert the entire spoken content of this recording into a clear and faithful English translation, preserving meaning and tone.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_st_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_st_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_detailed_2.wav"
@@ -186,7 +204,8 @@
       {
         "text": "Translate into English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_st_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_st_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_short_1.wav"
@@ -195,7 +214,8 @@
       {
         "text": "In English, please.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_st_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_st_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_st_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_st_short_2.wav"
@@ -208,7 +228,8 @@
       {
         "text": "Please answer the question based on the clip: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_basic_1.wav"
@@ -217,7 +238,8 @@
       {
         "text": "Listen to the recording and provide the answer to: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_basic_2.wav"
@@ -228,7 +250,8 @@
       {
         "text": "Kindly listen to the provided recording and supply an accurate answer to the following question: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_formal_1.wav"
@@ -237,7 +260,8 @@
       {
         "text": "Please analyze the audio content and deliver a precise response to the question: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_formal_2.wav"
@@ -248,7 +272,8 @@
       {
         "text": "Hey, can you listen to this and tell me the answer to <question>?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_informal_1.wav"
@@ -257,7 +282,8 @@
       {
         "text": "Give the clip a listen and let me know the answer to this: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_informal_2.wav"
@@ -268,7 +294,8 @@
       {
         "text": "Please carefully listen to the entire audio clip and provide a complete and context-aware answer to the question: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_detailed_1.wav"
@@ -277,7 +304,8 @@
       {
         "text": "Using all relevant information from the recording, deliver a clear and well-reasoned answer to this question: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_detailed_2.wav"
@@ -288,7 +316,8 @@
       {
         "text": "What is the answer: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_short_1.wav"
@@ -297,7 +326,8 @@
       {
         "text": "Listen and answer: <question>.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_sqa_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_sqa_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_sqa_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_sqa_short_2.wav"
@@ -310,7 +340,8 @@
       {
         "text": "Please summarize the recording.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_basic_1.wav"
@@ -319,7 +350,8 @@
       {
         "text": "Provide a brief summary of the content.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_basic_2.wav"
@@ -330,7 +362,8 @@
       {
         "text": "Kindly listen to this and produce a concise and accurate summary.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_formal_1.wav"
@@ -339,7 +372,8 @@
       {
         "text": "Please generate a well-structured summary of the audio clip.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_formal_2.wav"
@@ -350,7 +384,8 @@
       {
         "text": "Hey, can you listen to this and tell me the main points?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_informal_1.wav"
@@ -359,7 +394,8 @@
       {
         "text": "Give this clip a listen and sum it up for me.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_informal_2.wav"
@@ -370,7 +406,8 @@
       {
         "text": "Please listen to the full recording and provide a comprehensive summary capturing all key ideas, themes, and important details.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_detailed_1.wav"
@@ -379,7 +416,8 @@
       {
         "text": "Create a clear, well-organized summary of the recording, highlighting major points, supporting information, and any conclusions mentioned.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_detailed_2.wav"
@@ -390,7 +428,8 @@
       {
         "text": "Summarize.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_short_1.wav"
@@ -399,7 +438,8 @@
       {
         "text": "Give a short summary.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_ssum_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_ssum_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_ssum_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_ssum_short_2.wav"
@@ -412,7 +452,8 @@
       {
         "text": "Please interpret the meaning of the spoken clip.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_slu_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_slu_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_basic_1.wav"
@@ -421,7 +462,8 @@
       {
         "text": "Extract the intent and key information from this recording.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_slu_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_slu_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_basic_2.wav"
@@ -432,7 +474,8 @@
       {
         "text": "Kindly analyze the spoken content and provide the detected intent along with relevant entities.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_slu_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_slu_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_formal_1.wav"
@@ -441,7 +484,8 @@
       {
         "text": "Please perform spoken language understanding on this recording and produce its semantic interpretation.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_slu_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_slu_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_formal_2.wav"
@@ -452,7 +496,8 @@
       {
         "text": "Hey, can you figure out what the speaker wants from this clip?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_slu_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_slu_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_informal_1.wav"
@@ -461,7 +506,8 @@
       {
         "text": "Listen to this and tell me the intent and important details.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_slu_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_slu_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_informal_2.wav"
@@ -472,7 +518,8 @@
       {
         "text": "Please listen to the complete recording and provide a full semantic interpretation, including intent, key entities, and any relevant contextual information.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_slu_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_slu_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_detailed_1.wav"
@@ -481,7 +528,8 @@
       {
         "text": "Analyze the recording and deliver a structured SLU output that captures the speaker's intent, slots, entities, and any additional semantic cues.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_slu_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_slu_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_detailed_2.wav"
@@ -492,7 +540,8 @@
       {
         "text": "Extract intent and entities.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_slu_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_slu_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_short_1.wav"
@@ -501,7 +550,8 @@
       {
         "text": "Do SLU on this audio.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_slu_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_slu_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_slu_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_slu_short_2.wav"
@@ -514,7 +564,8 @@
       {
         "text": "Please convert this text into speech.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_tts_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_tts_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_basic_1.wav"
@@ -523,7 +574,8 @@
       {
         "text": "Generate spoken audio from the following text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_tts_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_tts_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_basic_2.wav"
@@ -534,7 +586,8 @@
       {
         "text": "Kindly produce a natural-sounding speech rendition of the provided text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_tts_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_tts_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_formal_1.wav"
@@ -543,7 +596,8 @@
       {
         "text": "Please synthesize this text into clear and accurate audio output.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_tts_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_tts_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_formal_2.wav"
@@ -554,7 +608,8 @@
       {
         "text": "Hey, read this text out loud.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_tts_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_tts_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_informal_1.wav"
@@ -563,7 +618,8 @@
       {
         "text": "Generate speech from this.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_tts_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_tts_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_informal_2.wav"
@@ -574,7 +630,8 @@
       {
         "text": "Please convert the entire text into speech, maintaining proper intonation, pauses, and emphasis for a natural delivery.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_tts_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_tts_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_detailed_1.wav"
@@ -583,7 +640,8 @@
       {
         "text": "Generate a high-quality spoken version of the text, capturing nuances, punctuation, and expressive tone.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_tts_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_tts_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_detailed_2.wav"
@@ -594,7 +652,8 @@
       {
         "text": "Text to speech.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_tts_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_tts_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_short_1.wav"
@@ -603,7 +662,8 @@
       {
         "text": "Speak this text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tts_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_tts_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_tts_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tts_short_2.wav"
@@ -616,7 +676,8 @@
       {
         "text": "Please translate this clip into English speech.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_basic_1.wav"
@@ -625,7 +686,8 @@
       {
         "text": "Convert the spoken content into English audio.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_basic_2.wav"
@@ -636,7 +698,8 @@
       {
         "text": "Kindly produce a spoken translation of this recording in English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_formal_1.wav"
@@ -645,7 +708,8 @@
       {
         "text": "Please generate an accurate English speech rendition of the provided recording.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_formal_2.wav"
@@ -656,7 +720,8 @@
       {
         "text": "Hey, can you turn this into English audio?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_informal_1.wav"
@@ -665,7 +730,8 @@
       {
         "text": "Make this clip speak in English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_informal_2.wav"
@@ -676,7 +742,8 @@
       {
         "text": "Please listen to the full recording and provide a natural, contextually accurate spoken translation in English, preserving tone and meaning.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_detailed_1.wav"
@@ -685,7 +752,8 @@
       {
         "text": "Generate a high-quality English speech version of this recording, maintaining intonation, emphasis, and any expressive cues.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_detailed_2.wav"
@@ -696,7 +764,8 @@
       {
         "text": "Translate to English speech.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_short_1.wav"
@@ -705,7 +774,8 @@
       {
         "text": "S2ST: English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_s2st_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_s2st_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_s2st_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_s2st_short_2.wav"
@@ -718,7 +788,8 @@
       {
         "text": "Please translate the text to English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_mt_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_mt_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_basic_1.wav"
@@ -727,7 +798,8 @@
       {
         "text": "Convert this text into English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_mt_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_mt_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_basic_2.wav"
@@ -738,7 +810,8 @@
       {
         "text": "Kindly provide an accurate translation of the following text to English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_mt_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_mt_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_formal_1.wav"
@@ -747,7 +820,8 @@
       {
         "text": "Please translate this text into English, preserving its meaning and tone.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_mt_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_mt_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_formal_2.wav"
@@ -758,7 +832,8 @@
       {
         "text": "Hey, can you translate this into English?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_mt_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_mt_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_informal_1.wav"
@@ -767,7 +842,8 @@
       {
         "text": "Turn this into English for me.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_mt_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_mt_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_informal_2.wav"
@@ -778,7 +854,8 @@
       {
         "text": "Please translate the full text to English, maintaining clarity, context, and natural phrasing.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_mt_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_mt_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_detailed_1.wav"
@@ -787,7 +864,8 @@
       {
         "text": "Provide a high-quality translation of this text, preserving idiomatic expressions and the intended meaning to English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_mt_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_mt_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_detailed_2.wav"
@@ -798,7 +876,8 @@
       {
         "text": "Translate to English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_mt_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_mt_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_short_1.wav"
@@ -807,7 +886,8 @@
       {
         "text": "MT: English.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_mt_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_mt_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_mt_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_mt_short_2.wav"
@@ -820,7 +900,8 @@
       {
         "text": "Please summarize the text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_basic_1.wav"
@@ -829,7 +910,8 @@
       {
         "text": "Provide a brief summary.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_basic_2.wav"
@@ -840,7 +922,8 @@
       {
         "text": "Kindly generate a concise and accurate summary of the following text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_formal_1.wav"
@@ -849,7 +932,8 @@
       {
         "text": "Please produce a well-structured summary of the text.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_formal_2.wav"
@@ -860,7 +944,8 @@
       {
         "text": "Hey, can you tell me the main points of this text?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_informal_1.wav"
@@ -869,7 +954,8 @@
       {
         "text": "Give this a read and sum it up for me.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_informal_2.wav"
@@ -880,7 +966,8 @@
       {
         "text": "Please create a comprehensive summary of the text, capturing all key ideas, supporting details, and conclusions.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_detailed_1.wav"
@@ -889,7 +976,8 @@
       {
         "text": "Analyze the text and provide a detailed, well-organized summary highlighting major points and important information.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_detailed_2.wav"
@@ -900,7 +988,8 @@
       {
         "text": "Summarize this.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_short_1.wav"
@@ -909,7 +998,8 @@
       {
         "text": "Give a short summary.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_tsum_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_tsum_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_tsum_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_tsum_short_2.wav"
@@ -922,7 +1012,8 @@
       {
         "text": "Please transcribe the speech from the video.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_basic_1.wav"
@@ -931,7 +1022,8 @@
       {
         "text": "Write down what the person is saying in this video.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_basic_2.wav"
@@ -942,7 +1034,8 @@
       {
         "text": "Kindly provide an accurate transcription of the speech based on the speaker's lip movements in this video.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_formal_1.wav"
@@ -951,7 +1044,8 @@
       {
         "text": "Please analyze the video and generate a precise text transcription of the spoken content.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_formal_2.wav"
@@ -962,7 +1056,8 @@
       {
         "text": "Hey, can you tell me what they're saying by watching their lips?",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_informal_1.wav"
@@ -971,7 +1066,8 @@
       {
         "text": "Watch this video and write down the words being spoken.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_informal_2.wav"
@@ -982,7 +1078,8 @@
       {
         "text": "Please carefully observe the speaker's lip movements throughout the video and provide a full and accurate transcription of all spoken words.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_detailed_1.wav"
@@ -991,7 +1088,8 @@
       {
         "text": "Generate a comprehensive text transcription based on the lip movements in the video, capturing every spoken word and context as accurately as possible.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_detailed_2.wav"
@@ -1002,7 +1100,8 @@
       {
         "text": "Transcribe from lips.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_short_1.wav"
@@ -1011,7 +1110,8 @@
       {
         "text": "Lipread and write.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_lipread_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_lipread_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_lipread_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_lipread_short_2.wav"
@@ -1024,7 +1124,8 @@
       {
         "text": "Please divide the audio into chapters and provide a clear title for each chapter. Also produce the transcript, organized under each chapter. Use Markdown headings for chapter titles (e.g., ## Chapter Title) and separate each chapter with newlines.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_basic_1.wav"
+          "prompts/audio_prompts/en/en_female1_achap_basic_1.wav",
+          "prompts/audio_prompts/en/en_female2_achap_basic_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_basic_1.wav"
@@ -1033,7 +1134,8 @@
       {
         "text": "Create segments for this audio and assign a descriptive title to each segment. Also include the transcript, grouped by segment. Format segment titles as Markdown headings and put a newline between segments.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_basic_2.wav"
+          "prompts/audio_prompts/en/en_female1_achap_basic_2.wav",
+          "prompts/audio_prompts/en/en_female2_achap_basic_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_basic_2.wav"
@@ -1044,7 +1146,8 @@
       {
         "text": "Kindly analyze the audio and generate well-defined chapters with descriptive titles for each one based on its content, and also provide the full transcript organized under the corresponding chapters. Please format chapter titles as Markdown headings and separate each chapter with a blank line.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_formal_1.wav"
+          "prompts/audio_prompts/en/en_female1_achap_formal_1.wav",
+          "prompts/audio_prompts/en/en_female2_achap_formal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_formal_1.wav"
@@ -1053,7 +1156,8 @@
       {
         "text": "Please segment the audio into logical sections and provide chapter markers with titles for each section, along with the transcript text arranged under each chapter. Use Markdown headings for the chapter titles and ensure there is a newline between chapters.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_formal_2.wav"
+          "prompts/audio_prompts/en/en_female1_achap_formal_2.wav",
+          "prompts/audio_prompts/en/en_female2_achap_formal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_formal_2.wav"
@@ -1064,7 +1168,8 @@
       {
         "text": "Hey, can you split this audio into parts, give each part a title, and include the transcript under each part? Use Markdown headings for the titles and put a blank line between parts.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_informal_1.wav"
+          "prompts/audio_prompts/en/en_female1_achap_informal_1.wav",
+          "prompts/audio_prompts/en/en_female2_achap_informal_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_informal_1.wav"
@@ -1073,7 +1178,8 @@
       {
         "text": "Break the audio into chapters for me, including a title and the transcript for each chapter. Format the titles as Markdown headings and separate each chapter with a newline.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_informal_2.wav"
+          "prompts/audio_prompts/en/en_female1_achap_informal_2.wav",
+          "prompts/audio_prompts/en/en_female2_achap_informal_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_informal_2.wav"
@@ -1084,7 +1190,8 @@
       {
         "text": "Please watch the audio and divide it into chapters based on function, topic, scene transitions, and key content. For each chapter, provide a descriptive title and the transcript of that chapter. Use Markdown headings for the chapter titles (e.g., ## Introduction) and separate each chapter with a blank line.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_detailed_1.wav"
+          "prompts/audio_prompts/en/en_female1_achap_detailed_1.wav",
+          "prompts/audio_prompts/en/en_female2_achap_detailed_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_detailed_1.wav"
@@ -1093,7 +1200,8 @@
       {
         "text": "Generate a detailed chapter-wise segmentation of the audio, describing the content of each section, and giving each chapter a clear title. Also include the transcript, organized under each chapter. Format chapter titles as Markdown headings (e.g., ## Introduction) and insert a newline between chapters.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_detailed_2.wav"
+          "prompts/audio_prompts/en/en_female1_achap_detailed_2.wav",
+          "prompts/audio_prompts/en/en_female2_achap_detailed_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_detailed_2.wav"
@@ -1104,7 +1212,8 @@
       {
         "text": "Transcript + Chapters in Markdown (headings for titles, blank line between chapters).",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_short_1.wav"
+          "prompts/audio_prompts/en/en_female1_achap_short_1.wav",
+          "prompts/audio_prompts/en/en_female2_achap_short_1.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_short_1.wav"
@@ -1113,7 +1222,8 @@
       {
         "text": "Transcript with added audio chapters. Use Markdown headings for chapter titles and newlines between chapters.",
         "female_rec": [
-          "prompts/audio_prompts/en/en_female1_achap_short_2.wav"
+          "prompts/audio_prompts/en/en_female1_achap_short_2.wav",
+          "prompts/audio_prompts/en/en_female2_achap_short_2.wav"
         ],
         "male_rec": [
           "prompts/audio_prompts/en/en_male1_achap_short_2.wav"

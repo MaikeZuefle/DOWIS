@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-LANG="ru"
+LANG="en"
 
 INPUT_JSON=f"prompts_{LANG}.json"
 OUTPUT_JSON=f"prompts_{LANG}.json"
@@ -22,16 +22,17 @@ def update_json_with_audio_paths(data):
                 for gender_key, gender_variants in GENDERS.items():
                     for gender_variant in gender_variants:
                         filename = f"{LANG}_{gender_variant}_{task}_{style}_{idx}.wav"
-                        file_path = "prompts" / AUDIO_ROOT / filename
+                        file_path = AUDIO_ROOT / filename
 
                         if file_path.exists():
-                            prompt[f"{gender_key}_rec"].append(str(file_path))
+                            prompt[f"{gender_key}_rec"].append(f"prompts/{str(file_path)}")
 
     return data
 
 # ---- usage ----
 with open(INPUT_JSON, "r", encoding="utf-8") as f:
     data = json.load(f)
+
 
 data = update_json_with_audio_paths(data)
 

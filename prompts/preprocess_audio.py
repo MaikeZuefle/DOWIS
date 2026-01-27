@@ -2,13 +2,14 @@ import os
 from pydub import AudioSegment
 from pydub.silence import detect_nonsilent
 
-AUDIO_DIR = "audio_prompts/czech_male"
-LANGUAGE="cz"
-GENDER="male1"
+AUDIO_DIR = "audio_prompts/spanish_female"
+LANGUAGE="es"
+GENDER="female1"
+IN_FOMRAT="wav" # "mp3", "m4a" "wav"
 
 tasks = ["ASR", "ST", "SQA", "SSUM", "SLU", "TTS", "S2ST", "MT", "TSUM", "LIPREAD", "ACHAP"]
 prompt_types = ["basic", "basic", "formal", "formal", "informal", "informal", "detailed", "detailed", "short", "short"]
-IN_FOMRAT="wav" # "mp3", "m4a" "wav"
+
 
 # Get all .m4a files
 files = [f for f in os.listdir(AUDIO_DIR) if f.endswith(f".{IN_FOMRAT}")]
@@ -54,6 +55,7 @@ for idx, f in enumerate(files):
     output_path = os.path.join(AUDIO_DIR, new_filename)
 
     # Convert to WAV
+
     audio = AudioSegment.from_file(input_path, format=IN_FOMRAT)
     audio.export(output_path, format="wav")
     print(f"{f} -> {new_filename}")

@@ -4,60 +4,80 @@
       {
         "text": "Kérlek, írd le a hangfelvételt szóról szóra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_basic_1.wav"
+        ]
       },
       {
         "text": "Alakítsa át az elhangzott tartalmat szöveggé.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Kérem, írja le a hangfelvétel tartalmát szóról szóra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, készítsen pontos szöveges jegyzetet erről a felvételről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia, le tudnád írni, mi hangzik el ebben a felvételben?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_informal_1.wav"
+        ]
       },
       {
         "text": "Légyszi írj le mindent, amit hallasz ebben a klipben.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, hallgasd végig a teljes hangfelvételt, és készíts pontos, teljes szöveges jegyzetet az elhangzott szövegről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_detailed_1.wav"
+        ]
       },
       {
         "text": "Kérem, készítsen pontos és világos jegyzetet a felvétel teljes hanganyagáról.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Kérem, írja le.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_short_1.wav"
+        ]
       },
       {
         "text": "Írja le a beszélgetést.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_asr_short_2.wav"
+        ]
       }
     ]
   },
@@ -66,60 +86,80 @@
       {
         "text": "Kérlek, fordítsd le a felvételt magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_basic_1.wav"
+        ]
       },
       {
         "text": "Fordítsd le a beszélgetést magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Legyen szíves, fordítsa le a hangfelvételt magyarra, ügyelve a pontosságra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, fordítsa le alaposan a beszélgetést magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia, lefordítanád magyarra, hogy mit beszélnek?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_informal_1.wav"
+        ]
       },
       {
         "text": "Légyszi, fordítsd le ezt a hangot magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, hallgasd végig a teljes hangfelvételt, és készíts pontos, teljes körű magyar fordítást az elhangzott szövegről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_detailed_1.wav"
+        ]
       },
       {
         "text": "Kérlek, fordítsd le a hangfelvétel teljes tartalmát pontos és egyértelmű magyar szövegre, megőrizve az eredeti szöveg értelmét és stílusát.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Fordítsa le magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_short_1.wav"
+        ]
       },
       {
         "text": "Kérem magyarul.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_st_short_2.wav"
+        ]
       }
     ]
   },
@@ -128,60 +168,80 @@
       {
         "text": "Kérlek, válaszold meg a kérdést a felvétel alapján: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_basic_1.wav"
+        ]
       },
       {
         "text": "Hallgassa meg a felvételt, és válaszoljon a következő kérdésre: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Kérem, hallgasa meg a mellékelt hangfelvételt, és adjon pontos választ a következő kérdésre: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, elemezze a hangfelvételt, és adjon pontos választ a következő kérdésre: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia, meg tudnád ezt hallgatni, és megmondani a választ a következő kérdésre: <question>?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_informal_1.wav"
+        ]
       },
       {
         "text": "Hallgasd meg a klipet, és válaszoljál erre a kérdésre: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, hallgasd meg figyelmesen a teljes hangfelvételt, és adj egy teljes körű, a szövegnek megfelelő választ az alábbi kérdésre: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_detailed_1.wav"
+        ]
       },
       {
         "text": "A felvételből származó összes releváns információ felhasználásával adjon világos és megalapozott választ az alábbi kérdésre: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Mi a helyes válasz: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_short_1.wav"
+        ]
       },
       {
         "text": "Figyelj és válaszold meg ezt a kérdést: <question>.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_sqa_short_2.wav"
+        ]
       }
     ]
   },
@@ -190,60 +250,80 @@
       {
         "text": "Kérem foglald össze a felvételt.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_basic_1.wav"
+        ]
       },
       {
         "text": "Kérlek, készíts egy rövid összefoglalót a tartalomról.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Kérem, hallgassa meg ezt, és készítsen róla egy rövid és pontos összefoglalót.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, készítsen egy jól strukturált összefoglalót erről a hangfelvételről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Meg tudnád hallgatni ezt, és elmondanád a lényeget?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_informal_1.wav"
+        ]
       },
       {
         "text": "Hallgasd meg ezt és mondd el a lényeget?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, hallgasd meg a teljes felvételt, és készíts egy átfogó összefoglalót, amely tartalmazza az összes kulcsfontosságú gondolatot, témát és fontos részletet.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_detailed_1.wav"
+        ]
       },
       {
         "text": "Készíts egy világos, jól strukturált összefoglalót a felvételről, emeld ki a főbb pontokat, az alátámasztó információkat és az elhangzott következtetéseket.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Foglald össze.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_short_1.wav"
+        ]
       },
       {
         "text": "Írj egy rövid összefoglalót.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_ssum_short_2.wav"
+        ]
       }
     ]
   },
@@ -252,60 +332,80 @@
       {
         "text": "Kérem, értelmezd a hangfelvétel jelentését.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_basic_1.wav"
+        ]
       },
       {
         "text": "Vond ki a szándékot és a kulcsfontosságú információkat ebből a felvételből.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Kérem, elemezze a beszélt tartalmat, és határozza meg a felismert szándékot, valamint a releváns entitásokat.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, végezzen beszéltnyelv-értelmezést ezen a felvételen, és írja le a szemantikai értelmezését.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Meg tudnád állapítani ebből a klipből, hogy mit szeretne a beszélő?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_informal_1.wav"
+        ]
       },
       {
         "text": "Hallgasd meg ezt, és mondd meg, mi a szándék, illetve mik a fontos részletek.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, hallgasd végig a felvételt, és adj teljes szemantikai értelmezést, beleértve a szándékot, a kulcsfontosságú entitásokat és a releváns kontextuális információkat.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_detailed_1.wav"
+        ]
       },
       {
         "text": "Elemezd a felvételt, és készíts egy strukturált beszélt nyelv értelmezést, amely rögzíti a beszélő szándékát, a slotokat, az entitásokat és az egyéb szemantikai jeleket.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Nyerd ki a szándékot és az entitásokat.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_short_1.wav"
+        ]
       },
       {
         "text": "Végezz SLU-t (beszélt nyelv értelmezést) ezen a hanganyagon.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_slu_short_2.wav"
+        ]
       }
     ]
   },
@@ -314,60 +414,80 @@
       {
         "text": "Kérlek, alakítsd át ezt a szöveget beszéddé.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_basic_1.wav"
+        ]
       },
       {
         "text": "Készíts egy hangfelvételt a következő szövegből.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Legyen szíves, készítsen egy természetes hangzású felvételt a megadott szövegből.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, készítsen egy tiszta és pontos hangfelvételt ebből a szövegből.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia, olvasd fel hangosan ezt a szöveget!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_informal_1.wav"
+        ]
       },
       {
         "text": "Készíts hangfelvételt ebből a szövegből.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, alakítsd át a teljes szöveget beszéddé, ügyelve a megfelelő hangsúlyozásra, szünetekre és hanglejtésre a természetes hatás érdekében.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_detailed_1.wav"
+        ]
       },
       {
         "text": "Készíts kiváló minőségű hangfelvételt a szövegből, visszaadva az árnyalatokat, az írásjeleket és a kifejező tónust.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Olvasd hangosan!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_short_1.wav"
+        ]
       },
       {
         "text": "Olvasd fel ezt a szöveget.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tts_short_2.wav"
+        ]
       }
     ]
   },
@@ -376,60 +496,80 @@
       {
         "text": "Kérlek, fordítsd le ezt a klipet magyar beszédre.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_basic_1.wav"
+        ]
       },
       {
         "text": "Fordítsd le az elhangzott tartalmat magyar nyelvű hanganyaggá.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Legyen szíves, készítsen egy magyar nyelvű hangos fordítást erről a felvételről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, készítsen egy pontos magyar nyelvű hangos fordítást a mellékelt felvétel alapján.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Le tudnád ezt fordítani magyarra?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_informal_1.wav"
+        ]
       },
       {
         "text": "Fordítsd le ezt a klipet magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, hallgasd végig a teljes felvételt, és készíts egy természetes, kontextushoz illő magyar nyelvű hangos fordítást, megőrizve az eredeti felvétel hangvételét és jelentését.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_detailed_1.wav"
+        ]
       },
       {
         "text": "Készíts egy kiváló minőségű magyar nyelvű hangfelvételt erről a felvételről, megtartva a hanglejtést, a hangsúlyokat és az egyéb kifejezőeszközöket.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Fordítsd le magyar nyelvű beszédre.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_short_1.wav"
+        ]
       },
       {
         "text": "Beszéd-beszéd fordítás: Magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_s2st_short_2.wav"
+        ]
       }
     ]
   },
@@ -438,60 +578,80 @@
       {
         "text": "Kérlek, fordítsd le a szöveget magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_basic_1.wav"
+        ]
       },
       {
         "text": "Fordítsd le ezt a szöveget magyar nyelvre.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Legyen szíves, készítsen pontos magyar fordítást az alábbi szövegről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, fordítsa le ezt a szöveget magyarra, megőrizve a szöveg jelentését és stílusát.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Lefordítanád ezt magyarra?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_informal_1.wav"
+        ]
       },
       {
         "text": "Fordítsd ezt le magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, fordítsd le a teljes szöveget magyarra, ügyelve a világosságra és a természetes megfogalmazásra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_detailed_1.wav"
+        ]
       },
       {
         "text": "Kérlek, készíts kiváló minőségű magyar fordítást, megtartva a szólásmondásokat és az eredeti jelentést.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Fordítsd magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_short_1.wav"
+        ]
       },
       {
         "text": "Fordítás magyarra.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_mt_short_2.wav"
+        ]
       }
     ]
   },
@@ -500,60 +660,80 @@
       {
         "text": "Kérem, foglalja össze a szöveget!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_basic_1.wav"
+        ]
       },
       {
         "text": "Írjon egy rövid összefoglalót.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Legyen szíves készítsen egy tömör és pontos összefoglalót a következő szövegről!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, készítsen egy jól strukturált összefoglalót a szövegről!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Elmondanád a szöveg legfőbb pontjait?",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_informal_1.wav"
+        ]
       },
       {
         "text": "Olvasd el ezt a szöveget, és szedd össze nekem a lényeget!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérem, készítsen egy átfogó összefoglalót, amely tartalmazza a főbb gondolatokat, az alátámasztó részleteket és a következtetéseket is!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_detailed_1.wav"
+        ]
       },
       {
         "text": "Elemezze a szöveget, és készítsen egy részletes, jól felépített összefoglalót, kiemelve a lényeges pontokat és a fontos információkat!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Foglald össze!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_short_1.wav"
+        ]
       },
       {
         "text": "Írj egy rövid összefoglalót!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_tsum_short_2.wav"
+        ]
       }
     ]
   },
@@ -562,60 +742,80 @@
       {
         "text": "Kérlek, készíts jegyzetet a videóban látható beszédről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_basic_1.wav"
+        ]
       },
       {
         "text": "Írd le, mit mondanak ebben a videóban.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Kérem, készítsen pontos jegyzetet a beszédről a videóban látható szájmozgás alapján.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, elemezze a videót, és készítsen pontos jegyzetet a videóban látható beszédről.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Meg tudnád mondani, mit beszélnek? Figyeld a szájukat!",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_informal_1.wav"
+        ]
       },
       {
         "text": "Nézd meg ezt a videót, és írd le az elhangzott szavakat.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, figyeld meg alaposan a beszélő szájmozgását a videó során, és készíts teljes, pontos jegyzetet minden elhangzott szóról.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_detailed_1.wav"
+        ]
       },
       {
         "text": "Készíts részletes szöveges jegyzetet a videóban látható szájmozgás alapján, a lehető legpontosabban visszaadva minden szót.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Írd le szájról olvasva.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_short_1.wav"
+        ]
       },
       {
         "text": "Olvasd le a szájukról, hogy mit mondanak.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_lipread_short_2.wav"
+        ]
       }
     ]
   },
@@ -624,60 +824,80 @@
       {
         "text": "Kérlek, oszd fel a hanganyagot fejezetekre, és adj mindegyiknek egy egyértelmű címet. Készíts jegyzetet is az elhangzottakról, és csoportosítsd fejezetek szerint. Használj Markdown címsorokat a fejezetcímekhez (pl. ## Fejezet címe), és válaszd el a fejezeteket sorközökkel.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_basic_1.wav"
+        ]
       },
       {
         "text": "Oszd fel ezt a hanganyagot szegmensekre, és adjál mindegyiknek címet. Mellékelj jegyzeteket az elhangzottakról, szintén szegmensenkre csoportosítva. A szegmensek címeit Markdown címsorként írjad, és tegyél közéjük üres sort.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_basic_2.wav"
+        ]
       }
     ],
     "formal": [
       {
         "text": "Kérem, elemezze a hanganyagot, és határozzon meg jól elkülöníthető fejezeteket a tartalom alapján, címekkel ellátva, valamint készítsen jegyzeteket az elhangzottakról a megfelelő fejezetek alá rendezve. A fejezetcímeket Markdown címsorként formázza, és válasszon el minden fejezetet egy üres sorral.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_formal_1.wav"
+        ]
       },
       {
         "text": "Kérem, szegmentálja a hanganyagot logikai egységekre, és adjon címet minden részhez. Készítsen jegyzeteket az elhangzottakról és rendezze ezeket a fejezetek alá. Használjon Markdown címsorokat a fejezetcímekhez, és ügyeljen rá, hogy legyen sorköz a fejezetek között.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_formal_2.wav"
+        ]
       }
     ],
     "informal": [
       {
         "text": "Szia! Fel tudnád osztani ezt a hanganyagot részekre? Adj mindegyiknek egy címet, és írd le fejezetenként, hogy mit beszélnek. A címekhez használj Markdown címsorokat, a részek közé pedig tegyél egy üres sort.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_informal_1.wav"
+        ]
       },
       {
         "text": "Bontsd nekem fejezetekre a hanganyagot, mellékelve a fejezetcímeket és írd le fejezetenként, hogy mit beszélnek. A címeket Markdown címsorként formázd, és válassz el minden fejezetet egy üres sorral.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
       {
         "text": "Kérlek, vizsgáld meg a hanganyagot, és oszd fel fejezetekre funkció, téma, jelenetváltás és kulcsfontosságú tartalom alapján. Minden fejezethez adj egy címet és írd le, hogy mit beszélnek az adott részben. Használj Markdown címsorokat (pl. ## Bevezetés), és válassz el minden fejezetet egy üres sorral.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_detailed_1.wav"
+        ]
       },
       {
         "text": "Készíts egy részletes, fejezetekre bontott szegmentálást a hanganyaghoz, leírva az egyes részek tartalmát. Adj minden fejezetnek egy egyértelmű címet és írd le, hogy mit beszélnek az adott részben. A fejezetcímeket Markdown címsorként formázd (pl. ## Bevezetés), és iktass be sorközt a fejezetek közé.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_detailed_2.wav"
+        ]
       }
     ],
     "short": [
       {
         "text": "Szöveg + Fejezetek Markdown formátumban (címsorok a címekhez, üres sor a fejezetek közé).",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_short_1.wav"
+        ]
       },
       {
         "text": "Szöveg + Fejezetek. Használj Markdown címsorokat a fejezetcímekhez és sorközöket a fejezetek között.",
         "female_rec": [],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/hu/hu_male1_achap_short_2.wav"
+        ]
       }
     ]
   }
