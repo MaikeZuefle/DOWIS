@@ -5,7 +5,7 @@
 The following languages are currently supported:
 
 ```
-alb, cs, de, en, es, fr, hu, it, nl, pt, ru, sv
+cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv
 ```
 
 ---
