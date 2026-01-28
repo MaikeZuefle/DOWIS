@@ -164,7 +164,7 @@ def main(out_folder, model, task, lang):
 
 
 if __name__ == "__main__":
-    LANGS = ["sq", "cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
+    LANGS = ["cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sq", "sv"]
     MODALITIES = ["text", "audio"]
     TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SLU", "SQA", "SSUM", "ST", "TSUM", "TTS"]
     MODELS = ["phi_multimodal", "qwen_omni"]
