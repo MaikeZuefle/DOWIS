@@ -48,11 +48,13 @@ def load_sqa(language):
             question = entry.replace(qa_starting_prompt[language], "")
             sqa_samples[idx]["question"] = question
 
-    audio_paths = []; references = []; questions = []
-
+    samples = []; references = []
     for idx in sqa_samples.keys():
-        audio_paths.append(sqa_samples[idx]["audio_path"])
+        samples.append({
+            "audio_path": sqa_samples[idx]["audio_path"],
+            "question_text": sqa_samples[idx]["question"],
+            "question_speech": sqa_samples[idx]["....."]
+        })
         references.append(sqa_samples[idx]["reference"])
-        questions.append(sqa_samples[idx]["question"])
 
-    return {"inputs": audio_paths, "references": references, "additional_inputs": questions}
+    return {"inputs": samples, "references": references}

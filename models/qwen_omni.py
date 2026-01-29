@@ -16,35 +16,45 @@ def load_model():
     return model, processor
 
 
-def generate(model_processor, prompt, example, modality, output_modality, out_wav):
+def generate(model_processor, prompt, input_data, modality, output_modality, out_wav):
 
     from qwen_omni_utils import process_mm_info
     import soundfile as sf
+
+    # Handle question answering tasks
+    if input_data is dict:
+        example = input_data["audio_path"]
+        speech_q = input_data["question_speech"]
+        text_q = input_data["question_text"]
+    else:
+        example = input_data
 
     # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
     orig_prompt = prompt["prompt"]
     model, processor = model_processor
 
-
     # prepare prompts
     if prompt_modality == "audio":
-        prompt_dict = {"type": "audio", "audio": orig_prompt}
-
+        prompt_dict = [{"type": "audio", "audio": orig_prompt}]
+        if input_data is dict:
+            prompt_dict.append({"type": "audio", "audio": speech_q})
     elif prompt_modality == "text":
-        prompt_dict = {"type": "text", "text": orig_prompt}
+        prompt_dict = [{"type": "text", "text": orig_prompt}]
+        if input_data is dict:
+            prompt_dict[0]["text"] = prompt_dict[0]["text"] + " " + text_q
 
     # prepare inputs
     if modality == "audio":
-        input_dict = {"type": "audio", "audio": example}
+        input_dict = [{"type": "audio", "audio": example}]
     elif modality == "text":
-        input_dict = {"type": "text", "text": example}
+        input_dict = [{"type": "text", "text": example}]
         
 
     USE_AUDIO_IN_VIDEO = False
     RETURN_AUDIO = output_modality == "audio"
 
-    user_conv_content = [input_dict, prompt_dict]
+    user_conv_content = input_dict + prompt_dict
 
     conversations = [{"role": "user", "content": user_conv_content}]
 

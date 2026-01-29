@@ -15,11 +15,19 @@ def load_model():
 
     return model, processor, generation_config
 
-def generate(model_processor_config, prompt, example, modality, output_modality, out_wav=None):
+def generate(model_processor_config, prompt, input_data, modality, output_modality, out_wav=None):
     import soundfile as sf
 
     if output_modality == "audio":
         raise NotImplementedError("Phi-4-multimodal-instruct does not support speech in output.")
+
+    # Handle question answering tasks
+    if input_data is dict:
+        example = input_data["audio_path"]
+        speech_q = input_data["question_speech"]
+        text_q = input_data["question_text"]
+    else:
+        example = input_data
 
     # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
@@ -38,18 +46,21 @@ def generate(model_processor_config, prompt, example, modality, output_modality,
     if prompt_modality == "audio":
         prompt_audio, prompt_samplerate = sf.read(orig_prompt)
         audios.append((prompt_audio, prompt_samplerate))
+        if input_data is dict:
+            speech_q_audio, speech_q_samplerate = sf.read(speech_q)
+            audios.append((speech_q_audio, speech_q_samplerate))
         seperator_token += f"<|audio_{len(audios)}|>"
         prompt = ""
-
     elif prompt_modality == "text":
         prompt = orig_prompt
+        if input_data is dict:
+            prompt += " " + text_q
 
     # prepare inputs
     if modality == "audio":
         audio, samplerate = sf.read(example)
         audios.append((audio, samplerate))
         seperator_token += f"<|audio_{len(audios)}|>"
-    
     elif modality == "text":
         seperator_token += f"\n"
         if prompt_modality == "text":
