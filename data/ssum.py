@@ -6,7 +6,6 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 MCIF_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/main/"
-MCIF_VERSION = "1.2"
 
 def download_audio(base_dir):
     api_url = "https://huggingface.co/api/datasets/FBK-MT/MCIF/tree/main"

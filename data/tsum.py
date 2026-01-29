@@ -6,7 +6,6 @@ import xml.etree.ElementTree as ET
 from datasets import load_dataset
 
 MCIF_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/main/"
-MCIF_VERSION = "1.2"
 
 def load_tsum(language):
     if language not in ["en", "it", "de"]:
