@@ -1,0 +1,904 @@
+{
+  "asr": {
+    "basic": [
+      {
+        "text": "Gelieve de clip te transcriberen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Zet de gesproken inhoud om in tekst.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Gelieve de opgenomen inhoud om te zetten naar een geschreven formaat.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Maak alstublieft een nauwkeurige tekstuele transcriptie van deze opname.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je opschrijven wat er in deze audio wordt gezegd?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Noteer alsjeblieft alles wat je hoort in deze clip.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister alstublieft naar de volledige audioclip en geef een volledige, nauwkeurige transcriptie van alle gesproken woorden.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Gelieve de volledige gesproken inhoud van deze opname om te zetten in een duidelijke en precieze teksttranscriptie.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Gelieve te transcriberen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Transcribeer deze clip.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_asr_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "st": {
+    "basic": [
+      {
+        "text": "Gelieve de opname in het Nederlands te vertalen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Zet het gesprek om in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Gelieve de audio-inhoud met hoge nauwkeurigheid in het Nederlands te vertalen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Gelieve een nauwkeurige vertaling in het Nederlands te leveren.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je vertalen wat er gezegd wordt naar het Nederlands?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Graag deze audio voor mij in het Nederlands om te zetten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister alsjeblieft naar het volledige audiobestand en geef een complete, nauwkeurige vertaling van alle gesproken inhoud naar het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Gelieve de volledige gesproken inhoud van deze opname om te zetten in een duidelijke en getrouwe Nederlandse vertaling, met behoud van betekenis en toon.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Vertaal naar het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "In het Nederlands, alstublieft.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_st_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "sqa": {
+    "basic": [
+      {
+        "text": "Beantwoord alstublieft de vraag op basis van de clip: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Luister naar de opname en geef het antwoord op: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Gelieve naar de verstrekte opname te luisteren en een nauwkeurig antwoord te geven op de volgende vraag: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Analyseer de audio-inhoud en geef een precies antwoord op de vraag: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je hiernaar luisteren en me het antwoord op <question> vertellen?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Luister naar de clip en laat me het antwoord weten op dit: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister zorgvuldig naar de volledige audioclip en geef een compleet en contextbewust antwoord op de vraag: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Gebruik alle relevante informatie uit de opname en geef een duidelijk en goed onderbouwd antwoord op deze vraag: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Wat is het antwoord: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Luister en beantwoord: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_sqa_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "ssum": {
+    "basic": [
+      {
+        "text": "Gelieve de opname samen te vatten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Geef een korte samenvatting van de inhoud.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Luister hiernaar en produceer een beknopte en nauwkeurige samenvatting.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer een goed gestructureerde samenvatting van de audioclip.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je hiernaar luisteren en me de belangrijkste punten vertellen?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Luister naar deze clip en vat het voor me samen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister naar de volledige opname en geef een uitgebreide samenvatting die alle kernideeën, thema’s en belangrijke details omvat.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Maak een duidelijke, goed georganiseerde samenvatting van de opname, met de belangrijkste punten, ondersteunende informatie en eventuele conclusies.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Samenvatten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Geef een korte samenvatting.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_ssum_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "slu": {
+    "basic": [
+      {
+        "text": "Gelieve de betekenis van de gesproken clip te interpreteren.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Haal de intentie en kerninformatie uit deze opname.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Analyseer de gesproken inhoud en geef de gedetecteerde intentie samen met relevante entiteiten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Voer gesproken taalbegrip uit op deze opname en produceer de semantische interpretatie ervan.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je achterhalen wat de spreker wil met deze clip?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Luister hiernaar en geef de intentie en belangrijke details.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister naar de volledige opname en geef een volledige semantische interpretatie, inclusief intentie, kernentiteiten en relevante contextuele informatie.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Analyseer de opname en lever een gestructureerde SLU-output die de intentie van de spreker, kern ideeën, entiteiten en aanvullende semantische aanwijzingen weergeeft.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Haal intentie en hoofdzaken eruit.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Voer SLU uit op deze audio.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_slu_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "tts": {
+    "basic": [
+      {
+        "text": "Gelieve deze tekst om te zetten in spraak.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer gesproken audio van de volgende tekst.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Produceer een natuurlijk klinkende gesproken versie van de opgegeven tekst.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Synthetiseer deze tekst naar een duidelijke en nauwkeurige audio-output.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, lees deze tekst hardop voor.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer spraak van dit.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Zet de volledige tekst om in spraak, met behoud van juiste intonatie, pauzes en klemtoon voor een natuurlijke uitvoering.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer een hoogwaardige gesproken versie van de tekst, met nuances, interpunctie en expressieve toon.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Tekst naar spraak.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lees deze tekst voor.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tts_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "s2st": {
+    "basic": [
+      {
+        "text": "Gelieve deze clip naar het Nederlands om te zetten in spraak.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Zet de gesproken inhoud om in Nederlandse audio.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Produceer een gesproken vertaling van deze opname in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer een nauwkeurige Nederlandse spraakversie van de opgegeven opname.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je dit omzetten naar Nederlandse audio?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Laat deze clip in het Nederlands spreken.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister naar de volledige opname en lever een natuurlijke, contextueel nauwkeurige gesproken vertaling in het Nederlands, met behoud van toon en betekenis.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer een hoogwaardige Nederlandse spraakversie van deze opname, met behoud van intonatie, klemtoon en expressieve aanwijzingen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Vertaal naar Nederlandse spraak.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "S2ST: Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_s2st_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "mt": {
+    "basic": [
+      {
+        "text": "Vertaal deze tekst in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Zet deze tekst om in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Geef een nauwkeurige vertaling van de volgende tekst in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vertaal deze tekst in het Nederlands, met behoud van betekenis en toon.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je dit in het Nederlands vertalen?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Zet dit voor mij om in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vertaal de volledige tekst in het Nederlands, met behoud van duidelijkheid, context en natuurlijke formulering.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Geef een hoogwaardige vertaling van deze tekst, met behoud van idiomatische uitdrukkingen en de bedoelde betekenis in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Vertaal in het Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "MT: Nederlands.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_mt_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "tsum": {
+    "basic": [
+      {
+        "text": "Gelieve de tekst samen te vatten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Geef een korte samenvatting.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Genereer een beknopte en nauwkeurige samenvatting van de volgende tekst.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Produceer een goed gestructureerde samenvatting van de tekst.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je me de belangrijkste punten van deze tekst vertellen?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lees dit en vat het voor me samen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Maak een uitgebreide samenvatting van de tekst, waarin alle kernideeën, ondersteunende details en conclusies worden meegenomen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Analyseer de tekst en geef een gedetailleerde, goed georganiseerde samenvatting met de belangrijkste punten en belangrijke informatie.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Samenvatten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Geef een korte samenvatting.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_tsum_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "lipread": {
+    "basic": [
+      {
+        "text": "Gelieve de spraak uit de video te transcriberen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Schrijf op wat de persoon in deze video zegt.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Geef een nauwkeurige transcriptie van de spraak op basis van de lipbewegingen van de spreker in deze video.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Analyseer de video en genereer een precieze teksttranscriptie van de gesproken inhoud.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je me vertellen wat er gezegd wordt door naar hun lippen te kijken?",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Bekijk deze video en schrijf de gesproken woorden op.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Observeer zorgvuldig de lipbewegingen van de spreker gedurende de video en geef een volledige en nauwkeurige transcriptie van alle gesproken woorden.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer een uitgebreide teksttranscriptie op basis van de lipbewegingen in de video, waarbij elk woord en de context zo nauwkeurig mogelijk worden vastgelegd.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transcribeer van lippen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lees van de lippen en schrijf op.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_lipread_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "achap": {
+    "basic": [
+      {
+        "text": "Gelieve de audio in hoofdstukken te verdelen en voor elk hoofdstuk een duidelijke titel te geven. Voeg ook de transcriptie toe, georganiseerd onder elk hoofdstuk. Gebruik Markdown-koppen voor hoofdstuktitels (bijv. ## Hoofdstuktitel) en scheid elk hoofdstuk met een lege regel.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Verdeel deze audio in segmenten en wijs een beschrijvende titel toe aan elk segment. Voeg ook de transcriptie toe, gegroepeerd per segment. Formatteer segmenttitels als Markdown-koppen en zet een lege regel tussen de segmenten.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Analyseer de audio en genereer goed gedefinieerde hoofdstukken met beschrijvende titels op basis van de inhoud, en geef tevens de volledige transcriptie georganiseerd onder de bijbehorende hoofdstukken. Formatteer hoofdstuktitels als Markdown-koppen en scheid elk hoofdstuk met een lege regel.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Segmenteer de audio in logische secties en geef hoofdstukmarkeringen met titels voor elke sectie, samen met de transcriptietekst onder elk hoofdstuk. Gebruik Markdown-koppen voor de hoofdstuktitels en zorg voor een lege regel tussen de hoofdstukken.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hé, kun je deze audio in delen splitsen, elk deel een titel geven en de transcriptie onder elk deel opnemen? Gebruik Markdown-koppen voor de titels en zet een lege regel tussen de delen.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Breek de audio voor me op in hoofdstukken, inclusief een titel en de transcriptie voor elk hoofdstuk. Formatteer de titels als Markdown-koppen en scheid elk hoofdstuk met een lege regel.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Luister naar de audio en verdeel deze in hoofdstukken op basis van functie, onderwerp, sceneovergangen en belangrijke inhoud. Voor elk hoofdstuk, geef een beschrijvende titel en de transcriptie van dat hoofdstuk. Gebruik Markdown-koppen voor de hoofdstuktitels (bijv. ## Inleiding) en scheid elk hoofdstuk met een lege regel.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Genereer een gedetailleerde hoofdstukgewijze segmentatie van de audio, beschrijf de inhoud van elke sectie en geef elk hoofdstuk een duidelijke titel. Voeg ook de transcriptie toe, georganiseerd per hoofdstuk. Formatteer hoofdstuktitels als Markdown-koppen (bijv. ## Inleiding) en voeg een lege regel toe tussen hoofdstukken.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transcriptie + Hoofdstukken in Markdown (koppen voor titels, lege regel tussen hoofdstukken).",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Transcriptie met toegevoegde audio-hoofdstukken. Gebruik Markdown-koppen voor hoofdstuktitels en lege regels tussen hoofdstukken.",
+        "female_rec": [
+          "prompts/audio_prompts/nl/nl_female1_achap_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  }
+}
