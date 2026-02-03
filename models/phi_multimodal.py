@@ -60,5 +60,5 @@ def generate(model_processor_config, prompt, example, modality, output_modality,
     
     # Clear CUDA cache before returning
     torch.cuda.empty_cache()
-    
+
     return response

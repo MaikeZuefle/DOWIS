@@ -84,7 +84,7 @@ def main(out_folder, model, task, lang):
     modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
     wavs_folder = None
     if output_modality == "audio":
-        wavs_folder = output_file_path.replace(".jsonl", "wavs")
+        wavs_folder = output_file_path.replace(".jsonl", "_wavs")
         if not os.path.exists(wavs_folder):
             os.makedirs(wavs_folder)
 
@@ -101,8 +101,6 @@ def main(out_folder, model, task, lang):
     logging.info(f"Loading Data.")
     data = load_data(task=task, language=lang)
     input_data, references = data["inputs"], data["references"]
-
-    input_data, references = input_data[0:3], references[0:3]
 
     # Loading Prompts
     logging.info(f"Loading Prompts.")
@@ -193,4 +191,4 @@ if __name__ == "__main__":
     )
 
     # Usage:
-    # python main.py --lang es --model qwen_omni --task MT --out_folder outputs_debug
+    # python main.py --lang es --model phi_multimodal --task ASR --out_folder outputs_debug

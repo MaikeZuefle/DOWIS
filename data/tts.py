@@ -1,16 +1,15 @@
 import os
+from datasets import load_dataset
+from data.utils import FLEURS_LANG_MAP
+
 def load_tts(language):
-    raise NotImplementedError()
 
-    # example in asr.py 
+    if language == "sq":
+        raise ValueError("Albanian is not supported in FLEURS.")
 
-    if language == "":
-        raise ValueError("_ is not supported.")
 
-    base_dir = "data_storage/task"
-    os.makedirs(base_dir, exist_ok=True)
+    fleurs_tts = load_dataset("google/fleurs", FLEURS_LANG_MAP[language], split="test", trust_remote_code=True)
 
-    audio_paths = [] # .wav should be stored in data_storage/task_name (loaded if already there, else download it)
-    references = [] # strings
+    sources = [entry["raw_transcription"] for entry in fleurs_tts]
 
-    return {"inputs" : audio_paths, "references": references}
+    return {"inputs" : sources, "references": sources} 

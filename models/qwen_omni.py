@@ -1,17 +1,14 @@
 import os
 def load_model():
-    from transformers import Qwen3OmniMoeForConditionalGeneration, Qwen3OmniMoeProcessor
+    from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor
 
-    MODEL_PATH = "Qwen/Qwen3-Omni-30B-A3B-Instruct"
-
-    model = Qwen3OmniMoeForConditionalGeneration.from_pretrained(
-        MODEL_PATH,
-        dtype="auto",
+    model = Qwen2_5OmniForConditionalGeneration.from_pretrained(
+        "Qwen/Qwen2.5-Omni-7B",
+        torch_dtype="auto",
         device_map="auto",
         attn_implementation="flash_attention_2",
-    )
-    model.disable_talker()
-    processor = Qwen3OmniMoeProcessor.from_pretrained(MODEL_PATH)
+    ) 
+    processor = Qwen2_5OmniProcessor.from_pretrained("Qwen/Qwen2.5-Omni-7B")
     return model, processor
 
 
@@ -44,11 +41,15 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
     RETURN_AUDIO = output_modality == "audio"
 
     user_conv_content = [input_dict, prompt_dict]
+    if RETURN_AUDIO:
+        system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."
+    else:
+        system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech. Only return the answer requested. Do not include any explanation or introductions."
 
     system_conv = {
         "role": "system",
         "content": [
-            {"type": "text", "text": "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."}
+            {"type": "text", "text": system_prompt}
         ],
     }
     user_conv = {"role": "user", "content": user_conv_content}
@@ -63,7 +64,11 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
     inputs = inputs.to(model.device).to(model.dtype)
 
     # Inference: Generation of the output text and audio
-    text_ids, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+    if RETURN_AUDIO:
+        text_ids, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+    else:
+        text_ids  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+        audio = None
     text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
 
     # postprocess
@@ -78,6 +83,7 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
 
     # Clear CUDA cache before returning
     torch.cuda.empty_cache()
+
     return response
 
 
