@@ -8,7 +8,6 @@ def load_model():
         MODEL_PATH,
         dtype="auto",
         device_map="auto",
-        
         attn_implementation="flash_attention_2",
     )
     model.disable_talker()
@@ -17,7 +16,7 @@ def load_model():
 
 
 def generate(model_processor, prompt, example, modality, output_modality, out_wav):
-
+    import torch
     from qwen_omni_utils import process_mm_info
     import soundfile as sf
 
@@ -46,28 +45,29 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
 
     user_conv_content = [input_dict, prompt_dict]
 
-    conversations = [{"role": "user", "content": user_conv_content}]
+    system_conv = {
+        "role": "system",
+        "content": [
+            {"type": "text", "text": "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."}
+        ],
+    }
+    user_conv = {"role": "user", "content": user_conv_content}
 
-    text = processor.apply_chat_template(conversations, add_generation_prompt=True, tokenize=False)
-    audios, images, videos = process_mm_info(conversations, use_audio_in_video=USE_AUDIO_IN_VIDEO)
-    inputs = processor(text=text, 
-                    audio=audios, 
-                    images=images, 
-                    videos=videos, 
-                    return_tensors="pt", 
-                    padding=True, 
-                    use_audio_in_video=USE_AUDIO_IN_VIDEO)
+    conversation = [system_conv, user_conv]
+  
+
+    # Preparation for inference
+    text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+    audios, images, videos = process_mm_info(conversation, use_audio_in_video=USE_AUDIO_IN_VIDEO)
+    inputs = processor(text=text, audio=audios, images=images, videos=videos, return_tensors="pt", padding=True, use_audio_in_video=USE_AUDIO_IN_VIDEO)
     inputs = inputs.to(model.device).to(model.dtype)
 
-    text_ids, audio = model.generate(**inputs, 
-                                    thinker_return_dict_in_generate=True,
-                                    use_audio_in_video=USE_AUDIO_IN_VIDEO,
-                                    return_audio=RETURN_AUDIO,
-                                    max_new_tokens=32768)
-    
-    response = processor.batch_decode(text_ids.sequences[:, inputs["input_ids"].shape[1] :],
-                                skip_special_tokens=True,
-                                clean_up_tokenization_spaces=False)[0]
+    # Inference: Generation of the output text and audio
+    text_ids, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+    text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+
+    # postprocess
+    response = text[-1].split("\nassistant")[-1].strip()
 
     if RETURN_AUDIO and audio is not None:
         sf.write(
@@ -76,6 +76,8 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
             samplerate=24000,
         )
 
+    # Clear CUDA cache before returning
+    torch.cuda.empty_cache()
     return response
 
 

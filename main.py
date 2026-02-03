@@ -102,6 +102,8 @@ def main(out_folder, model, task, lang):
     data = load_data(task=task, language=lang)
     input_data, references = data["inputs"], data["references"]
 
+    input_data, references = input_data[0:3], references[0:3]
+
     # Loading Prompts
     logging.info(f"Loading Prompts.")
     prompt_dict = load_prompt(task=task, language=lang)
@@ -191,4 +193,4 @@ if __name__ == "__main__":
     )
 
     # Usage:
-    # python main.py --lang es --model phi_multimodal --task MT --out_folder outputs_debug
+    # python main.py --lang es --model qwen_omni --task MT --out_folder outputs_debug
