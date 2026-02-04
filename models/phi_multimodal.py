@@ -50,7 +50,7 @@ def generate(model_processor_config, prompt, example, modality, output_modality,
     inputs = processor(text=final_prompt, audios=audios, return_tensors='pt').to('cuda:0')
     generate_ids = model.generate(
         **inputs,
-        max_new_tokens=128000,
+        max_new_tokens=4096,
         generation_config=generation_config,
     )
     generate_ids = generate_ids[:, inputs['input_ids'].shape[1]:]
