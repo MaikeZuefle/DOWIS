@@ -4,11 +4,11 @@ import gzip
 import urllib.request
 import xml.etree.ElementTree as ET
 
-MCIF_DOWNLOAD_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/main/"
-MCIF_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/tree/main/MCIF_DATA/LONG_AUDIOS"
+MCIF_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/main/"
 
 def download_audio(base_dir):
-    with urllib.request.urlopen(MCIF_URL) as r:
+    MCIF_LONGAUDIO_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/tree/main/MCIF_DATA/LONG_AUDIOS"
+    with urllib.request.urlopen(MCIF_LONGAUDIO_URL) as r:
         html = r.read().decode("utf-8")
 
     files = []
@@ -22,7 +22,7 @@ def download_audio(base_dir):
         if os.path.exists(out_path):
             continue
         urllib.request.urlretrieve(
-            f"{MCIF_DOWNLOAD_URL+"MCIF_DATA/LONG_AUDIOS"}/{filename}", out_path)
+            f"{MCIF_URL+"MCIF_DATA/LONG_AUDIOS"}/{filename}", out_path)
     print("Done.")
 
 
@@ -36,7 +36,7 @@ def load_ssum(language):
     download_audio(base_dir)
 
     file_name = f"MCIF.long.{language}.ref.xml.gz"
-    url = MCIF_DOWNLOAD_URL + f"{file_name}?download=true"
+    url = MCIF_URL + f"{file_name}?download=true"
 
     audio_paths = []; references = []
 
