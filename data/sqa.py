@@ -1,4 +1,5 @@
 import os
+import csv
 from datasets import load_dataset
 from data.ssum import download_audio
 import gzip
@@ -15,6 +16,7 @@ def load_sqa(language):
         raise ValueError("Only English, Italian, and German languages are supported for SQA.")
 
     base_dir = "data_storage/mcif"
+    questions_dir = os.path.join(base_dir, "questions")
     os.makedirs(base_dir, exist_ok=True)
 
     download_audio(base_dir)
@@ -48,12 +50,20 @@ def load_sqa(language):
             question = entry.replace(qa_starting_prompt[language], "")
             sqa_samples[idx]["question"] = question
 
+    with open(os.path.join(base_dir, "questions.tsv"), newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for row in reader:
+            idx = row["idx"]
+            speaker = row["speaker"]
+            sqa_samples[idx]["question_path"] = f"spk{speaker}/{idx}.wav"
+
     samples = []; references = []
     for idx in sqa_samples.keys():
         samples.append({
-            "audio_path": sqa_samples[idx]["audio_path"],
+            "audio_path": os.path.join(base_dir, sqa_samples[idx]["audio_path"]),
             "question_text": sqa_samples[idx]["question"],
-            "question_speech": sqa_samples[idx]["....."]
+            "speech_q_m": os.path.join(questions_dir, "male", sqa_samples[idx]["question_path"]),
+            "speech_q_f": os.path.join(questions_dir, "female", sqa_samples[idx]["question_path"])
         })
         references.append(sqa_samples[idx]["reference"])
 

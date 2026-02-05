@@ -46,7 +46,7 @@ def load_ssum(language):
 
             for event, elem in context:
                 if elem.tag == "sample" and elem.attrib.get("task") == "SUM":
-                    audio_paths.append(base_dir + "/" + elem.findtext("audio_path"))
+                    audio_paths.append(os.path.join(base_dir, elem.findtext("audio_path")))
                     references.append(elem.findtext("reference"))
                     elem.clear()
     return {"inputs": audio_paths, "references": references}
