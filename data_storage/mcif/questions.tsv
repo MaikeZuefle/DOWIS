@@ -1,0 +1,221 @@
+idx	question
+0	What are the main data sources for language models?
+1	What are the affiliations of the authors of the paper?
+4	What is the name of the speaker?
+5	Which model did they use to obtain the 82%-87% accuracy?
+7	Do CoNLL-2003 taggers still work?
+8	What is the novelty of the proposed human evaluation method?
+9	What does the success of the existing weakly supervised approach heavily rely on?
+10	What kind of advances can be done to improve the score?
+12	How many authors are involved in the paper?
+15	How many authors are involved in the paper?
+16	Which domains are simplified more?
+18	What is the example of the preference for shorter left conjuncts?
+20	Can I use the models for my research?
+21	DEplain-web contains documents from the web. Which type of content is inside DEplain-apa?
+22	Which factors lead to good generalization?
+24	How was the tendency for left conjuncts to be shorter measured?
+25	How were the experiments designed to study the effect of the governor’s position?
+26	How well does a baseline classifier work training on imbalanced data?
+27	How many authors are involved in the paper?
+28	What are the characters' names in the example conversation?
+29	On which discourse phenomena do context-aware MT models improve over context-agnostic ones?
+31	What are the affiliations of the authors of the paper?
+33	How exactly does the introduced framework quantify the positionality?
+37	What was the finding of the previous study where human subjects were given the same persona prompts?
+38	Which sources of data were used in this study?
+39	How many authors are involved in the paper?
+40	What are some closely related tasks for cognitive dissonance?
+42	How many authors are involved in the paper?
+43	How many authors are involved in the paper?
+44	How does the introduced framework differ from the previous works?
+45	Which of the three compared setups overlaps the most with the lexicon of stereotypes?
+46	Which commercial systems were compared?
+48	How many authors are involved in the paper?
+49	Up to how many tokens context length were MPP evaluations performed?
+51	Which domains did they include in their dataset?
+52	What is the definition of positionality in general?
+53	What is the name of the speaker?
+55	Does EDAtt adapt an existing offline ST model?
+56	How many authors are involved in the paper?
+57	Does the tested model work on the test suite?
+58	Which three variants of KITMUS are there?
+60	What are the affiliations of the authors of the paper?
+61	What is the last research question?
+63	How does the metric sensitivity work?
+64	What is the name of the speaker?
+65	Does greater sensitivity indicate improved model performance, or does it suggest the opposite?
+68	What kind of linguistic context do models receive during pretraining?
+69	How many clean validation samples are typically needed for good performance in WSL?
+70	What are the affiliations of the authors of the paper?
+72	Why is there a need to develop new methods for measuring media biases?
+73	What is the name of the speaker?
+76	What does the political bias propagation pipeline look like?
+78	Does the simplification process differ for DEplain-apa and web?
+79	Is Coscript publicly available?
+80	How exactly is the watermark inserted into the text?
+81	What are the affiliations of the authors of the paper?
+83	Can encoder-decoder models such as mt5 improve by training on a mixture of languages?
+85	What is an example of constrained language planning?
+86	How do they make sure of the covertness of their method?
+87	How does the work use existing PLMs to build a new one?
+88	Which country is GPT-4 the least aligned with?
+89	On which example sentence does the speaker show how the model leverages knowledge learned though the attention mechanism?
+91	How does the amount of tasks impact the model performance?
+92	Name three treeless baselines that the authors compare their method with.
+93	In what relation are the two co-authors with the first author?
+95	Who is the first author of PaLM?
+97	How many problems of SimulST does the speaker mention?
+98	What is an effective way to mitigate social and political biases in datasets when training NLP models?
+101	How good is the fluency of PaLM?
+102	What are the important properties of a watermarking method?
+103	Which are the 14 different languages into which the English TED talks have been translated?
+104	How many instances are sampled from one dataset for reannotating?
+105	Which distance metrics are used for measuring the difference between benign and backdoor datasets?
+107	How were the multilingual encoder-based models used for this task?
+111	How do the authors decide what moderate-frequency words are?
+115	What speech segment size does the approach use?
+116	In the example with Servin and Kea, what entity-specific knowledge is needed?
+117	What is the most important factor between the example quality and the similarity to the source sentence?
+119	Which language models does the paper focus on in the extended experiments?
+120	Does the model use attention scores from a specific layer or combine the scores from several layers?
+121	What are the examples of direct inference?
+122	What are the affiliations of the authors of the paper?
+125	How many authors are involved in the paper?
+126	Was translating the natural language query using a machine translation model before semantic parsing considered as a baseline?
+129	What example did the authors give as a marked group?
+130	Which model architectures do not generalize well?
+131	What are the names of the testing datasets?
+132	How many authors are involved in the paper?
+133	Does the author work with multiple modalities or only text?
+138	What do the authors claim is an understudied area in NLU?
+139	What are the names of the speakers?
+140	Did Coscript undergo any quality checks?
+141	What are the limits of existing resources for on context-dependent translation?
+143	To which existing SimulST policies is the approach compared?
+144	What are the affiliations of the authors of the paper?
+145	What is the name of the speaker?
+147	How many authors are involved in the paper?
+149	Is the dataset publicly available?
+154	What are the affiliations of the authors of the paper?
+155	What is the name of the speaker?
+160	What type of tokens does the first step of the method map the input tokens to?
+161	How many scripts are represented in Coscript?
+163	What is the best alignment method for DEplain?
+164	What is the benefit of weakly supervised learning?
+167	The documents in DEplain-web were aligned with manual and automatic alignment methods. How was the allocation exactly?
+168	How was the CoNLL++ dataset created?
+171	What are the existing works on this?
+172	Are multilingual LLMs such as Codex or Bloom sufficient for CLSP?
+175	How does the method deal with the ambiguity of permutations?
+176	How is the fairness of a downstream NLP model defined?
+177	What is the name of the speaker?
+178	What is the name of the speaker?
+180	What is the name of the speaker?
+182	What does tropicalism indicate in the context of this paper?
+183	How did the authors create the human-written portrayals of target groups?
+184	What was used to measure context usage in this work?
+185	What is the difference between DrBERT and ChuBERT?
+187	How many authors are involved in the paper?
+188	What is iterative transfer learning?
+189	What is the goal of the dataset?
+190	How can an attacker extract model parameters through an EaaS?
+191	How many authors are involved in the paper?
+193	How many annotators were used to create the initial dataset?
+194	What are the affiliations of the authors of the paper?
+196	What is the example that the governor is on the left?
+197	What are the state-of-the-art models in dialogue systems?
+198	Why do we need to evaluate the models' acceptability throughout the context window?
+199	Did training in multilingual fashion cause performance drop compared to monolingual English model?
+200	Do the annotators know about the entity in advance?
+201	Which MT metrics were used for the evaluation?
+202	Does the regress in generalization impact specific NER types?
+203	Why does positionality in NLP matter?
+204	Were the multilingual LLMs like BLOOM fine-tuned with adapters or full fine-tuning?
+206	Which model do they use for transfer learning?
+207	Which are the recent test sets used to assess the PaLM capabilities?
+208	How many recommendations did the authors propose at last?
+209	How much is the gain of the proposed method over the strongest baseline?
+210	What is the name of the speaker?
+211	Can the results and dataset in the paper be used as a benchmark?
+212	How many smaller models do they experiment with in the paper?
+213	Which model is used as the base model for investigating multi-model instruction tuning?
+218	What are the affiliations of the authors of the paper?
+220	What are the affiliations of the authors of the paper?
+221	Which language pairs were analyzed in the paper?
+223	What is the name of the speaker?
+224	Which models were investigated during the experiments?
+225	From the 62 diverse tasks used in MultiInstruct, how many tasks are used for training and testing purposes?
+226	How many authors are involved in the paper?
+228	Which datasets did the authors experiment on?
+231	What is NACHOS?
+232	What is the name of the speaker?
+234	How much does the prompting strategy impact the results?
+235	What are the affiliations of the authors of the paper?
+236	What are the 5 expert-written instructions?
+237	What do the authors propose to test the models on using information from multiple sources?
+242	What are common evaluation methods for dialogue systems?
+243	How many authors are involved in the paper?
+244	In the example with Servin and Kea, what background knowledge is needed?
+246	Is the code available, and if yes, where?
+248	Are the annotators for NLPositionality balanced in regard to each demographic, i.e., country, gender, etc.?
+249	How were sentences perturbed in the acceptable domain?
+250	What does it mean to have a dimensional evaluation?
+251	What are the affiliations of the authors of the paper?
+255	In which cases, if any, is the form of the prompting important?
+257	Which dialog models did the authors evaluate?
+260	How many authors are involved in the paper?
+261	What are the ideal qualities of a good planner?
+262	How many authors are involved in the paper?
+265	What is the name of the speaker?
+266	What are the affiliations of the authors of the paper?
+268	Which are the most common errors of PaLM?
+270	What are the affiliations of the authors of the paper?
+271	What does CFT stand for in this paper?
+272	How many authors are involved in the paper?
+274	What is the name of the speaker?
+277	If the new method has a name, state that name, otherwise state that it does not have a name.
+278	"What was the author's description of the ""marked words"" method?"
+279	What are the affiliations of the authors of the paper?
+283	What is the name of the first mentioned symmetrical dependency structure? Answer the one including the city name
+286	What is the name of the speaker?
+287	How many authors are involved in the paper?
+288	What datasets can be used to test syntactic phenomena?
+290	What are the abbreviations of the five methods for the first research question?
+291	On which tasks is the model evaluated?
+294	On which data is CamemBERT initially trained?
+295	What is the name of the speaker?
+298	Which findings led to the conclusion that the temporal drift is the main cause of performance loss?
+302	Why is it necessary to permute the tokens for the output sequence?
+303	Why did the authors recommend that model owners should increase transparency about bias mitigation methods?
+304	What are minimal-pair unacceptable inputs?
+307	What evaluation metrics did the authors use?
+309	Which metric was used for measuring inter-annotator agreement?
+310	Which domain was chosen to add completely unrelated sentences to the unacceptable and acceptable queries?
+311	What are the affiliations of the authors of the paper?
+312	How does MultiInstruct differ from other benchmarks?
+313	How many authors are involved in the paper?
+314	What is the definition of binary coordination?
+315	How long, on average, were the prompts used in this study?
+316	What are the implications of the findings on the smaller T5 model?
+319	Which learning strategies are investigated in the work?
+320	How big is the factor of overfitting due to test reuse specifically?
+321	How was the quality of the simplification evaluated?
+324	Do language models have different political biases?
+326	What is cognitive dissonance?
+328	Which language model is the most liberal?
+330	Does cumulative training perform better than iterative when doing active learning?
+331	What is the name of the speaker?
+332	Where was the data taken from in the MuDa benchmark?
+335	What is the name of the speaker?
+336	What is cross-lingual transfer?
+339	What are the affiliations of the authors of the paper?
+341	Which latency measures do the authors use?
+344	What are the drawbacks of tree-based methods?
+346	What are the affiliations of the authors of the paper?
+352	What does ABC-Eval stand for?
+354	Until which year is the performance delta between CoNLL-2003 and CoNLL++ higher than 5 percentage points?
+356	What are the affiliations of the authors of the paper?
+357	What is the name of the speaker?
+358	How many authors are involved in the paper?
+359	To which dedicated simulST architecture is the approach compared?
