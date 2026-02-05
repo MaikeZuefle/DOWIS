@@ -191,4 +191,4 @@ if __name__ == "__main__":
     )
 
     # Usage:
-    # python main.py --lang es --model phi_multimodal --task ASR --out_folder outputs_debug
+    # python main.py --lang en --model phi_multimodal --task TSUM --out_folder outputs_debug
