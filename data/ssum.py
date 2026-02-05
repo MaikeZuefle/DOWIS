@@ -28,7 +28,7 @@ def download_audio(base_dir):
 
 def load_ssum(language):
     if language not in ["en", "it", "de"]:
-        raise ValueError("Only English, Italian, and German languages are supported for SQA.")
+        raise ValueError("Only English, Italian, and German languages are supported for SSUM.")
 
     base_dir = "data_storage/mcif"
     os.makedirs(base_dir, exist_ok=True)
