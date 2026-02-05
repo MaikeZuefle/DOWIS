@@ -191,4 +191,4 @@ if __name__ == "__main__":
     )
 
     # Usage:
-    # python main.py --lang es --model phi_multimodal --task S2ST --out_folder outputs_debug
+    # python main.py --lang es --model qwen_omni --task S2ST --out_folder outputs_debug
