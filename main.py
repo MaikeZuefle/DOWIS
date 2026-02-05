@@ -136,7 +136,6 @@ def main(out_folder, model, task, lang):
             text_prompt = {"prompt_modality": "text", "prompt": p["text"]}
             out["predicted"][prompt_type]["text_prompt"]  = generate(model_instance, text_prompt, x, modality, output_modality, out_wav=t_wav)
 
-            
             # sample one speaker (most tasks have only speaker per gender, but some have two)
             f_len, m_len = len(p["female_rec"]), len(p["male_rec"])
             num_audio_prompts = min(f_len, m_len) if f_len > 0 and m_len > 0 else max(f_len, m_len)
@@ -148,10 +147,16 @@ def main(out_folder, model, task, lang):
                 # audio prompts generation
                 if  p["female_rec"]:
                     f_audio_prompt = {"prompt_modality": "audio", "prompt": p["female_rec"][speaker_idx]}
+                    # in SQA, we have to match the gender of the question with that of the prompt
+                    if x is dict:
+                        x["question_speech"] = x["speech_q_f"]
                     out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality, out_wav=fa_wav)
 
                 if p["male_rec"]:
                     m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
+                    # in SQA, we have to match the gender of the question with that of the prompt
+                    if x is dict:
+                        x["question_speech"] = x["speech_q_m"]
                     out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality, out_wav=ma_wav)
 
         f_out.write(json.dumps(out, ensure_ascii=False) + "\n")
