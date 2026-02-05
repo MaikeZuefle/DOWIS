@@ -24,7 +24,7 @@ def load_tsum(language):
             context = ET.iterparse(gz, events=("end",))
             for event, elem in context:
                 if elem.tag == "sample" and elem.attrib.get("task") == "SUM":
-                    sum_samples[f"{elem.attrib.get("id")}"] = {
+                    sum_samples[f"{elem.attrib.get('id')}"] = {
                         "reference": elem.findtext("reference")
                     }
                     elem.clear()

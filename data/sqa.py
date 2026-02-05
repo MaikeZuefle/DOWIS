@@ -37,7 +37,7 @@ def load_sqa(language):
             context = ET.iterparse(gz, events=("end",))
             for event, elem in context:
                 if elem.tag == "sample" and elem.attrib.get("task") == "QA":
-                    sqa_samples[f"{elem.attrib.get("id")}"] = {
+                    sqa_samples[f"{elem.attrib.get('id')}"] = {
                         "audio_path": elem.findtext("audio_path"),
                         "reference": elem.findtext("reference")
                     }
