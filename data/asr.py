@@ -16,8 +16,9 @@ def load_asr(language):
     audio_paths = [];  references = []
 
     for idx, entry in enumerate(fleurs_asr):
+        fleurs_idx = entry["id"]
         wav_path = os.path.join(
-            base_dir, f"fleurs_{language}_{idx}.wav"
+            base_dir, f"fleurs_{language}_{fleurs_idx}.wav"
         )
 
         if not os.path.exists(wav_path):

@@ -84,7 +84,7 @@ def main(out_folder, model, task, lang):
     modality, output_modality = TASK_MODALITY_MAPPER[task]["modality"], TASK_MODALITY_MAPPER[task]["output_modality"]
     wavs_folder = None
     if output_modality == "audio":
-        wavs_folder = output_file_path.replace(".jsonl", "wavs")
+        wavs_folder = output_file_path.replace(".jsonl", "_wavs")
         if not os.path.exists(wavs_folder):
             os.makedirs(wavs_folder)
 
@@ -164,7 +164,7 @@ def main(out_folder, model, task, lang):
 
 
 if __name__ == "__main__":
-    LANGS = ["sq", "cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
+    LANGS = ["cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sq", "sv"]
     MODALITIES = ["text", "audio"]
     TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SLU", "SQA", "SSUM", "ST", "TSUM", "TTS"]
     MODELS = ["phi_multimodal", "qwen_omni"]
@@ -191,4 +191,4 @@ if __name__ == "__main__":
     )
 
     # Usage:
-    # python main.py --lang en --model phi_multimodal --task TSUM --out_folder outputs_debug
+    # python main.py --lang es --model phi_multimodal --task S2ST --out_folder outputs_debug

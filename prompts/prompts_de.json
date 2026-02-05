@@ -8,7 +8,8 @@
           "prompts/audio_prompts/de/de_female2_asr_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_asr_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_asr_basic_1.wav"
         ]
       },
       {
@@ -18,7 +19,8 @@
           "prompts/audio_prompts/de/de_female2_asr_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_asr_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_asr_basic_2.wav"
         ]
       }
     ],
@@ -30,7 +32,8 @@
           "prompts/audio_prompts/de/de_female2_asr_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_asr_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_asr_formal_1.wav"
         ]
       },
       {
@@ -40,7 +43,8 @@
           "prompts/audio_prompts/de/de_female2_asr_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_asr_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_asr_formal_2.wav"
         ]
       }
     ],
@@ -52,7 +56,8 @@
           "prompts/audio_prompts/de/de_female2_asr_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_asr_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_asr_informal_1.wav"
         ]
       },
       {
@@ -62,7 +67,8 @@
           "prompts/audio_prompts/de/de_female2_asr_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_asr_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_asr_informal_2.wav"
         ]
       }
     ],
@@ -74,7 +80,8 @@
           "prompts/audio_prompts/de/de_female2_asr_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_asr_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_asr_detailed_1.wav"
         ]
       },
       {
@@ -84,7 +91,8 @@
           "prompts/audio_prompts/de/de_female2_asr_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_asr_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_asr_detailed_2.wav"
         ]
       }
     ],
@@ -96,7 +104,8 @@
           "prompts/audio_prompts/de/de_female2_asr_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_asr_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_asr_short_1.wav"
         ]
       },
       {
@@ -106,7 +115,8 @@
           "prompts/audio_prompts/de/de_female2_asr_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_asr_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_asr_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_asr_short_2.wav"
         ]
       }
     ]
@@ -120,7 +130,8 @@
           "prompts/audio_prompts/de/de_female2_st_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_st_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_st_basic_1.wav"
         ]
       },
       {
@@ -130,7 +141,8 @@
           "prompts/audio_prompts/de/de_female2_st_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_st_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_st_basic_2.wav"
         ]
       }
     ],
@@ -142,7 +154,8 @@
           "prompts/audio_prompts/de/de_female2_st_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_st_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_st_formal_1.wav"
         ]
       },
       {
@@ -152,7 +165,8 @@
           "prompts/audio_prompts/de/de_female2_st_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_st_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_st_formal_2.wav"
         ]
       }
     ],
@@ -164,7 +178,8 @@
           "prompts/audio_prompts/de/de_female2_st_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_st_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_st_informal_1.wav"
         ]
       },
       {
@@ -174,7 +189,8 @@
           "prompts/audio_prompts/de/de_female2_st_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_st_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_st_informal_2.wav"
         ]
       }
     ],
@@ -186,7 +202,8 @@
           "prompts/audio_prompts/de/de_female2_st_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_st_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_st_detailed_1.wav"
         ]
       },
       {
@@ -196,7 +213,8 @@
           "prompts/audio_prompts/de/de_female2_st_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_st_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_st_detailed_2.wav"
         ]
       }
     ],
@@ -208,7 +226,8 @@
           "prompts/audio_prompts/de/de_female2_st_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_st_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_st_short_1.wav"
         ]
       },
       {
@@ -218,7 +237,8 @@
           "prompts/audio_prompts/de/de_female2_st_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_st_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_st_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_st_short_2.wav"
         ]
       }
     ]
@@ -232,7 +252,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_basic_1.wav"
         ]
       },
       {
@@ -242,7 +263,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_basic_2.wav"
         ]
       }
     ],
@@ -254,7 +276,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_formal_1.wav"
         ]
       },
       {
@@ -264,7 +287,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_formal_2.wav"
         ]
       }
     ],
@@ -276,7 +300,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_informal_1.wav"
         ]
       },
       {
@@ -286,7 +311,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_informal_2.wav"
         ]
       }
     ],
@@ -298,7 +324,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_detailed_1.wav"
         ]
       },
       {
@@ -308,7 +335,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_detailed_2.wav"
         ]
       }
     ],
@@ -320,7 +348,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_short_1.wav"
         ]
       },
       {
@@ -330,7 +359,8 @@
           "prompts/audio_prompts/de/de_female2_sqa_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_sqa_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_sqa_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_sqa_short_2.wav"
         ]
       }
     ]
@@ -344,7 +374,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_basic_1.wav"
         ]
       },
       {
@@ -354,7 +385,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_basic_2.wav"
         ]
       }
     ],
@@ -366,7 +398,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_formal_1.wav"
         ]
       },
       {
@@ -376,7 +409,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_formal_2.wav"
         ]
       }
     ],
@@ -388,7 +422,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_informal_1.wav"
         ]
       },
       {
@@ -398,7 +433,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_informal_2.wav"
         ]
       }
     ],
@@ -410,7 +446,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_detailed_1.wav"
         ]
       },
       {
@@ -420,7 +457,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_detailed_2.wav"
         ]
       }
     ],
@@ -432,7 +470,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_short_1.wav"
         ]
       },
       {
@@ -442,7 +481,8 @@
           "prompts/audio_prompts/de/de_female2_ssum_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_ssum_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_ssum_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_ssum_short_2.wav"
         ]
       }
     ]
@@ -456,7 +496,8 @@
           "prompts/audio_prompts/de/de_female2_slu_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_slu_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_slu_basic_1.wav"
         ]
       },
       {
@@ -466,7 +507,8 @@
           "prompts/audio_prompts/de/de_female2_slu_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_slu_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_slu_basic_2.wav"
         ]
       }
     ],
@@ -478,7 +520,8 @@
           "prompts/audio_prompts/de/de_female2_slu_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_slu_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_slu_formal_1.wav"
         ]
       },
       {
@@ -488,7 +531,8 @@
           "prompts/audio_prompts/de/de_female2_slu_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_slu_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_slu_formal_2.wav"
         ]
       }
     ],
@@ -500,7 +544,8 @@
           "prompts/audio_prompts/de/de_female2_slu_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_slu_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_slu_informal_1.wav"
         ]
       },
       {
@@ -510,7 +555,8 @@
           "prompts/audio_prompts/de/de_female2_slu_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_slu_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_slu_informal_2.wav"
         ]
       }
     ],
@@ -522,7 +568,8 @@
           "prompts/audio_prompts/de/de_female2_slu_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_slu_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_slu_detailed_1.wav"
         ]
       },
       {
@@ -532,7 +579,8 @@
           "prompts/audio_prompts/de/de_female2_slu_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_slu_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_slu_detailed_2.wav"
         ]
       }
     ],
@@ -544,7 +592,8 @@
           "prompts/audio_prompts/de/de_female2_slu_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_slu_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_slu_short_1.wav"
         ]
       },
       {
@@ -554,7 +603,8 @@
           "prompts/audio_prompts/de/de_female2_slu_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_slu_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_slu_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_slu_short_2.wav"
         ]
       }
     ]
@@ -568,7 +618,8 @@
           "prompts/audio_prompts/de/de_female2_tts_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_tts_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_tts_basic_1.wav"
         ]
       },
       {
@@ -578,7 +629,8 @@
           "prompts/audio_prompts/de/de_female2_tts_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_tts_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_tts_basic_2.wav"
         ]
       }
     ],
@@ -590,7 +642,8 @@
           "prompts/audio_prompts/de/de_female2_tts_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_tts_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_tts_formal_1.wav"
         ]
       },
       {
@@ -600,7 +653,8 @@
           "prompts/audio_prompts/de/de_female2_tts_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_tts_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_tts_formal_2.wav"
         ]
       }
     ],
@@ -612,7 +666,8 @@
           "prompts/audio_prompts/de/de_female2_tts_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_tts_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_tts_informal_1.wav"
         ]
       },
       {
@@ -622,7 +677,8 @@
           "prompts/audio_prompts/de/de_female2_tts_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_tts_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_tts_informal_2.wav"
         ]
       }
     ],
@@ -634,7 +690,8 @@
           "prompts/audio_prompts/de/de_female2_tts_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_tts_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_tts_detailed_1.wav"
         ]
       },
       {
@@ -644,7 +701,8 @@
           "prompts/audio_prompts/de/de_female2_tts_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_tts_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_tts_detailed_2.wav"
         ]
       }
     ],
@@ -656,7 +714,8 @@
           "prompts/audio_prompts/de/de_female2_tts_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_tts_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_tts_short_1.wav"
         ]
       },
       {
@@ -666,7 +725,8 @@
           "prompts/audio_prompts/de/de_female2_tts_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tts_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_tts_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_tts_short_2.wav"
         ]
       }
     ]
@@ -680,7 +740,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_basic_1.wav"
         ]
       },
       {
@@ -690,7 +751,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_basic_2.wav"
         ]
       }
     ],
@@ -702,7 +764,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_formal_1.wav"
         ]
       },
       {
@@ -712,7 +775,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_formal_2.wav"
         ]
       }
     ],
@@ -724,7 +788,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_informal_1.wav"
         ]
       },
       {
@@ -734,7 +799,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_informal_2.wav"
         ]
       }
     ],
@@ -746,7 +812,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_detailed_1.wav"
         ]
       },
       {
@@ -756,7 +823,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_detailed_2.wav"
         ]
       }
     ],
@@ -768,7 +836,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_short_1.wav"
         ]
       },
       {
@@ -778,7 +847,8 @@
           "prompts/audio_prompts/de/de_female2_s2st_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_s2st_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_s2st_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_s2st_short_2.wav"
         ]
       }
     ]
@@ -792,7 +862,8 @@
           "prompts/audio_prompts/de/de_female2_mt_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_mt_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_mt_basic_1.wav"
         ]
       },
       {
@@ -802,7 +873,8 @@
           "prompts/audio_prompts/de/de_female2_mt_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_mt_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_mt_basic_2.wav"
         ]
       }
     ],
@@ -814,7 +886,8 @@
           "prompts/audio_prompts/de/de_female2_mt_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_mt_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_mt_formal_1.wav"
         ]
       },
       {
@@ -824,7 +897,8 @@
           "prompts/audio_prompts/de/de_female2_mt_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_mt_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_mt_formal_2.wav"
         ]
       }
     ],
@@ -836,7 +910,8 @@
           "prompts/audio_prompts/de/de_female2_mt_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_mt_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_mt_informal_1.wav"
         ]
       },
       {
@@ -846,7 +921,8 @@
           "prompts/audio_prompts/de/de_female2_mt_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_mt_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_mt_informal_2.wav"
         ]
       }
     ],
@@ -858,7 +934,8 @@
           "prompts/audio_prompts/de/de_female2_mt_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_mt_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_mt_detailed_1.wav"
         ]
       },
       {
@@ -868,7 +945,8 @@
           "prompts/audio_prompts/de/de_female2_mt_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_mt_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_mt_detailed_2.wav"
         ]
       }
     ],
@@ -880,7 +958,8 @@
           "prompts/audio_prompts/de/de_female2_mt_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_mt_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_mt_short_1.wav"
         ]
       },
       {
@@ -890,7 +969,8 @@
           "prompts/audio_prompts/de/de_female2_mt_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_mt_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_mt_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_mt_short_2.wav"
         ]
       }
     ]
@@ -904,7 +984,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_basic_1.wav"
         ]
       },
       {
@@ -914,7 +995,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_basic_2.wav"
         ]
       }
     ],
@@ -926,7 +1008,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_formal_1.wav"
         ]
       },
       {
@@ -936,7 +1019,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_formal_2.wav"
         ]
       }
     ],
@@ -948,7 +1032,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_informal_1.wav"
         ]
       },
       {
@@ -958,7 +1043,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_informal_2.wav"
         ]
       }
     ],
@@ -970,7 +1056,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_detailed_1.wav"
         ]
       },
       {
@@ -980,7 +1067,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_detailed_2.wav"
         ]
       }
     ],
@@ -992,7 +1080,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_short_1.wav"
         ]
       },
       {
@@ -1002,7 +1091,8 @@
           "prompts/audio_prompts/de/de_female2_tsum_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_tsum_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_tsum_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_tsum_short_2.wav"
         ]
       }
     ]
@@ -1016,7 +1106,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_basic_1.wav"
         ]
       },
       {
@@ -1026,7 +1117,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_basic_2.wav"
         ]
       }
     ],
@@ -1038,7 +1130,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_formal_1.wav"
         ]
       },
       {
@@ -1048,7 +1141,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_formal_2.wav"
         ]
       }
     ],
@@ -1060,7 +1154,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_informal_1.wav"
         ]
       },
       {
@@ -1070,7 +1165,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_informal_2.wav"
         ]
       }
     ],
@@ -1082,7 +1178,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_detailed_1.wav"
         ]
       },
       {
@@ -1092,7 +1189,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_detailed_2.wav"
         ]
       }
     ],
@@ -1104,7 +1202,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_short_1.wav"
         ]
       },
       {
@@ -1114,7 +1213,8 @@
           "prompts/audio_prompts/de/de_female2_lipread_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_lipread_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_lipread_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_lipread_short_2.wav"
         ]
       }
     ]
@@ -1128,7 +1228,8 @@
           "prompts/audio_prompts/de/de_female2_achap_basic_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_basic_1.wav"
+          "prompts/audio_prompts/de/de_male1_achap_basic_1.wav",
+          "prompts/audio_prompts/de/de_male2_achap_basic_1.wav"
         ]
       },
       {
@@ -1138,7 +1239,8 @@
           "prompts/audio_prompts/de/de_female2_achap_basic_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_basic_2.wav"
+          "prompts/audio_prompts/de/de_male1_achap_basic_2.wav",
+          "prompts/audio_prompts/de/de_male2_achap_basic_2.wav"
         ]
       }
     ],
@@ -1150,7 +1252,8 @@
           "prompts/audio_prompts/de/de_female2_achap_formal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_formal_1.wav"
+          "prompts/audio_prompts/de/de_male1_achap_formal_1.wav",
+          "prompts/audio_prompts/de/de_male2_achap_formal_1.wav"
         ]
       },
       {
@@ -1160,7 +1263,8 @@
           "prompts/audio_prompts/de/de_female2_achap_formal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_formal_2.wav"
+          "prompts/audio_prompts/de/de_male1_achap_formal_2.wav",
+          "prompts/audio_prompts/de/de_male2_achap_formal_2.wav"
         ]
       }
     ],
@@ -1172,7 +1276,8 @@
           "prompts/audio_prompts/de/de_female2_achap_informal_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_informal_1.wav"
+          "prompts/audio_prompts/de/de_male1_achap_informal_1.wav",
+          "prompts/audio_prompts/de/de_male2_achap_informal_1.wav"
         ]
       },
       {
@@ -1182,7 +1287,8 @@
           "prompts/audio_prompts/de/de_female2_achap_informal_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_informal_2.wav"
+          "prompts/audio_prompts/de/de_male1_achap_informal_2.wav",
+          "prompts/audio_prompts/de/de_male2_achap_informal_2.wav"
         ]
       }
     ],
@@ -1194,7 +1300,8 @@
           "prompts/audio_prompts/de/de_female2_achap_detailed_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_detailed_1.wav"
+          "prompts/audio_prompts/de/de_male1_achap_detailed_1.wav",
+          "prompts/audio_prompts/de/de_male2_achap_detailed_1.wav"
         ]
       },
       {
@@ -1204,7 +1311,8 @@
           "prompts/audio_prompts/de/de_female2_achap_detailed_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_detailed_2.wav"
+          "prompts/audio_prompts/de/de_male1_achap_detailed_2.wav",
+          "prompts/audio_prompts/de/de_male2_achap_detailed_2.wav"
         ]
       }
     ],
@@ -1216,7 +1324,8 @@
           "prompts/audio_prompts/de/de_female2_achap_short_1.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_short_1.wav"
+          "prompts/audio_prompts/de/de_male1_achap_short_1.wav",
+          "prompts/audio_prompts/de/de_male2_achap_short_1.wav"
         ]
       },
       {
@@ -1226,7 +1335,8 @@
           "prompts/audio_prompts/de/de_female2_achap_short_2.wav"
         ],
         "male_rec": [
-          "prompts/audio_prompts/de/de_male1_achap_short_2.wav"
+          "prompts/audio_prompts/de/de_male1_achap_short_2.wav",
+          "prompts/audio_prompts/de/de_male2_achap_short_2.wav"
         ]
       }
     ]

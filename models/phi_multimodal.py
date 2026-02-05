@@ -1,4 +1,3 @@
-
 def load_model():
     from transformers import AutoModelForCausalLM, AutoProcessor, GenerationConfig
     model_path = "microsoft/Phi-4-multimodal-instruct"
@@ -10,13 +9,12 @@ def load_model():
         trust_remote_code=True,
         _attn_implementation='flash_attention_2',
     ).cuda()
-
     generation_config = GenerationConfig.from_pretrained(model_path)
-
     return model, processor, generation_config
 
 def generate(model_processor_config, prompt, input_data, modality, output_modality, out_wav=None):
     import soundfile as sf
+    import torch
 
     if output_modality == "audio":
         raise NotImplementedError("Phi-4-multimodal-instruct does not support speech in output.")
@@ -38,7 +36,6 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
     user_prompt = "<|user|>"
     assistant_prompt = "<|assistant|>"
     prompt_suffix = "<|end|>"
-
     audios = []
     seperator_token = ""
 
@@ -68,15 +65,17 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
 
     final_prompt = f"{user_prompt}{example}{seperator_token}{prompt}{prompt_suffix}{assistant_prompt}"
     inputs = processor(text=final_prompt, audios=audios, return_tensors='pt').to('cuda:0')
-
     generate_ids = model.generate(
         **inputs,
-        max_new_tokens=128000,
+        max_new_tokens=4096,
         generation_config=generation_config,
     )
     generate_ids = generate_ids[:, inputs['input_ids'].shape[1]:]
     response = processor.batch_decode(
         generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
     )[0]
+
+    # Clear CUDA cache before returning
+    torch.cuda.empty_cache()
 
     return response
