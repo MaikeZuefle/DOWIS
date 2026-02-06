@@ -22,7 +22,7 @@ def download_audio(base_dir):
         if os.path.exists(out_path):
             continue
         urllib.request.urlretrieve(
-            f"{MCIF_URL+"MCIF_DATA/LONG_AUDIOS"}/{filename}", out_path)
+            f"{MCIF_URL+'MCIF_DATA/LONG_AUDIOS'}/{filename}", out_path)
     print("Done.")
 
 
