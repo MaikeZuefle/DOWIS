@@ -22,13 +22,13 @@ def process_audio_files(input_dir, output_dir):
         print(f"Created directory: {output_dir}")
 
     # Supported formats
-    valid_extensions = (".m4a", ".mp3")
+    valid_extensions = (".m4a", ".mp3", ".wav")
 
     # Get all files with valid extensions
     files = [f for f in os.listdir(input_dir) if f.lower().endswith(valid_extensions)]
 
     if not files:
-        print(f"No .mp3 or .m4a files found in {input_dir}")
+        print(f"No valid files found in {input_dir}")
         return
 
     print(f"Found {len(files)} files. Starting processing...")
