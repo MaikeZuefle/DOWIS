@@ -50,7 +50,6 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
     USE_AUDIO_IN_VIDEO = False
     RETURN_AUDIO = output_modality == "audio"
 
-    user_conv_content = [input_dict, prompt_dict]
     if RETURN_AUDIO:
         system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."
     else:
@@ -62,11 +61,11 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
             {"type": "text", "text": system_prompt}
         ],
     }
-    user_conv = {"role": "user", "content": user_conv_content}
+
     user_conv_content = input_dict + prompt_dict
+    user_conv = {"role": "user", "content": user_conv_content}
 
     conversation = [system_conv, user_conv]
-
 
     # Preparation for inference
     text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
