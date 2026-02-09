@@ -104,7 +104,8 @@ def main(out_folder, model, task, lang):
 
     # Loading Prompts
     logging.info(f"Loading Prompts.")
-    prompt_dict = load_prompt(task=task, language=lang)
+    prompt_lang = lang if task != "S2ST" else "en" # S2ST is en->x
+    prompt_dict = load_prompt(task=task, language=prompt_lang)
 
     # Loading Model
     logging.info(f"Loading Model.")
