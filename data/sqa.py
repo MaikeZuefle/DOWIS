@@ -60,7 +60,8 @@ def load_sqa(language):
     samples = []; references = []
     for idx in sqa_samples.keys():
         samples.append({
-            "audio_path": os.path.join(base_dir, sqa_samples[idx]["audio_path"]),
+            "audio_path": os.path.join(
+                base_dir, "MCIF_DATA/LONG_AUDIOS/", sqa_samples[idx]["audio_path"]),
             "question_text": sqa_samples[idx]["question"],
             "speech_q_m": os.path.join(questions_dir, "male", sqa_samples[idx]["question_path"]),
             "speech_q_f": os.path.join(questions_dir, "female", sqa_samples[idx]["question_path"])

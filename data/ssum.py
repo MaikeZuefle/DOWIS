@@ -1,5 +1,6 @@
 import os
 import gzip
+from huggingface_hub import snapshot_download
 
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -7,24 +8,15 @@ import xml.etree.ElementTree as ET
 MCIF_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/resolve/main/"
 
 def download_audio(base_dir):
-    MCIF_LONGAUDIO_URL = "https://huggingface.co/datasets/FBK-MT/MCIF/tree/main/MCIF_DATA/LONG_AUDIOS"
-    with urllib.request.urlopen(MCIF_LONGAUDIO_URL) as r:
-        html = r.read().decode("utf-8")
-
-    files = []
-    for part in html.split('"'):
-        if part.endswith(".wav"):
-            files.append(os.path.basename(part))
-
     print("Downloading audio...")
-    for filename in sorted(set(files)):
-        out_path = os.path.join(base_dir, filename)
-        if os.path.exists(out_path):
-            continue
-        urllib.request.urlretrieve(
-            f"{MCIF_URL+'MCIF_DATA/LONG_AUDIOS'}/{filename}", out_path)
+    snapshot_download(
+        repo_id="FBK-MT/MCIF",
+        repo_type="dataset",
+        allow_patterns="MCIF_DATA/LONG_AUDIOS/*.wav",
+        local_dir=base_dir,
+        local_dir_use_symlinks=False
+    )
     print("Done.")
-
 
 def load_ssum(language):
     if language not in ["en", "it", "de"]:
@@ -46,7 +38,10 @@ def load_ssum(language):
 
             for event, elem in context:
                 if elem.tag == "sample" and elem.attrib.get("task") == "SUM":
-                    audio_paths.append(os.path.join(base_dir, elem.findtext("audio_path")))
+                    audio_paths.append(
+                        os.path.join(
+                            base_dir, "MCIF_DATA/LONG_AUDIOS/", elem.findtext("audio_path"))
+                    )
                     references.append(elem.findtext("reference"))
                     elem.clear()
     return {"inputs": audio_paths, "references": references}
