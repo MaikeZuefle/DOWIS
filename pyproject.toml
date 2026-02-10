@@ -20,4 +20,6 @@ dependencies = [
 [project.optional-dependencies]
 eval = [
     "jiwer",
+    "unbabel-comet",
+    "bert-score",
 ]

@@ -1,6 +1,6 @@
 LANG="en"
 MODEL="qwen_omni"
-TASK="ASR"
+TASK="SSUM"
 OUT_FOLDER="eval_outputs"
 PREDICTION_FOLDER="outputs"
 

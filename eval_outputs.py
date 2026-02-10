@@ -6,18 +6,10 @@ from collections import defaultdict
 from typing import Dict, List, Any
 from tqdm import tqdm
 
+
 # utils
 from utils import set_up_logging, TASK_MODALITY_MAPPER
-from eval.asr import score_asr
-from eval.achap import score_achap
-from eval.mt import score_mt
-from eval.s2st import score_s2st
-from eval.sqa import score_sqa
-from eval.ssum import score_ssum
-from eval.st import score_st
-from eval.tsum import score_tsum
-from eval.tts import score_tts
-
+from eval.utils import get_score_function
 
 
 class EvaluationResults:
@@ -141,23 +133,6 @@ class EvaluationResults:
         
         return stats
 
-def get_score_function(task):
-    task = task.lower()
-    eval_model = None
-    if task == "asr": score_function = score_asr
-    elif task == "achap": score_function = score_achap
-    elif task == "mt": score_function = score_mt
-    elif task == "s2st": score_function = score_s2st
-    elif task == "sqa": score_function = score_sqa
-    elif task == "ssum": score_function = score_ssum
-    elif task == "st": score_function = score_st
-    elif task == "tsum": score_function = score_tsum
-    elif task == "tts": score_function = score_tts
-    else:
-        raise NotImplementedError()
-
-    return score_function, eval_model
-
 def main(out_folder, model, task, lang, predictions_folder=None):
     
     # Setting paths
@@ -223,32 +198,49 @@ def main(out_folder, model, task, lang, predictions_folder=None):
             reference = sample["ref"]
             predicted = sample["predicted"]
 
+            # Collect all predictions for this sample (up to 15: 5 prompt types × 3 modalities)
+            batch_predictions = []
+            batch_metadata = []  # Store (prompt_type, prompt_modality) for each prediction
+            
             # Iterate over all prompt types (basic, formal, informal, detailed, short)
             for prompt_type, predictions_dict in predicted.items():
                 # Skip metadata fields
                 if prompt_type in ["prompt_number", "spk_number"]:
                     continue
                 
-                # Evaluate text prompt (always present)
+                # Collect text prompt (always present)
                 if "text_prompt" in predictions_dict:
-                    prediction = predictions_dict["text_prompt"]
-                    metrics = evaluate_prediction(prediction, reference, eval_model=eval_model)
-                    eval_results.add_score(prompt_type, "text_prompt", metrics)
+                    batch_predictions.append(predictions_dict["text_prompt"])
+                    batch_metadata.append((prompt_type, "text_prompt"))
                 
-                # Evaluate female audio prompt (if present)
+                # Collect female audio prompt (if present)
                 if "f_audio_prompt" in predictions_dict:
-                    prediction = predictions_dict["f_audio_prompt"]
-                    metrics = evaluate_prediction(prediction, reference, eval_model=eval_model)
-                    eval_results.add_score(prompt_type, "f_audio_prompt", metrics)
+                    batch_predictions.append(predictions_dict["f_audio_prompt"])
+                    batch_metadata.append((prompt_type, "f_audio_prompt"))
                 
-                # Evaluate male audio prompt (if present)
+                # Collect male audio prompt (if present)
                 if "m_audio_prompt" in predictions_dict:
-                    prediction = predictions_dict["m_audio_prompt"]
-                    metrics = evaluate_prediction(prediction, reference, eval_model=eval_model)
-                    eval_results.add_score(prompt_type, "m_audio_prompt", metrics)
+                    batch_predictions.append(predictions_dict["m_audio_prompt"])
+                    batch_metadata.append((prompt_type, "m_audio_prompt"))
+            
+            # Evaluate all predictions for this sample in one batch
+            if batch_predictions:
+                batch_metrics = evaluate_prediction(
+                    batch_predictions, 
+                    reference, 
+                    eval_model=eval_model,
+                    lang=lang,
+                )
                 
-
-    
+                # Add scores back to results using metadata
+                for idx, (prompt_type, prompt_modality) in enumerate(batch_metadata):
+                    # Extract metrics for this specific prediction
+                    sample_metrics = {
+                        metric_name: scores[idx] 
+                        for metric_name, scores in batch_metrics.items()
+                    }
+                    eval_results.add_score(prompt_type, prompt_modality, sample_metrics)
+                    
     logging.info(f"Processed {line_count} samples")
     if error_count > 0:
         logging.warning(f"Encountered {error_count} errors during processing")

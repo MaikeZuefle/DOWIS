@@ -1,4 +1,4 @@
-def score_achap(prediction, reference, eval_model=None):
+def score_achap(predictions, reference, eval_model=None, lang=None):
     raise NotImplementedError
     metrics = {
         "metric1": 0,
