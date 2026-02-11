@@ -98,3 +98,4 @@ run_scripts/
 myjob_phi.sh
 myjob_qwen.sh
 eval_outputs
+myjob_eval.sh
