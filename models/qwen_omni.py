@@ -65,21 +65,22 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
 
     # Inference: Generation of the output text and audio
     if RETURN_AUDIO:
-        text_ids, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
-    else:
-        text_ids  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
-        audio = None
-    text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
-
-    # postprocess
-    response = text[-1].split("\nassistant")[-1].strip()
-
-    if RETURN_AUDIO and audio is not None:
+        _, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+        response = out_wav
         sf.write(
             out_wav,
             audio.reshape(-1).detach().cpu().numpy(),
             samplerate=24000,
         )
+        
+    else:
+        text_ids  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+        audio = None
+        text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+
+        # postprocess
+        response = text[-1].split("\nassistant")[-1].strip()
+
 
     # Clear CUDA cache before returning
     torch.cuda.empty_cache()
