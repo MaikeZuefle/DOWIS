@@ -19,6 +19,9 @@ dependencies = [
 
 [project.optional-dependencies]
 eval = [
+    "torch",
+    "torchaudio",
+    "torchvision",
     "jiwer",
     "unbabel-comet",
     "bert-score",

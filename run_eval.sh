@@ -1,6 +1,6 @@
-LANG="en"
+LANG="de"
 MODEL="qwen_omni"
-TASK="SSUM"
+TASK="S2ST"
 OUT_FOLDER="eval_outputs"
 PREDICTION_FOLDER="outputs"
 

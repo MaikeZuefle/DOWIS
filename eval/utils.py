@@ -16,11 +16,14 @@ def load_comet():
 def load_whisper():
     from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
     import torch
+    torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
+
+    model_id = "openai/whisper-large-v3"
     model = AutoModelForSpeechSeq2Seq.from_pretrained(
-        "openai/whisper-large-v3", torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
+        model_id, dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
     )
-    model.to("device")
+    model = model.to(device)
 
     processor = AutoProcessor.from_pretrained(model_id)
 
@@ -29,12 +32,13 @@ def load_whisper():
         model=model,
         tokenizer=processor.tokenizer,
         feature_extractor=processor.feature_extractor,
-        torch_dtype=torch_dtype,
+        dtype=torch_dtype,
         device=device,
     )
     return pipe
 
 def load_utmos_predictor():
+    import torch
     predictor = torch.hub.load(
         "tarepan/SpeechMOS:v1.2.0", "utmos22_strong", trust_repo=True
     ).to("cuda")

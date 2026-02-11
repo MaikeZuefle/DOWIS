@@ -2,6 +2,7 @@ def score_s2st(prediction, reference, eval_model=None, lang=None):
     asr_model = eval_model[0]
     comet_model = eval_model[1]
     utmos_model = eval_modle[2]
+    breakpoint()
     raise NotImplementedError
     metrics = {
         "UTMOS": 0,
