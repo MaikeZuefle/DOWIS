@@ -1,8 +1,8 @@
 LANG="de"
 MODEL="qwen_omni"
-TASK="S2ST"
+TASK="TTS"
 OUT_FOLDER="eval_outputs"
-PREDICTION_FOLDER="outputs"
+PREDICTION_FOLDER="outputs_debug"
 
 
 python eval_outputs.py \

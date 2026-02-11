@@ -187,7 +187,7 @@ def main(out_folder, model, task, lang, predictions_folder=None):
     error_count = 0
     
     with open(predictions_file_path, "r", encoding="utf-8") as f_in:
-        for line in tqdm(f_in, total=total_lines, desc="Evaluating"):
+        for line_idx, line in tqdm(enumerate(f_in), total=total_lines, desc="Evaluating"):
             line = line.strip()
             if not line:
                 continue
@@ -203,11 +203,20 @@ def main(out_folder, model, task, lang, predictions_folder=None):
             batch_metadata = []  # Store (prompt_type, prompt_modality) for each prediction
             
             # Iterate over all prompt types (basic, formal, informal, detailed, short)
+
             for prompt_type, predictions_dict in predicted.items():
                 # Skip metadata fields
                 if prompt_type in ["prompt_number", "spk_number"]:
                     continue
-                
+
+                if task in ["TTS", "S2ST"]:
+                    # predictions will be the audio paths
+                    a_dir = predictions_file_path.replace(".jsonl", "_wavs")
+                    predictions_dict["text_prompt"] = f"{a_dir}/{line_idx}_{prompt_type}_text_prompt.wav"
+                    predictions_dict["f_audio_prompt"] = f"{a_dir}/{line_idx}_{prompt_type}_f_audio_prompt.wav"
+                    predictions_dict["m_audio_prompt"] = f"{a_dir}/{line_idx}_{prompt_type}_m_audio_prompt.wav"    
+
+
                 # Collect text prompt (always present)
                 if "text_prompt" in predictions_dict:
                     batch_predictions.append(predictions_dict["text_prompt"])

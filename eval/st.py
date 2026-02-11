@@ -1,11 +1,11 @@
-def score_st(predictions, reference, eval_model=None, lang=None):
+def score_st(predictions, source, eval_model=None, lang=None):
 
     is_batch = isinstance(predictions, list)
     if not is_batch: predictions = [predictions]
     
     data = [
         {
-            "src": reference,
+            "src": source,
             "mt": prediction
         }
         for prediction in predictions
