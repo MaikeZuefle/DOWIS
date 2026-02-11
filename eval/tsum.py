@@ -29,5 +29,5 @@ def score_tsum(predictions, reference, eval_model=None, lang=None):
         "BERTScore_R": recall_scores,
         "BERTScore_F1": f1_scores,
     }
-    breakpoint()
+
     return metrics

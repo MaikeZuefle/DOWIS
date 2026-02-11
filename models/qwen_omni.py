@@ -43,6 +43,7 @@ def generate(model_processor, prompt, example, modality, output_modality, out_wa
     user_conv_content = [input_dict, prompt_dict]
     if RETURN_AUDIO:
         system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."
+        user_conv_content.append({"type": "text", "text": "Only return the answer requested. Do not include any explanation or introductions."})
     else:
         system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech. Only return the answer requested. Do not include any explanation or introductions."
 
