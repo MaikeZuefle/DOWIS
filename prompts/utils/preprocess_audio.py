@@ -2,8 +2,8 @@ import os
 from pydub import AudioSegment
 from pydub.silence import detect_nonsilent
 
-AUDIO_DIR = "audio_prompts/fr_female"
-LANGUAGE="fr"
+AUDIO_DIR = "audio_prompts/sv"
+LANGUAGE="sv"
 GENDER="female1"
 IN_FOMRAT="m4a" # "mp3", "m4a" "wav"
 
