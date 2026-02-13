@@ -24,7 +24,7 @@ TASK_LANGUAGES = {
     'ST': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],
     'SQA': ['en'],
     'SSUM': ['en', 'de', 'it'],
-    'TTS': ['en'],
+    'TTS': ['en', 'de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],
     'S2ST': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],
     'MT': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],
     'TSUM': ['en', 'de', 'it'],
