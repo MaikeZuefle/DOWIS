@@ -1,7 +1,7 @@
-LANGS=("ru") # "fr") #"en" "de" "it" "es" "pt" "nl" ) # "ru" "cs" "hu" "sv" "fr"
-MODELS=("qwen_omni" "phi_multimodal") 
+LANGS=("en") 
+MODELS=("qwen_omni")
 
-TASK="ASR"
+TASK="TTS"
 OUT_FOLDER="eval_outputs"
 PREDICTION_FOLDER="outputs"
 

@@ -1,4 +1,4 @@
-LANGS=("en" "de" "it" "es" "pt" "nl"  "ru" "cs" "hu") # "sv" "fr"
+LANGS=("sv") #"en" "de" "it" "es" "pt" "nl"  "ru" "cs" "hu") # "sv" "fr"
 MODELS=("qwen_omni" "phi_multimodal") 
 
 TASK="MT"
