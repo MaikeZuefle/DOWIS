@@ -42,10 +42,11 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
         speech_q = input_data["question_speech"]
         prompt_audio, prompt_samplerate = sf.read(orig_prompt)
         audios.append((prompt_audio, prompt_samplerate))
+        seperator_token += f"<|audio_{len(audios)}|>"
         if isinstance(input_data, dict):
             speech_q_audio, speech_q_samplerate = sf.read(speech_q)
             audios.append((speech_q_audio, speech_q_samplerate))
-        seperator_token += f"<|audio_{len(audios)}|>"
+            seperator_token += f"<|audio_{len(audios)}|>"
         prompt = ""
     elif prompt_modality == "text":
         text_q = input_data["question_text"]
