@@ -55,7 +55,7 @@ The main entry point of the project is `main.py`, which can be executed from the
 
 | Argument | Description | Choices                                             | Default          |
 |--------|-------------|-----------------------------------------------------|------------------|
-| `--lang` | Language to process | sq, cs, de, en, es, fr, hu, it, nl, pt, ru, sv      | cs               |
+| `--lang` | Language to process | cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv      | cs               |
 | `--task` | Task to run | ACHAP, ASR, MT, S2ST, SLU, SQA, SSUM, ST, TSUM, TTS | ACHAP            |
 | `--model` | Model to use | phi_multimodal, qwen_omni                           | phi_multimodal   |
 | `--out_folder` | Output directory | any path                                            | generated_output |
