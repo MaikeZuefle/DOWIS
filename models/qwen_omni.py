@@ -17,25 +17,25 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
     from qwen_omni_utils import process_mm_info
     import soundfile as sf
 
-    # Handle question answering tasks
-    if isinstance(input_data, dict):
-        example = input_data["audio_path"]
-        speech_q = input_data["question_speech"]
-        text_q = input_data["question_text"]
-    else:
-        example = input_data
-
     # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
     orig_prompt = prompt["prompt"]
     model, processor = model_processor
 
+    # Handle question answering tasks
+    if isinstance(input_data, dict):
+        example = input_data["audio_path"]
+    else:
+        example = input_data
+
     # prepare prompts
     if prompt_modality == "audio":
+        speech_q = input_data["question_speech"]
         prompt_dict = [{"type": "audio", "audio": orig_prompt}]
         if isinstance(input_data, dict):
             prompt_dict.append({"type": "audio", "audio": speech_q})
     elif prompt_modality == "text":
+        text_q = input_data["question_text"]
         text_prompt = orig_prompt
         if isinstance(input_data, dict):
             text_prompt += " " + text_q

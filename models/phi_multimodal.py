@@ -19,18 +19,16 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
     if output_modality == "audio":
         raise NotImplementedError("Phi-4-multimodal-instruct does not support speech in output.")
 
-    # Handle question answering tasks
-    if isinstance(input_data, dict):
-        example = input_data["audio_path"]
-        speech_q = input_data["question_speech"]
-        text_q = input_data["question_text"]
-    else:
-        example = input_data
-
     # get (prompt-)modalities and model
     prompt_modality = prompt["prompt_modality"]
     orig_prompt = prompt["prompt"]
     model, processor,  generation_config = model_processor_config
+
+    # Handle question answering tasks
+    if isinstance(input_data, dict):
+        example = input_data["audio_path"]
+    else:
+        example = input_data
 
     # prompts
     user_prompt = "<|user|>"
@@ -41,6 +39,7 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
 
     # prepare prompts
     if prompt_modality == "audio":
+        speech_q = input_data["question_speech"]
         prompt_audio, prompt_samplerate = sf.read(orig_prompt)
         audios.append((prompt_audio, prompt_samplerate))
         if isinstance(input_data, dict):
@@ -49,6 +48,7 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
         seperator_token += f"<|audio_{len(audios)}|>"
         prompt = ""
     elif prompt_modality == "text":
+        text_q = input_data["question_text"]
         prompt = orig_prompt
         if isinstance(input_data, dict):
             prompt += " " + text_q
