@@ -148,14 +148,14 @@ def main(out_folder, model, task, lang):
                 if  p["female_rec"]:
                     f_audio_prompt = {"prompt_modality": "audio", "prompt": p["female_rec"][speaker_idx]}
                     # in SQA, we have to match the gender of the question with that of the prompt
-                    if x is dict:
+                    if isinstance(x, dict):
                         x["question_speech"] = x["speech_q_f"]
                     out["predicted"][prompt_type]["f_audio_prompt"]  = generate(model_instance, f_audio_prompt, x, modality, output_modality, out_wav=fa_wav)
 
                 if p["male_rec"]:
                     m_audio_prompt = {"prompt_modality": "audio", "prompt": p["male_rec"][speaker_idx]}
                     # in SQA, we have to match the gender of the question with that of the prompt
-                    if x is dict:
+                    if isinstance(x, dict):
                         x["question_speech"] = x["speech_q_m"]
                     out["predicted"][prompt_type]["m_audio_prompt"]  = generate(model_instance, m_audio_prompt, x, modality, output_modality, out_wav=ma_wav)
 

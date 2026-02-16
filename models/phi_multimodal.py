@@ -20,7 +20,7 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
         raise NotImplementedError("Phi-4-multimodal-instruct does not support speech in output.")
 
     # Handle question answering tasks
-    if input_data is dict:
+    if isinstance(input_data, dict):
         example = input_data["audio_path"]
         speech_q = input_data["question_speech"]
         text_q = input_data["question_text"]
@@ -43,14 +43,14 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
     if prompt_modality == "audio":
         prompt_audio, prompt_samplerate = sf.read(orig_prompt)
         audios.append((prompt_audio, prompt_samplerate))
-        if input_data is dict:
+        if isinstance(input_data, dict):
             speech_q_audio, speech_q_samplerate = sf.read(speech_q)
             audios.append((speech_q_audio, speech_q_samplerate))
         seperator_token += f"<|audio_{len(audios)}|>"
         prompt = ""
     elif prompt_modality == "text":
         prompt = orig_prompt
-        if input_data is dict:
+        if isinstance(input_data, dict):
             prompt += " " + text_q
 
     # prepare inputs

@@ -18,7 +18,7 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
     import soundfile as sf
 
     # Handle question answering tasks
-    if input_data is dict:
+    if isinstance(input_data, dict):
         example = input_data["audio_path"]
         speech_q = input_data["question_speech"]
         text_q = input_data["question_text"]
@@ -33,19 +33,19 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
     # prepare prompts
     if prompt_modality == "audio":
         prompt_dict = [{"type": "audio", "audio": orig_prompt}]
-        if input_data is dict:
+        if isinstance(input_data, dict):
             prompt_dict.append({"type": "audio", "audio": speech_q})
     elif prompt_modality == "text":
-        prompt_dict = [{"type": "text", "text": orig_prompt}]
-        if input_data is dict:
-            prompt_dict[0]["text"] = prompt_dict[0]["text"] + " " + text_q
+        text_prompt = orig_prompt
+        if isinstance(input_data, dict):
+            text_prompt += " " + text_q
+        prompt_dict = [{"type": "text", "text": text_prompt}]
 
     # prepare inputs
     if modality == "audio":
         input_dict = [{"type": "audio", "audio": example}]
     elif modality == "text":
         input_dict = [{"type": "text", "text": example}]
-        
 
     USE_AUDIO_IN_VIDEO = False
     RETURN_AUDIO = output_modality == "audio"
