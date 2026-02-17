@@ -1,5 +1,5 @@
-LANGS=("en" "de" "it") 
-MODELS=("qwen_omni" "phi_multimodal")
+LANGS=(  "it") #"en" "de"
+MODELS=( "phi_multimodal") # "qwen_omni"
 
 TASK="TSUM"
 OUT_FOLDER="eval_outputs"

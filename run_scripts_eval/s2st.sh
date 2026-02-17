@@ -1,7 +1,7 @@
-LANGS=("sv") # "fr") #"en" "de" "it" "es" "pt" "nl" ) # "ru" "cs" "hu" "sv" "fr" "ru"
-MODELS=("qwen_omni" "phi_multimodal") 
+LANGS=("de" "es" "pt"   "ru" "cs"  "sv" "fr" "hu") # it nl
+MODELS=("qwen_omni") 
 
-TASK="ASR"
+TASK="S2ST"
 OUT_FOLDER="eval_outputs"
 PREDICTION_FOLDER="outputs"
 
