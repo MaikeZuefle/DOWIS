@@ -19,7 +19,11 @@ def score_tts(predictions, reference, eval_model=None, lang=None):
     utmos_model = eval_model[1]
 
     # get ASR-WER
-    transcripts = asr_model(predictions, batch_size=len(predictions))
+    try:
+        transcripts = asr_model(predictions, batch_size=len(predictions), return_timestamps=True)
+    except:
+        transcripts = asr_model(predictions, batch_size=1, return_timestamps=True)
+
     transcripts = [t["text"].strip() for t in transcripts]
     asr_wer_scores = [round(wer(reference, t)*100, 2) for t in transcripts]
 

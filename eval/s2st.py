@@ -10,7 +10,12 @@ def score_s2st(predictions, source, eval_model=None, lang=None):
     utmos_model = eval_model[2]
 
     # get ASR-COMET
-    transcripts = asr_model(predictions, batch_size=len(predictions))
+    # get ASR-WER
+    try:
+        transcripts = asr_model(predictions, batch_size=len(predictions), return_timestamps=True)
+    except:
+        transcripts = asr_model(predictions, batch_size=1, return_timestamps=True)
+
     transcripts = [t["text"].strip() for t in transcripts]
 
     data = [
