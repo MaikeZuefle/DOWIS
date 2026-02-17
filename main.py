@@ -104,7 +104,8 @@ def main(out_folder, model, task, lang):
 
     # Loading Prompts
     logging.info(f"Loading Prompts.")
-    prompt_dict = load_prompt(task=task, language=lang)
+    prompt_lang = lang if task != "S2ST" else "en" # S2ST is en->x
+    prompt_dict = load_prompt(task=task, language=prompt_lang)
 
     # Loading Model
     logging.info(f"Loading Model.")
@@ -113,13 +114,50 @@ def main(out_folder, model, task, lang):
     # Starting Generation
     logging.info(f"Starting Output Generation.")
 
+    # Load existing outputs to skip already processed samples
+    existing_outputs = {}
+    if os.path.exists(output_file_path):
+        logging.info(f"Found existing output file. Loading to skip already processed samples.")
+        try:
+            with open(output_file_path, "r", encoding="utf-8") as f_in:
+                idx = 0
+                for line in f_in:
+                    line = line.strip()
+                    if not line:  # Skip empty lines
+                        continue
+                    try:
+                        existing_out = json.loads(line)
+                        if "ref" in existing_out:
+                            existing_outputs[idx] = existing_out["ref"]
+                            idx += 1
+                    except json.JSONDecodeError as e:
+                        logging.warning(f"Could not parse line: {line[:100]}... Error: {e}")
+                        continue
+            logging.info(f"Found {len(existing_outputs)} already processed samples. Skipping them.")
+        except Exception as e:
+            logging.error(f"Error reading existing output file: {e}")
+            logging.info("Will proceed without skipping any samples.")
+
     f_out = open(output_file_path, "a", encoding="utf-8")
     
+    skipped_count = 0
+    processed_count = 0
+
     for idx, (x, ref) in enumerate(
             tqdm(zip(input_data, references),
                 desc="Generating Outputs",
                 total=len(input_data))
         ):
+
+        # Skip if already processed (check by index and verify reference)
+        if idx in existing_outputs:
+            if existing_outputs[idx] == ref:
+                skipped_count += 1
+                continue
+            else:
+                # Reference mismatch - warn and re-process
+                logging.warning(f"Index {idx}: Reference mismatch! Expected: {ref[:50]}... Found: {existing_outputs[idx][:50]}...")
+                logging.warning(f"Will re-process this sample.")
 
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
@@ -161,9 +199,12 @@ def main(out_folder, model, task, lang):
 
         f_out.write(json.dumps(out, ensure_ascii=False) + "\n")
         f_out.flush()
+        processed_count += 1
 
     f_out.close()
 
+    logging.info(f"Skipped {skipped_count} already processed samples.")
+    logging.info(f"Processed {processed_count} new samples.")
     logging.info(f"Writing Outputs to file {output_file_path}.")
     logging.info("All done.")
 

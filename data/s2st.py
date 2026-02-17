@@ -12,15 +12,12 @@ def load_s2st(language):
     os.makedirs(base_dir, exist_ok=True)
 
     fleurs_s2st = load_dataset("google/fleurs", FLEURS_LANG_MAP[language], split="test", trust_remote_code=True)
-    fleurs_en = load_dataset("google/fleurs", f"en_us", split="test", trust_remote_code=True)
-    en_dict = {entry["id"]: entry for entry in fleurs_en}
 
-    audio_paths = [];  references = []
+    audio_paths = [];  sources = []
 
     for idx, entry in enumerate(fleurs_s2st):
         fleurs_idx = entry["id"]
-        if fleurs_idx not in en_dict:
-            continue
+
         wav_path = os.path.join(
             base_dir, f"fleurs_{language}_{fleurs_idx}.wav"
         )
@@ -30,8 +27,8 @@ def load_s2st(language):
             sr = entry["audio"]["sampling_rate"]
             sf.write(wav_path, audio_array, sr)
 
-        en_entry = en_dict[fleurs_idx]["raw_transcription"]
+        source = entry["raw_transcription"]
         audio_paths.append(wav_path)
-        references.append(en_entry)
+        sources.append(source)
 
-    return {"inputs" : audio_paths, "references": references}
+    return {"inputs" : audio_paths, "references": sources}  # we append sources because we do QE

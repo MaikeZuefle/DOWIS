@@ -52,6 +52,7 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
 
     if RETURN_AUDIO:
         system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."
+        user_conv_content.append({"type": "text", "text": "Only return the answer requested. Do not include any explanation or introductions."})
     else:
         system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech. Only return the answer requested. Do not include any explanation or introductions."
 
@@ -75,21 +76,22 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
 
     # Inference: Generation of the output text and audio
     if RETURN_AUDIO:
-        text_ids, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
-    else:
-        text_ids  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
-        audio = None
-    text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
-
-    # postprocess
-    response = text[-1].split("\nassistant")[-1].strip()
-
-    if RETURN_AUDIO and audio is not None:
+        _, audio  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+        response = out_wav
         sf.write(
             out_wav,
             audio.reshape(-1).detach().cpu().numpy(),
             samplerate=24000,
         )
+        
+    else:
+        text_ids  = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO, return_audio=RETURN_AUDIO)
+        audio = None
+        text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+
+        # postprocess
+        response = text[-1].split("\nassistant")[-1].strip()
+
 
     # Clear CUDA cache before returning
     torch.cuda.empty_cache()
