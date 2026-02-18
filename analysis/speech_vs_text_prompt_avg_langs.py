@@ -1,40 +1,19 @@
 import json
 from pathlib import Path
 from collections import defaultdict
+from utils import TASK_LANGUAGES, MODEL_TASK_LANGUAGES, TASK_METRICS
 
 # Define the structure
 models = ['qwen_omni', 'phi_multimodal']
 tasks = ['ASR', 'MT', 'S2ST', 'SSUM', 'TSUM', 'ST', 'TTS', 'ACHAP', 'SQA']
 
 # Define which languages are supported by each task
-TASK_LANGUAGES = {
-    'ASR': ['en', 'de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 11 languages
-    'ST': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 10 languages
-    'SQA': ['en'],  # 1 language
-    'SSUM': ['en', 'de', 'it'],  # 3 languages
-    'TTS': ['en', 'de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 1 language
-    'S2ST': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 10 languages
-    'MT': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 10 languages
-    'TSUM': ['en', 'de', 'it'],  # 3 languages
-    'ACHAP': ['en']  # 1 language
-}
 
 # All possible languages (union of all task languages)
 all_languages = sorted(list(set(lang for langs in TASK_LANGUAGES.values() for lang in langs)))
 
 # Define which metric(s) to use for each task
 # Tasks can have single metric (string) or multiple metrics (list)
-TASK_METRICS = {
-    'ASR': 'wer',
-    'MT': 'CometQE',
-    'S2ST': ['UTMOS', 'ASR_CometQE'],  # Two metrics
-    'SSUM': 'BERTScore_F1',
-    'TSUM': 'BERTScore_F1',
-    'ST': 'CometQE',
-    'TTS': ['UTMOS', 'ASR_WER'],  # Two metrics
-    'ACHAP': 'wer',
-    'SQA': 'BERTScore_F1'
-}
 
 # Base directory
 base_dir = 'eval_outputs'
@@ -52,8 +31,11 @@ print("Processing files...")
 files_processed = 0
 files_missing = 0
 
-for model in models:
-    for task in tasks:
+print_task_order = ['ASR', 'SQA', 'ACHAP', 'TTS', 'MT', 'ST', 'TSUM', 'SSUM', 'S2ST']
+print_model_order = ['phi_multimodal', 'qwen_omni']
+
+for task in print_task_order:
+    for model in print_model_order:
         task_metrics = TASK_METRICS.get(task, 'wer')
         
         # Handle both single metric (string) and multiple metrics (list)
@@ -61,7 +43,7 @@ for model in models:
             task_metrics = [task_metrics]
         
         # Get supported languages for this task
-        task_langs = TASK_LANGUAGES.get(task, [])
+        task_langs = MODEL_TASK_LANGUAGES.get(model, {}).get(task, TASK_LANGUAGES.get(task, []))
         
         for lang in task_langs:
             file_path = Path(base_dir) / model / task / f'{lang}_eval.json'
@@ -252,14 +234,16 @@ print("="*150)
 print(f"{'Task':<10} {'Metric':<18} {'Text':>12} {'Combined':>12} {'Male':>12} {'Female':>12} {'Langs':>8} {'Model':<15}")
 print("-"*150)
 
-for model in models:
-    for task in tasks:
+for task in print_task_order:
+    for model in print_model_order:
         task_metrics = TASK_METRICS.get(task, 'wer')
         if isinstance(task_metrics, str):
             task_metrics = [task_metrics]
         
         # Get expected language count for this task
-        expected_langs = len(TASK_LANGUAGES.get(task, []))
+        expected_langs = len(MODEL_TASK_LANGUAGES.get(model, {}).get(task, TASK_LANGUAGES.get(task, [])))
+        if expected_langs == 0:
+            continue
         
         for metric in task_metrics:
             text_val = "N/A"
