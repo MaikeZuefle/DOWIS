@@ -14,7 +14,8 @@ def score_tsum(predictions, reference, eval_model=None, lang=None):
         predictions, 
         references, 
         lang=lang, 
-        model_type="microsoft/deberta-xlarge-mnli", 
+        model_type="microsoft/deberta-xlarge-mnli",
+        rescale_with_baseline=True,
         verbose=False,
         batch_size=len(predictions))
     except:
@@ -24,6 +25,7 @@ def score_tsum(predictions, reference, eval_model=None, lang=None):
             references, 
             lang=lang, 
             model_type="microsoft/deberta-xlarge-mnli", 
+            rescale_with_baseline=True,
             verbose=False,
             batch_size=1)
         except torch.OutOfMemoryError:
