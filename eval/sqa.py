@@ -10,7 +10,8 @@ def score_sqa(predictions, reference, eval_model=None, lang=None):
         predictions, 
         references, 
         lang=lang, 
-        model_type="microsoft/deberta-xlarge-mnli", 
+        model_type="microsoft/deberta-xlarge-mnli",
+        rescale_with_baseline=True,
         verbose=False
     )
     
