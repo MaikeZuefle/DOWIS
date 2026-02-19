@@ -4,7 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 from collections import defaultdict
-from utils import TASK_LANGUAGES, MODEL_TASK_LANGUAGES, TASK_METRICS, MODEL_DISPLAY_NAMES, MONOLINGUAL_TASKS, MULTILINGUAL_TASKS, LOWER_IS_BETTER, METRIC_DISPLAY_NAMES
+from utils import TASK_LANGUAGES, MODEL_TASK_LANGUAGES, TASK_METRICS, MODEL_DISPLAY_NAMES, LOWER_IS_BETTER, METRIC_DISPLAY_NAMES
+
+# Task definitions
+MONOLINGUAL_TASKS = ['ASR']
+MULTILINGUAL_TASKS = ['MT', 'ST']
 
 # Define the structure
 models = ['qwen_omni', 'phi_multimodal']

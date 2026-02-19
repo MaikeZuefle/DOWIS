@@ -40,9 +40,9 @@ MODEL_DISPLAY_NAMES = {
     'phi_multimodal': 'Phi-4-MM'
 }
 
-# Task definitions
-MONOLINGUAL_TASKS = ['ASR']
-MULTILINGUAL_TASKS = ['MT', 'ST']
+
+
+
 
 
 # Metrics where lower is better (need to flip sign for heatmap)
