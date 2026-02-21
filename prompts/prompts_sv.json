@@ -1,0 +1,904 @@
+{
+  "asr": {
+    "basic": [
+      {
+        "text": "Vänligen transkribera klippet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Omvandla det talade innehållet till text.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Vänligen transkribera det inspelade innehållet i skriftlig form.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Var vänlig och skapa en korrekt textuell transkription av denna inspelning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du skriva ner vad som sägs i det här ljudklippet?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Skriv ner allt du hör i det här klippet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Lyssna på hela ljudklippet och tillhandahåll en fullständig och korrekt transkription av alla talade ord.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Var vänlig och omvandla hela det talade innehållet i denna inspelning till en tydlig och exakt textutskrift.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Vänligen transkribera.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Transkribera detta klipp.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_asr_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "st": {
+    "basic": [
+      {
+        "text": "Vänligen översätt inspelningen till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Omvandla samtalet till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Vänligen översätt ljudinnehållet till svenska med hög noggrannhet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Var vänlig och tillhandahåll en exakt översättning till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du översätta det de säger till svenska?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Kan du göra om det här ljudet till svenska åt mig?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Lyssna på hela ljudfilen och tillhandahåll en fullständig och korrekt översättning av allt talat innehåll till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Var vänlig och omvandla hela det talade innehållet i denna inspelning till en tydlig och trogen svensk översättning, med bevarad innebörd och ton.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Översätt till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "På svenska, tack.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_st_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "sqa": {
+    "basic": [
+      {
+        "text": "Vänligen besvara frågan baserat på ljudklippet: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lyssna på inspelningen och ge svaret på: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och lyssna på den tillhandahållna inspelningen och lämna ett korrekt svar på följande fråga: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen analysera ljudinnehållet och leverera ett exakt svar på frågan: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du lyssna på det här och berätta svaret på <question>?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lyssna på klippet och låt mig veta svaret på detta: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen lyssna noggrant på hela ljudklippet och ge ett fullständigt och sammanhangsmedvetet svar på frågan: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Med hjälp av all relevant information från inspelningen, leverera ett tydligt och välgrundat svar på denna fråga: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Vad är svaret: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lyssna och svara: <question>.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_sqa_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "ssum": {
+    "basic": [
+      {
+        "text": "Vänligen sammanfatta inspelningen.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Ge en kort sammanfattning av innehållet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och lyssna på detta och skapa en koncis och korrekt sammanfattning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen generera en välstrukturerad sammanfattning av ljudklippet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du lyssna på det här och berätta huvudpunkterna?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lyssna på klippet och sammanfatta det åt mig.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen lyssna på hela inspelningen och ge en omfattande sammanfattning som fångar alla centrala idéer, teman och viktiga detaljer.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Skapa en tydlig och välorganiserad sammanfattning av inspelningen, som lyfter fram huvudpunkter, stödjande information och eventuella slutsatser som nämns.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Sammanfatta.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Ge en kort sammanfattning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_ssum_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "slu": {
+    "basic": [
+      {
+        "text": "Vänligen tolka innebörden av det talade klippet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Extrahera avsikten och nyckelinformationen från denna inspelning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och analysera det talade innehållet och ange den identifierade avsikten tillsammans med relevanta entiteter.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen utför förståelse av talat språk på denna inspelning och producera dess semantiska tolkning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du lista ut vad talaren vill med det här klippet?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Lyssna på detta och berätta avsikten och viktiga detaljer.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen lyssna på hela inspelningen och ge en fullständig semantisk tolkning, inklusive avsikt, nyckelentiteter och all relevant kontextuell information.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Analysera inspelningen och leverera ett strukturerat SLU-resultat som fångar talarens avsikt, slots, entiteter och eventuella ytterligare semantiska ledtrådar.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Extrahera avsikt och entiteter.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Utför SLU på detta ljud.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_slu_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "tts": {
+    "basic": [
+      {
+        "text": "Vänligen omvandla denna text till tal.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Generera talat ljud från följande text.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och skapa en naturligt klingande talversion av den tillhandahållna texten.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen syntetisera denna text till ett tydligt och korrekt ljudutdata.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, läs upp den här texten högt.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Generera tal från detta.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen omvandla hela texten till tal och behåll korrekt intonation, pauser och betoning för en naturlig leverans.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Generera en högkvalitativ talad version av texten som fångar nyanser, interpunktion och uttrycksfull ton.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Text till tal.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Läs upp denna text.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tts_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "s2st": {
+    "basic": [
+      {
+        "text": "Vänligen översätt detta klipp till svenskt tal.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Omvandla det talade innehållet till svenskt ljud.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och skapa en talad översättning av denna inspelning på svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen generera en korrekt svensk talversion av den tillhandahållna inspelningen.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du göra om det här till svenskt ljud?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Gör så att det här klippet talar svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen lyssna på hela inspelningen och tillhandahåll en naturlig och sammanhangsmässigt korrekt talad översättning på svenska, med bevarad ton och innebörd.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Generera en högkvalitativ svensk talversion av denna inspelning och behåll intonation, betoning och eventuella uttrycksfulla nyanser.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Översätt till svenskt tal.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "S2ST: Svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_s2st_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "mt": {
+    "basic": [
+      {
+        "text": "Vänligen översätt texten till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Omvandla denna text till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och tillhandahåll en korrekt översättning av följande text till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen översätt denna text till svenska och bevara dess innebörd och ton.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du översätta det här till svenska?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Gör det här till svenska åt mig.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen översätt hela texten till svenska och behåll tydlighet, sammanhang och naturligt språk.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Tillhandahåll en högkvalitativ översättning av denna text till svenska, med bevarade idiomatiska uttryck och avsedd innebörd.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Översätt till svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "MT: Svenska.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_mt_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "tsum": {
+    "basic": [
+      {
+        "text": "Vänligen sammanfatta texten.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Ge en kort sammanfattning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och skapa en koncis och korrekt sammanfattning av följande text.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen producera en välstrukturerad sammanfattning av texten.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du berätta huvudpunkterna i den här texten?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Läs igenom detta och sammanfatta det åt mig.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen skapa en omfattande sammanfattning av texten som fångar alla centrala idéer, stödjande detaljer och slutsatser.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Analysera texten och ge en detaljerad och välorganiserad sammanfattning som lyfter fram huvudpunkter och viktig information.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Sammanfatta detta.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Ge en kort sammanfattning.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_tsum_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "lipread": {
+    "basic": [
+      {
+        "text": "Vänligen transkribera talet från videon.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Skriv ner vad personen säger i den här videon.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och tillhandahåll en korrekt transkription av talet baserat på talarens läpprörelser i denna video.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen analysera videon och generera en exakt texttranskription av det talade innehållet.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du säga vad de säger genom att titta på deras läppar?",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Titta på den här videon och skriv ner de ord som sägs.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen observera noggrant talarens läpprörelser genom hela videon och tillhandahåll en fullständig och korrekt transkription av alla talade ord.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Generera en omfattande texttranskription baserad på läpprörelserna i videon och fånga varje talat ord och sammanhang så korrekt som möjligt.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transkribera från läppar.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Läsläppar och skriv.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_lipread_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  },
+  "achap": {
+    "basic": [
+      {
+        "text": "Vänligen dela upp ljudet i kapitel och ge varje kapitel en tydlig titel. Ta även fram transkriptionen, organiserad under varje kapitel. Använd Markdown-rubriker för kapitelrubriker (t.ex. ## Kapitelrubrik) och separera varje kapitel med tomrader.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_basic_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Skapa segment för detta ljud och tilldela varje segment en beskrivande titel. Inkludera även transkriptionen, grupperad per segment. Formatera segmenttitlar som Markdown-rubriker och lägg in en tomrad mellan segmenten.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_basic_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "formal": [
+      {
+        "text": "Var vänlig och analysera ljudet och generera väldefinierade kapitel med beskrivande titlar för vart och ett baserat på innehållet, samt tillhandahåll hela transkriptionen organiserad under motsvarande kapitel. Formatera kapitelrubriker som Markdown-rubriker och separera varje kapitel med en tomrad.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_formal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Vänligen segmentera ljudet i logiska avsnitt och tillhandahåll kapitelmarkörer med titlar för varje avsnitt, tillsammans med transkriptionstexten ordnad under varje kapitel. Använd Markdown-rubriker för kapitelrubrikerna och se till att det finns en tomrad mellan kapitlen.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_formal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "informal": [
+      {
+        "text": "Hej, kan du dela upp det här ljudet i delar, ge varje del en titel och inkludera transkriptionen under varje del? Använd Markdown-rubriker för titlarna och lägg en tomrad mellan delarna.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_informal_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Dela upp ljudet i kapitel åt mig, inklusive en titel och transkriptionen för varje kapitel. Formatera titlarna som Markdown-rubriker och separera varje kapitel med en tomrad.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_informal_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "detailed": [
+      {
+        "text": "Vänligen titta på ljudet och dela upp det i kapitel baserat på funktion, ämne, scenövergångar och centralt innehåll. För varje kapitel, tillhandahåll en beskrivande titel och transkriptionen för det kapitlet. Använd Markdown-rubriker för kapitelrubrikerna (t.ex. ## Introduktion) och separera varje kapitel med en tomrad.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_detailed_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Generera en detaljerad kapitelvis segmentering av ljudet som beskriver innehållet i varje avsnitt och ger varje kapitel en tydlig titel. Inkludera även transkriptionen, organiserad under varje kapitel. Formatera kapitelrubriker som Markdown-rubriker (t.ex. ## Introduktion) och infoga en tomrad mellan kapitlen.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_detailed_2.wav"
+        ],
+        "male_rec": []
+      }
+    ],
+    "short": [
+      {
+        "text": "Transkription + kapitel i Markdown (rubriker för titlar, tomrad mellan kapitlen).",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_short_1.wav"
+        ],
+        "male_rec": []
+      },
+      {
+        "text": "Transkription med tillagda ljudkapitel. Använd Markdown-rubriker för kapitelrubriker och tomrader mellan kapitlen.",
+        "female_rec": [
+          "prompts/audio_prompts/sv/sv_female1_achap_short_2.wav"
+        ],
+        "male_rec": []
+      }
+    ]
+  }
+}

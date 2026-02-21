@@ -44,5 +44,26 @@ def set_up_logging(output_file_path):
     # Add handlers to root logger
     logging.basicConfig(level=logging.INFO, handlers=[file_handler, console_handler])
 
+    logging.getLogger("unbabel_comet").setLevel(logging.WARNING)
+
+    for name in [
+        "lightning",
+        "lightning_fabric",
+        "pytorch_lightning",
+    ]:
+        logger = logging.getLogger(name)
+        logger.setLevel(logging.ERROR)
+        logger.propagate = False
+    import warnings
+
+    warnings.filterwarnings(
+        "ignore",
+        message=".*LeafSpec.*",
+    )
+
+    warnings.filterwarnings(
+        "ignore",
+        message=".*srun.*",
+    )
 
 
