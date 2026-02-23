@@ -54,7 +54,6 @@ for task in print_task_order:
                                 if prompt_type not in prompt_data:
                                     continue
 
-                                # Use all_prompt_modalities as the combined value across modalities
                                 pt_entry = prompt_data[prompt_type]
                                 if 'all_prompt_modalities' in pt_entry and metric in pt_entry['all_prompt_modalities']:
                                     value = pt_entry['all_prompt_modalities'][metric]['mean']
@@ -133,7 +132,7 @@ full_output = {
     'results': output_results
 }
 
-output_file = 'prompt_type_averages.json'
+output_file = 'analysis/result_json/prompt_type_averages.json'
 with open(output_file, 'w') as f:
     json.dump(full_output, f, indent=2)
 
@@ -184,3 +183,210 @@ print("=" * total_width)
 print("\nNote: Values are averaged over all modalities (text, male audio, female audio) combined.")
 print("      For WER: lower is better. For CometQE, BERTScore, and UTMOS: higher is better.")
 print("      'Langs' shows how many languages have data / expected languages for that task.")
+
+
+# =============================================================================
+# LaTeX Table Generation
+# =============================================================================
+
+METRIC_LATEX = {
+    'wer':           r'WER $\downarrow$',
+    'CometQE':       r'Comet $\uparrow$',
+    'ASR-COMET':     r'COM.$_{\text{ASR}}$ $\uparrow$',
+    'BERTScore_F1':  r'BERTS. $\uparrow$',
+    'UTMOS':         r'UTMOS $\uparrow$',
+    'ASR-WER':       r'WER$_{\text{ASR}}$ $\downarrow$',
+    'CollarF1':      r'CollarF1 $\uparrow$',
+    'GC-BS':         r'GC-BS $\uparrow$',
+}
+
+# Metrics where lower is better (will be inverted for colour scaling)
+LOWER_IS_BETTER = {'wer', 'ASR-WER'}
+
+MODEL_LATEX = {
+    'phi_multimodal': 'Phi',
+    'qwen_omni':      'Qwen',
+}
+
+QWEN_ONLY_TASKS = {'TTS', 'S2ST'}
+PHI_FOOTNOTE_TASKS = {'ASR'}
+MIDRULE_AFTER = {'TTS'}
+
+METRIC_SCALE = {
+    'CollarF1': 100,
+    'GC-BS':    100,
+}
+
+TASK_COLOURS = ['taskgreen', 'taskblue']
+
+ALPHA_MIN = 0.20
+ALPHA_MAX = 0.80
+
+
+def fmt_value(entry, metric):
+    if entry is None:
+        return ''
+    scale = METRIC_SCALE.get(metric, 1)
+    return f"{entry['average'] * scale:.2f}"
+
+
+def collect_metric_values(output_results, task, metric, model, prompt_types):
+    """Collect all numeric values for a given task+metric+model across all prompt types."""
+    values = []
+    for prompt_type in prompt_types:
+        entry = output_results[model][task][metric].get(prompt_type)
+        if entry is not None:
+            scale = METRIC_SCALE.get(metric, 1)
+            values.append(entry['average'] * scale)
+    return values
+
+
+def compute_alpha(value, min_val, max_val, lower_is_better):
+    """Map a value to an alpha intensity in [ALPHA_MIN, ALPHA_MAX].
+    Better values get higher alpha (darker colour)."""
+    if max_val == min_val:
+        return (ALPHA_MIN + ALPHA_MAX) / 2
+    norm = (value - min_val) / (max_val - min_val)
+    if lower_is_better:
+        norm = 1.0 - norm
+    return ALPHA_MIN + norm * (ALPHA_MAX - ALPHA_MIN)
+
+
+def coloured_cell(value_str, alpha, colour_name):
+    """Wrap a cell value with a \cellcolor command."""
+    if value_str == '':
+        return ''
+    intensity = int(round(max(0.0, min(1.0, alpha)) * 100))  # clamp to [0, 100]
+    return rf'\cellcolor{{{colour_name}!{intensity}}} {value_str}'
+
+
+def build_latex_table(output_results, print_task_order, print_model_order,
+                      TASK_METRICS, MODEL_TASK_LANGUAGES, TASK_LANGUAGES):
+
+    lines = []
+
+    lines.append(r'% Add to your preamble:')
+    lines.append(r'% \usepackage[table]{xcolor}')
+    lines.append(r'% \definecolor{taskgreen}{RGB}{180, 220, 180}')
+    lines.append(r'% \definecolor{taskblue}{RGB}{180, 210, 230}')
+    lines.append(r'')
+    lines.append(r'\begin{table*}[]')
+    lines.append(r'    \centering')
+    lines.append(r'    \footnotesize')
+    lines.append(r'    \begin{tabular}{llcccccc}')
+    lines.append(r'     \toprule')
+    lines.append(r'     \multirow{2}{*}{\textbf{Task}} & \multirow{2}{*}{\textbf{Metric}} & \multirow{2}{*}{\textbf{Model}} & \multicolumn{5}{c}{\textbf{Prompt Type}} \\')
+    lines.append(r'     \cmidrule(lr){4-8}')
+    lines.append(r'     &&& \textbf{Basic} & \textbf{Formal} & \textbf{Inform.} & \textbf{Detail.} & \textbf{Short} \\')
+    lines.append(r'     \midrule')
+
+    num_tasks = len(print_task_order)
+
+    for task_idx, task in enumerate(print_task_order):
+        task_metrics = TASK_METRICS.get(task, 'wer')
+        if isinstance(task_metrics, str):
+            task_metrics = [task_metrics]
+
+        task_models = ['qwen_omni'] if task in QWEN_ONLY_TASKS else print_model_order
+        num_rows = len(task_metrics) * len(task_models)
+
+        colour_name = TASK_COLOURS[task_idx % 2]
+
+
+        # Pre-compute per-metric value ranges, anchored to the better model
+        metric_ranges = {}
+        for metric in task_metrics:
+            lower_better = metric in LOWER_IS_BETTER
+            best_min, best_max = None, None
+
+            for model in task_models:
+                values = collect_metric_values(output_results, task, metric, model, PROMPT_TYPES)
+                if not values:
+                    continue
+                model_min, model_max = min(values), max(values)
+                # The "better" model is the one with the better average
+                model_avg = sum(values) / len(values)
+                if best_max is None:
+                    best_min, best_max = model_min, model_max
+                    best_avg = model_avg
+                else:
+                    is_better = (model_avg < best_avg) if lower_better else (model_avg > best_avg)
+                    if is_better:
+                        best_min, best_max = model_min, model_max
+                        best_avg = model_avg
+
+            # Use the better model's range for both models
+            shared_range = (best_min, best_max) if best_min is not None else (0, 1)
+            metric_ranges[metric] = {model: shared_range for model in task_models}
+
+        for metric_idx, metric in enumerate(task_metrics):
+            metric_latex = METRIC_LATEX.get(metric, metric)
+            lower_better = metric in LOWER_IS_BETTER
+
+            for model_idx, model in enumerate(task_models):
+                # ← fix: look up ranges inside the model loop
+                min_val, max_val = metric_ranges[metric][model]
+
+                model_name = MODEL_LATEX.get(model, model)
+                if model == 'phi_multimodal' and task in PHI_FOOTNOTE_TASKS:
+                    model_name += '*'
+
+                # Build value cells with colour
+                cells = []
+                for prompt_type in PROMPT_TYPES:
+                    entry = output_results[model][task][metric].get(prompt_type)
+                    value_str = fmt_value(entry, metric)
+                    if value_str != '':
+                        scale = METRIC_SCALE.get(metric, 1)
+                        raw_value = entry['average'] * scale
+                        alpha = compute_alpha(raw_value, min_val, max_val, lower_better)
+                        cells.append(coloured_cell(value_str, alpha, colour_name))
+                    else:
+                        cells.append('')
+                cells_str = ' & '.join(cells)
+
+                # Task label (first row of block only)
+                global_row = metric_idx * len(task_models) + model_idx
+                if global_row == 0:
+                    task_col = rf'\multirow{{{num_rows}}}{{*}}{{\textbf{{{task}}}}}'
+                else:
+                    task_col = ''
+
+                # Metric label (first model row per metric only)
+                if model_idx == 0:
+                    if len(task_models) > 1:
+                        metric_col = rf'\multirow{{{len(task_models)}}}{{*}}{{{metric_latex}}}'
+                    else:
+                        metric_col = metric_latex
+                else:
+                    metric_col = ''
+
+                row = f'     {task_col} & {metric_col} & {model_name} & {cells_str} \\\\'
+                lines.append(row)
+
+        # Separator after task block
+        if task_idx < num_tasks - 1:
+            if task in MIDRULE_AFTER:
+                lines.append(r'     \midrule')
+            else:
+                lines.append(r'     \cmidrule(lr){1-8}')
+
+    lines.append(r'     \bottomrule')
+    lines.append(r'    \end{tabular}')
+    lines.append(r"    \caption{The impact of prompt type across different tasks. Results are averaged over all modalities and available languages. *Phi only supports the languages 'en', 'de', 'fr', 'it', 'es', 'pt' for speech in input, so we only report results for these languages for ASR.}")
+    lines.append(r'    \label{tab:prompt_type}')
+    lines.append(r'\end{table*}')
+
+    return '\n'.join(lines)
+
+
+latex_table = build_latex_table(
+    output_results, print_task_order, print_model_order,
+    TASK_METRICS, MODEL_TASK_LANGUAGES, TASK_LANGUAGES
+)
+
+latex_output_file = 'analysis/latex/prompt_type_table.tex'
+with open(latex_output_file, 'w') as f:
+    f.write(latex_table)
+
+print(f"\n✓ LaTeX table saved to: {latex_output_file}")
