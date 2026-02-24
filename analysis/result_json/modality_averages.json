@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "files_processed": 78,
-    "files_missing": 1,
-    "total_expected": 100,
+    "files_processed": 79,
+    "files_missing": 0,
+    "total_expected": 98,
     "task_metrics": {
       "ASR": "wer",
       "MT": "CometQE",
@@ -34,8 +34,7 @@
         "nl",
         "ru",
         "sv",
-        "cs",
-        "hu"
+        "cs"
       ],
       "ST": [
         "de",
@@ -93,13 +92,7 @@
         "en"
       ]
     },
-    "missing_files_by_model_task": {
-      "phi_multimodal": {
-        "ACHAP": [
-          "en"
-        ]
-      }
-    },
+    "missing_files_by_model_task": {},
     "missing_modalities_by_model_task": {
       "phi_multimodal": {
         "ASR": {
@@ -1449,16 +1442,86 @@
           "GC-BS"
         ],
         "CollarF1": {
-          "text_prompt": null,
-          "f_audio_prompt": null,
-          "m_audio_prompt": null,
-          "audio_prompt_combined": null
+          "text_prompt": {
+            "average": 0.07489026312026478,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.07489026312026478
+            }
+          },
+          "f_audio_prompt": {
+            "average": 0.0598589492477481,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.0598589492477481
+            }
+          },
+          "m_audio_prompt": {
+            "average": 0.06555635896673451,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.06555635896673451
+            }
+          },
+          "audio_prompt_combined": {
+            "average": 0.0627076541072413,
+            "num_values": 2,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "note": "Average over both male and female audio prompts"
+          }
         },
         "GC-BS": {
-          "text_prompt": null,
-          "f_audio_prompt": null,
-          "m_audio_prompt": null,
-          "audio_prompt_combined": null
+          "text_prompt": {
+            "average": 0.8430179655716412,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.8430179655716412
+            }
+          },
+          "f_audio_prompt": {
+            "average": 0.6078463219784769,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.6078463219784769
+            }
+          },
+          "m_audio_prompt": {
+            "average": 0.6407909722973035,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.6407909722973035
+            }
+          },
+          "audio_prompt_combined": {
+            "average": 0.6243186471378902,
+            "num_values": 2,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "note": "Average over both male and female audio prompts"
+          }
         }
       },
       "SQA": {

@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "files_processed": 78,
-    "files_missing": 1,
-    "total_expected": 100,
+    "files_processed": 79,
+    "files_missing": 0,
+    "total_expected": 98,
     "task_metrics": {
       "ASR": "wer",
       "MT": "CometQE",
@@ -34,8 +34,7 @@
         "nl",
         "ru",
         "sv",
-        "cs",
-        "hu"
+        "cs"
       ],
       "ST": [
         "de",
@@ -101,13 +100,7 @@
       "short"
     ],
     "note": "Values are averaged over all modalities (all_prompt_modalities) per prompt type",
-    "missing_files_by_model_task": {
-      "phi_multimodal": {
-        "ACHAP": [
-          "en"
-        ]
-      }
-    }
+    "missing_files_by_model_task": {}
   },
   "results": {
     "qwen_omni": {
@@ -1836,18 +1829,108 @@
           "GC-BS"
         ],
         "CollarF1": {
-          "basic": null,
-          "formal": null,
-          "informal": null,
-          "detailed": null,
-          "short": null
+          "basic": {
+            "average": 0.07663183110656792,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.07663183110656792
+            }
+          },
+          "formal": {
+            "average": 0.08481453902086736,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.08481453902086736
+            }
+          },
+          "informal": {
+            "average": 0.06953915873851191,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.06953915873851191
+            }
+          },
+          "detailed": {
+            "average": 0.08105639122967398,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.08105639122967398
+            }
+          },
+          "short": {
+            "average": 0.021800698795625018,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.021800698795625018
+            }
+          }
         },
         "GC-BS": {
-          "basic": null,
-          "formal": null,
-          "informal": null,
-          "detailed": null,
-          "short": null
+          "basic": {
+            "average": 0.7973604566734358,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.7973604566734358
+            }
+          },
+          "formal": {
+            "average": 0.8119221781887405,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.8119221781887405
+            }
+          },
+          "informal": {
+            "average": 0.6945893861369391,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.6945893861369391
+            }
+          },
+          "detailed": {
+            "average": 0.8421976295982684,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.8421976295982684
+            }
+          },
+          "short": {
+            "average": 0.3400224491483191,
+            "num_languages": 1,
+            "languages": [
+              "en"
+            ],
+            "per_language": {
+              "en": 0.3400224491483191
+            }
+          }
         }
       },
       "SQA": {
