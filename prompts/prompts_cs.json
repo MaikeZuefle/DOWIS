@@ -933,7 +933,9 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_basic_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_basic_2.wav"
+        ]
       }
     ],
     "formal": [
@@ -942,14 +944,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_formal_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_formal_1.wav"
+        ]
       },
       {
         "text": "Prosím, analyzujte video a vytvořte přesnou textovou transkripci mluveného obsahu.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_formal_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_formal_2.wav"
+        ]
       }
     ],
     "informal": [
@@ -958,14 +964,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_informal_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_informal_1.wav"
+        ]
       },
       {
         "text": "Sledujte toto video a zapište slova, která jsou vyslovena.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_informal_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
@@ -974,14 +984,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_detailed_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_detailed_1.wav"
+        ]
       },
       {
         "text": "Vytvořte ucelenou textovou transkripci na základě pohybů rtů ve videu, zachycující každé vyslovené slovo a kontext co nejpřesněji.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_detailed_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_detailed_2.wav"
+        ]
       }
     ],
     "short": [
@@ -990,14 +1004,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_short_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_short_1.wav"
+        ]
       },
       {
         "text": "Čtěte podle rtů a zapisujte.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_lipread_short_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_lipread_short_2.wav"
+        ]
       }
     ]
   },
@@ -1008,14 +1026,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_basic_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_basic_1.wav"
+        ]
       },
       {
         "text": "Vytvořte segmenty tohoto audia a přiřaďte každému segmentu popisný název. Zahrňte také přepis seskupený podle segmentů. Formátujte názvy segmentů jako nadpisy Markdown a mezi segmenty vložte prázdný řádek.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_basic_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_basic_2.wav"
+        ]
       }
     ],
     "formal": [
@@ -1024,14 +1046,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_formal_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_formal_1.wav"
+        ]
       },
       {
         "text": "Prosím, rozdělte audio do logických sekcí a u každé sekce uveďte značku kapitoly s názvem, spolu s přepisem textu uspořádaným pod každou kapitolou. Použijte nadpisy Markdown pro názvy kapitol a zajistěte, aby mezi kapitolami byl prázdný řádek.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_formal_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_formal_2.wav"
+        ]
       }
     ],
     "informal": [
@@ -1040,14 +1066,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_informal_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_informal_1.wav"
+        ]
       },
       {
         "text": "Rozděl pro mě audio na kapitoly, u každé kapitoly uveď název a přepis. Formátujte názvy jako nadpisy Markdown a každou kapitolu oddělte prázdným řádkem.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_informal_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_informal_2.wav"
+        ]
       }
     ],
     "detailed": [
@@ -1056,14 +1086,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_detailed_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_detailed_1.wav"
+        ]
       },
       {
         "text": "Vytvořte podrobné členění audia po kapitolách, uveďte časové značky, popište obsah každé sekce a dejte každé kapitole jasný název. Zahrňte také přepis, uspořádaný pod jednotlivými kapitolami. Formátujte názvy kapitol jako nadpisy Markdown s časovými značkami začátku (např. ## 00:00 – Úvod) a vložte prázdný řádek mezi kapitoly.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_detailed_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_detailed_2.wav"
+        ]
       }
     ],
     "short": [
@@ -1072,14 +1106,18 @@
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_short_1.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_short_1.wav"
+        ]
       },
       {
         "text": "Přepis s přidanými kapitolami audia. Použijte nadpisy Markdown pro názvy kapitol a prázdné řádky mezi kapitolami.",
         "female_rec": [
           "prompts/audio_prompts/cs/cs_female1_achap_short_2.wav"
         ],
-        "male_rec": []
+        "male_rec": [
+          "prompts/audio_prompts/cs/cs_male1_achap_short_2.wav"
+        ]
       }
     ]
   }

@@ -104,6 +104,7 @@ def analyze_audio_prompts(base_dir: str) -> Dict:
     
     # Iterate through language directories
     for lang_dir in sorted(base_path.iterdir()):
+
         if not lang_dir.is_dir():
             continue
             
@@ -117,6 +118,11 @@ def analyze_audio_prompts(base_dir: str) -> Dict:
             try:
                 # Parse filename
                 language, speaker, task, style, number = parse_filename(wav_file.name)
+                if task == "slu" or task == "lipread":
+                    continue
+
+                if language == "sq":
+                    continue
                 
                 # Verify language code matches directory
                 if language != language_code:
