@@ -27,8 +27,10 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
     # Handle question answering tasks
     if isinstance(input_data, dict):
         example = input_data["audio_path"]
+        is_q_task = True
     else:
         example = input_data
+        is_q_task = False
 
     # prompts
     user_prompt = "<|user|>"
@@ -39,19 +41,19 @@ def generate(model_processor_config, prompt, input_data, modality, output_modali
 
     # prepare prompts
     if prompt_modality == "audio":
-        speech_q = input_data["question_speech"]
         prompt_audio, prompt_samplerate = sf.read(orig_prompt)
         audios.append((prompt_audio, prompt_samplerate))
         seperator_token += f"<|audio_{len(audios)}|>"
-        if isinstance(input_data, dict):
+        if is_q_task:
+            speech_q = input_data["question_speech"]
             speech_q_audio, speech_q_samplerate = sf.read(speech_q)
             audios.append((speech_q_audio, speech_q_samplerate))
             seperator_token += f"<|audio_{len(audios)}|>"
         prompt = ""
     elif prompt_modality == "text":
-        text_q = input_data["question_text"]
         prompt = orig_prompt
-        if isinstance(input_data, dict):
+        if is_q_task:
+            text_q = input_data["question_text"]
             prompt += " " + text_q
 
     # prepare inputs
