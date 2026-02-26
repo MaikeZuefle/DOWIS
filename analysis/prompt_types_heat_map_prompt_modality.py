@@ -18,7 +18,7 @@ CROSSLINGUAL_LANGS = {
 }
 
 # Define the structure
-models = ['qwen_omni', 'phi_multimodal']
+models = ['qwen_omni'] #, 'phi_multimodal']
 
 # Prompt types (x-axis)
 PROMPT_TYPES = ['basic', 'formal', 'informal', 'detailed', 'short']
@@ -28,7 +28,8 @@ base_dir = 'eval_outputs'
 
 HEATMAP_METRIC_OVERRIDE = {
     'TTS': 'ASR-WER',
-    'S2ST': 'ASR-COMET'
+    'S2ST': 'ASR-COMET',
+    'ACHAP': 'CollarF1'
 }
 
 # Structure: results[model][task][prompt_type][language] = diff (sign-adjusted)
@@ -239,7 +240,7 @@ def create_prompt_heatmap(model, task_list, task_type_name, fig_height=8,
     output_dir.mkdir(exist_ok=True)
     model_display = MODEL_DISPLAY_NAMES.get(model, model)
     model_name = model_display.replace('.', '_').replace('-', '_').replace(' ', '_')
-    filename = output_dir / f'heatmap_prompt_types_{model_name}_{task_type_name.lower().replace(" ", "_")}.pdf'
+    filename = output_dir / f'heatmaps/heatmap_prompt_types_{model_name}_{task_type_name.lower().replace(" ", "_")}.pdf'
     plt.savefig(filename, dpi=300, bbox_inches='tight', format='pdf')
     print(f"✓ Saved: {filename}")
     plt.close()

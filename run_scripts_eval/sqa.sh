@@ -1,7 +1,7 @@
-LANGS=("en" "de"  "it") #
-MODELS=( "phi_multimodal" "qwen_omni") # 
+LANGS=("en")
+MODELS=( "phi_multimodal" "qwen_omni")
 
-TASK="TSUM"
+TASK="SQA"
 OUT_FOLDER="eval_outputs"
 PREDICTION_FOLDER="outputs"
 

@@ -4,14 +4,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 from collections import defaultdict
-from utils import TASK_LANGUAGES, MODEL_TASK_LANGUAGES, TASK_METRICS, MODEL_DISPLAY_NAMES, LOWER_IS_BETTER, METRIC_DISPLAY_NAMES
+from utils import TASK_LANGUAGES, TASK_METRICS, MODEL_DISPLAY_NAMES, LOWER_IS_BETTER, METRIC_DISPLAY_NAMES
 
 # Task definitions
 MONOLINGUAL_TASKS = ['ASR']
 MULTILINGUAL_TASKS = ['MT', 'ST']
 
 # Define the structure
-models = ['qwen_omni', 'phi_multimodal']
+models = ['qwen_omni'] #, 'phi_multimodal']
 
 # Base directory
 base_dir = 'eval_outputs'
@@ -22,7 +22,8 @@ results = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
 HEATMAP_METRIC_OVERRIDE = {
     'TTS': 'ASR-WER',
-    'S2ST': 'ASR-COMET'
+    'S2ST': 'ASR-COMET',
+    'ACHAP': 'CollarF1'
 }
 
 print("Processing files...")
@@ -230,7 +231,7 @@ def create_heatmap(model, task_list, task_type_name, fig_height=8):
     output_dir = Path('analysis')
     output_dir.mkdir(exist_ok=True)
     model_name = MODEL_DISPLAY_NAMES.get(model, model).replace('.', '_').replace('-', '_')
-    filename = output_dir / f'heatmap_{model_name}_{task_type_name.lower().replace(" ", "_")}.pdf'
+    filename = output_dir / f'heatmaps/heatmap_{model_name}_{task_type_name.lower().replace(" ", "_")}.pdf'
     plt.savefig(filename, dpi=300, bbox_inches='tight', format='pdf')
     print(f"✓ Saved: {filename}")
     plt.close()

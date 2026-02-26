@@ -2,10 +2,10 @@ import os
 from pydub import AudioSegment
 from pydub.silence import detect_nonsilent
 
-AUDIO_DIR = "audio_prompts/sv"
-LANGUAGE="sv"
-GENDER="female1"
-IN_FOMRAT="m4a" # "mp3", "m4a" "wav"
+AUDIO_DIR = "audio_prompts/cs/male"
+LANGUAGE="cs"
+GENDER="male1"
+IN_FOMRAT="wav" # "mp3", "m4a" "wav"
 
 tasks = ["ASR", "ST", "SQA", "SSUM", "SLU", "TTS", "S2ST", "MT", "TSUM", "LIPREAD", "ACHAP"]
 prompt_types = ["basic", "basic", "formal", "formal", "informal", "informal", "detailed", "detailed", "short", "short"]

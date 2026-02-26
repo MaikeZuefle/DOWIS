@@ -221,7 +221,7 @@ full_output = {
 }
 
 # Save to JSON
-output_file = 'modality_averages.json'
+output_file = 'analysis/result_json/modality_averages.json'
 with open(output_file, 'w') as f:
     json.dump(full_output, f, indent=2)
 
@@ -291,3 +291,200 @@ print("  - Missing files are skipped")
 print("  - Averages are calculated only over available languages")
 print("  - If no data is available for a task/metric, it shows as 'N/A'")
 print("  - Check 'metadata' section in JSON for details on missing data")
+
+# =============================================================================
+# LaTeX Table Generation
+# =============================================================================
+
+METRIC_LATEX = {
+    'wer':           r'WER $\downarrow$',
+    'CometQE':       r'Comet $\uparrow$',
+    'ASR-COMET':     r'COM.$_{\text{ASR}}$ $\uparrow$',
+    'BERTScore_F1':  r'BERTS. $\uparrow$',
+    'UTMOS':         r'UTMOS $\uparrow$',
+    'ASR-WER':       r'WER$_{\text{ASR}}$ $\downarrow$',
+    'CollarF1':      r'CollarF1 $\uparrow$',
+    'GC-BS':         r'GC-BS $\uparrow$',
+}
+
+LOWER_IS_BETTER = {'wer', 'ASR-WER'}
+
+MODEL_LATEX = {
+    'phi_multimodal': 'Phi',
+    'qwen_omni':      'Qwen',
+}
+
+QWEN_ONLY_TASKS = {'TTS', 'S2ST'}
+PHI_FOOTNOTE_TASKS = {'ASR'}
+MIDRULE_AFTER = {'TTS'}
+
+METRIC_SCALE = {
+    'CollarF1': 100,
+    'GC-BS':    100,
+}
+
+TASK_COLOURS = ['taskgreen', 'taskblue']
+
+ALPHA_MIN = 0.20
+ALPHA_MAX = 0.80
+
+# Modalities in display order: text, combined audio, male, female
+MODALITIES = ['text_prompt', 'audio_prompt_combined', 'm_audio_prompt', 'f_audio_prompt']
+
+
+def fmt_value(entry, metric):
+    if entry is None:
+        return ''
+    scale = METRIC_SCALE.get(metric, 1)
+    return f"{entry['average'] * scale:.2f}"
+
+
+def collect_metric_values_modality(output_results, task, metric, model, modalities):
+    """Collect all numeric values for a given task+metric+model across all modalities."""
+    values = []
+    for modality in modalities:
+        entry = output_results[model][task][metric].get(modality)
+        if entry is not None:
+            scale = METRIC_SCALE.get(metric, 1)
+            values.append(entry['average'] * scale)
+    return values
+
+
+def compute_alpha(value, min_val, max_val, lower_is_better):
+    if max_val == min_val:
+        return (ALPHA_MIN + ALPHA_MAX) / 2
+    norm = (value - min_val) / (max_val - min_val)
+    if lower_is_better:
+        norm = 1.0 - norm
+    return ALPHA_MIN + norm * (ALPHA_MAX - ALPHA_MIN)
+
+
+def coloured_cell(value_str, alpha, colour_name):
+    if value_str == '':
+        return ''
+    intensity = int(round(max(0.0, min(1.0, alpha)) * 100))
+    return rf'\cellcolor{{{colour_name}!{intensity}}} {value_str}'
+
+
+def build_latex_table_modality(output_results, print_task_order, print_model_order,
+                               TASK_METRICS, MODEL_TASK_LANGUAGES, TASK_LANGUAGES):
+
+    lines = []
+
+    lines.append(r'% Add to your preamble:')
+    lines.append(r'% \usepackage[table]{xcolor}')
+    lines.append(r'% \definecolor{taskgreen}{RGB}{180, 220, 180}')
+    lines.append(r'% \definecolor{taskblue}{RGB}{180, 210, 230}')
+    lines.append(r'')
+    lines.append(r'\begin{table}[]')
+    lines.append(r'    \centering')
+    lines.append(r'    \footnotesize')
+    lines.append(r'    \begin{tabular}{p{0.6cm}p{1.3cm}p{0.6cm}p{0.7cm}p{0.7cm}p{0.7cm}p{0.7cm}}')
+    lines.append(r'     \toprule')
+    lines.append(r'     \multirow{2}{*}{\textbf{Task}} & \multirow{2}{*}{\textbf{Metric}} & \multirow{2}{*}{\textbf{Model}} & \textbf{Text} & \multicolumn{3}{c}{\textbf{Speech Prompt}} \\')
+    lines.append(r'     &&& \textbf{Prompt} & \multicolumn{1}{c}{\textbf{All}} & \multicolumn{1}{c}{\textbf{Male}} & \multicolumn{1}{c}{\textbf{Fem.}} \\')
+    lines.append(r'     \midrule')
+
+    num_tasks = len(print_task_order)
+
+    for task_idx, task in enumerate(print_task_order):
+        task_metrics = TASK_METRICS.get(task, 'wer')
+        if isinstance(task_metrics, str):
+            task_metrics = [task_metrics]
+
+        task_models = ['qwen_omni'] if task in QWEN_ONLY_TASKS else print_model_order
+        num_rows = len(task_metrics) * len(task_models)
+
+        colour_name = TASK_COLOURS[task_idx % 2]
+
+        # Pre-compute per-metric ranges anchored to the better model
+        metric_ranges = {}
+        for metric in task_metrics:
+            lower_better = metric in LOWER_IS_BETTER
+            best_min, best_max, best_avg = None, None, None
+
+            for model in task_models:
+                values = collect_metric_values_modality(output_results, task, metric, model, MODALITIES)
+                if not values:
+                    continue
+                model_avg = sum(values) / len(values)
+                if best_avg is None:
+                    best_min, best_max, best_avg = min(values), max(values), model_avg
+                else:
+                    is_better = (model_avg < best_avg) if lower_better else (model_avg > best_avg)
+                    if is_better:
+                        best_min, best_max, best_avg = min(values), max(values), model_avg
+
+            shared_range = (best_min, best_max) if best_min is not None else (0, 1)
+            metric_ranges[metric] = {model: shared_range for model in task_models}
+
+        for metric_idx, metric in enumerate(task_metrics):
+            metric_latex = METRIC_LATEX.get(metric, metric)
+            lower_better = metric in LOWER_IS_BETTER
+
+            for model_idx, model in enumerate(task_models):
+                min_val, max_val = metric_ranges[metric][model]
+
+                model_name = MODEL_LATEX.get(model, model)
+                if model == 'phi_multimodal' and task in PHI_FOOTNOTE_TASKS:
+                    model_name += '*'
+
+                # Build 4 value cells: text, combined, male, female
+                cells = []
+                for modality in MODALITIES:
+                    entry = output_results[model][task][metric].get(modality)
+                    value_str = fmt_value(entry, metric)
+                    if value_str != '':
+                        scale = METRIC_SCALE.get(metric, 1)
+                        raw_value = entry['average'] * scale
+                        alpha = compute_alpha(raw_value, min_val, max_val, lower_better)
+                        cells.append(coloured_cell(value_str, alpha, colour_name))
+                    else:
+                        cells.append('')
+                cells_str = ' & '.join(cells)
+
+                # Task label (first row of block only)
+                global_row = metric_idx * len(task_models) + model_idx
+                if global_row == 0:
+                    task_col = rf'\multirow{{{num_rows}}}{{*}}{{\textbf{{{task}}}}}'
+                else:
+                    task_col = ''
+
+                # Metric label (first model row per metric only)
+                if model_idx == 0:
+                    if len(task_models) > 1:
+                        metric_col = rf'\multirow{{{len(task_models)}}}{{*}}{{{metric_latex}}}'
+                    else:
+                        metric_col = metric_latex
+                else:
+                    metric_col = ''
+
+                row = f'     {task_col} & {metric_col} & {model_name} & {cells_str} \\\\'
+                lines.append(row)
+
+        # Separator after task block
+        if task_idx < num_tasks - 1:
+            if task in MIDRULE_AFTER:
+                lines.append(r'     \midrule')
+            else:
+                lines.append(r'     \cmidrule(lr){1-7}')
+
+    lines.append(r'     \bottomrule')
+    lines.append(r'    \end{tabular}')
+    lines.append(r"    \caption{The impact of speech vs. text prompts across different tasks. The results are averaged over different prompt types and languages. *Phi only supports the languages 'en', 'de', 'fr', 'it', 'es', 'pt' for speech in input, so we only report results for these languages for ASR.}")
+    lines.append(r'    \label{tab:modality}')
+    lines.append(r'\end{table}')
+
+    return '\n'.join(lines)
+
+
+latex_table = build_latex_table_modality(
+    output_results, print_task_order, print_model_order,
+    TASK_METRICS, MODEL_TASK_LANGUAGES, TASK_LANGUAGES
+)
+
+latex_output_file = 'analysis/latex/modality_table.tex'
+with open(latex_output_file, 'w') as f:
+    f.write(latex_table)
+
+print(f"\n✓ LaTeX table saved to: {latex_output_file}")

@@ -1,0 +1,47 @@
+% Add to your preamble:
+% \usepackage[table]{xcolor}
+% \definecolor{taskgreen}{RGB}{180, 220, 180}
+% \definecolor{taskblue}{RGB}{180, 210, 230}
+
+\begin{table*}[]
+    \centering
+    \footnotesize
+    \begin{tabular}{llcccccc}
+     \toprule
+     \multirow{2}{*}{\textbf{Task}} & \multirow{2}{*}{\textbf{Metric}} & \multirow{2}{*}{\textbf{Model}} & \multicolumn{5}{c}{\textbf{Prompt Type}} \\
+     \cmidrule(lr){4-8}
+     &&& \textbf{Basic} & \textbf{Formal} & \textbf{Inform.} & \textbf{Detail.} & \textbf{Short} \\
+     \midrule
+     \multirow{2}{*}{\textbf{ASR}} & \multirow{2}{*}{WER $\downarrow$} & Phi* & \cellcolor{taskgreen!0} 206.93 & \cellcolor{taskgreen!0} 217.39 & \cellcolor{taskgreen!0} 284.71 & \cellcolor{taskgreen!0} 188.93 & \cellcolor{taskgreen!0} 269.90 \\
+      &  & Qwen & \cellcolor{taskgreen!30} 37.81 & \cellcolor{taskgreen!80} 29.93 & \cellcolor{taskgreen!47} 35.11 & \cellcolor{taskgreen!67} 31.99 & \cellcolor{taskgreen!20} 39.44 \\
+     \cmidrule(lr){1-8}
+     \multirow{2}{*}{\textbf{SQA}} & \multirow{2}{*}{BERTS. $\uparrow$} & Phi & \cellcolor{taskblue!0} 20.48 & \cellcolor{taskblue!0} 21.17 & \cellcolor{taskblue!0} 17.58 & \cellcolor{taskblue!0} 21.04 & \cellcolor{taskblue!0} 17.77 \\
+      &  & Qwen & \cellcolor{taskblue!80} 28.55 & \cellcolor{taskblue!62} 27.92 & \cellcolor{taskblue!42} 27.26 & \cellcolor{taskblue!23} 26.60 & \cellcolor{taskblue!20} 26.49 \\
+     \cmidrule(lr){1-8}
+     \multirow{4}{*}{\textbf{ACHAP}} & \multirow{2}{*}{CollarF1 $\uparrow$} & Phi & \cellcolor{taskgreen!0} 7.66 & \cellcolor{taskgreen!0} 8.48 & \cellcolor{taskgreen!0} 6.95 & \cellcolor{taskgreen!0} 8.11 & \cellcolor{taskgreen!0} 2.18 \\
+      &  & Qwen & \cellcolor{taskgreen!79} 15.49 & \cellcolor{taskgreen!80} 15.57 & \cellcolor{taskgreen!45} 12.55 & \cellcolor{taskgreen!73} 15.00 & \cellcolor{taskgreen!20} 10.33 \\
+      & \multirow{2}{*}{GC-BS $\uparrow$} & Phi & \cellcolor{taskgreen!75} 79.74 & \cellcolor{taskgreen!78} 81.19 & \cellcolor{taskgreen!54} 69.46 & \cellcolor{taskgreen!84} 84.22 & \cellcolor{taskgreen!0} 34.00 \\
+      &  & Qwen & \cellcolor{taskgreen!80} 82.15 & \cellcolor{taskgreen!75} 79.59 & \cellcolor{taskgreen!41} 63.52 & \cellcolor{taskgreen!76} 80.19 & \cellcolor{taskgreen!20} 53.36 \\
+     \cmidrule(lr){1-8}
+     \multirow{2}{*}{\textbf{TTS}} & UTMOS $\uparrow$ & Qwen & \cellcolor{taskblue!31} 4.33 & \cellcolor{taskblue!80} 4.35 & \cellcolor{taskblue!26} 4.33 & \cellcolor{taskblue!20} 4.33 & \cellcolor{taskblue!47} 4.34 \\
+      & WER$_{\text{ASR}}$ $\downarrow$ & Qwen & \cellcolor{taskblue!80} 13.63 & \cellcolor{taskblue!33} 45.81 & \cellcolor{taskblue!20} 55.07 & \cellcolor{taskblue!41} 40.29 & \cellcolor{taskblue!70} 20.43 \\
+     \midrule
+     \multirow{2}{*}{\textbf{MT}} & \multirow{2}{*}{Comet $\uparrow$} & Phi & \cellcolor{taskgreen!0} 60.14 & \cellcolor{taskgreen!0} 55.10 & \cellcolor{taskgreen!0} 59.63 & \cellcolor{taskgreen!0} 62.41 & \cellcolor{taskgreen!0} 56.90 \\
+      &  & Qwen & \cellcolor{taskgreen!80} 76.32 & \cellcolor{taskgreen!59} 74.79 & \cellcolor{taskgreen!47} 73.96 & \cellcolor{taskgreen!70} 75.57 & \cellcolor{taskgreen!20} 72.01 \\
+     \cmidrule(lr){1-8}
+     \multirow{2}{*}{\textbf{ST}} & \multirow{2}{*}{Comet $\uparrow$} & Phi & \cellcolor{taskblue!0} 65.65 & \cellcolor{taskblue!0} 65.33 & \cellcolor{taskblue!0} 62.71 & \cellcolor{taskblue!0} 61.19 & \cellcolor{taskblue!0} 64.72 \\
+      &  & Qwen & \cellcolor{taskblue!71} 73.90 & \cellcolor{taskblue!80} 74.67 & \cellcolor{taskblue!66} 73.49 & \cellcolor{taskblue!20} 69.51 & \cellcolor{taskblue!49} 72.00 \\
+     \cmidrule(lr){1-8}
+     \multirow{2}{*}{\textbf{TSUM}} & \multirow{2}{*}{BERTS. $\uparrow$} & Phi & \cellcolor{taskgreen!32} 40.11 & \cellcolor{taskgreen!69} 44.67 & \cellcolor{taskgreen!62} 43.73 & \cellcolor{taskgreen!73} 45.15 & \cellcolor{taskgreen!24} 39.06 \\
+      &  & Qwen & \cellcolor{taskgreen!80} 45.98 & \cellcolor{taskgreen!64} 44.07 & \cellcolor{taskgreen!20} 38.62 & \cellcolor{taskgreen!70} 44.77 & \cellcolor{taskgreen!75} 45.31 \\
+     \cmidrule(lr){1-8}
+     \multirow{2}{*}{\textbf{SSUM}} & \multirow{2}{*}{BERTS. $\uparrow$} & Phi & \cellcolor{taskblue!0} 38.54 & \cellcolor{taskblue!0} 38.51 & \cellcolor{taskblue!0} 38.40 & \cellcolor{taskblue!3} 39.48 & \cellcolor{taskblue!0} 36.04 \\
+      &  & Qwen & \cellcolor{taskblue!80} 45.74 & \cellcolor{taskblue!64} 44.46 & \cellcolor{taskblue!20} 40.87 & \cellcolor{taskblue!64} 44.44 & \cellcolor{taskblue!67} 44.66 \\
+     \cmidrule(lr){1-8}
+     \multirow{2}{*}{\textbf{S2ST}} & UTMOS $\uparrow$ & Qwen & \cellcolor{taskgreen!69} 4.35 & \cellcolor{taskgreen!80} 4.35 & \cellcolor{taskgreen!20} 4.34 & \cellcolor{taskgreen!44} 4.35 & \cellcolor{taskgreen!54} 4.35 \\
+      & COM.$_{\text{ASR}}$ $\uparrow$ & Qwen & \cellcolor{taskgreen!28} 71.91 & \cellcolor{taskgreen!42} 72.03 & \cellcolor{taskgreen!20} 71.83 & \cellcolor{taskgreen!71} 72.30 & \cellcolor{taskgreen!80} 72.38 \\
+     \bottomrule
+    \end{tabular}
+    \caption{The impact of prompt type across different tasks. Results are averaged over all modalities and available languages. *Phi only supports the languages 'en', 'de', 'fr', 'it', 'es', 'pt' for speech in input, so we only report results for these languages for ASR.}
+    \label{tab:prompt_type}
+\end{table*}

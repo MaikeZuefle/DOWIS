@@ -25,19 +25,21 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
     # Handle question answering tasks
     if isinstance(input_data, dict):
         example = input_data["audio_path"]
+        is_q_task = True
     else:
         example = input_data
+        is_q_task = False
 
     # prepare prompts
     if prompt_modality == "audio":
-        speech_q = input_data["question_speech"]
         prompt_dict = [{"type": "audio", "audio": orig_prompt}]
-        if isinstance(input_data, dict):
+        if is_q_task:
+            speech_q = input_data["question_speech"]
             prompt_dict.append({"type": "audio", "audio": speech_q})
     elif prompt_modality == "text":
-        text_q = input_data["question_text"]
         text_prompt = orig_prompt
-        if isinstance(input_data, dict):
+        if is_q_task:
+            text_q = input_data["question_text"]
             text_prompt += " " + text_q
         prompt_dict = [{"type": "text", "text": text_prompt}]
 
@@ -49,6 +51,9 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
 
     USE_AUDIO_IN_VIDEO = False
     RETURN_AUDIO = output_modality == "audio"
+
+
+    user_conv_content = input_dict + prompt_dict
 
     if RETURN_AUDIO:
         system_prompt = "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."
@@ -62,8 +67,7 @@ def generate(model_processor, prompt, input_data, modality, output_modality, out
             {"type": "text", "text": system_prompt}
         ],
     }
-
-    user_conv_content = input_dict + prompt_dict
+    
     user_conv = {"role": "user", "content": user_conv_content}
 
     conversation = [system_conv, user_conv]

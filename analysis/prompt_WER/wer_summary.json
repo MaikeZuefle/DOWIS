@@ -1,0 +1,86 @@
+{
+  "per_language": {
+    "cs": {
+      "mean_wer": 0.16492307872268722,
+      "num_samples": 180
+    },
+    "de": {
+      "mean_wer": 0.10946724956141293,
+      "num_samples": 360
+    },
+    "en": {
+      "mean_wer": 0.10586897134071423,
+      "num_samples": 270
+    },
+    "es": {
+      "mean_wer": 0.07567690778764659,
+      "num_samples": 180
+    },
+    "fr": {
+      "mean_wer": 0.1723478305551959,
+      "num_samples": 180
+    },
+    "hu": {
+      "mean_wer": 0.13648809532916284,
+      "num_samples": 90
+    },
+    "it": {
+      "mean_wer": 0.07315341352317185,
+      "num_samples": 360
+    },
+    "nl": {
+      "mean_wer": 0.3657503514461164,
+      "num_samples": 90
+    },
+    "pt": {
+      "mean_wer": 0.18431988584341308,
+      "num_samples": 90
+    },
+    "ru": {
+      "mean_wer": 0.1066932981806553,
+      "num_samples": 90
+    },
+    "sv": {
+      "mean_wer": 0.13220775554660108,
+      "num_samples": 90
+    }
+  },
+  "per_task": {
+    "ACHAP": {
+      "mean_wer": 0.10848962729181472,
+      "num_samples": 220
+    },
+    "ASR": {
+      "mean_wer": 0.1136868514260859,
+      "num_samples": 220
+    },
+    "MT": {
+      "mean_wer": 0.10075736249708943,
+      "num_samples": 220
+    },
+    "S2ST": {
+      "mean_wer": 0.14171472056093437,
+      "num_samples": 220
+    },
+    "SQA": {
+      "mean_wer": 0.16585515543420842,
+      "num_samples": 220
+    },
+    "SSUM": {
+      "mean_wer": 0.13949485297141595,
+      "num_samples": 220
+    },
+    "ST": {
+      "mean_wer": 0.08624408078756207,
+      "num_samples": 220
+    },
+    "TSUM": {
+      "mean_wer": 0.1477379102704532,
+      "num_samples": 220
+    },
+    "TTS": {
+      "mean_wer": 0.1412467697394092,
+      "num_samples": 220
+    }
+  }
+}
