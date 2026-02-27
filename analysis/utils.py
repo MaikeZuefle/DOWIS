@@ -1,5 +1,5 @@
 TASK_LANGUAGES = {
-    'ASR': ['en', 'de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs'],#, 'hu'],  # 11 languages
+    'ASR': ['en', 'de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 11 languages
     'ST': ['de', 'it', 'es', 'fr', 'pt', 'nl', 'ru', 'sv', 'cs', 'hu'],  # 10 languages
     'SQA': ['en'],  # 1 language
     'SSUM': ['en', 'de', 'it'],  # 3 languages

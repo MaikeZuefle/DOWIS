@@ -82,5 +82,1422 @@
       "mean_wer": 0.1412467697394092,
       "num_samples": 220
     }
+  },
+  "per_language_per_task": {
+    "cs": {
+      "ACHAP": {
+        "mean_wer": 0.08463122700494823,
+        "num_samples": 20
+      },
+      "ASR": {
+        "mean_wer": 0.231511544011544,
+        "num_samples": 20
+      },
+      "MT": {
+        "mean_wer": 0.10982142857142856,
+        "num_samples": 20
+      },
+      "S2ST": {
+        "mean_wer": 0.165625,
+        "num_samples": 20
+      },
+      "SQA": {
+        "mean_wer": 0.11676948051948051,
+        "num_samples": 20
+      },
+      "SSUM": {
+        "mean_wer": 0.2882107843137255,
+        "num_samples": 20
+      },
+      "ST": {
+        "mean_wer": 0.09533668730650154,
+        "num_samples": 20
+      },
+      "TSUM": {
+        "mean_wer": 0.2234432234432234,
+        "num_samples": 20
+      },
+      "TTS": {
+        "mean_wer": 0.16895833333333332,
+        "num_samples": 20
+      }
+    },
+    "de": {
+      "ACHAP": {
+        "mean_wer": 0.13587795846018458,
+        "num_samples": 40
+      },
+      "ASR": {
+        "mean_wer": 0.09106907894736842,
+        "num_samples": 40
+      },
+      "MT": {
+        "mean_wer": 0.062044683257918544,
+        "num_samples": 40
+      },
+      "S2ST": {
+        "mean_wer": 0.1088888888888889,
+        "num_samples": 40
+      },
+      "SQA": {
+        "mean_wer": 0.14906637222426697,
+        "num_samples": 40
+      },
+      "SSUM": {
+        "mean_wer": 0.10041305916305916,
+        "num_samples": 40
+      },
+      "ST": {
+        "mean_wer": 0.059097222222222225,
+        "num_samples": 40
+      },
+      "TSUM": {
+        "mean_wer": 0.1339828431372549,
+        "num_samples": 40
+      },
+      "TTS": {
+        "mean_wer": 0.1447651397515528,
+        "num_samples": 40
+      }
+    },
+    "en": {
+      "ACHAP": {
+        "mean_wer": 0.1056362016040244,
+        "num_samples": 30
+      },
+      "ASR": {
+        "mean_wer": 0.11111111111111112,
+        "num_samples": 30
+      },
+      "MT": {
+        "mean_wer": 0.05094696969696969,
+        "num_samples": 30
+      },
+      "S2ST": {
+        "mean_wer": 0.13830808080808082,
+        "num_samples": 30
+      },
+      "SQA": {
+        "mean_wer": 0.14883896991095139,
+        "num_samples": 30
+      },
+      "SSUM": {
+        "mean_wer": 0.00499108734402852,
+        "num_samples": 30
+      },
+      "ST": {
+        "mean_wer": 0.0678042328042328,
+        "num_samples": 30
+      },
+      "TSUM": {
+        "mean_wer": 0.13147727272727272,
+        "num_samples": 30
+      },
+      "TTS": {
+        "mean_wer": 0.19370681605975723,
+        "num_samples": 30
+      }
+    },
+    "es": {
+      "ACHAP": {
+        "mean_wer": 0.04837180280037423,
+        "num_samples": 20
+      },
+      "ASR": {
+        "mean_wer": 0.024469696969696968,
+        "num_samples": 20
+      },
+      "MT": {
+        "mean_wer": 0.019298245614035085,
+        "num_samples": 20
+      },
+      "S2ST": {
+        "mean_wer": 0.006926406926406926,
+        "num_samples": 20
+      },
+      "SQA": {
+        "mean_wer": 0.18321039340776182,
+        "num_samples": 20
+      },
+      "SSUM": {
+        "mean_wer": 0.1035361377752682,
+        "num_samples": 20
+      },
+      "ST": {
+        "mean_wer": 0.05487012987012987,
+        "num_samples": 20
+      },
+      "TSUM": {
+        "mean_wer": 0.15444444444444444,
+        "num_samples": 20
+      },
+      "TTS": {
+        "mean_wer": 0.08596491228070176,
+        "num_samples": 20
+      }
+    },
+    "fr": {
+      "ACHAP": {
+        "mean_wer": 0.10332553298987637,
+        "num_samples": 20
+      },
+      "ASR": {
+        "mean_wer": 0.2,
+        "num_samples": 20
+      },
+      "MT": {
+        "mean_wer": 0.09945512820512821,
+        "num_samples": 20
+      },
+      "S2ST": {
+        "mean_wer": 0.2370916421488504,
+        "num_samples": 20
+      },
+      "SQA": {
+        "mean_wer": 0.23669676814413654,
+        "num_samples": 20
+      },
+      "SSUM": {
+        "mean_wer": 0.2121031746031746,
+        "num_samples": 20
+      },
+      "ST": {
+        "mean_wer": 0.13541666666666669,
+        "num_samples": 20
+      },
+      "TSUM": {
+        "mean_wer": 0.15312030075187968,
+        "num_samples": 20
+      },
+      "TTS": {
+        "mean_wer": 0.17392126148705095,
+        "num_samples": 20
+      }
+    },
+    "hu": {
+      "ACHAP": {
+        "mean_wer": 0.13981266336682494,
+        "num_samples": 10
+      },
+      "ASR": {
+        "mean_wer": 0.15194444444444444,
+        "num_samples": 10
+      },
+      "MT": {
+        "mean_wer": 0.12380952380952381,
+        "num_samples": 10
+      },
+      "S2ST": {
+        "mean_wer": 0.09320747520976354,
+        "num_samples": 10
+      },
+      "SQA": {
+        "mean_wer": 0.16305708180708178,
+        "num_samples": 10
+      },
+      "SSUM": {
+        "mean_wer": 0.09226190476190477,
+        "num_samples": 10
+      },
+      "ST": {
+        "mean_wer": 0.22147869674185464,
+        "num_samples": 10
+      },
+      "TSUM": {
+        "mean_wer": 0.08964646464646465,
+        "num_samples": 10
+      },
+      "TTS": {
+        "mean_wer": 0.15317460317460316,
+        "num_samples": 10
+      }
+    },
+    "it": {
+      "ACHAP": {
+        "mean_wer": 0.0866807200735772,
+        "num_samples": 40
+      },
+      "ASR": {
+        "mean_wer": 0.01388888888888889,
+        "num_samples": 40
+      },
+      "MT": {
+        "mean_wer": 0.07888888888888888,
+        "num_samples": 40
+      },
+      "S2ST": {
+        "mean_wer": 0.1648611111111111,
+        "num_samples": 40
+      },
+      "SQA": {
+        "mean_wer": 0.1488125763125763,
+        "num_samples": 40
+      },
+      "SSUM": {
+        "mean_wer": 0.048027087646652866,
+        "num_samples": 40
+      },
+      "ST": {
+        "mean_wer": 0.0359054834054834,
+        "num_samples": 40
+      },
+      "TSUM": {
+        "mean_wer": 0.035818713450292396,
+        "num_samples": 40
+      },
+      "TTS": {
+        "mean_wer": 0.04549725193107547,
+        "num_samples": 40
+      }
+    },
+    "nl": {
+      "ACHAP": {
+        "mean_wer": 0.28366072397833536,
+        "num_samples": 10
+      },
+      "ASR": {
+        "mean_wer": 0.16148809523809524,
+        "num_samples": 10
+      },
+      "MT": {
+        "mean_wer": 0.6676395534290271,
+        "num_samples": 10
+      },
+      "S2ST": {
+        "mean_wer": 0.257303391053391,
+        "num_samples": 10
+      },
+      "SQA": {
+        "mean_wer": 0.20024304728639092,
+        "num_samples": 10
+      },
+      "SSUM": {
+        "mean_wer": 0.4822041847041847,
+        "num_samples": 10
+      },
+      "ST": {
+        "mean_wer": 0.233133971291866,
+        "num_samples": 10
+      },
+      "TSUM": {
+        "mean_wer": 0.49413992869875223,
+        "num_samples": 10
+      },
+      "TTS": {
+        "mean_wer": 0.5119402673350042,
+        "num_samples": 10
+      }
+    },
+    "pt": {
+      "ACHAP": {
+        "mean_wer": 0.05569974927991548,
+        "num_samples": 10
+      },
+      "ASR": {
+        "mean_wer": 0.3308838383838384,
+        "num_samples": 10
+      },
+      "MT": {
+        "mean_wer": 0.0919047619047619,
+        "num_samples": 10
+      },
+      "S2ST": {
+        "mean_wer": 0.18268518518518517,
+        "num_samples": 10
+      },
+      "SQA": {
+        "mean_wer": 0.2476984126984127,
+        "num_samples": 10
+      },
+      "SSUM": {
+        "mean_wer": 0.2541269841269841,
+        "num_samples": 10
+      },
+      "ST": {
+        "mean_wer": 0.138989898989899,
+        "num_samples": 10
+      },
+      "TSUM": {
+        "mean_wer": 0.23079365079365077,
+        "num_samples": 10
+      },
+      "TTS": {
+        "mean_wer": 0.12609649122807015,
+        "num_samples": 10
+      }
+    },
+    "ru": {
+      "ACHAP": {
+        "mean_wer": 0.08645116821973535,
+        "num_samples": 10
+      },
+      "ASR": {
+        "mean_wer": 0.0625,
+        "num_samples": 10
+      },
+      "MT": {
+        "mean_wer": 0.03333333333333333,
+        "num_samples": 10
+      },
+      "S2ST": {
+        "mean_wer": 0.06984126984126984,
+        "num_samples": 10
+      },
+      "SQA": {
+        "mean_wer": 0.19634920634920633,
+        "num_samples": 10
+      },
+      "SSUM": {
+        "mean_wer": 0.21333333333333332,
+        "num_samples": 10
+      },
+      "ST": {
+        "mean_wer": 0.011764705882352941,
+        "num_samples": 10
+      },
+      "TSUM": {
+        "mean_wer": 0.2,
+        "num_samples": 10
+      },
+      "TTS": {
+        "mean_wer": 0.08666666666666667,
+        "num_samples": 10
+      }
+    },
+    "sv": {
+      "ACHAP": {
+        "mean_wer": 0.1413470510375953,
+        "num_samples": 10
+      },
+      "ASR": {
+        "mean_wer": 0.12916666666666665,
+        "num_samples": 10
+      },
+      "MT": {
+        "mean_wer": 0.12625,
+        "num_samples": 10
+      },
+      "S2ST": {
+        "mean_wer": 0.1854761904761905,
+        "num_samples": 10
+      },
+      "SQA": {
+        "mean_wer": 0.13007968338850692,
+        "num_samples": 10
+      },
+      "SSUM": {
+        "mean_wer": 0.21052631578947367,
+        "num_samples": 10
+      },
+      "ST": {
+        "mean_wer": 0.13733201581027668,
+        "num_samples": 10
+      },
+      "TSUM": {
+        "mean_wer": 0.1,
+        "num_samples": 10
+      },
+      "TTS": {
+        "mean_wer": 0.029691876750700275,
+        "num_samples": 10
+      }
+    }
+  },
+  "per_gender": {
+    "female": {
+      "mean_wer": 0.13697995388291825,
+      "num_samples": 1080
+    },
+    "male": {
+      "mean_wer": 0.11556851402424731,
+      "num_samples": 900
+    },
+    "gender_gap": 0.021411
+  },
+  "per_language_per_gender": {
+    "cs": {
+      "female": {
+        "mean_wer": 0.14544159060149323,
+        "num_samples": 90
+      },
+      "male": {
+        "mean_wer": 0.1844045668438812,
+        "num_samples": 90
+      },
+      "gender_gap": -0.038963
+    },
+    "de": {
+      "female": {
+        "mean_wer": 0.1323143370741133,
+        "num_samples": 180
+      },
+      "male": {
+        "mean_wer": 0.08662016204871253,
+        "num_samples": 180
+      },
+      "gender_gap": 0.045694
+    },
+    "en": {
+      "female": {
+        "mean_wer": 0.06993645897629647,
+        "num_samples": 180
+      },
+      "male": {
+        "mean_wer": 0.17773399606954987,
+        "num_samples": 90
+      },
+      "gender_gap": -0.107798
+    },
+    "es": {
+      "female": {
+        "mean_wer": 0.05882989804197714,
+        "num_samples": 90
+      },
+      "male": {
+        "mean_wer": 0.09252391753331603,
+        "num_samples": 90
+      },
+      "gender_gap": -0.033694
+    },
+    "fr": {
+      "female": {
+        "mean_wer": 0.1675553534951631,
+        "num_samples": 90
+      },
+      "male": {
+        "mean_wer": 0.17714030761522873,
+        "num_samples": 90
+      },
+      "gender_gap": -0.009585
+    },
+    "hu": {
+      "male": {
+        "mean_wer": 0.13648809532916284,
+        "num_samples": 90
+      }
+    },
+    "it": {
+      "female": {
+        "mean_wer": 0.09257650975971708,
+        "num_samples": 180
+      },
+      "male": {
+        "mean_wer": 0.053730317286626535,
+        "num_samples": 180
+      },
+      "gender_gap": 0.038846
+    },
+    "nl": {
+      "female": {
+        "mean_wer": 0.3657503514461164,
+        "num_samples": 90
+      }
+    },
+    "pt": {
+      "female": {
+        "mean_wer": 0.18431988584341308,
+        "num_samples": 90
+      }
+    },
+    "ru": {
+      "male": {
+        "mean_wer": 0.1066932981806553,
+        "num_samples": 90
+      }
+    },
+    "sv": {
+      "female": {
+        "mean_wer": 0.13220775554660108,
+        "num_samples": 90
+      }
+    }
+  },
+  "per_language_per_task_per_gender": {
+    "cs": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.0624076326122362,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.10685482139766027,
+          "num_samples": 10
+        },
+        "gender_gap": -0.044447
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.21428571428571427,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.24873737373737376,
+          "num_samples": 10
+        },
+        "gender_gap": -0.034452
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.06666666666666667,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.15297619047619046,
+          "num_samples": 10
+        },
+        "gender_gap": -0.08631
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.11499999999999999,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.21625,
+          "num_samples": 10
+        },
+        "gender_gap": -0.10125
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.11504329004329003,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.118495670995671,
+          "num_samples": 10
+        },
+        "gender_gap": -0.003452
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.25602941176470584,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.3203921568627451,
+          "num_samples": 10
+        },
+        "gender_gap": -0.064363
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.06702786377708977,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.12364551083591331,
+          "num_samples": 10
+        },
+        "gender_gap": -0.056618
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.2070970695970696,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.23978937728937733,
+          "num_samples": 10
+        },
+        "gender_gap": -0.032692
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.20541666666666666,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.1325,
+          "num_samples": 10
+        },
+        "gender_gap": 0.072917
+      }
+    },
+    "de": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.1788905989806043,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.09286531793976491,
+          "num_samples": 20
+        },
+        "gender_gap": 0.086025
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.11949926900584795,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.06263888888888888,
+          "num_samples": 20
+        },
+        "gender_gap": 0.05686
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.08031485671191554,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.04377450980392157,
+          "num_samples": 20
+        },
+        "gender_gap": 0.03654
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.08322222222222223,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.13455555555555557,
+          "num_samples": 20
+        },
+        "gender_gap": -0.051333
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.16827045761256285,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.12986228683597106,
+          "num_samples": 20
+        },
+        "gender_gap": 0.038408
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.10002525252525252,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.10080086580086581,
+          "num_samples": 20
+        },
+        "gender_gap": -0.000776
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.03194444444444444,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.08625000000000001,
+          "num_samples": 20
+        },
+        "gender_gap": -0.054306
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.20939950980392155,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.05856617647058824,
+          "num_samples": 20
+        },
+        "gender_gap": 0.150833
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.21926242236024845,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.07026785714285713,
+          "num_samples": 20
+        },
+        "gender_gap": 0.148995
+      }
+    },
+    "en": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.09379962852697414,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.1293093477581248,
+          "num_samples": 10
+        },
+        "gender_gap": -0.03551
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.0611111111111111,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.2111111111111111,
+          "num_samples": 10
+        },
+        "gender_gap": -0.15
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.020170454545454547,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.1125,
+          "num_samples": 10
+        },
+        "gender_gap": -0.09233
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.08371212121212121,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.2475,
+          "num_samples": 10
+        },
+        "gender_gap": -0.163788
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.12251793227412422,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.20148104518460555,
+          "num_samples": 10
+        },
+        "gender_gap": -0.078963
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.0,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.014973262032085561,
+          "num_samples": 10
+        },
+        "gender_gap": -0.014973
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.02142857142857143,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.16055555555555556,
+          "num_samples": 10
+        },
+        "gender_gap": -0.139127
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.1612121212121212,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.07200757575757576,
+          "num_samples": 10
+        },
+        "gender_gap": 0.089205
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.06547619047619047,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.45016806722689073,
+          "num_samples": 10
+        },
+        "gender_gap": -0.384692
+      }
+    },
+    "es": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.038198658484372774,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.0585449471163757,
+          "num_samples": 10
+        },
+        "gender_gap": -0.020346
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.025757575757575757,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.023181818181818182,
+          "num_samples": 10
+        },
+        "gender_gap": 0.002576
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.005263157894736842,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.03333333333333333,
+          "num_samples": 10
+        },
+        "gender_gap": -0.02807
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.00909090909090909,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.0047619047619047615,
+          "num_samples": 10
+        },
+        "gender_gap": 0.004329
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.16830608718766613,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.1981146996278575,
+          "num_samples": 10
+        },
+        "gender_gap": -0.029809
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.03207227555053642,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.175,
+          "num_samples": 10
+        },
+        "gender_gap": -0.142928
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.062012987012987006,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.04772727272727273,
+          "num_samples": 10
+        },
+        "gender_gap": 0.014286
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.03222222222222222,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.27666666666666667,
+          "num_samples": 10
+        },
+        "gender_gap": -0.244444
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.15654520917678813,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.015384615384615385,
+          "num_samples": 10
+        },
+        "gender_gap": 0.141161
+      }
+    },
+    "fr": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.08058817187540591,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.1260628941043468,
+          "num_samples": 10
+        },
+        "gender_gap": -0.045475
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.19999999999999998,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.19999999999999998,
+          "num_samples": 10
+        },
+        "gender_gap": 0.0
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.08125,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.11766025641025642,
+          "num_samples": 10
+        },
+        "gender_gap": -0.03641
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.21795739348370927,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.2562258908139915,
+          "num_samples": 10
+        },
+        "gender_gap": -0.038268
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.19468548994864784,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.2787080463396253,
+          "num_samples": 10
+        },
+        "gender_gap": -0.084023
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.1472222222222222,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.276984126984127,
+          "num_samples": 10
+        },
+        "gender_gap": -0.129762
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.13499999999999998,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.1358333333333333,
+          "num_samples": 10
+        },
+        "gender_gap": -0.000833
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.18312030075187968,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.1231203007518797,
+          "num_samples": 10
+        },
+        "gender_gap": 0.06
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.2681746031746032,
+          "num_samples": 10
+        },
+        "male": {
+          "mean_wer": 0.07966791979949875,
+          "num_samples": 10
+        },
+        "gender_gap": 0.188507
+      }
+    },
+    "hu": {
+      "ACHAP": {
+        "male": {
+          "mean_wer": 0.13981266336682494,
+          "num_samples": 10
+        }
+      },
+      "ASR": {
+        "male": {
+          "mean_wer": 0.15194444444444444,
+          "num_samples": 10
+        }
+      },
+      "MT": {
+        "male": {
+          "mean_wer": 0.12380952380952381,
+          "num_samples": 10
+        }
+      },
+      "S2ST": {
+        "male": {
+          "mean_wer": 0.09320747520976354,
+          "num_samples": 10
+        }
+      },
+      "SQA": {
+        "male": {
+          "mean_wer": 0.16305708180708178,
+          "num_samples": 10
+        }
+      },
+      "SSUM": {
+        "male": {
+          "mean_wer": 0.09226190476190477,
+          "num_samples": 10
+        }
+      },
+      "ST": {
+        "male": {
+          "mean_wer": 0.22147869674185464,
+          "num_samples": 10
+        }
+      },
+      "TSUM": {
+        "male": {
+          "mean_wer": 0.08964646464646465,
+          "num_samples": 10
+        }
+      },
+      "TTS": {
+        "male": {
+          "mean_wer": 0.15317460317460316,
+          "num_samples": 10
+        }
+      }
+    },
+    "it": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.09037121608550179,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.08299022406165261,
+          "num_samples": 20
+        },
+        "gender_gap": 0.007381
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.02277777777777778,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.005,
+          "num_samples": 20
+        },
+        "gender_gap": 0.017778
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.14777777777777779,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.01,
+          "num_samples": 20
+        },
+        "gender_gap": 0.137778
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.22999999999999998,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.09972222222222223,
+          "num_samples": 20
+        },
+        "gender_gap": 0.130278
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.15311965811965814,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.14450549450549452,
+          "num_samples": 20
+        },
+        "gender_gap": 0.008614
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.0583247066942719,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.03772946859903382,
+          "num_samples": 20
+        },
+        "gender_gap": 0.020595
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.027067099567099566,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.04474386724386724,
+          "num_samples": 20
+        },
+        "gender_gap": -0.017677
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.06900584795321638,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.002631578947368421,
+          "num_samples": 20
+        },
+        "gender_gap": 0.066374
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.03474450386215093,
+          "num_samples": 20
+        },
+        "male": {
+          "mean_wer": 0.05625,
+          "num_samples": 20
+        },
+        "gender_gap": -0.021505
+      }
+    },
+    "nl": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.28366072397833536,
+          "num_samples": 10
+        }
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.16148809523809524,
+          "num_samples": 10
+        }
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.6676395534290271,
+          "num_samples": 10
+        }
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.257303391053391,
+          "num_samples": 10
+        }
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.20024304728639092,
+          "num_samples": 10
+        }
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.4822041847041847,
+          "num_samples": 10
+        }
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.233133971291866,
+          "num_samples": 10
+        }
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.49413992869875223,
+          "num_samples": 10
+        }
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.5119402673350042,
+          "num_samples": 10
+        }
+      }
+    },
+    "pt": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.05569974927991548,
+          "num_samples": 10
+        }
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.3308838383838384,
+          "num_samples": 10
+        }
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.0919047619047619,
+          "num_samples": 10
+        }
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.18268518518518517,
+          "num_samples": 10
+        }
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.2476984126984127,
+          "num_samples": 10
+        }
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.2541269841269841,
+          "num_samples": 10
+        }
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.138989898989899,
+          "num_samples": 10
+        }
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.23079365079365077,
+          "num_samples": 10
+        }
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.12609649122807015,
+          "num_samples": 10
+        }
+      }
+    },
+    "ru": {
+      "ACHAP": {
+        "male": {
+          "mean_wer": 0.08645116821973535,
+          "num_samples": 10
+        }
+      },
+      "ASR": {
+        "male": {
+          "mean_wer": 0.0625,
+          "num_samples": 10
+        }
+      },
+      "MT": {
+        "male": {
+          "mean_wer": 0.03333333333333333,
+          "num_samples": 10
+        }
+      },
+      "S2ST": {
+        "male": {
+          "mean_wer": 0.06984126984126984,
+          "num_samples": 10
+        }
+      },
+      "SQA": {
+        "male": {
+          "mean_wer": 0.19634920634920633,
+          "num_samples": 10
+        }
+      },
+      "SSUM": {
+        "male": {
+          "mean_wer": 0.21333333333333332,
+          "num_samples": 10
+        }
+      },
+      "ST": {
+        "male": {
+          "mean_wer": 0.011764705882352941,
+          "num_samples": 10
+        }
+      },
+      "TSUM": {
+        "male": {
+          "mean_wer": 0.2,
+          "num_samples": 10
+        }
+      },
+      "TTS": {
+        "male": {
+          "mean_wer": 0.08666666666666667,
+          "num_samples": 10
+        }
+      }
+    },
+    "sv": {
+      "ACHAP": {
+        "female": {
+          "mean_wer": 0.1413470510375953,
+          "num_samples": 10
+        }
+      },
+      "ASR": {
+        "female": {
+          "mean_wer": 0.12916666666666665,
+          "num_samples": 10
+        }
+      },
+      "MT": {
+        "female": {
+          "mean_wer": 0.12625,
+          "num_samples": 10
+        }
+      },
+      "S2ST": {
+        "female": {
+          "mean_wer": 0.1854761904761905,
+          "num_samples": 10
+        }
+      },
+      "SQA": {
+        "female": {
+          "mean_wer": 0.13007968338850692,
+          "num_samples": 10
+        }
+      },
+      "SSUM": {
+        "female": {
+          "mean_wer": 0.21052631578947367,
+          "num_samples": 10
+        }
+      },
+      "ST": {
+        "female": {
+          "mean_wer": 0.13733201581027668,
+          "num_samples": 10
+        }
+      },
+      "TSUM": {
+        "female": {
+          "mean_wer": 0.1,
+          "num_samples": 10
+        }
+      },
+      "TTS": {
+        "female": {
+          "mean_wer": 0.029691876750700275,
+          "num_samples": 10
+        }
+      }
+    }
   }
 }

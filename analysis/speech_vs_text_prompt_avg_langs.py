@@ -7,6 +7,9 @@ from utils import TASK_LANGUAGES, MODEL_TASK_LANGUAGES, TASK_METRICS
 models = ['qwen_omni', 'phi_multimodal']
 tasks = ['ASR', 'MT', 'S2ST', 'SSUM', 'TSUM', 'ST', 'TTS', 'ACHAP', 'SQA']
 
+# languages where we have both speakers
+GENDERED_LANGUAGES = {'de', 'en', 'it', 'cs', 'es', 'fr'}
+
 # Define which languages are supported by each task
 
 # All possible languages (union of all task languages)
@@ -148,27 +151,39 @@ for model in models:
             else:
                 output_results[model][task][metric]['text_prompt'] = None
             
-            # Female audio prompt average
+            # Female audio prompt average (only gendered languages)
             if 'f_audio_prompt' in raw_results[model][task][metric] and len(raw_results[model][task][metric]['f_audio_prompt']) > 0:
-                values = [item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']]
-                output_results[model][task][metric]['f_audio_prompt'] = {
-                    'average': sum(values) / len(values),
-                    'num_languages': len(values),
-                    'languages': sorted([item['language'] for item in raw_results[model][task][metric]['f_audio_prompt']]),
-                    'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']}
-                }
+                values = [item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']
+                          if item['language'] in GENDERED_LANGUAGES]
+                if values:
+                    output_results[model][task][metric]['f_audio_prompt'] = {
+                        'average': sum(values) / len(values),
+                        'num_languages': len(values),
+                        'languages': sorted([item['language'] for item in raw_results[model][task][metric]['f_audio_prompt']
+                                             if item['language'] in GENDERED_LANGUAGES]),
+                        'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']
+                                         if item['language'] in GENDERED_LANGUAGES}
+                    }
+                else:
+                    output_results[model][task][metric]['f_audio_prompt'] = None
             else:
                 output_results[model][task][metric]['f_audio_prompt'] = None
             
-            # Male audio prompt average
+            # Male audio prompt average (only gendered languages)
             if 'm_audio_prompt' in raw_results[model][task][metric] and len(raw_results[model][task][metric]['m_audio_prompt']) > 0:
-                values = [item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']]
-                output_results[model][task][metric]['m_audio_prompt'] = {
-                    'average': sum(values) / len(values),
-                    'num_languages': len(values),
-                    'languages': sorted([item['language'] for item in raw_results[model][task][metric]['m_audio_prompt']]),
-                    'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']}
-                }
+                values = [item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']
+                          if item['language'] in GENDERED_LANGUAGES]
+                if values:
+                    output_results[model][task][metric]['m_audio_prompt'] = {
+                        'average': sum(values) / len(values),
+                        'num_languages': len(values),
+                        'languages': sorted([item['language'] for item in raw_results[model][task][metric]['m_audio_prompt']
+                                             if item['language'] in GENDERED_LANGUAGES]),
+                        'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']
+                                         if item['language'] in GENDERED_LANGUAGES}
+                    }
+                else:
+                    output_results[model][task][metric]['m_audio_prompt'] = None
             else:
                 output_results[model][task][metric]['m_audio_prompt'] = None
             
