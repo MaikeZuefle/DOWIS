@@ -196,6 +196,8 @@ def main(out_folder, model, task, lang, predictions_folder=None):
 
             sample = json.loads(line)
             reference = sample["ref"]
+            if "video_id" in sample and isinstance(reference, list):
+                reference = {"timestamps": reference, "video_id": sample["video_id"]}
             predicted = sample["predicted"]
 
             # Collect all predictions for this sample (up to 15: 5 prompt types × 3 modalities)
