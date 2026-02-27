@@ -1,8 +1,8 @@
 import json
 import logging
 import os
-from chunkseg import evaluate
-from mutagen import File as MutaFile
+
+
 
 
 _DATA_DIR = ""
@@ -55,6 +55,8 @@ def _load_ref_titles(video_id: str) -> list:
 
 
 def score_achap(predictions, reference, eval_model=None, lang=None):
+    from mutagen import File as MutaFile
+    from chunkseg import evaluate
     if isinstance(predictions, str):
         predictions = [predictions]
 
