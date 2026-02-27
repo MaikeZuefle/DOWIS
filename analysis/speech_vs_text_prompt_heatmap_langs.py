@@ -242,10 +242,10 @@ for model in models:
     print(f"\nGenerating heatmaps for {model}...")
 
     # Monolingual tasks
-    create_heatmap(model, MONOLINGUAL_TASKS, "Monolingual Tasks", fig_height=5)
+    create_heatmap(model, MONOLINGUAL_TASKS, "Monolingual Tasks", fig_height=3.5)
 
     # Multilingual tasks
-    create_heatmap(model, MULTILINGUAL_TASKS, "Multilingual Tasks", fig_height=5)
+    create_heatmap(model, MULTILINGUAL_TASKS, "Multilingual Tasks", fig_height=3.5)
 
 print("\n✓ All heatmaps generated!")
 print("\nColor interpretation:")

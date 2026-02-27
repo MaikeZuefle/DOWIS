@@ -7,6 +7,9 @@ from utils import TASK_LANGUAGES, MODEL_TASK_LANGUAGES, TASK_METRICS
 models = ['qwen_omni', 'phi_multimodal']
 tasks = ['ASR', 'MT', 'S2ST', 'SSUM', 'TSUM', 'ST', 'TTS', 'ACHAP', 'SQA']
 
+# languages where we have both speakers
+GENDERED_LANGUAGES = {'de', 'en', 'it', 'cs', 'es', 'fr'}
+
 # Define which languages are supported by each task
 
 # All possible languages (union of all task languages)
@@ -148,27 +151,39 @@ for model in models:
             else:
                 output_results[model][task][metric]['text_prompt'] = None
             
-            # Female audio prompt average
+            # Female audio prompt average (only gendered languages)
             if 'f_audio_prompt' in raw_results[model][task][metric] and len(raw_results[model][task][metric]['f_audio_prompt']) > 0:
-                values = [item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']]
-                output_results[model][task][metric]['f_audio_prompt'] = {
-                    'average': sum(values) / len(values),
-                    'num_languages': len(values),
-                    'languages': sorted([item['language'] for item in raw_results[model][task][metric]['f_audio_prompt']]),
-                    'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']}
-                }
+                values = [item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']
+                          if item['language'] in GENDERED_LANGUAGES]
+                if values:
+                    output_results[model][task][metric]['f_audio_prompt'] = {
+                        'average': sum(values) / len(values),
+                        'num_languages': len(values),
+                        'languages': sorted([item['language'] for item in raw_results[model][task][metric]['f_audio_prompt']
+                                             if item['language'] in GENDERED_LANGUAGES]),
+                        'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['f_audio_prompt']
+                                         if item['language'] in GENDERED_LANGUAGES}
+                    }
+                else:
+                    output_results[model][task][metric]['f_audio_prompt'] = None
             else:
                 output_results[model][task][metric]['f_audio_prompt'] = None
             
-            # Male audio prompt average
+            # Male audio prompt average (only gendered languages)
             if 'm_audio_prompt' in raw_results[model][task][metric] and len(raw_results[model][task][metric]['m_audio_prompt']) > 0:
-                values = [item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']]
-                output_results[model][task][metric]['m_audio_prompt'] = {
-                    'average': sum(values) / len(values),
-                    'num_languages': len(values),
-                    'languages': sorted([item['language'] for item in raw_results[model][task][metric]['m_audio_prompt']]),
-                    'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']}
-                }
+                values = [item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']
+                          if item['language'] in GENDERED_LANGUAGES]
+                if values:
+                    output_results[model][task][metric]['m_audio_prompt'] = {
+                        'average': sum(values) / len(values),
+                        'num_languages': len(values),
+                        'languages': sorted([item['language'] for item in raw_results[model][task][metric]['m_audio_prompt']
+                                             if item['language'] in GENDERED_LANGUAGES]),
+                        'per_language': {item['language']: item['value'] for item in raw_results[model][task][metric]['m_audio_prompt']
+                                         if item['language'] in GENDERED_LANGUAGES}
+                    }
+                else:
+                    output_results[model][task][metric]['m_audio_prompt'] = None
             else:
                 output_results[model][task][metric]['m_audio_prompt'] = None
             
@@ -323,7 +338,7 @@ METRIC_SCALE = {
     'GC-BS':    100,
 }
 
-TASK_COLOURS = ['taskgreen', 'taskblue']
+#TASK_COLOURS = ['taskgreen', 'taskblue']
 
 ALPHA_MIN = 0.20
 ALPHA_MAX = 0.80
@@ -366,8 +381,136 @@ def coloured_cell(value_str, alpha, colour_name):
     return rf'\cellcolor{{{colour_name}!{intensity}}} {value_str}'
 
 
+# def build_latex_table_modality(output_results, print_task_order, print_model_order,
+#                                TASK_METRICS, MODEL_TASK_LANGUAGES, TASK_LANGUAGES):
+
+#     lines = []
+
+#     lines.append(r'% Add to your preamble:')
+#     lines.append(r'% \usepackage[table]{xcolor}')
+#     lines.append(r'% \definecolor{taskgreen}{RGB}{180, 220, 180}')
+#     lines.append(r'% \definecolor{taskblue}{RGB}{180, 210, 230}')
+#     lines.append(r'')
+#     lines.append(r'\begin{table}[]')
+#     lines.append(r'    \centering')
+#     lines.append(r'    \footnotesize')
+#     lines.append(r'    \begin{tabular}{p{0.6cm}p{1.3cm}p{0.6cm}p{0.7cm}p{0.7cm}p{0.7cm}p{0.7cm}}')
+#     lines.append(r'     \toprule')
+#     lines.append(r'     \multirow{2}{*}{\textbf{Task}} & \multirow{2}{*}{\textbf{Metric}} & \multirow{2}{*}{\textbf{Model}} & \textbf{Text} & \multicolumn{3}{c}{\textbf{Speech Prompt}} \\')
+#     lines.append(r'     &&& \textbf{Prompt} & \multicolumn{1}{c}{\textbf{All}} & \multicolumn{1}{c}{\textbf{Male}} & \multicolumn{1}{c}{\textbf{Fem.}} \\')
+#     lines.append(r'     \midrule')
+
+#     num_tasks = len(print_task_order)
+
+#     for task_idx, task in enumerate(print_task_order):
+#         task_metrics = TASK_METRICS.get(task, 'wer')
+#         if isinstance(task_metrics, str):
+#             task_metrics = [task_metrics]
+
+#         task_models = ['qwen_omni'] if task in QWEN_ONLY_TASKS else print_model_order
+#         num_rows = len(task_metrics) * len(task_models)
+
+#         colour_name = TASK_COLOURS[task_idx % 2]
+
+#         # Pre-compute per-metric ranges anchored to the better model
+#         metric_ranges = {}
+#         for metric in task_metrics:
+#             lower_better = metric in LOWER_IS_BETTER
+#             best_min, best_max, best_avg = None, None, None
+
+#             for model in task_models:
+#                 values = collect_metric_values_modality(output_results, task, metric, model, MODALITIES)
+#                 if not values:
+#                     continue
+#                 model_avg = sum(values) / len(values)
+#                 if best_avg is None:
+#                     best_min, best_max, best_avg = min(values), max(values), model_avg
+#                 else:
+#                     is_better = (model_avg < best_avg) if lower_better else (model_avg > best_avg)
+#                     if is_better:
+#                         best_min, best_max, best_avg = min(values), max(values), model_avg
+
+#             shared_range = (best_min, best_max) if best_min is not None else (0, 1)
+#             metric_ranges[metric] = {model: shared_range for model in task_models}
+
+#         for metric_idx, metric in enumerate(task_metrics):
+#             metric_latex = METRIC_LATEX.get(metric, metric)
+#             lower_better = metric in LOWER_IS_BETTER
+
+#             for model_idx, model in enumerate(task_models):
+#                 min_val, max_val = metric_ranges[metric][model]
+
+#                 model_name = MODEL_LATEX.get(model, model)
+#                 if model == 'phi_multimodal' and task in PHI_FOOTNOTE_TASKS:
+#                     model_name += '*'
+
+#                 # Build 4 value cells: text, combined, male, female
+#                 cells = []
+#                 for modality in MODALITIES:
+#                     entry = output_results[model][task][metric].get(modality)
+#                     value_str = fmt_value(entry, metric)
+#                     if value_str != '':
+#                         scale = METRIC_SCALE.get(metric, 1)
+#                         raw_value = entry['average'] * scale
+#                         alpha = compute_alpha(raw_value, min_val, max_val, lower_better)
+#                         cells.append(coloured_cell(value_str, alpha, colour_name))
+#                     else:
+#                         cells.append('')
+#                 cells_str = ' & '.join(cells)
+
+#                 # Task label (first row of block only)
+#                 global_row = metric_idx * len(task_models) + model_idx
+#                 if global_row == 0:
+#                     task_col = rf'\multirow{{{num_rows}}}{{*}}{{\textbf{{{task}}}}}'
+#                 else:
+#                     task_col = ''
+
+#                 # Metric label (first model row per metric only)
+#                 if model_idx == 0:
+#                     if len(task_models) > 1:
+#                         metric_col = rf'\multirow{{{len(task_models)}}}{{*}}{{{metric_latex}}}'
+#                     else:
+#                         metric_col = metric_latex
+#                 else:
+#                     metric_col = ''
+
+#                 row = f'     {task_col} & {metric_col} & {model_name} & {cells_str} \\\\'
+#                 lines.append(row)
+
+#         # Separator after task block
+#         if task_idx < num_tasks - 1:
+#             if task in MIDRULE_AFTER:
+#                 lines.append(r'     \midrule')
+#             else:
+#                 lines.append(r'     \cmidrule(lr){1-7}')
+
+#     lines.append(r'     \bottomrule')
+#     lines.append(r'    \end{tabular}')
+#     lines.append(r"    \caption{The impact of speech vs. text prompts across different tasks. The results are averaged over different prompt types and languages. *Phi only supports the languages 'en', 'de', 'fr', 'it', 'es', 'pt' for speech in input, so we only report results for these languages for ASR.}")
+#     lines.append(r'    \label{tab:modality}')
+#     lines.append(r'\end{table}')
+
+#     return '\n'.join(lines)
+
 def build_latex_table_modality(output_results, print_task_order, print_model_order,
                                TASK_METRICS, MODEL_TASK_LANGUAGES, TASK_LANGUAGES):
+
+    MODALITY_COLOURS = {
+        0: {
+            'text_prompt':           'taskgreen',
+            'audio_prompt_combined': 'taskgreen',
+            'm_audio_prompt':        'taskorange',
+            'f_audio_prompt':        'taskorange',
+        },
+        1: {
+            'text_prompt':           'taskblue',
+            'audio_prompt_combined': 'taskblue',
+            'm_audio_prompt':        'taskpink',
+            'f_audio_prompt':        'taskpink',
+        },
+    }
+    TEXT_SPEECH_MODALITIES = ['text_prompt', 'audio_prompt_combined']
+    GENDER_MODALITIES      = ['m_audio_prompt', 'f_audio_prompt']
 
     lines = []
 
@@ -375,6 +518,8 @@ def build_latex_table_modality(output_results, print_task_order, print_model_ord
     lines.append(r'% \usepackage[table]{xcolor}')
     lines.append(r'% \definecolor{taskgreen}{RGB}{180, 220, 180}')
     lines.append(r'% \definecolor{taskblue}{RGB}{180, 210, 230}')
+    lines.append(r'% \definecolor{taskorange}{RGB}{255, 210, 170}')
+    lines.append(r'% \definecolor{taskpink}{RGB}{255, 185, 200}')
     lines.append(r'')
     lines.append(r'\begin{table}[]')
     lines.append(r'    \centering')
@@ -395,36 +540,48 @@ def build_latex_table_modality(output_results, print_task_order, print_model_ord
         task_models = ['qwen_omni'] if task in QWEN_ONLY_TASKS else print_model_order
         num_rows = len(task_metrics) * len(task_models)
 
-        colour_name = TASK_COLOURS[task_idx % 2]
+        # Colour mapping for this task (alternates by task index)
+        colour_map = MODALITY_COLOURS[task_idx % 2]
 
-        # Pre-compute per-metric ranges anchored to the better model
+        # Pre-compute per-metric ranges — separately for each column group
         metric_ranges = {}
         for metric in task_metrics:
             lower_better = metric in LOWER_IS_BETTER
-            best_min, best_max, best_avg = None, None, None
+            scale = METRIC_SCALE.get(metric, 1)
 
+            # text + combined range
+            ts_values = []
             for model in task_models:
-                values = collect_metric_values_modality(output_results, task, metric, model, MODALITIES)
-                if not values:
-                    continue
-                model_avg = sum(values) / len(values)
-                if best_avg is None:
-                    best_min, best_max, best_avg = min(values), max(values), model_avg
-                else:
-                    is_better = (model_avg < best_avg) if lower_better else (model_avg > best_avg)
-                    if is_better:
-                        best_min, best_max, best_avg = min(values), max(values), model_avg
+                for modality in TEXT_SPEECH_MODALITIES:
+                    entry = output_results[model][task][metric].get(modality)
+                    if entry is not None:
+                        ts_values.append(entry['average'] * scale)
 
-            shared_range = (best_min, best_max) if best_min is not None else (0, 1)
-            metric_ranges[metric] = {model: shared_range for model in task_models}
+            # male + female range
+            gen_values = []
+            for model in task_models:
+                for modality in GENDER_MODALITIES:
+                    entry = output_results[model][task][metric].get(modality)
+                    if entry is not None:
+                        gen_values.append(entry['average'] * scale)
+
+            ts_range  = (min(ts_values),  max(ts_values))  if ts_values  else (0, 1)
+            gen_range = (min(gen_values), max(gen_values)) if gen_values else (0, 1)
+
+            metric_ranges[metric] = {
+                'text_speech': ts_range,
+                'gender':      gen_range,
+            }
 
         for metric_idx, metric in enumerate(task_metrics):
             metric_latex = METRIC_LATEX.get(metric, metric)
             lower_better = metric in LOWER_IS_BETTER
+            scale = METRIC_SCALE.get(metric, 1)
+
+            ts_min,  ts_max  = metric_ranges[metric]['text_speech']
+            gen_min, gen_max = metric_ranges[metric]['gender']
 
             for model_idx, model in enumerate(task_models):
-                min_val, max_val = metric_ranges[metric][model]
-
                 model_name = MODEL_LATEX.get(model, model)
                 if model == 'phi_multimodal' and task in PHI_FOOTNOTE_TASKS:
                     model_name += '*'
@@ -434,13 +591,18 @@ def build_latex_table_modality(output_results, print_task_order, print_model_ord
                 for modality in MODALITIES:
                     entry = output_results[model][task][metric].get(modality)
                     value_str = fmt_value(entry, metric)
+                    colour_name = colour_map[modality]
+
                     if value_str != '':
-                        scale = METRIC_SCALE.get(metric, 1)
                         raw_value = entry['average'] * scale
-                        alpha = compute_alpha(raw_value, min_val, max_val, lower_better)
+                        if modality in TEXT_SPEECH_MODALITIES:
+                            alpha = compute_alpha(raw_value, ts_min, ts_max, lower_better)
+                        else:
+                            alpha = compute_alpha(raw_value, gen_min, gen_max, lower_better)
                         cells.append(coloured_cell(value_str, alpha, colour_name))
                     else:
                         cells.append('')
+
                 cells_str = ' & '.join(cells)
 
                 # Task label (first row of block only)
@@ -476,7 +638,6 @@ def build_latex_table_modality(output_results, print_task_order, print_model_ord
     lines.append(r'\end{table}')
 
     return '\n'.join(lines)
-
 
 latex_table = build_latex_table_modality(
     output_results, print_task_order, print_model_order,
