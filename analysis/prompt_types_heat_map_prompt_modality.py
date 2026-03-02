@@ -255,7 +255,7 @@ for model in models:
         model,
         MONOLINGUAL_TASKS + SPLIT_TASKS,
         "Monolingual Tasks",
-        fig_height=5,
+        fig_height=5.3,
         split_task_langs=MONOLINGUAL_LANGS
     )
 
@@ -264,7 +264,7 @@ for model in models:
         model,
         CROSSLINGUAL_TASKS + SPLIT_TASKS,
         "Crosslingual Tasks",
-        fig_height=5,
+        fig_height=5.3,
         split_task_langs=CROSSLINGUAL_LANGS
     )
 

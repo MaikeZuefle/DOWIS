@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "files_processed": 78,
-    "files_missing": 1,
+    "files_processed": 79,
+    "files_missing": 0,
     "total_expected": 100,
     "task_metrics": {
       "ASR": "wer",
@@ -93,13 +93,7 @@
         "en"
       ]
     },
-    "missing_files_by_model_task": {
-      "qwen_omni": {
-        "S2ST": [
-          "cs"
-        ]
-      }
-    },
+    "missing_files_by_model_task": {},
     "missing_modalities_by_model_task": {
       "phi_multimodal": {
         "ASR": {
@@ -348,9 +342,10 @@
         ],
         "UTMOS": {
           "text_prompt": {
-            "average": 4.35055556946447,
-            "num_languages": 9,
+            "average": 4.347662391494508,
+            "num_languages": 10,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -370,13 +365,15 @@
               "nl": 4.367450549450539,
               "ru": 4.366583225806403,
               "sv": 4.307032938076379,
+              "cs": 4.321623789764847,
               "hu": 4.288059668508276
             }
           },
           "f_audio_prompt": {
-            "average": 4.368490075321427,
-            "num_languages": 4,
+            "average": 4.3608058915157795,
+            "num_languages": 5,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -386,13 +383,15 @@
               "de": 4.367464037122922,
               "it": 4.374728323699387,
               "es": 4.367874449339177,
-              "fr": 4.363893491124224
+              "fr": 4.363893491124224,
+              "cs": 4.33006915629319
             }
           },
           "m_audio_prompt": {
-            "average": 4.366418834017021,
-            "num_languages": 4,
+            "average": 4.356303531943902,
+            "num_languages": 5,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -402,14 +401,16 @@
               "de": 4.365600928074208,
               "it": 4.374455491329458,
               "es": 4.363722466960307,
-              "fr": 4.361896449704113
+              "fr": 4.361896449704113,
+              "cs": 4.315842323651423
             }
           },
           "audio_prompt_combined": {
-            "average": 4.352627815612221,
-            "num_values": 18,
-            "num_languages": 9,
+            "average": 4.3496606080482305,
+            "num_values": 20,
+            "num_languages": 10,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -425,9 +426,10 @@
         },
         "ASR-COMET": {
           "text_prompt": {
-            "average": 74.89795980877444,
-            "num_languages": 9,
+            "average": 72.09867558446686,
+            "num_languages": 10,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -447,13 +449,15 @@
               "nl": 81.82931318681308,
               "ru": 82.00647999999963,
               "sv": 47.802355731225454,
+              "cs": 46.90511756569857,
               "hu": 47.52822320441988
             }
           },
           "f_audio_prompt": {
-            "average": 83.54846796885678,
-            "num_languages": 4,
+            "average": 76.18352679555571,
+            "num_languages": 5,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -463,13 +467,15 @@
               "de": 81.90319257540622,
               "it": 84.66514682080896,
               "es": 84.05150881057286,
-              "fr": 83.57402366863906
+              "fr": 83.57402366863906,
+              "cs": 46.723762102351415
             }
           },
           "m_audio_prompt": {
-            "average": 83.36916242230379,
-            "num_languages": 4,
+            "average": 75.98628152843777,
+            "num_languages": 5,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
@@ -479,14 +485,16 @@
               "de": 81.5865127610209,
               "it": 84.49230520231234,
               "es": 83.87555066079314,
-              "fr": 83.52228106508878
+              "fr": 83.52228106508878,
+              "cs": 46.45475795297367
             }
           },
           "audio_prompt_combined": {
-            "average": 74.91116031437774,
-            "num_values": 18,
-            "num_languages": 9,
+            "average": 72.07897028570622,
+            "num_values": 20,
+            "num_languages": 10,
             "languages": [
+              "cs",
               "de",
               "es",
               "fr",
