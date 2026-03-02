@@ -25,4 +25,6 @@ eval = [
     "jiwer",
     "unbabel-comet",
     "bert-score",
+    "mutagen>=1.47",
+    "chunkseg[align,titles]==0.3.1",
 ]
