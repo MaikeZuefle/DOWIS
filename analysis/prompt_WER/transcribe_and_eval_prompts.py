@@ -126,7 +126,7 @@ def transcribe_and_evaluate(asr_model="whisper", whisper_model_size="large"):
                             # Inference: Generation of the output text and audio
                             text_ids, audio = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO)
                             text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
-                            text = text[-1].split("\nassistant")[-1].strip()
+                            transcription = text[-1].split("\nassistant")[-1].strip()
 
                         else:
                             raise NotImplemntedError
