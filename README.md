@@ -161,11 +161,10 @@ Different tasks use different evaluation metrics:
 - **SQA, TSUM, SSUM**: BERTScore
 - **TTS**: ASR-WER, UTMOS
 - **S2ST**: ASR-COMET, UTMOS
-- **ACHAP**: TODO
+- **ACHAP**: CollarF1, GC-BERTScore
 
 
 ---
 
 
 If you use or extend DOWIS in your research, please consider citing the project.
-
