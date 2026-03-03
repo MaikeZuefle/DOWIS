@@ -1,5 +1,5 @@
 import json
-import whisper
+
 import jiwer
 from tqdm import tqdm
 import os
@@ -13,6 +13,18 @@ transformation = jiwer.Compose([
 ])
 
 
+def load_qwen():
+    from transformers import Qwen2_5OmniForConditionalGeneration, Qwen2_5OmniProcessor
+
+    model = Qwen2_5OmniForConditionalGeneration.from_pretrained(
+        "Qwen/Qwen2.5-Omni-7B",
+        torch_dtype="auto",
+        device_map="auto",
+        attn_implementation="flash_attention_2",
+    )
+    processor = Qwen2_5OmniProcessor.from_pretrained("Qwen/Qwen2.5-Omni-7B")
+    return model, processor
+
 def load_prompt(task, language):
     prompts_path = f"prompts/prompts_{language}.json"
     if not os.path.exists(prompts_path):
@@ -24,12 +36,19 @@ def load_prompt(task, language):
     return prompts[task.lower()]
 
 
-LANGUAGES = ["cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
+LANGUAGES = [ "de", "cs", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sv"]
 TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SQA", "SSUM", "ST", "TSUM", "TTS"]
 
 
-def transcribe_and_evaluate(whisper_model_size="large"):
-    model = whisper.load_model(whisper_model_size)
+def transcribe_and_evaluate(asr_model="whisper", whisper_model_size="large"):
+    if asr_model == "whisper":
+        import whisper
+        model = whisper.load_model(whisper_model_size)
+    elif asr_model == "qwen":
+        from qwen_omni_utils import process_mm_info
+        model, processor = load_qwen()
+    else:
+        raise NotImplemntedError
     results = {}
 
     lang_pbar = tqdm(LANGUAGES, desc="Languages", position=0)
@@ -75,7 +94,42 @@ def transcribe_and_evaluate(whisper_model_size="large"):
                     # Insert recordings into results
                     for gender, audio_path, rec_idx in audio_entries:
                         key = f"prompt_{prompt_idx+1}_{gender}{rec_idx}"
-                        transcription = model.transcribe(audio_path)["text"].strip()
+
+                        if asr_model == "whisper":
+                            transcription = model.transcribe(audio_path)["text"].strip()
+                        elif asr_model == "qwen":
+                            conversation = [
+                                {
+                                    "role": "system",
+                                    "content": [
+                                        {"type": "text", "text": "You are Qwen, a virtual human developed by the Qwen Team, Alibaba Group, capable of perceiving auditory and visual inputs, as well as generating text and speech."}
+                                    ],
+                                },
+                                {
+                                    "role": "user",
+                                    "content": [
+                                        {"type": "text", "text": "Please transcribe the audio prompt. Do not add any explanations, follow-up questions or introductions."},
+                                        {"type": "audio", "audio": audio_path},
+                                    ],
+                                },
+                            ]
+
+                            # set use audio in video
+                            USE_AUDIO_IN_VIDEO = False
+
+                            # Preparation for inference
+                            text = processor.apply_chat_template(conversation, add_generation_prompt=True, tokenize=False)
+                            audios, images, videos = process_mm_info(conversation, use_audio_in_video=USE_AUDIO_IN_VIDEO)
+                            inputs = processor(text=text, audio=audios, images=images, videos=videos, return_tensors="pt", padding=True, use_audio_in_video=USE_AUDIO_IN_VIDEO)
+                            inputs = inputs.to(model.device).to(model.dtype)
+
+                            # Inference: Generation of the output text and audio
+                            text_ids, audio = model.generate(**inputs, use_audio_in_video=USE_AUDIO_IN_VIDEO)
+                            text = processor.batch_decode(text_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)
+                            text = text[-1].split("\nassistant")[-1].strip()
+
+                        else:
+                            raise NotImplemntedError
 
                         wer_score = jiwer.wer(reference_text, transcription,
                                               reference_transform=transformation,
@@ -123,9 +177,11 @@ def summarize_results(results):
 
 
 if __name__ == "__main__":
-    results = transcribe_and_evaluate(whisper_model_size="large")
+    MODEL="qwen"
+
+    results = transcribe_and_evaluate(asr_model=MODEL, whisper_model_size="large")
     summarize_results(results)
 
-    with open("wer_results.json", "w", encoding="utf-8") as f:
+    with open(f"wer_results_{MODEL}.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print("\nResults saved to wer_results_new.json")
