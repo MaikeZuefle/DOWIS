@@ -1,20 +1,20 @@
 {
   "summary": {
-    "total_files_found": 2530,
-    "successfully_processed": 1980,
+    "total_files_found": 2640,
+    "successfully_processed": 2070,
     "edge_cases": 0,
     "total_duration_all_files": {
       "hours": 3,
-      "minutes": 9,
-      "seconds": 9.53,
-      "total_seconds": 11349.53
+      "minutes": 16,
+      "seconds": 20.33,
+      "total_seconds": 11780.33
     },
-    "total_language_speaker_combinations": 22,
+    "total_language_speaker_combinations": 23,
     "average_duration_per_speaker_per_language": {
       "hours": 0,
       "minutes": 8,
-      "seconds": 35.89,
-      "total_seconds": 515.89
+      "seconds": 32.19,
+      "total_seconds": 512.19
     }
   },
   "by_language": {
@@ -32,9 +32,9 @@
     },
     "en": {
       "hours": 0,
-      "minutes": 23,
-      "seconds": 34.02,
-      "total_seconds": 1414.02
+      "minutes": 30,
+      "seconds": 44.82,
+      "total_seconds": 1844.82
     },
     "es": {
       "hours": 0,
@@ -157,11 +157,17 @@
         "seconds": 36.05,
         "total_seconds": 516.05
       },
+      "male2": {
+        "hours": 0,
+        "minutes": 7,
+        "seconds": 10.8,
+        "total_seconds": 430.8
+      },
       "average_per_speaker": {
         "hours": 0,
         "minutes": 7,
-        "seconds": 51.34,
-        "total_seconds": 471.34
+        "seconds": 41.2,
+        "total_seconds": 461.2
       }
     },
     "es": {
@@ -312,136 +318,136 @@
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 15.87,
-        "total_seconds": 15.87
+        "seconds": 15.75,
+        "total_seconds": 15.75
       },
       "total_duration": {
-        "hours": 0,
-        "minutes": 58,
-        "seconds": 10.49,
-        "total_seconds": 3490.49
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 21.49,
+        "total_seconds": 3621.49
       },
-      "count": 220
+      "count": 230
     },
     "asr": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.3,
-        "total_seconds": 4.3
+        "seconds": 4.28,
+        "total_seconds": 4.28
       },
       "total_duration": {
         "hours": 0,
-        "minutes": 15,
-        "seconds": 46.85,
-        "total_seconds": 946.85
+        "minutes": 16,
+        "seconds": 25.15,
+        "total_seconds": 985.15
       },
-      "count": 220
+      "count": 230
     },
     "mt": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.08,
-        "total_seconds": 4.08
+        "seconds": 4.06,
+        "total_seconds": 4.06
       },
       "total_duration": {
         "hours": 0,
-        "minutes": 14,
-        "seconds": 58.17,
-        "total_seconds": 898.17
+        "minutes": 15,
+        "seconds": 32.87,
+        "total_seconds": 932.87
       },
-      "count": 220
+      "count": 230
     },
     "s2st": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.88,
-        "total_seconds": 4.88
+        "seconds": 4.84,
+        "total_seconds": 4.84
       },
       "total_duration": {
         "hours": 0,
-        "minutes": 17,
-        "seconds": 53.04,
-        "total_seconds": 1073.04
+        "minutes": 18,
+        "seconds": 33.24,
+        "total_seconds": 1113.24
       },
-      "count": 220
+      "count": 230
     },
     "sqa": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.92,
-        "total_seconds": 4.92
+        "seconds": 4.89,
+        "total_seconds": 4.89
       },
       "total_duration": {
         "hours": 0,
         "minutes": 18,
-        "seconds": 2.9,
-        "total_seconds": 1082.9
+        "seconds": 44.0,
+        "total_seconds": 1124.0
       },
-      "count": 220
+      "count": 230
     },
     "ssum": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.56,
-        "total_seconds": 4.56
+        "seconds": 4.53,
+        "total_seconds": 4.53
       },
       "total_duration": {
         "hours": 0,
-        "minutes": 16,
-        "seconds": 44.2,
-        "total_seconds": 1004.2
+        "minutes": 17,
+        "seconds": 22.5,
+        "total_seconds": 1042.5
       },
-      "count": 220
+      "count": 230
     },
     "st": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.46,
-        "total_seconds": 4.46
+        "seconds": 4.43,
+        "total_seconds": 4.43
       },
       "total_duration": {
         "hours": 0,
         "minutes": 16,
-        "seconds": 20.45,
-        "total_seconds": 980.45
+        "seconds": 59.15,
+        "total_seconds": 1019.15
       },
-      "count": 220
+      "count": 230
     },
     "tsum": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.05,
-        "total_seconds": 4.05
+        "seconds": 4.02,
+        "total_seconds": 4.02
       },
       "total_duration": {
         "hours": 0,
-        "minutes": 14,
-        "seconds": 51.97,
-        "total_seconds": 891.97
+        "minutes": 15,
+        "seconds": 24.57,
+        "total_seconds": 924.57
       },
-      "count": 220
+      "count": 230
     },
     "tts": {
       "average_duration": {
         "hours": 0,
         "minutes": 0,
-        "seconds": 4.46,
-        "total_seconds": 4.46
+        "seconds": 4.42,
+        "total_seconds": 4.42
       },
       "total_duration": {
         "hours": 0,
         "minutes": 16,
-        "seconds": 21.46,
-        "total_seconds": 981.46
+        "seconds": 57.36,
+        "total_seconds": 1017.36
       },
-      "count": 220
+      "count": 230
     }
   },
   "edge_cases": []
