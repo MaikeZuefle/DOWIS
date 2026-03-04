@@ -68,7 +68,7 @@ python eval_outputs.py \
 | Argument | Description | Choices | Default |
 |--------|-------------|---------|---------|
 | `--lang` | Language to evaluate | cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv | cs |
-| `--task` | Task to evaluate | ACHAP, ASR, MT, S2ST, SLU, SQA, SSUM, ST, TSUM, TTS | ACHAP |
+| `--task` | Task to evaluate | ACHAP, ASR, MT, S2ST, SQA, SSUM, ST, TSUM, TTS | ACHAP |
 | `--model` | Model to evaluate | phi_multimodal, qwen_omni | phi_multimodal |
 | `--out_folder` | Output directory for evaluation results | any path | evaluation_results |
 | `--predictions_folder` | Folder containing predictions (optional) | any path | same as `--out_folder` |
