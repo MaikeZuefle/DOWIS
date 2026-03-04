@@ -15,7 +15,6 @@ It includes inference and evaluation code for
   | ASR | Automatic Speech Recognition |
   | MT | Machine Translation |
   | S2ST | Speech-to-Speech Translation |
-  | SLU | Spoken Language Understanding |
   | SQA | Spoken Question Answering |
   | SSUM | Speech Summarization |
   | ST | Speech Translation |
