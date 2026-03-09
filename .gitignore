@@ -94,6 +94,7 @@ z_outputs/
 outputs_debug
 outputs_deb/
 run_scripts/
+run_scripts_eval/
 myjob_phi.sh
 myjob_qwen.sh
 eval_outputs

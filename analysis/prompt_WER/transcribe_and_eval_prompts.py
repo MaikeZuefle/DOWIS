@@ -108,7 +108,7 @@ def transcribe_and_evaluate(asr_model="whisper", whisper_model_size="large"):
                                 {
                                     "role": "user",
                                     "content": [
-                                        {"type": "text", "text": "Please transcribe the audio prompt. Do not add any explanations, follow-up questions or introductions."},
+                                        {"type": "text", "text": "Please transcribe the given audio. Do not add any explanations, follow-up questions or introductions."},
                                         {"type": "audio", "audio": audio_path},
                                     ],
                                 },
