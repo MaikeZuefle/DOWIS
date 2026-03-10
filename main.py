@@ -4,6 +4,8 @@ import os
 from tqdm import tqdm
 from transformers import set_seed
 import json
+import atexit
+import shutil
 
 # import multimodal models
 from models.qwen_omni import generate as generate_qwen_omni
@@ -24,13 +26,16 @@ from data.tsum import load_tsum
 from data.tts import load_tts
 
 # utils
-from utils import set_up_logging, TASK_MODALITY_MAPPER
+from utils import set_up_logging, TASK_MODALITY_MAPPER, audio_to_tempfile
 
 # setting seed for reproducibilty
 import random
 set_seed(42)
 random.seed(42)
 
+# remove temporary wave files
+_TEMP_DIR = tempfile.mkdtemp()
+atexit.register(shutil.rmtree, _TEMP_DIR, True) 
 
 def load_model(model_name):
     if model_name == "phi_multimodal":
@@ -59,13 +64,29 @@ def load_data(task, language):
         raise NotImplementedError()
     return data
 
+
 def load_prompt(task, language):
-    prompts_path = f"prompts/prompts_{language}.json"
-    with open(prompts_path, "r", encoding="utf-8") as f:
-        prompts = json.load(f)
-        if not task.lower() in prompts.keys():
-            raise KeyError(f"Task {task} does not have prompts in {prompts_path}.")
-    return prompts[task.lower()]
+    ds = load_dataset("maikezu/dowis", split="test")
+    ds = ds.filter(lambda x: x["language"] == language and x["task"] == task.lower())
+
+    prompts = {}
+    for row in ds:
+        pt = row["prompt_type"]
+        if pt not in prompts:
+            prompts[pt] = []
+        prompts[pt].append({
+            "text":       row["text_prompt"],
+            "female_rec": [p for p in [
+                audio_to_tempfile(row["audio_prompt_female_1"]),
+                audio_to_tempfile(row["audio_prompt_female_2"]),
+            ] if p is not None],
+            "male_rec": [p for p in [
+                audio_to_tempfile(row["audio_prompt_male_1"]),
+                audio_to_tempfile(row["audio_prompt_male_2"]),
+            ] if p is not None],
+        })
+
+    return prompts
 
 def get_out_wav_path(output_modality, idx, wavs_folder, prompt_type):
     if output_modality == "audio":

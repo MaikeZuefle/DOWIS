@@ -66,4 +66,9 @@ def set_up_logging(output_file_path):
         message=".*srun.*",
     )
 
-
+def audio_to_tempfile(audio_dict):
+    if audio_dict is None:
+        return None
+    tmp = tempfile.NamedTemporaryFile(suffix=".wav", dir=_TEMP_DIR, delete=False)
+    sf.write(tmp.name, audio_dict["array"], audio_dict["sampling_rate"])
+    return tmp.name
