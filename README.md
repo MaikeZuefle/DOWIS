@@ -1,7 +1,23 @@
-# DOWIS (Do What I Say)
+# Do What I Say: A Spoken Prompt Dataset for Instruction-Following
+[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/YOUR_DATASET)
 
 This repository contains code for the DOWIS prompt project. 
-It includes inference and evaluation code for 
+The dataset can be found on ... 
+
+
+<span style="background-color:#fee2e2; color:#b91c1c; padding:2px 6px; border-radius:4px; font-size:0.85em; font-weight:600;">NEW</span> DOWIS now also contains spoken and written prompts in Albanian (sq), and for the tasks LIPREAD and SLU!
+
+---
+### Paper Abstract
+Speech Large Language Models (SLLMs) have rapidly expanded, supporting a wide range of tasks. These models are typically evaluated using text prompts, which may not reflect real-world scenarios where users interact with speech. 
+To address this gap, we introduce DoWhatISay (DOWIS), a multilingual dataset of human-recorded spoken and written prompts designed to pair with any existing benchmark for realistic evaluation of SLLMs under spoken instruction conditions. 
+Spanning 9 tasks and 11 languages, it provides 10 prompt variants per task-language pair, across five styles.
+Using DOWIS, we benchmark state-of-the-art SLLMs, analyzing the interplay between prompt modality, style, language, and task type. Results show that text prompts consistently outperform spoken prompts, particularly for low-resource and cross-lingual settings. Only for tasks with speech output, spoken prompts do  close the gap, highlighting the need for speech-based prompting in SLLM evaluation.
+
+---
+
+The code includes inference and evaluation code for 
 
 - 🤖 the models  `phi_multimodal` and `qwen_omni`
 - 🌍 the languages  cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv
@@ -84,3 +100,4 @@ python eval_outputs.py \
 ---
 
 If you use or extend DOWIS in your research, please consider citing the project.
+TBD
