@@ -18,7 +18,6 @@ from data.achap import load_achap
 from data.asr import load_asr
 from data.mt import load_mt
 from data.s2st import load_s2st
-from data.slu import load_slu
 from data.sqa import load_sqa
 from data.ssum import load_ssum
 from data.st import load_st
