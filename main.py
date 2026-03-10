@@ -3,9 +3,8 @@ import logging
 import os
 from tqdm import tqdm
 from transformers import set_seed
+from datasets import load_dataset
 import json
-import atexit
-import shutil
 
 # import multimodal models
 from models.qwen_omni import generate as generate_qwen_omni
@@ -32,9 +31,6 @@ import random
 set_seed(42)
 random.seed(42)
 
-# remove temporary wave files
-_TEMP_DIR = tempfile.mkdtemp()
-atexit.register(shutil.rmtree, _TEMP_DIR, True) 
 
 def load_model(model_name):
     if model_name == "phi_multimodal":
@@ -53,7 +49,6 @@ def load_data(task, language):
     elif task == "asr": data = load_asr(language)
     elif task == "mt": data = load_mt(language)
     elif task == "s2st": data = load_s2st(language)
-    elif task == "slu": data = load_slu(language)
     elif task == "sqa": data = load_sqa(language)
     elif task == "ssum": data = load_ssum(language)
     elif task == "st": data = load_st(language)
@@ -181,7 +176,7 @@ def main(out_folder, model, task, lang):
 
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
-
+            
             t_wav, fa_wav, ma_wav = get_out_wav_path(output_modality, idx, wavs_folder, prompt_type)
             out["predicted"][prompt_type] = {}
 
@@ -232,7 +227,7 @@ def main(out_folder, model, task, lang):
 if __name__ == "__main__":
     LANGS = ["cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sq", "sv"]
     MODALITIES = ["text", "audio"]
-    TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SLU", "SQA", "SSUM", "ST", "TSUM", "TTS"]
+    TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SQA", "SSUM", "ST", "TSUM", "TTS"]
     MODELS = ["phi_multimodal", "qwen_omni"]
 
     parser = argparse.ArgumentParser(description="Process MCIF data.")

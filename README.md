@@ -1,20 +1,22 @@
 # Do What I Say: A Spoken Prompt Dataset for Instruction-Following
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/YOUR_DATASET)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-DOWIS-yellow)](https://huggingface.co/datasets/maikezu/dowis)
+
 
 This repository contains code for the DOWIS prompt project. 
-The dataset can be found on ... 
-
+The dataset can be found on HuggingFace at [maikezu/dowis](https://huggingface.co/datasets/maikezu/dowis).
 
 <span style="background-color:#fee2e2; color:#b91c1c; padding:2px 6px; border-radius:4px; font-size:0.85em; font-weight:600;">NEW</span> DOWIS now also contains spoken and written prompts in Albanian (sq), and for the tasks LIPREAD and SLU!
 
 ---
 ### Paper Abstract
+
 Speech Large Language Models (SLLMs) have rapidly expanded, supporting a wide range of tasks. These models are typically evaluated using text prompts, which may not reflect real-world scenarios where users interact with speech. 
 To address this gap, we introduce DoWhatISay (DOWIS), a multilingual dataset of human-recorded spoken and written prompts designed to pair with any existing benchmark for realistic evaluation of SLLMs under spoken instruction conditions. 
 Spanning 9 tasks and 11 languages, it provides 10 prompt variants per task-language pair, across five styles.
 Using DOWIS, we benchmark state-of-the-art SLLMs, analyzing the interplay between prompt modality, style, language, and task type. Results show that text prompts consistently outperform spoken prompts, particularly for low-resource and cross-lingual settings. Only for tasks with speech output, spoken prompts do  close the gap, highlighting the need for speech-based prompting in SLLM evaluation.
 
+> **Note:** DOWIS has since been extended to 11 tasks and 12 languages, including Albanian (sq) and the tasks LIPREAD and SLU.
 ---
 
 The code includes inference and evaluation code for 
@@ -42,7 +44,7 @@ We also release the model outputs in the [`outputs`](./outputs) folder.
 
 ---
 
-## 🚀 Inference
+## Inference
 
 Run [`main.py`](main.py) with the following arguments to start inference:
 
@@ -70,7 +72,7 @@ python main.py \
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 The evaluation script [`eval_outputs.py`](eval_outputs.py) computes metrics on the generated predictions.
 ```bash
 python eval_outputs.py \

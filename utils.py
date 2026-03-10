@@ -1,7 +1,12 @@
-import xml.etree.ElementTree as ET
 import logging
-import os
-import sys
+import tempfile
+import soundfile as sf
+import atexit
+import shutil
+
+# remove temporary wave files
+_TEMP_DIR = tempfile.mkdtemp()
+atexit.register(shutil.rmtree, _TEMP_DIR, True) 
 
 TASK_MODALITY_MAPPER = {
     "ACHAP": {"modality": "audio", "output_modality": "text"},    
