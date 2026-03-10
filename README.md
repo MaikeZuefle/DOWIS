@@ -6,6 +6,9 @@
 This repository contains code for the DOWIS prompt project. 
 The dataset can be found on HuggingFace at [maikezu/dowis](https://huggingface.co/datasets/maikezu/dowis).
 
+> **TL;DR** — DOWIS is a multilingual dataset of human-recorded spoken and written instruction prompts, designed to enable realistic evaluation of Speech Large Language Models across 11 tasks and 12 languages.
+
+
 > 🆕 **New:** DOWIS now also contains spoken and written prompts in Albanian (sq), and for the tasks LIPREAD and SLU!
 > 
 ---
