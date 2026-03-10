@@ -6,8 +6,8 @@
 This repository contains code for the DOWIS prompt project. 
 The dataset can be found on HuggingFace at [maikezu/dowis](https://huggingface.co/datasets/maikezu/dowis).
 
-<span style="background-color:#fee2e2; color:#b91c1c; padding:2px 6px; border-radius:4px; font-size:0.85em; font-weight:600;">NEW</span> DOWIS now also contains spoken and written prompts in Albanian (sq), and for the tasks LIPREAD and SLU!
-
+> 🆕 **New:** DOWIS now also contains spoken and written prompts in Albanian (sq), and for the tasks LIPREAD and SLU!
+> 
 ---
 ### Paper Abstract
 
