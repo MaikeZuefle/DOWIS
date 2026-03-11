@@ -104,5 +104,24 @@ python eval_outputs.py \
 
 ---
 
-If you use or extend DOWIS in your research, please consider citing the project.
-TBD
+## Citation
+
+If you use this work, please cite:
+```bibtex
+@misc{züfle2026isayspokenprompt,
+      title={Do What I Say: A Spoken Prompt Dataset for Instruction-Following}, 
+      author={Maike Züfle and
+              Sara Papi and
+              Fabian Retkowski and
+              Szymon Mazurek and
+              Marek Kasztelnik and
+              Alexander Waibel and
+              Luisa Bentivogli and
+              Jan Niehues},
+      year={2026},
+      eprint={2603.09881},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.09881}}
+```
+
