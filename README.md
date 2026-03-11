@@ -1,5 +1,5 @@
 # Do What I Say: A Spoken Prompt Dataset for Instruction-Following
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2603.09881-b31b1b.svg)](https://arxiv.org/abs/2603.09881)
 [![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-DOWIS-yellow)](https://huggingface.co/datasets/maikezu/dowis)
 
 
