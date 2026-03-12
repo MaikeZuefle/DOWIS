@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="dowis_logo.png" alt="Hearing to Translate" width="500"/>
+  <img src="dowis_logo.png" alt="DOWIS" width="500"/>
 </p>
 <h1 align="center">
   Do What I Say: A Spoken Prompt Dataset for Instruction-Following
