@@ -1,7 +1,18 @@
-# Do What I Say: A Spoken Prompt Dataset for Instruction-Following
-[![arXiv](https://img.shields.io/badge/arXiv-2603.09881-b31b1b.svg)](https://arxiv.org/abs/2603.09881)
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-DOWIS-yellow)](https://huggingface.co/datasets/maikezu/dowis)
+<p align="center">
+  <img src="dowis_logo.png" alt="Hearing to Translate" width="500"/>
+</p>
+<h1 align="center">
+  Do What I Say: A Spoken Prompt Dataset for Instruction-Following
+</h1>
 
+<p align="center">
+    <a href="https://arxiv.org/abs/2603.09881">
+        <img src="https://img.shields.io/badge/arXiv-2603.09881-b31b1b.svg" alt="arXiv">
+    </a>
+    <a href="https://huggingface.co/datasets/maikezu/dowis">
+        <img src="https://img.shields.io/badge/🤗%20HuggingFace-DOWIS-yellow" alt="HuggingFace">
+    </a>
+</p>
 
 This repository contains code for the DOWIS prompt project. 
 The dataset can be found on HuggingFace at [maikezu/dowis](https://huggingface.co/datasets/maikezu/dowis).
