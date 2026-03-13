@@ -88,11 +88,13 @@ for model in models:
                         speech_val = None
 
                     if text_val is not None and speech_val is not None:
+                        
                         if metric in LOWER_IS_BETTER:
                             diff = speech_val - text_val
                         else:
                             diff = text_val - speech_val
-
+                        if task == "ACHAP":
+                            diff = diff*100 # all other values have been multiplied by 100 before
                         results[model][task][prompt_type][lang] = diff
                         print(f"✓ {model}/{task}/{lang}/{prompt_type}: diff={diff:.2f}")
 
@@ -255,7 +257,7 @@ for model in models:
         model,
         MONOLINGUAL_TASKS + SPLIT_TASKS,
         "Monolingual Tasks",
-        fig_height=5,
+        fig_height=5.3,
         split_task_langs=MONOLINGUAL_LANGS
     )
 
@@ -264,7 +266,7 @@ for model in models:
         model,
         CROSSLINGUAL_TASKS + SPLIT_TASKS,
         "Crosslingual Tasks",
-        fig_height=5,
+        fig_height=5.3,
         split_task_langs=CROSSLINGUAL_LANGS
     )
 

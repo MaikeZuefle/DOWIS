@@ -1,7 +1,12 @@
-import xml.etree.ElementTree as ET
 import logging
-import os
-import sys
+import tempfile
+import soundfile as sf
+import atexit
+import shutil
+
+# remove temporary wave files
+_TEMP_DIR = tempfile.mkdtemp()
+atexit.register(shutil.rmtree, _TEMP_DIR, True) 
 
 TASK_MODALITY_MAPPER = {
     "ACHAP": {"modality": "audio", "output_modality": "text"},    
@@ -66,4 +71,9 @@ def set_up_logging(output_file_path):
         message=".*srun.*",
     )
 
-
+def audio_to_tempfile(audio_dict):
+    if audio_dict is None:
+        return None
+    tmp = tempfile.NamedTemporaryFile(suffix=".wav", dir=_TEMP_DIR, delete=False)
+    sf.write(tmp.name, audio_dict["array"], audio_dict["sampling_rate"])
+    return tmp.name

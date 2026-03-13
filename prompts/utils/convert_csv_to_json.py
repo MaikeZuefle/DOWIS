@@ -1,7 +1,7 @@
 import csv
 import json
 
-INPUT_CSV = "[Meetween] Prompts to Record (DOWIS) - SV.csv"
+INPUT_CSV = "Prompts to Record (DOWIS) - SV.csv"
 OUTPUT_JSON = "prompts_sv.json"
 
 def normalize_key(value):

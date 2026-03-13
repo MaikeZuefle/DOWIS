@@ -87,7 +87,6 @@ ipython_config.py
 __pycache__/
 .env
 generated_output/
-outputs/
 convert_to_json.py
 get_flash.sh
 myjob.sh
@@ -95,7 +94,9 @@ z_outputs/
 outputs_debug
 outputs_deb/
 run_scripts/
+run_scripts_eval/
 myjob_phi.sh
 myjob_qwen.sh
 eval_outputs
 myjob_eval.sh
+*.log

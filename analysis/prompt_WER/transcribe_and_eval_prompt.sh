@@ -1,1 +1,1 @@
-python transcribe_and_eval_prompts.py
+python analysis/prompt_WER/transcribe_and_eval_prompts.py

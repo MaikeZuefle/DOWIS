@@ -1,12 +1,15 @@
 import logging
 from chunkseg import evaluate
 from mutagen import File as MutaFile
+import os
 
 
 _CHUNKSEG_LANG = {"en": "eng", "de": "deu", "it": "ita", "zh": "zho"}
 
 
 def score_achap(predictions, reference, eval_model=None, lang=None):
+    from mutagen import File as MutaFile
+    from chunkseg import evaluate
     if isinstance(predictions, str):
         predictions = [predictions]
 

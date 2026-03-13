@@ -3,6 +3,7 @@ import logging
 import os
 from tqdm import tqdm
 from transformers import set_seed
+from datasets import load_dataset
 import json
 
 # import multimodal models
@@ -16,7 +17,6 @@ from data.achap import load_achap
 from data.asr import load_asr
 from data.mt import load_mt
 from data.s2st import load_s2st
-from data.slu import load_slu
 from data.sqa import load_sqa
 from data.ssum import load_ssum
 from data.st import load_st
@@ -24,7 +24,7 @@ from data.tsum import load_tsum
 from data.tts import load_tts
 
 # utils
-from utils import set_up_logging, TASK_MODALITY_MAPPER
+from utils import set_up_logging, TASK_MODALITY_MAPPER, audio_to_tempfile
 
 # setting seed for reproducibilty
 import random
@@ -49,7 +49,6 @@ def load_data(task, language):
     elif task == "asr": data = load_asr(language)
     elif task == "mt": data = load_mt(language)
     elif task == "s2st": data = load_s2st(language)
-    elif task == "slu": data = load_slu(language)
     elif task == "sqa": data = load_sqa(language)
     elif task == "ssum": data = load_ssum(language)
     elif task == "st": data = load_st(language)
@@ -59,13 +58,29 @@ def load_data(task, language):
         raise NotImplementedError()
     return data
 
+
 def load_prompt(task, language):
-    prompts_path = f"prompts/prompts_{language}.json"
-    with open(prompts_path, "r", encoding="utf-8") as f:
-        prompts = json.load(f)
-        if not task.lower() in prompts.keys():
-            raise KeyError(f"Task {task} does not have prompts in {prompts_path}.")
-    return prompts[task.lower()]
+    ds = load_dataset("maikezu/dowis", split="test")
+    ds = ds.filter(lambda x: x["language"] == language and x["task"] == task.lower())
+
+    prompts = {}
+    for row in ds:
+        pt = row["prompt_type"]
+        if pt not in prompts:
+            prompts[pt] = []
+        prompts[pt].append({
+            "text":       row["text_prompt"],
+            "female_rec": [p for p in [
+                audio_to_tempfile(row["audio_prompt_female_1"]),
+                audio_to_tempfile(row["audio_prompt_female_2"]),
+            ] if p is not None],
+            "male_rec": [p for p in [
+                audio_to_tempfile(row["audio_prompt_male_1"]),
+                audio_to_tempfile(row["audio_prompt_male_2"]),
+            ] if p is not None],
+        })
+
+    return prompts
 
 def get_out_wav_path(output_modality, idx, wavs_folder, prompt_type):
     if output_modality == "audio":
@@ -161,7 +176,7 @@ def main(out_folder, model, task, lang):
 
         out = {"ref": ref, "predicted": {}}
         for prompt_type, prompts in prompt_dict.items():
-
+            
             t_wav, fa_wav, ma_wav = get_out_wav_path(output_modality, idx, wavs_folder, prompt_type)
             out["predicted"][prompt_type] = {}
 
@@ -212,7 +227,7 @@ def main(out_folder, model, task, lang):
 if __name__ == "__main__":
     LANGS = ["cs", "de", "en", "es", "fr", "hu", "it", "nl", "pt", "ru", "sq", "sv"]
     MODALITIES = ["text", "audio"]
-    TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SLU", "SQA", "SSUM", "ST", "TSUM", "TTS"]
+    TASKS = ["ACHAP", "ASR", "MT", "S2ST", "SQA", "SSUM", "ST", "TSUM", "TTS"]
     MODELS = ["phi_multimodal", "qwen_omni"]
 
     parser = argparse.ArgumentParser(description="Process MCIF data.")

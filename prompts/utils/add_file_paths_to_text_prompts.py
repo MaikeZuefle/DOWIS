@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-LANG="cs"
+LANG="en"
 
 INPUT_JSON=f"prompts_{LANG}.json"
 OUTPUT_JSON=f"prompts_{LANG}.json"

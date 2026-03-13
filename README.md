@@ -1,68 +1,66 @@
-# DOWIS (Do What I Say)
+<p align="center">
+  <img src="dowis_logo.png" alt="DOWIS" width="500"/>
+</p>
+<h1 align="center">
+  Do What I Say: A Spoken Prompt Dataset for Instruction-Following
+</h1>
 
-## 🌍 Supported Languages
+<p align="center">
+    <a href="https://arxiv.org/abs/2603.09881">
+        <img src="https://img.shields.io/badge/arXiv-2603.09881-b31b1b.svg" alt="arXiv">
+    </a>
+    <a href="https://huggingface.co/datasets/maikezu/dowis">
+        <img src="https://img.shields.io/badge/🤗%20HuggingFace-DOWIS-yellow" alt="HuggingFace">
+    </a>
+</p>
 
-The following languages are currently supported:
+This repository contains code for the DOWIS prompt project. 
+The dataset can be found on HuggingFace at [maikezu/dowis](https://huggingface.co/datasets/maikezu/dowis).
 
-```
-cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv
-```
+> **TL;DR** — DOWIS is a multilingual dataset of human-recorded spoken and written instruction prompts, designed to enable realistic evaluation of Speech Large Language Models across 11 tasks and 12 languages.
+
+
+> 🆕 **New:** DOWIS now also contains spoken and written prompts in Albanian (sq), and for the tasks LIPREAD and SLU!
+> 
+---
+### Paper Abstract
+
+Speech Large Language Models (SLLMs) have rapidly expanded, supporting a wide range of tasks. These models are typically evaluated using text prompts, which may not reflect real-world scenarios where users interact with speech. 
+To address this gap, we introduce DoWhatISay (DOWIS), a multilingual dataset of human-recorded spoken and written prompts designed to pair with any existing benchmark for realistic evaluation of SLLMs under spoken instruction conditions. 
+Spanning 9 tasks and 11 languages, it provides 10 prompt variants per task-language pair, across five styles.
+Using DOWIS, we benchmark state-of-the-art SLLMs, analyzing the interplay between prompt modality, style, language, and task type. Results show that text prompts consistently outperform spoken prompts, particularly for low-resource and cross-lingual settings. Only for tasks with speech output, spoken prompts do  close the gap, highlighting the need for speech-based prompting in SLLM evaluation.
+
+> **Note:** DOWIS has since been extended to 11 tasks and 12 languages, including Albanian (sq) and the tasks LIPREAD and SLU.
+---
+
+The code includes inference and evaluation code for 
+
+- 🤖 the models  `phi_multimodal` and `qwen_omni`
+- 🌍 the languages  cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv
+- 🎧 the prompt modalities `text`  and `audio`
+- 🧠 the tasks below:
+
+
+  | Task Code | Description |
+  |---------|-------------|
+  | ACHAP | Audio Chaptering |
+  | ASR | Automatic Speech Recognition |
+  | MT | Machine Translation |
+  | S2ST | Speech-to-Speech Translation |
+  | SQA | Spoken Question Answering |
+  | SSUM | Speech Summarization |
+  | ST | Speech Translation |
+  | TSUM | Text Summarization |
+  | TTS | Text-to-Speech |
+
+
+We also release the model outputs in the [`outputs`](./outputs) folder.
 
 ---
 
-## 🎧 Modalities
+## Inference
 
-DOWIS supports two prompt and task modalities:
-
-- `text`  – written text prompts
-- `audio` – spoken prompts (e.g., WAV files)
-
----
-
-## 🧠 Tasks
-
-The following tasks are implemented:
-
-| Task Code | Description |
-|---------|-------------|
-| ACHAP | Audio Chaptering |
-| ASR | Automatic Speech Recognition |
-| MT | Machine Translation |
-| S2ST | Speech-to-Speech Translation |
-| SLU | Spoken Language Understanding |
-| SQA | Spoken Question Answering |
-| SSUM | Speech Summarization |
-| ST | Speech Translation |
-| TSUM | Text Summarization |
-| TTS | Text-to-Speech |
-
----
-
-## 🤖 Models
-
-The following models are supported:
-
-- `phi_multimodal`
-- `qwen_omni`
-
----
-
-## 🚀 Inference
-
-The main entry point of the project is `main.py`, which can be executed from the command line.
-
-### Command-line Arguments
-
-| Argument | Description | Choices                                             | Default          |
-|--------|-------------|-----------------------------------------------------|------------------|
-| `--lang` | Language to process | cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv      | cs               |
-| `--task` | Task to run | ACHAP, ASR, MT, S2ST, SLU, SQA, SSUM, ST, TSUM, TTS | ACHAP            |
-| `--model` | Model to use | phi_multimodal, qwen_omni                           | phi_multimodal   |
-| `--out_folder` | Output directory | any path                                            | generated_output |
-
----
-
-### Example Command
+Run [`main.py`](main.py) with the following arguments to start inference:
 
 ```bash
 python main.py \
@@ -72,33 +70,24 @@ python main.py \
   --out_folder outputs
 ```
 
+
+| Argument | Description | Choices                                             | Default          |
+|--------|-------------|-----------------------------------------------------|------------------|
+| `--lang` | Language to process | cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv      | cs               |
+| `--task` | Task to run | ACHAP, ASR, MT, S2ST, SQA, SSUM, ST, TSUM, TTS | ACHAP            |
+| `--model` | Model to use | phi_multimodal, qwen_omni                           | phi_multimodal   |
+| `--out_folder` | Output directory | any path                                            | generated_output |
+
 ---
-
-### 📂 Inference Output
-
-Generated outputs are stored in the specified output folder as JSON files. Each output contains:
-
+📂 Generated outputs are stored in the specified output folder as JSON files. Each output contains:
 - Reference text
 - Prompt type
 - Model outputs per prompt style and modality
 
 ---
 
-## 📊 Evaluation
-The evaluation script `eval_outputs.py` computes metrics on the generated predictions from `main.py`.
-
-### Command-line Arguments
-| Argument | Description | Choices | Default |
-|--------|-------------|---------|---------|
-| `--lang` | Language to evaluate | cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv | cs |
-| `--task` | Task to evaluate | ACHAP, ASR, MT, S2ST, SLU, SQA, SSUM, ST, TSUM, TTS | ACHAP |
-| `--model` | Model to evaluate | phi_multimodal, qwen_omni | phi_multimodal |
-| `--out_folder` | Output directory for evaluation results | any path | evaluation_results |
-| `--predictions_folder` | Folder containing predictions (optional) | any path | same as `--out_folder` |
-
----
-
-### Example Commands
+## Evaluation
+The evaluation script [`eval_outputs.py`](eval_outputs.py) computes metrics on the generated predictions.
 ```bash
 python eval_outputs.py \
   --lang de \
@@ -108,64 +97,42 @@ python eval_outputs.py \
   --out_folder evaluation_results
 ```
 
----
+| Argument | Description | Choices | Default |
+|--------|-------------|---------|---------|
+| `--lang` | Language to evaluate | cs, de, en, es, fr, hu, it, nl, pt, ru, sq, sv | cs |
+| `--task` | Task to evaluate | ACHAP, ASR, MT, S2ST, SQA, SSUM, ST, TSUM, TTS | ACHAP |
+| `--model` | Model to evaluate | phi_multimodal, qwen_omni | phi_multimodal |
+| `--out_folder` | Output directory for evaluation results | any path | evaluation_results |
+| `--predictions_folder` | Folder containing predictions (optional) | any path | same as `--out_folder` |
 
-### 📈 Evaluation Output
-Evaluation results are stored as JSON files containing:
+---
+📈  Evaluation results are stored as JSON files containing:
 - **Summary statistics**: Unique samples, total evaluations, prompt types, and modalities
 - **Per prompt type results**: Metrics for each prompt style (basic, formal, informal, detailed, short)
 - **Per modality results**: Metrics aggregated by prompt modality (text, female audio, male audio)
 - **Overall results**: Global metrics across all prompt types and modalities
 
-#### Example Output Structure
-```json
-{
-  "task": "ASR",
-  "language": "en",
-  "model": "qwen_omni",
-  "summary_stats": {
-    "unique_samples": 1294,
-    "total_evaluations": 19410,
-    "num_prompt_types": 5,
-    "num_modalities": 3,
-    "evaluations_per_prompt_type": {
-      "basic": 3882,
-      "formal": 3882,
-      ...
-    },
-    "evaluations_per_modality": {
-      "text_prompt": 6470,
-      "f_audio_prompt": 6470,
-      "m_audio_prompt": 6470
-    }
-  },
-  "results": {
-    "per_prompt_type": { ... },
-    "per_modality": { ... },
-    "overall": {
-      "wer": {
-        "mean": 12.355,
-        "count": 19410
-      }
-    }
-  }
-}
+
+---
+
+## Citation
+
+If you use this work, please cite:
+```bibtex
+@misc{züfle2026isayspokenprompt,
+      title={Do What I Say: A Spoken Prompt Dataset for Instruction-Following}, 
+      author={Maike Züfle and
+              Sara Papi and
+              Fabian Retkowski and
+              Szymon Mazurek and
+              Marek Kasztelnik and
+              Alexander Waibel and
+              Luisa Bentivogli and
+              Jan Niehues},
+      year={2026},
+      eprint={2603.09881},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.09881}}
 ```
-
----
-
-### 📋 Task-Specific Metrics
-Different tasks use different evaluation metrics:
-- **ASR,**: WER 
-- **MT, ST**: COMET QE
-- **SQA, TSUM, SSUM**: BERTScore
-- **TTS**: ASR-WER, UTMOS
-- **S2ST**: ASR-COMET, UTMOS
-- **ACHAP**: TODO
-
-
----
-
-
-If you use or extend DOWIS in your research, please consider citing the project.
 
