@@ -1,8 +1,4 @@
 import logging
-from chunkseg import evaluate
-from mutagen import File as MutaFile
-import os
-
 
 _CHUNKSEG_LANG = {"en": "eng", "de": "deu", "it": "ita", "zh": "zho"}
 
